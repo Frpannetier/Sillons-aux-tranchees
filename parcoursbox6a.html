@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Convois</title>
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Merriweather&family=Montserrat:wght@500&family=Sacramento&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheet, Bootstrap and Favicon -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon (2).ico">
+
+  <!-- Font Awesome -->
+
+  <script src="https://kit.fontawesome.com/cc4dcc56d7.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      background-image: linear-gradient(to right top, #d97e57, #d5815c, #d08460, #cc8665, #c7896a, #c68d6f, #c59174, #c49579, #c69c7f, #c9a386, #cbaa8d, #ceb194);
+    }
+
+    .map {
+      background-image: url(images/imagesbox/Box5/map26Aout.jpg);
+      height: 90rem;
+    }
+
+    .couv17 {
+      padding-top: 47rem;
+      padding-right: 5rem;
+    }
+
+    .couv98 {
+      padding-top: 10rem;
+    }
+
+    .mapChipotte {
+      background-image: url(images/imagesbox/Box5/ColdelaChipotte.jpg);
+      text-align: left;
+    }
+
+    .mapFrance {
+      background-image: url(images/imagesbox/Box6a/Mapconvois.jpg);
+      text-align: left;
+    }
+
+    .mapStRemy {
+      background-image: url(images/imagesbox/Box5/StRemy.jpg);
+      text-align: left;
+    }
+
+    .mapEMMarne {
+      background-image: url(images/imagesbox/Box5/MapEMMarne.jpg);
+      text-align: left;
+    }
+
+    .PicChipotte {
+      padding-top: 25rem;
+    }
+
+    .PicMarne {
+      padding-top: 0rem;
+
+    }
+
+    .fraternite {
+      padding-left: 6.5rem;
+    }
+
+    .title-parcours {
+      padding-top: 10%;
+      padding-bottom: 1%;
+    }
+
+    .textcarte {
+      font-family: 'Sacramento', cursive;
+      font-size: 200%;
+      color: #434144;
+      font-weight: 600;
+    }
+
+    .texte-legend {
+      font-size: 100%;
+    }
+
+    .image-box {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 10rem 0rem;
+    }
+
+    .image-boxms {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 5rem 0rem;
+    }
+
+    .text-box {
+      height: 40rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxconvois {
+      height: 30rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxbergougnan {
+      height: 20rem;
+      text-align: left;
+      padding-top: 2%;
+    }
+
+    .text-boxchamond {
+      height: 20rem;
+      text-align: left;
+      padding-top: 0%;
+    }
+
+    .text-boxmichelin {
+      height: 20rem;
+      text-align: left;
+      padding-top: 1%;
+    }
+
+
+    .text-box1 {
+      height: 40rem;
+      text-align: left;
+      padding-top: 1%;
+    }
+
+    .text-boxjourneaux {
+      height: 45rem;
+      text-align: center;
+    }
+
+    .text-boxdepart {
+      height: 25rem;
+      text-align: center;
+    }
+
+    .text-boxgiono2 {
+
+      height: 67rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+    .text-boxgenevoix {
+
+      height: 60rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+    .text-boxjmo17 {
+
+      height: 38rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 1.5%;
+
+    }
+
+
+
+    h4 {
+      color: #434144;
+    }
+
+    .Pica {
+      padding: 20px;
+      width: 18rem;
+      height: 18rem;
+      box-shadow: 4px 5px 10px 10px rgba(20, 20, 20, 0.4);
+    }
+
+    .Picc {
+      width: 70rem;
+      height: 20rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+    .Picd {
+      width: 20rem;
+      height: 30rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+    .Pice {
+      width: 25rem;
+      height: 37rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+
+    .picms {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 15rem;
+      height: 20rem;
+      margin-left: 3rem;
+    }
+
+    .pich {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 30rem;
+      height: 20rem;
+    }
+
+    .picv {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 20rem;
+      height: 30rem;
+    }
+
+    .picrot-15 {
+      transform: rotate(-15deg);
+    }
+
+    .ppich {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 20rem;
+      height: 14rem;
+    }
+
+    .PicConscrits {
+      width: 36rem;
+      height: 24rem;
+    }
+
+    .piclaguerre {
+      width: 40rem;
+      height: 12rem;
+    }
+
+    .picBergougnan {
+      width: 15rem;
+      height: 22rem;
+    }
+
+    .picMichelin {
+      width: 22rem;
+      height: 16rem;
+    }
+
+    .picChamond3 {
+      width: 50rem;
+      height: 15rem;
+    }
+
+    .picBrun {
+      width: 15rem;
+      height: 15rem;
+    }
+
+    .audiobutton {
+      padding-bottom: 3%;
+    }
+
+    audio::-webkit-media-controls-panel {
+      background-color: #DFAA93
+    }
+
+    audio {
+      height: 1.5rem;
+      width: 14rem;
+    }
+
+
+    @media (max-width:990px) {
+
+      .Pic1a,
+      .Pic1b {
+        position: static;
+        transform: rotate(0);
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <a href="box-page1"></a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid navigation-accueil blip">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="images/logo1.png" alt="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html#introduction">INTRODUCTION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#les-acteurs">LES ACTEURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#leslieux">LES LIEUX</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#parcours">PARCOURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#focus">FOCUS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#Ressources">RESSOURCES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PLAN DES TRANCHEES</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="cont">
+          <div class="scroller">
+            <div class="img"><img src="audios/Vapeur.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition1.jpg" alt=""></div>
+            <div class="img"><img src="audios/Vapeur.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition2.jpg" alt=""></div>
+            <div class="img"><img src="audios/Vapeur.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition1.jpg" alt=""></div>
+            <div class="img"><img src="audios/Vapeur.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition2.jpg" alt=""></div>
+          </div>
+        </div>
+        <br>
+        <div class="audiobutton">
+          <audio id="audio" controls>
+            <source src="audios/Train.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+      <div class="col-lg-8">
+      </div>
+    </div>
+    <h1 class="title-parcours">Convois</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>De retour au dépôt de son régiment au début de Décembre 1914, Auguste est dans l’attente. Repartira-t ’il au Front avec le prochain départ ou aura-t’ il un sursis supplémentaire ? Finalement il échappe à un retour immédiat – la guerre est
+      encore ” jeune “ et les états-majors préfèrent sans doute envoyer des troupes fraîches …</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-1 text-boxconvois">
+      </div>
+      <div class="col-lg-4 text-boxconvois">
+        <h3 class="texte-parcours">De fin Décembre 1914 à fin Mars 1915, Auguste va vivre une expérience tout à fait particulière et sillonner une bonne partie du territoire français. Suivez son parcours sur la carte ci-contre.</h3>
+        <br>
+        <h3>Il est affecté aux convois et son parcours révèle comment l’économie et l’industrie se sont rapidement reconverties pour assurer l’approvisionnement en armes et munitions pour le Front. A chaque ville, son industrie et sa contribution à
+          l’effort de guerre. A chaque ville, sa carte postale qu’Auguste s’empresse d’envoyer à la famille, avec sans doute pas mal de fierté de montrer les ” nouveaux pays “ qu’il découvre …</h3>
+        <br>
+      </div>
+      <div class="col-lg-6 mapFrance">
+      </div>
+      <div class="col-lg-1 text-boxconvois">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Comme en attestent ces deux cartes postales, l’un des premiers convois d’Auguste le fait voyager de Lyon à Clermont-Ferrand , en passant par St-Etienne. Dès le début de la guerre, Clermont devient un centre important de l’industrie d'armement !
+    </h3>
+    <br>
+    <br>
+    <br>
+
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic2a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box6a/Pic2b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chers parents,</h3>
+        <br>
+        <h3 class="textcarte">Je suis parti de Lyon ce matin pour conduire 3 wagons d’obus vides à Clermont-Ferrand. Je suis arrivé à St-Etienne ce soir à 5 heures, j’étais dans un wagon de 3eme. Je repars à 11 heures pour mon voyage de Bourges.</h3>
+        <h3 class="textcarte">J'ai touché 17 francs 50, ça vaut bien la peine. Avec ça, on peut bien se soigner avec même des sous de bon. J’arriverai probablement demain soir à Clermont.</h3>
+        <h3 class="textcarte">Antoine va bien. Aujourd’hui, il voulait envoyer un colis à Gabriel pour ses étrennes. Hier, j’ai acheté ce qu’il fallait. Il écrit d’assez longues lettres, il ne se plaint pas. Il disait que ses tranchées s’étaient
+          écroulées mais qu’il les avait bien arrangées ce matin. Il ne faisait pas beau, il a tombé de toute la nuit et la matinée.</h3>
+        <h3 class="textcarte">Bien le bonjour de St Etienne.</h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Un bonjour de Clermont</h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic1a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box6a/Pic1b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>A l’époque, l’économie de Clermont-Ferrand est déjà concentrée sur les pneumatiques et dominée par la rivalité entre les frères Bergougnan et les frères Michelin.</h3>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-3">
+        <img class="picBergougnan" src="images/imagesbox/Box6a/Bergougnan1.JPG" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img class="picBergougnan" src="images/imagesbox/Box6a/Bergougnan2.JPG" alt="">
+      </div>
+      <div class="col-lg-4 text-boxbergougnan">
+        <h3 class="texte-parcours">Raymond Bergougnan débute comme simple ouvrier et fonde en 1885, avec ses deux frères, un petit atelier produisant des articles destinés aux graveurs. Bientôt, l’atelier se spécialise dans les moules de timbres en
+          caoutchouc ce qui le conduira naturellement à participer à l’aventure industrielle du pneumatique. Dès 1898, les Etablissements Bergougnan développent la production de bandages pour automobiles – en 1900, ils lancent la production des pneus
+          de vélo sous la fameuse marque ”le Gaulois“. </h3>
+        <br>
+      </div>
+      <div class="col-lg-1">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-3">
+        <img class="picBergougnan" src="images/imagesbox/Box6a/Bergougnan3.JPG" alt="">
+      </div>
+      <div class="col-lg-3">
+        <br>
+        <br>
+        <br>
+        <br><br><br>
+        <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="https://grandeguerre.bibliotheques-clermontmetropole.eu/arriere/produire/bergougnan/" target="_blank"><i class="fas fa-archive"></i> En Savoir Plus</a>
+      </div>
+      <div class="col-lg-4 text-boxbergougnan">
+        <h3>Mais, à la veille de la Guerre la grande spécialité de Bergougnan sera la production des bandages pour poids lourds. Ainsi, pendant la Guerre, Bergougnan devient le fournisseur exclusif de l’armée pour les bandages pleins qui équipaient
+          les véhicules lourds. Sans les bandages Bergougnan, la logistique du transport des troupes n’aurait pu être aussi efficace, notamment sur la Voie Sacrée de la bataille de Verdun …</h3>
+        <br>
+      </div>
+      <div class="col-lg-1">
+      </div>
+    </div>
+    <br>
+    <br>
+    <h3>Quant à Michelin, on ne présente plus la société. André et Edouard Michelin fondent l’entreprise en 1889 et très tôt, ils se distinguent par un sens aigu de l’innovation et un don pour la publicité sous l’égide du bonhomme Bibendum. </h3>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-4 text-boxbergougnan">
+        <h3 class="texte-parcours">Ainsi, ils inventent le pneu démontable pour bicyclettes en 1891 et bientôt ils se lancent dans l’aventure automobile en équipant les véhicules de pneumatiques au lieu de bandages, en confrontation directe avec
+          Bergougnan. On connaît le reste de l’histoire, bien des années plus tard Michelin deviendra le leader mondial du pneumatique et Bergougnan disparaîtra.</h3>
+        <br>
+      </div>
+      <div class="col-lg-3">
+        <img class="picMichelin" src="images/imagesbox/Box6a/Michelin1.JPG" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img class="picMichelin" src="images/imagesbox/Box6a/Michelin2.JPG" alt="">
+      </div>
+      <div class="col-lg-1">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-4 text-boxmichelin">
+        <h3>Mais dès 1914, Michelin s’engagera résolument dans l’effort de guerre. L'usine devient une véritable entreprise de guerre en produisant une multitude d’accessoires et équipements destinés à l’armée, dont des obus, des masques à gaz et des
+          avions. D’ailleurs, Auguste accompagne sans doute ses wagons d’obus vides sur le site Michelin de Gravanches où a lieu la production d’obus.</h3>
+        <br>
+        <h3>Au total, durant la Grande Guerre, l'entreprise a fourni 1 884 avions Bréguet-Michelin, 8600 lance-bombes, 342 000 obus dont 277 00 à l'armée américaine.</h3>
+      </div>
+      <div class="col-lg-3">
+        <img class="picBergougnan" src="images/imagesbox/Box6a/Michelin3.JPG" alt="">
+      </div>
+      <div class="col-lg-3">
+        <br>
+        <br>
+        <br>
+        <br><br><br>
+        <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="https://grandeguerre.bibliotheques-clermontmetropole.eu/arriere/produire/michelin/" target="_blank"><i class="fas fa-archive"></i> En Savoir Plus</a>
+      </div>
+      <div class="col-lg-1">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Avant de retrouver Auguste, attardons-nous un instant sur un épisode Auvergnat de l’époque, qui en dit long sur l’intuition et la vision des frères Michelin. Dès le début du siècle, ils sont convaincus que l’aéronautique jouera un rôle
+      important dans la guerre qui menace et n’ont de cesse de faire pression sur les autorités pour créer une véritable industrie aéronautique.</h3>
+    <br>
+    <h3>A ces fins, en Mars 1908, ils organisent le Prix Michelin d'aviation avec une récompense de 100 000 francs attribuée au premier aviateur réalisant un vol de Paris au sommet du Puy de Dôme en faisant le tour de la cathédrale de
+      Clermont-Ferrand en moins de 6 heures à bord d'un aéronef avec deux occupants. Soulignons au passage que le défi semble irréalisable, puisqu’au moment de la création du prix, le record de durée de vol établi par Henry Farman n'est que de 1 min
+      28 s !!!</h3>
+    <br>
+    <h3> Après deux tentatives infructueuses par d'autres équipages, ce sont finalement Eugène Renaux et Albert Senouque qui poseront leur biplan Maurice Farman à moteur Renault le 7 mars 1911 à 14 h 23, après 5 h 10 de vol et remporteront le prix.
+    </h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-3">
+        <img class="picMichelin" src="images/imagesbox/Box6a/Michelin8.JPG" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img class="picMichelin" src="images/imagesbox/Box6a/Michelin4.JPG" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img class="picMichelin" src="images/imagesbox/Box6a/Michelin5.JPG" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img class="picMichelin" src="images/imagesbox/Box6a/Michelin9.JPG" alt="">
+      </div>
+    </div>
+    <br>
+    <br>
+    <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="https://gallica.bnf.fr/ark:/12148/bpt6k563904k" target="_blank"><i class="fas fa-archive"></i> A la Une du Petit Parisien</a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Nous sommes en Janvier 1915 et Auguste ne fait plus les convois pour un temps. A la demande de son lieutenant, il reprend son métier d’ordonnance. Ce court épisode illustre bien au passage la différence de confort entre un soldat de 2ème
+      classe et les officiers, mais Auguste n’a pas à s’en plaindre.</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère Maria,</h3>
+        <br>
+        <h3 class="textcarte">Je t’écris ces quelques mots pour te donner de mes nouvelles. </h3>
+        <h3 class="textcarte">Depuis aujourd’hui, je ne fais plus de convois. Le lieutenant que j’avais été ordonnance m’a demandé pour faire son fourbi. Il est blessé au bras, il est à l’Hotel-Dieu. J’y va tous les jours à midi pour l’aider à
+          s’habiller et cirer ses souliers. Tous les soirs, il se promène en ville.</h3>
+        <h3 class="textcarte">J’ai une heure de travail. Je serai plus tranquille que voyager. J’étais pas venu que je repartais, la moitié des nuits, on les passe dans le train.</h3>
+        <h3 class="textcarte">Je ne sais pas si ça va être pour longtemps mais si ça n’avait été pour quelques jours, il ne m’aurait pas demandé ce soir.</h3>
+        <h3 class="textcarte">Antoine était en promenade en ville.</h3>
+        <h3 class="textcarte">Ton frère qui t’aime.</h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic3a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box6a/Pic3b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic3c.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box6a/Pic3d.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ma chère petite Léa,</h3>
+        <br>
+        <h3 class="textcarte">Je suis toujours en très bonne santé et je désire que tu en sois de même.</h3>
+        <h3 class="textcarte">Je va tous les jours chez mon lieutenant à midi – à 1 heure, j’ai fini mon travail.</h3>
+        <h3 class="textcarte">Je ne sais pas si ça va durer longtemps, mais pour le moment je m’en fais pas.</h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Mon cher cousin,</h3>
+        <br>
+        <h3 class="textcarte">Ici pas de retard, aussitôt la carte lue, aussitôt on se met à l’ouvrage – il ne faut pas être paresseux.</h3>
+        <h3 class="textcarte">Alors comme ça, on ne veut pas t’emmener voir les Boches. Il ne faut pas en être curieux, il sont déjà pas si suffisants.</h3>
+        <h3 class="textcarte">Antoine va toujours de mieux en mieux, il nous a écrit la semaine dernière.</h3>
+        <h3 class="textcarte">Rien de nouveau au pays. Nous t’embrassons tous bien fort ainsi qu'Antoine. Ta cousine qui pense à toi.</h3>
+        <br>
+        <h3 class="textcarte">Louise</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic4a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box6a/Pic4b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box6a/Pic5a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box6a/Pic5b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ma chère Maria,</h3>
+        <br>
+        <h3 class="textcarte">Je t’écris ces deux mots pour te donner de mes nouvelles. Je suis toujours en bonne santé et je désire que tu en sois de même ainsi que tous.</h3>
+        <h3 class="textcarte">Antoine va bien aussi, il va presque tous les jours à la promenade. Ce matin, j’ai reçu une lettre de Chez Chamard, je vois que vous allez tous bien. Gabriel nous écrit assez souvent.</h3>
+        <h3 class="textcarte">Demain, il part un convoi de 200 hommes pour le 17ème. Ce serait bien mon tour, mais je ne pars pas de cette fois, je va toujours chez le lieutenant à Lyon.</h3>
+        <h3 class="textcarte">Depuis 3 jours il ne fait pas chaud, il a tombé quelques petites neiges mais elles n’ont pas restées. Il faut espérer que l’hiver ne sera pas trop froid.</h3>
+        <h3 class="textcarte">Je termine en t’embrassant bien fort ainsi que tous.</h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>D'un soldat à l'autre, d'un cousin à l'autre ...</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Mon cher Cousin,</h3>
+        <br>
+        <h3 class="textcarte">Voilà déjà quelques jours que j’ai reçu ta lettre qui m’a fait un très grand plaisir de te savoir en bonne santé.</h3>
+        <h3 class="textcarte">Moi aussi je me porte toujours bien et j’espère que ma carte te trouveras comme elle me quitte.</h3>
+        <h3 class="textcarte">Tu me dis que tu dois d’abord venir nous voir, mais tâche de rester le plus possible car tu seras toujours mieux qu’avec moi. Je te quitte pour aujourd’hui.</h3>
+        <h3 class="textcarte">En attendant de prochaines nouvelles. Je te la serre d’amitié</h3>
+        <br>
+        <h3 class="textcarte">En attendant de prochaines nouvelles. Je te la serre d’amitié</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box6a/Pic6a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box6a/Pic6b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Ca y' est, Auguste est de retour sur la route et découvre de nouvelles villes. Sans doute, les deux petites jumelles aimeraient bien voir leur Auguste au détour d'un voyage, mais ce ne sera pas de cette fois.</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic7a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box6a/Pic7b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ma chère petite Léa,</h3>
+        <br>
+        <h3 class="textcarte">Je t’écris ces deux mots pour te dire que je suis rentré hier soir.</h3>
+        <h3 class="textcarte">J’ai passé à Commentry mardi soir à 4 heures. Je n’ai pas pu passer vous voir, je n’avais qu’un jour à rester.</h3>
+        <h3 class="textcarte">Je tâcherai d’avoir un autre voyage dans cette direction et d’avoir un jour de plus. Maintenant, c’est pas si commode que les premiers temps. A Roanne, j’ai eu 4 heures d’arrêt – je suis allé voir Gabriel. Il ne se fait pas de bile, il se porte assez bien.</h3>
+        <h3 class="textcarte">A Lyon, il fait très beau.</h3>
+        <h3 class="textcarte">Ton frère qui t’aime.</h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3> Prochaine destination : le bassin industriel de St-Etienne et St-Chamond.</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère Maria,</h3>
+        <br>
+        <h3 class="textcarte">Je t’écris ces deux mots pour te dire que je repars à midi pour aller à Villefranche sur Saône et de là à Saint Chamond près de Saint Etienne. </h3>
+        <h3 class="textcarte">J’ai trouvé deux lettres d’Antoine et une de Gabriel du 30 Janvier, Il vient de recevoir son colis et il disait prendre ses 4 jours de repos.</h3>
+        <h3 class="textcarte">Il fait très beau à Lyon.</h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic8a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box6a/Pic8b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic12a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box6a/Pic12b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Un bonjour de Saint-Chamond.</h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte"></h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Avec les bassins industriels du Nord et de l’Est sur la ligne de front, l’industrie française doit être réorganisée au plus vite pour faire face aux besoins de la Défense Nationale. Dans ce contexte, le bassin stéphanois va vite revêtir une grande importance, bien que massivement impacté par la mobilisation en masse des ouvriers.</h3>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-4 text-boxbergougnan">
+        <h3 class="texte-parcours">C’est à Saint-Etienne que le fameux fusil Lebel est produit par la Manufacture d’armes de Saint-Etienne, trois millions d’exemplaires entre 1887 et 1904 pour doter l’armée française. Bientôt, la MAS développera et produira de nouveaux fusils automatiques ainsi que la mitrailleuse Saint-Etienne pour faire face aux nouveaux besoins nés du conflit.</h3>
+        <br>
+      </div>
+      <div class="col-lg-3">
+        <img class="picMichelin" src="images/imagesbox/Box6a/Chamond1.JPG" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img class="picMichelin" src="images/imagesbox/Box6a/Chamond2.JPG" alt="">
+      </div>
+      <div class="col-lg-1">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-4 text-boxchamond">
+        <h3>A Saint-Chamond, la compagnie des Forges et aciéries de la marine (FAM) produit le fameux canon de 75 cité maintes fois dans la littérature de guerre. Très vite, la FAM se tourne vers l’artillerie lourde exigée par la guerre de position et la production massive d’obus. Dès 1917, la FAM va produire 400 chars d’assaut (le char Saint-Chamond), c’est le deuxième char français après le Schneider CA1. Malheureusement, il s’avère peu efficace en terrain de tranchées labouré par l‘artillerie … son train de chenille est trop court !...</h3>
+        <br>
+        <h3></h3>
+      </div>
+      <div class="col-lg-6">
+        <img class="picChamond3" src="images/imagesbox/Box6a/Chamond3.JPG" alt="">
+      </div>
+      <div class="col-lg-1">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Quelques lettres des cousines qui ont rencontré Antoine au pays, lors d'une rare permission.</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Cher Auguste,</h3>
+        <br>
+        <h3 class="textcarte">Je te remercie très sincèrement de ta superbe carte et je t’adresse un gracieux bonjour accompagné de mes bonnes affections.</h3>
+        <h3 class="textcarte">Bon souvenir de nous tous.</h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Louise</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic9a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box6a/Pic9b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic10a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box6a/Pic10b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Cher Cousin,</h3>
+        <br>
+        <h3 class="textcarte">Tu voudras bien m’excuser d’avoir retardé à t’écrire, mais cette semaine a passé si vite qu’on n’a pas eu le temps de s’en apercevoir.</h3>
+        <h3 class="textcarte">On était très heureux de pouvoir aller causer un moment avec Antoine, mais malheureusement ça n’a pas duré.</h3>
+        <h3 class="textcarte">On voudrait bien te causer aussi à toi de vive voix, enfin avec le temps et la patience, ça viendra.</h3>
+        <h3 class="textcarte">Je pense que tu vas toujours bien, notre santé à tous est bonne pour le moment.</h3>
+        <h3 class="textcarte">Ta cousine qui pense à toi.</h3>
+        <br>
+        <h3 class="textcarte">Louise</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Mon cher cousin,</h3>
+        <br>
+        <h3 class="textcarte">Un mot seulement pour te dire que je viens de recevoir la carte que tu m’as envoyée avec plaisir.</h3>
+        <h3 class="textcarte">Je suis contente de te savoir toujours en bonne santé et que tu ne sois pas au danger, peut-être encore pour longtemps.</h3>
+        <h3 class="textcarte">Je suis contente également que tu sois allé voir mon frère, vous avez eu le temps de passer un bon moment ensemble. Il a du être content de te voir, car il y avait longtemps qu’il ne t’avait plus vu.</h3>
+        <h3 class="textcarte">Je te dirais que nous allons toujours très bien pour le moment et j’espère que tu es pareillement. Ecris toujours quand tu le pourras, nous sommes si contents d’avoir des nouvelles de vous tous.</h3>
+        <h3 class="textcarte">Tous ces jours, nous avons eu un temps superbe mais aujourd’hui il pleut , mais ce n’est pas froid.</h3>
+        <h3 class="textcarte">Je termine, mon cher Auguste, en t’embrassant.</h3>
+        <br>
+        <h3 class="textcarte">Ta cousine Marie</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box6a/Pic11a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box6a/Pic11b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic13a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box6a/Pic13b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Je suis rentré à deux heures, j’ai trouvé un camarade qui m’a aidé porter mes colis.</h3>
+        <br>
+        <h3 class="textcarte">Auguste est rentré de faire un convoi à St-Chamond. Demain je vous écrirai une plus longue lettre.</h3>
+        <h3 class="textcarte">Je vous embrasse tous bien fort.</h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Antoine</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Les choses se précisent pour Antoine. Après avoir passé la visite médicale, il a l’espoir de passer au service auxiliaire et donc d’échapper à un retour au front.</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chers Parents</h3>
+        <br>
+        <h3 class="textcarte">Ce matin, j’ai passé la visite. On m’a proposé pour le service auxiliaire, je passerai la semaine prochaine.</h3>
+        <h3 class="textcarte">Auguste est parti pour faire un convoi à Briançon . J’ai reçu une carte de Gabriel, il est en bonne santé. Il me dit qu’il a reçu vos colis avec les pantalons. Je lui en enverrai un dimanche avec les 9 francs que la marraine m’a donné.</h3>
+        <h3 class="textcarte">Je vous dirais que je dors très bien quoique j’ai qu’une paillasse, elle a beaucoup de paille et j’ai deux bonnes couvertures. Je n’ai pas froid, au contraire.</h3>
+        <h3 class="textcarte">Il ne faut pas vous faire de mauvais sang pour moi ni pour Auguste. J’espère rester au dépôt et maintenant il ne fait pas froid pour faire les convois.</h3>
+        <h3 class="textcarte">Je termine en vous embrassant tous bien fort.</h3>
+        <br>
+        <h3 class="textcarte">Antoine</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box6a/Pic14a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box6a/Pic14b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Auguste, quant à lui, est reparti de plus belle sur les rails. Difficile de savoir la raison de son voyage à Briançon qui est une ville de garnison, mais sans réelle production d’armement.La réponse de Maria nous montre au passage comment les nouvelles circulent au village …</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic15a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box6a/Pic15b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chers Parents,</h3>
+        <br>
+        <h3 class="textcarte">Je suis à Briançon depuis hier soir.</h3>
+        <h3 class="textcarte">J’ai couché dans un lit bien chaud, ici c’est un pays très froid. Il y a un mètre de neige et il en tombe encore. C’est à six kilomètres de l’Italie, on ne voit que des montagnes.</h3>
+        <h3 class="textcarte">Je repars à 3 heures et demie, je coucherai à Gap et demain j’irai coucher à Grenoble. Ce n’est pas très loin de Lyon, mais comme il y a beaucoup de neige, les trains ne marchent pas vite. Je n’arriverai pas avant samedi soir.</h3>
+        <h3 class="textcarte">Dans mes voyages, je m’étais bien enrhumé mais je me suis soigné, je suis guéri. En descendant du train, je tâche de boire quelque chose de chaud.</h3>
+        <h3 class="textcarte">Depuis quelque temps, je vois beaucoup de pays.</h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Cher Frère,</h3>
+        <br>
+        <h3 class="textcarte">Nous avons reçu ta carte. Tu vois des pays mais tu trimardes beaucoup. Soigne-toi bien, prend quelque chose de chaud quand tu as de l’arrêt.</h3>
+        <h3 class="textcarte">Cher frère, je vais t’apprendre une petite nouvelle : Justin Tauveron part jeudi matin pour aller à Grenoble au 4ème Génie. Il ne s’attendait pas à changer de régiment. Il ne se fait pas de mauvais sang. Gustave va à Montbrison.</h3>
+        <h3 class="textcarte">Cher frère, es-tu bien habillé. Achète-toi un gilet marin comme Antoine. Si tu peux passer nous voir, ne manque pas.</h3>
+        <h3 class="textcarte">Nous sommes tous en bonne santé. Gabriel va bien. J’ai écrit à Antoine de lui envoyer un briquet, mais à amadou. Donne des nouvelles à Antoine.</h3>
+        <h3 class="textcarte">Je termine en vous embrassant tous les deux.</h3>
+        <br>
+        <h3 class="textcarte">Maria</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic16a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box6a/Pic16b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic17a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box6a/Pic17b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chers Parents,</h3>
+        <br>
+        <h3 class="textcarte">Je viens de recevoir votre lettre du 17, j’attendais qu’Auguste rentre pour vous répondre.</h3>
+        <h3 class="textcarte">Il a du passer deux jours avec vous, il rentrera sans doute aujourd’hui. J’irai l’attendre à Perrache.</h3>
+        <h3 class="textcarte">Je dois passer mardi devant la commission de convalescence. Je vous écrirai aussitôt que j’aurai passé. Je vois pas autre chose à vous dire.</h3>
+        <h3 class="textcarte">Je termine en vous embrassant tous bien fort.</h3>
+        <br>
+        <h3 class="textcarte">Antoine</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Quelques échanges entre camarades.</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Cher Ami,</h3>
+        <br>
+        <h3 class="textcarte">C’est avec un grand plaisir que je viens de recevoir ton aimable carte m’apprenant que tu es en bonne santé – c’est bien la chose principale.</h3>
+        <h3 class="textcarte">Quant à moi, la santé marche bien et j’espère que ma carte te trouve comme elle me quitte.</h3>
+        <h3 class="textcarte">Tu me dis que tu ne partiras pas de ce mois, tu as bien le temps d’y retourner. Je te dirais que l’on nous … maintenant mais je m’en fais pas pour ça et tâche de faire de même.</h3>
+        <h3 class="textcarte">Espérons de nous revoir plus vite que l’on pense pour boire un bon verre ensemble.</h3>
+        <h3 class="textcarte">Au revoir et bonne santé.</h3>
+        <br>
+        <h3 class="textcarte">Ton ami qui te serre la main de tout cœur.</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic17c.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box6a/Pic17d.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic17e.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box6a/Pic17f.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Cher camarade,</h3>
+        <br>
+        <h3 class="textcarte">Me voilà parti dans ce nouveau métier, une autre fois depuis lundi.</h3>
+        <h3 class="textcarte">Nous sommes pas mal nourris. Je va bien et je souhaite de tout cœur que tu en sois de même.</h3>
+        <h3 class="textcarte">J’ai passé la visite mercredi, je suis été versé au Génie. Je pense pas rester bien longtemps à Montbrison. Je t’en mets pas long aujourd’hui.</h3>
+        <h3 class="textcarte">Je pense que tu dois être toujours à Lyon. Nous payons le vin huit sous à emporter et dix sous sur la table.</h3>
+        <h3 class="textcarte">Mes meilleures amitiés.</h3>
+        <br>
+        <h3 class="textcarte">Gustave au 16ème.</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Quelques échanges avec les sœurs, et notamment les deux jumelles que les voyages et les cartes postales d’Auguste doivent bien impressionner. Prochaine destination : Grenoble !</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère sœur,</h3>
+        <br>
+        <h3 class="textcarte">J’ai reçu ta lettre hier soir qui m’a fait plaisir en apprenant votre bonne santé. Moi ça va toujours bien aussi.</h3>
+        <h3 class="textcarte">Tu me parles d’une permission. J’y avais déjà pensé mais il ne faut pas y compter. Ici, on ne donne aucune permission à moins qu’il y ait un cas aujourd’hui. Je m’en occuperai à Pâques, mais ce sera peut-être pareil.</h3>
+        <h3 class="textcarte">D’abord, je serai à Limoges, demain je t’écrirai pour te dire si je pourrais partir.</h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic18a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box6a/Pic18b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic19a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box6a/Pic19b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ma chère petite Augustine,</h3>
+        <br>
+        <h3 class="textcarte">Je t’écris ces deux mots pour te dire que je suis en très bonne santé et je désire que ma carte te trouvera de même, ainsi que Léa et tous.</h3>
+        <h3 class="textcarte">Je suis rentré depuis dimanche. Tous ce jours-ci, je n’ai rien fait que jouer aux cartes avec Antoine et d’autres bon camarades.</h3>
+        <h3 class="textcarte">Ce soir, je pars à Grenoble, à moins qu’à l’arsenal, on me change. J’irai voir Justin et Alexandre. J’écrirai une vue de Grenoble à Léa.</h3>
+        <br>
+        <h3 class="textcarte">Ton parrain qui t’aime. Auguste</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chers Oncle, Tante et sœur,</h3>
+        <br>
+        <h3 class="textcarte">Je vous envoie ces quelques lignes pour vous dire que je suis en bonne santé. Auguste n’est pas encore revenu de Grenoble.</h3>
+        <h3 class="textcarte">Je vous dirais que je dois passer mardi pour ma convalescence. J’ai reçu une carte de Gabriel vendredi dernier.</h3>
+        <h3 class="textcarte">J’espère que vous êtes toujours en bonne santé. Je vois pas autre chose à vous dire.</h3>
+        <h3 class="textcarte">En attendant de vous revoir bientôt, je vous embrasse fort.</h3>
+        <br>
+        <h3 class="textcarte">Antoine</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic20a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box6a/Pic20b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic21a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box6a/Pic21b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ma chère petite Léa,</h3>
+        <br>
+        <h3 class="textcarte">Je suis à Grenoble depuis samedi soir, je n’ai qu’été débarrassé ce matin. Je repars à 1 heure 46, j’arrive à Lyon ce soir à 7 heures.</h3>
+        <h3 class="textcarte">Hier, j’ai passé la journée avec Justin et Alexandre – il faisait bien beau temps, c’est une belle ville.</h3>
+        <h3 class="textcarte">J’ai trouvé Clément Blanc, il est arrivé il y a quinze jours , il est dans l’auxiliaire. J’ai trouvé beaucoup d’autres camarades de la Crouzille.</h3>
+        <br>
+        <h3 class="textcarte">Ton frère qui t’aime. Auguste</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Cher frère,</h3>
+        <br>
+        <h3 class="textcarte">Je fais réponse à ta carte qui m’a bien fait plaisir en voyant que tu penses toujours à moi.</h3>
+        <h3 class="textcarte">Cher frère, je vois avec plaisir que tu fais toujours des convois car tu es mieux que dans les tranchées et puis tu as toujours le temps d’y aller.</h3>
+        <h3 class="textcarte">Je te dirais que nous avons reçu des nouvelles de Gabriel datées du 3 février. Il nous dit qu’il a reçu son colis de 5 kilos. Il n’a mis que huit jours.</h3>
+        <h3 class="textcarte">Il nous dit que sa filleule lui a envoyé dix francs et un colis.</h3>
+        <h3 class="textcarte">Cher frère, le temps me dure bien de te voir mais en attendant je t’embrasse bien fort.</h3>
+        <br>
+        <h3 class="textcarte">Ta sœur affectueuse. Léa</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic22a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box6a/Pic22b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Comme ailleurs, une véritable économie de guerre s'instaure à Grenoble pour produire des vêtements chauds pour les soldats, de l'alimentaire pour le ravitaillement, de la métallurgie pour les armes et de la chimie pour la fabrication de gaz de combat ce qui occasionna par ailleurs une grave explosion le 20 Aout 1918.</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-3">
+        <img class="picMichelin" src="images/imagesbox/Box6a/Grenoble2.JPG" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img class="picMichelin" src="images/imagesbox/Box6a/Grenoble3.JPG" alt="">
+      </div>
+      <div class="col-lg-4 text-boxmichelin">
+        <h3 class="texte-parcours">L’utilisation massive des gaz de combat par l’armée allemande, dès 1915, conduit en effet le ministère de la guerre français à lancer un appel aux industriels pour organiser la riposte. En Isère, les usines chimiques de guerre vont bientôt produire du chlore, du phosgène, de l’hypérite, en quantité massive. Un atelier de chargement est installé à Pont-de-Claix, à proximité de l’usine Le chlore liquide par le Service des poudres. La guerre des gaz aura pour conséquence d’installer durablement une industrie chimique sur le département de l’Isère.</h3>
+        <br>
+      </div>
+      <div class="col-lg-1">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-3">
+        <img class="picBergougnan" src="images/imagesbox/Box6a/Grenoble5.JPG" alt="">
+      </div>
+      <div class="col-lg-3">
+        <br>
+        <br>
+        <img class="picBrun" src="images/imagesbox/Box6a/Grenoble4.JPG" alt="">
+      </div>
+      <div class="col-lg-4 text-boxbergougnan">
+        <h3>Sur une note plus légère, mais tout aussi importante, Grenoble est également le berceau des biscuits Brun. Dès 18851, Pierre-Jean-Félix Brun, négociant en grain, fait construire une biscuiterie avenue de Vizille à Grenoble, pour produire leur spécialité : le pain de guerre ou biscuit du soldat. Pendant la guerre, l'installation sera étendue pour faire face à la demande … un biscuit pas vraiment au goût des soldats, certains comptant la quille en nombre de biscuits !...</h3>
+        <br>
+        <h3></h3>
+      </div>
+      <div class="col-lg-1">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Auguste s’apprête maintenant à faire son plus long voyage, jusqu'à Rennes. A Rennes, on fabrique des obus de 75, peut-être est-ce une livraison d’obus dont Auguste est en charge. Il traverse une grande partie de la France et s’applique à envoyer une carte postale à chaque étape.</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic23a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box6a/Pic23b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chers parents,</h3>
+        <br>
+        <h3 class="textcarte">Je suis arrivé à Grenoble lundi soir. Je sui reparti mardi pour Rennes.</h3>
+        <h3 class="textcarte">Antoine a passé la visite mardi soir. Je ne sais pas ce qu’on lui a dit, je n’ai pas pu le voir. Je pense qu’il a eu sa convalescence et qu’il sera parti quand je rentrerai.</h3>
+        <h3 class="textcarte">J’en ai pour 9 ou 10 jours pour faire le voyage. Je n’arrive pas à Rennes avant samedi. Il fait beau ¬a Vierzon, il fait bien bon pour voyager.</h3>
+        <h3 class="textcarte">En arrivant à Rennes, si j’ai le temps, je vous écrirai une lettre.</h3>
+        <br>
+        <h3 class="textcarte">Auguste qui vous embrasse tous bien fort.</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Je t’écris deux mots de Vierzon.</h3>
+        <br>
+        <h3 class="textcarte">Je pensais partir ce soir à 1 heure, mais c’est 7 heures et je ne sais encore pas quand je vais partir.</h3>
+        <h3 class="textcarte">J’ai visité un peu la ville.</h3>
+        <br>
+        <h3 class="textcarte">Ton frère. Auguste</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic24a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box6a/Pic24b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic25a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box6a/Pic25b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Cher frère,</h3>
+        <br>
+        <h3 class="textcarte">Je viens d’arriver à Tours hier.</h3>
+        <h3 class="textcarte">J’ai passé la journée à Vierzon, je ne pense pas arriver avant samedi à Rennes.</h3>
+        <br>
+        <h3 class="textcarte">Ton frère. Auguste</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Un bonjour en passant.</h3>
+        <br>
+        <br>
+        <h3 class="textcarte">Angers</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic26a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box6a/Pic26b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Drôle d’époque tout de même où un paysan devenu soldat malgré lui évoque la ”recette“ des grenades avec ses parents …</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic27a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box6a/Pic27b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chers parents,</h3>
+        <br>
+        <h3 class="textcarte">Je pensais partir de Lyon hier soir.</h3>
+        <h3 class="textcarte">Je n’ai pas eu de train, je suis à trente kilomètres de Lyon. Je repars à trois heures ce soir par St Germain des Fossés.</h3>
+        <h3 class="textcarte">J’ai neuf colis de clous de cuivre pour faire des grenades. Comme ça marche, je ne pourrais pas passer vous voir.</h3>
+        <h3 class="textcarte">Il fait assez beau mais un peu froid.</h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Cher frère,</h3>
+        <br>
+        <h3 class="textcarte">Je t’écris ces deux mots de Bourges.</h3>
+        <h3 class="textcarte">Je suis arrivé aujourd’hui samedi à 4 heures. J’ai 3 wagons, je peux que les livrer demain à 7 heures.</h3>
+        <h3 class="textcarte">J’ai fait le voyage assez tranquille, mes deux camarades m’ont quitté qu’à Bourges. Ça fait que nous ne nous sommes pas ennuyés.</h3>
+        <h3 class="textcarte">Je ne rentrerai pas avant Mercredi soir à Perrache.</h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box6a/Pic28a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box6a/Pic28b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic29a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box6a/Pic29b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère Augustine,</h3>
+        <br>
+        <h3 class="textcarte">Je suis arrivé hier soir à Bourges. Je ne suis pas encore débarrassé. Je repars pas avant demain.</h3>
+        <h3 class="textcarte">Aujourd’hui, j’ai bien le temps de me promener. Il fait beau.</h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère petite Léa,</h3>
+        <br>
+        <h3 class="textcarte">Je t’envoie deux mots en passant à Moulins.</h3>
+        <h3 class="textcarte">Je suis parti hier soir de Lyon pour aller à Bourges.</h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic30a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box6a/Pic30b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>C’est peu connu, mais maintenant nous en avons la preuve, Mary Poppins a survolé Montluçon en Mars 1914 !!!</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box6a/Pic31a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box6a/Pic31b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère Augustine,</h3>
+        <br>
+        <h3 class="textcarte">Je t’écris ces deux mots de Montluçon à Bourges.</h3>
+        <h3 class="textcarte">J’ai vu Désiré, il va aller chez lui à la fin de la semaine, sa blessure n’était pas grave.</h3>
+        <h3 class="textcarte">Je ne passerai pas vous voir, j’ai mis trop de temps de Lyon pour venir jusqu’à St-Germain. Je repars tout de suite. J’arriverai à Lyon que demain.</h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ton frère qui pense souvent à toi et qui t’embrasse bien fort.</h3>
+        <br>
+        <h3 class="textcarte">Antoine</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box6a/Pic32a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box6a/Pic32b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Pour conclure cette partie consacrée à Auguste, une carte postale fort bien écrite et attendrissante de son amie Germaine. Auguste épousera Germaine juste après la guerre … et pour la petite histoire, Léa épousera le frère de Germaine quelques années plus tard …</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box6a/Pic33a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box6a/Pic33b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Mon cher Auguste,</h3>
+        <br>
+        <h3 class="textcarte">C’est avant d’aller dormir que je te trace ces quelques lignes. Je suis tout à fait heureuse de m’entretenir un instant avec toi.</h3>
+        <h3 class="textcarte">Tout d’abord je tiens à te remercier très sincèrement pour la belle et gentille carte que tu m’as adressée de Vierzon par laquelle tu m’apprenais ta bonne santé puisque tu continuais à voyager. J’espère donc ou du moins je le souhaite beaucoup que ma présente carte te trouve toujours en parfaite santé. Quant à moi, elle est excellente ainsi que tous.</h3>
+        <h3 class="textcarte">Hier soir, j’ai vu Antoine et j’ai causé un petit instant avec lui, alors il m’a appris sa courte permission. Sept jours, c’est bien court tout de même mais enfin plus tard en aura-t-il une plus longue. Il est tout à fait en bon état sauf son bras qu’il ne peut guère allonger. Espérons qu’il revienne aussi adroit qu’auparavant.</h3>
+        <h3 class="textcarte">Cher Auguste, je te joins quelques violettes que j’ai cueillies dans la soirée, c’est les premières que j’aperçois. Je termine faute de place en attendant le plaisir de te revoir ou de te lire prochainement.</h3>
+        <h3 class="textcarte">Accepte mes bonnes amitiés et bonne chance.</h3>
+        <br>
+        <h3 class="textcarte">Ton amie. Germaine Sol</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+</body>
+
+</html>
