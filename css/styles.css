@@ -418,9 +418,13 @@ padding: 3rem 0rem;
 
 
 
-.title, .sub-title{
+.title, .sub-title, .title-focus, .title-ressources{
   text-align: center;
 }
+  
+.coloredbox1, .coloredbox2{
+  display: none;
+  }
 
 .image-box{
   position: static;
