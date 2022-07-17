@@ -425,6 +425,33 @@ padding: 3rem 0rem;
 .coloredbox1, .coloredbox2{
   display: none;
   }
+  
+  
+.leg1{
+  margin-right: 29rem;
+}
+
+.leg2{
+  margin-right: 31rem;
+}
+
+.leg3{
+  margin-right: 26rem;
+}
+
+.leg4{
+  margin-right: 24rem;
+}
+
+.leg5{
+  margin-right: 27rem;
+}
+
+.leg6{
+  margin-right: 29rem;
+}
+
+
 
 .image-box{
   position: static;
