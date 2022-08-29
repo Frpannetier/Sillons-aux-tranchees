@@ -70,7 +70,7 @@ h4 {
 /** Title **/
 
 #Accueil{
-  padding: 3% 5% 5% 5%;
+  padding: 3% 0.7% 0% 0%;
 }
 
 .title, .sub-title{
@@ -78,8 +78,8 @@ h4 {
 }
 
 .accueil-carousel-img{
-  width: 25rem;
-  height: 38rem;
+  width: 18rem;
+  height: 28rem;
   box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
 
 }
