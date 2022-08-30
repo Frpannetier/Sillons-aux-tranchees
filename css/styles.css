@@ -473,6 +473,10 @@ padding-left: 25%;
 #les-lieux {
   padding-bottom: 5%;
 }  
+  
+#carouselExampleSlidesOnly {
+  display: none;
+}
 }
 
 /**  Music band **/
