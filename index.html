@@ -29,10 +29,155 @@
   background-image: url(images/LuneCrouzille.jpg);
   height: 55rem;
 }
+  
+*  Parcours CSS  */
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Merriweather&family=Montserrat:wght@500&family=Sacramento&display=swap");
+.timeline {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 700px;
+  position: relative;
+}
+.timeline__content-title {
+  font-weight: normal;
+  font-size: 66px;
+  margin: -10px 0 0 0;
+  transition: 0.4s;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.timeline__content-desc {
+  margin: 0;
+  font-size: 15px;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: normal;
+  line-height: 25px;
+}
+.timeline:before {
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  margin-left: -1px;
+  content: "";
+  background: rgba(255, 255, 255, 0.07);
+}
+@media only screen and (max-width: 767px) {
+  .timeline:before {
+    left: 40px;
+  }
+}
+.timeline-item {
+  padding: 40px 0;
+  padding-top: 200px;
+  opacity: 0.3;
+  filter: blur(2px);
+  transition: 0.5s;
+  box-sizing: border-box;
+  width: calc(50% - 40px);
+  display: flex;
+  position: relative;
+  transform: translateY(-80px);
+}
+.timeline-item:before {
+  content: attr(data-text);
+  letter-spacing: 3px;
+  width: 100%;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  top: 70%;
+  margin-top: -5px;
+  padding-left: 15px;
+  opacity: 0;
+  right: calc(-100% - 56px);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #fff3ee;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+}
+.timeline-item:nth-child(even) {
+  align-self: flex-end;
+}
+.timeline-item:nth-child(even):before {
+  right: auto;
+  text-align: right;
+  left: calc(-100% - 56px);
+  padding-left: 0;
+  border-left: none;
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+  padding-right: 15px;
+}
+.timeline-item--active {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0px);
+}
+.timeline-item--active:before {
+  top: 50%;
+  transition: 0.3s all 0.2s;
+  opacity: 1;
+}
+.timeline-item--active .timeline__content-title {
+  margin: -50px 0 20px 0;
+}
+@media only screen and (max-width: 767px) {
+  .timeline-item {
+    align-self: baseline !important;
+    width: 100%;
+    padding: 0 30px 150px 80px;
+  }
+  .timeline-item:before {
+    left: 10px !important;
+    padding: 0 !important;
+    top: 50px;
+    text-align: center !important;
+    width: 60px;
+    border: none !important;
+  }
+  .timeline-item:last-child {
+    padding-bottom: 40px;
+  }
+}
+.timeline__img {
+  max-width: 100%;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+}
+.timeline-container {
+  width: 100%;
+  position: relative;
+  padding: 80px 0;
+  transition: 0.3s ease 0s;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.timeline-container:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(99, 99, 99, 0.8);
+  content: "";
+}
+.timeline-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+  height: 220px;
+}
 
 </style>
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  
 </head>
 
 <body>
@@ -348,133 +493,126 @@
   <!--  Parcours  -->
 
   <a name="parcours"></a>
-  <section id="parcours" class="colored-page">
-    <br>
-    <br>
-    <h1 class="title-parcours">Parcours <img class="logo" src="images/logo1.png" alt="logo-img"></h1>
-    <div class="container-fluid">
-      <div id="carousel-parcours" class="carousel slide" data-bs-ride="false">
-        <div class="carousel-inner">
-          <div class="carousel-item active container-fluid">
-            <h2 class="box-parcours-legend-text">Avant Guerre</h2>
-            <a href="parcoursbox1.html">
-              <img class="boxpicturecarre" src="images/imagesbox/Frontpage.JPG" alt="Box1-img">
-            </a>
-            <h3 class="box-parcours-legend-text">Toute la famille vivant au hameau des Raynauds, il n’y a pas de correspondance entre frères et sœurs pour cette période. Les quelques cartes postales disponibles, souvent écrites entre amies, donnent
-              cependant quelques indications sur la vie quotidienne de la famille – une vie sans soucis majeurs, avec les préoccupations traditionnelles de jeunes filles dans leurs vingt-ans pour Marie et Maria …</h3>
-          </div>
-          <div class="carousel-item container-fluid">
-            <h2 class="box-parcours-legend-text">A l'Ecole</h2>
-            <a href="parcoursbox1a.html">
-              <img class="boxpicturecarre" src="images/imagesbox/FrontpageEcole.JPG" alt="Box2-img">
-            </a>
-            <h3 class="box-parcours-legend-text">Pour Augustine et Maria, ce sont les années d'école primaire à l'Institut du Sacré Coeur de Montaigut en Combraille. Elles y reçoivent une éducation robuste, mais gare aux fautes d'orthographe ...</h3>
-          </div>
-          <div class="carousel-item container-fluid">
-            <h2 class="box-parcours-legend-text">Le Service Militaire de Gabriel</h2>
-            <a href="parcoursbox2.html">
-              <img class="boxpicturecarre" src="images/imagesbox/FrontpageServiceMilitaire.JPG" alt="Box2-img">
-            </a>
-            <h3 class="box-parcours-legend-text">C’est un évènement majeur dans la vie de la famille, et un véritable rite de passage pour les trois garçons. Gabriel commence son service en 1909, il est basé à Roanne. Il écrit principalement à
-              Augustine et Léa qui sont encore toutes petites (elles ont huit ans) et elles s’appliquent également à écrire leurs propres cartes …</h3>
-          </div>
-          <div class="carousel-item container-fluid">
-            <h2 class="box-parcours-legend-text">Le Service Militaire d'Auguste et Antoine</h2>
-            <a href="parcoursbox3.html">
-              <img class="boxpicturecarre" src="images/imagesbox/FrontpageServiceMilitaireAA.JPG" alt="Box2-img">
-            </a>
-            <h3 class="box-parcours-legend-text">Auguste et Antoine partent en 1913 pour Epinal. On voyage peu à cette époque, et c’est l’occasion de voir du pays ce qui donne lieu à une correspondance fournie. Il est clair qu’Augustine et Léa
-              adorent recevoir ses images de contrées lointaines …</h3>
-          </div>
-          <div class="carousel-item container-fluid">
-            <h2 class="box-parcours-legend-text">La Mobilisation</h2>
-            <a href="parcoursbox4.html">
-              <img class="boxpicturecarre" src="images/imagesbox/FrontpageLaMobilisation.jpg" alt="Box2-img">
-            </a>
-            <h3 class="box-parcours-legend-text">La mobilisation est proclamée le 1er Août 1914, au pire moment pour les paysans, juste avant les moissons. Gabriel rejoint immédiatement le dépôt de son régiment à Roanne, Auguste et Antoine sont alors
-              au service militaire à Epinal et se voient engagés dans la guerre sans délai. Les trois frères participent très tôt aux combats et les évènements s’enchaînent à grande vitesse tout au long du mois d’août. A la ferme, ne restent que le
-              père, la mère et les sœurs pour s’occuper de l’exploitation …</h3>
-          </div>
-          <div class="carousel-item container-fluid">
-            <h2 class="box-parcours-legend-text">Premières Blessures</h2>
-            <a href="parcoursbox5.html">
-              <img class="boxpicturecarre" src="images/imagesbox/FrontpagePremieresBlessures.JPG" alt="Box2-img">
-            </a>
-            <h3 class="box-parcours-legend-text">Incorporés dans l’infanterie, les trois frères sont en première ligne dans une guerre de mouvement destinée à arrêter le mouvement des troupes allemandes. Auguste est le premier à être blessé dès la
-              fin du mois d’Août, puis ce sera le tour de Gabriel et Antoine peu après dans les premières semaines de Septembre. Chacune de ces blessures aura une importance primordiale sur le destin des trois hommes …</h3>
-          </div>
-          <div class="carousel-item container-fluid">
-            <h2 class="box-parcours-legend-text">Convalescence</h2>
-            <a href="parcoursbox6.html">
-              <img class="boxpicturecarre" src="images/imagesbox/FrontpageConvalescence.JPG" alt="Box2-img">
-            </a>
-            <h3 class="box-parcours-legend-text">Pendant une courte période, les trois frères se retrouvent ensemble à Lyon et décrivent leur convalescence à la famille inquiète. Gabriel est le premier rétabli et sera le premier à retourner au front.
-              Auguste et Antoine restent à Lyon encore quelque temps …</h3>
-          </div>
-          <div class="carousel-item container-fluid">
-            <h2 class="box-parcours-legend-text">Convois</h2>
-            <a href="parcoursbox6a.html">
-              <img class="boxpicturecarre" src="images/imagesbox/FrontpageConvoi.jpg" alt="Box2-img">
-            </a>
-            <h3 class="box-parcours-legend-text">Auguste est guéri mais ne repart pas tout de suite au front, il est affecté aux convois et comme on dit chez nous, il va voir du pays ...</h3>
-          </div>
-          <div class="carousel-item container-fluid">
-            <h2 class="box-parcours-legend-text">Gabriel de retour au front</h2>
-            <a href="parcoursbox7.html">
-              <img class="boxpicturecarre" src="images/imagesbox/FrontpageRAFGabriel.JPG" alt="Box2-img">
-            </a>
-            <h3 class="box-parcours-legend-text">Gabriel est le premier des frères à être rétabli, et il est donc le premier à repartir au front. Il retrouve une guerre bien différente, c’est maintenant une guerre de position et le conflit s’est enlisé. Il parle à demi-mots de son expérience dans les tranchées et tâche d’envoyer des messages rassurants aux parents et sœurs …</h3>
-          </div>
-          <div class="carousel-item container-fluid">
-            <h2 class="box-parcours-legend-text">Mort au combat</h2>
-            <a href="parcoursbox8.html">
-              <img class="boxpicturecarre" src="images/imagesbox/FrontpageMortAuCombat.JPG" alt="Box2-img">
-            </a>
-            <h3 class="box-parcours-legend-text">La mauvaise nouvelle tant redoutée arrive aux Raynauds en Mars 1916. Gabriel est tué dans les premières semaines de la bataille de Verdun …</h3>
-          </div>
-          <div class="carousel-item container-fluid">
-            <h2 class="box-parcours-legend-text">Un rendez-vous manqué ?</h2>
-            <a href="parcoursbox9.html">
-              <img class="boxpicturecarre" src="images/imagesbox/FrontpageRendezVous.JPG" alt="Box2-img">
-            </a>
-            <h3 class="box-parcours-legend-text">Cette guerre brise les hommes, mais elle brise aussi les cœurs. Difficile d’en être sûr, mais une correspondance entre Maria (alors dans ses vingt ans) et un autre soldat semble suggérer le début d’une
-              idylle interrompue par le conflit. On y décèle plus de tendresse, tout cela voilé par beaucoup de pudeur. Est-ce un rendez-vous manqué ?….</h3>
-          </div>
-          <div class="carousel-item container-fluid">
-            <h2 class="box-parcours-legend-text">Seconde Blessure</h2>
-            <a href="parcoursbox10.html">
-              <img class="boxpicturecarre" src="images/imagesbox/FrontpageSecondeBlessure.JPG" alt="Box2-img">
-            </a>
-            <h3 class="box-parcours-legend-text">Gabriel est mort, Antoine est toujours à Lyon en convalescence, mais Auguste est au front. Exposé au danger lui aussi à Verdun, il est blessé une deuxième fois, un an jour pour jour après sa première
-              blessure …</h3>
-          </div>
-          <div class="carousel-item container-fluid">
-            <h2 class="box-parcours-legend-text">Retour à la maison</h2>
-            <a href="parcoursbox11.html">
-              <img class="boxpicturecarre" src="images/imagesbox/FrontpageRetourMaison.JPG" alt="Box2-img">
-            </a>
-            <h3 class="box-parcours-legend-text">Commence une nouvelle période de convalescence au terme de laquelle Auguste rentre à la maison comme son frère Antoine. Au cours de cette période, la correspondance d’Auguste nous fait découvrir
-              d’autres lieux de passage de la Creuse et de l’Allier …</h3>
-          </div>
-          <div class="carousel-item container-fluid">
-            <h2 class="box-parcours-legend-text">Après Guerre</h2>
-            <a href="parcoursbox12.html">
-              <img class="boxpicturecarre" src="images/imagesbox/FrontpageApresGuerre.JPG" alt="Box2-img">
-            </a>
-            <h3 class="box-parcours-legend-text">La guerre finie et les deux frères jumeaux revenus au village, la correspondance devient plus éparse mais les quelques cartes conservées montrent un retour au cours normal des choses. Avec quelques
-              références cependant à l’épidémie du moment, la grippe espagnole …</h3>
-          </div>
+  <div class="timeline-container" id="timeline-1">
+    <div class="timeline-header">
+      <h1 class="title-parcours">Parcours <img class="logo" src="images/logo1.png" alt="logo-img"></h1>
+      <h3>Au fil des années ... découvrez chaque période en cliquant sur l'image</h3>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item" data-text="AVANT-GUERRE">
+        <div><a href="parcoursbox1.html"><img class="timeline__img" src="images/imagesbox/Frontpage.JPG"/></a>
+          <h2>1909</h2>
+          <h3 class="timeline__content-desc">Toute la famille vivant au hameau des Raynauds, il n’y a pas de correspondance entre frères et sœurs pour cette période. Les quelques cartes postales disponibles, souvent écrites entre amies, donnent
+            cependant quelques indications sur la vie quotidienne de la famille – une vie sans souçis majeurs, avec les préoccupations traditionnelles de jeunes filles dans leur vingt-ans pour Marie et Maria …<</h3>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-parcours" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel-parcours" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
+      </div>
+      <div class="timeline-item" data-text="LE SERVICE MILITAIRE DE GABRIEL">
+        <div><a href="parcoursbox2.html"><img class="timeline__img" src="images/imagesbox/FrontpageServiceMilitaire.JPG"/></a>
+          <h2>1911</h2>
+          <h3 class="timeline__content-desc">C’est un évènement majeur dans la vie de la famille, et un véritable rite de passage pour les trois garçons. Gabriel commence son service en 1909, il est basé à Roanne. Il écrit principalement à
+            Augustine et Léa qui sont encore toutes petites (elles ont huit ans) et elles s’appliquent également à écrire leurs propres cartes …</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="A L'ECOLE">
+        <div><a href="parcoursbox1a.html"><img class="timeline__img" src="images/imagesbox/FrontpageEcole.JPG"/></a>
+          <h2>1912</h2>
+          <h3 class="timeline__content-desc">Pour Augustine et Maria, ce sont les années d'école primaire à l'Institut du Sacré Coeur de Montaigut en Combraille. Elles y reçoivent une éducation robuste, mais gare aux fautes d'orthographe ...</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="LE SERVICE MILITAIRE D'AUGUSTE ET ANTOINE">
+        <div><a href="parcoursbox3.html"><img class="timeline__img" src="images/imagesbox/FrontpageServiceMilitaireAA.JPG"/></a>
+          <h2>1913</h2>
+          <h3 class="timeline__content-desc">Auguste et Antoine partent en 1913 pour Epinal. On voyage peu à cette époque, et c’est l’occasion de voir du pays ce qui donne lieu à une correspondance fournie. Il est clair qu’Augustine et Léa
+            adorent recevoir ses images de contrées lointaines …</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="LA MOBILISATION">
+        <div><a href="parcoursbox4.html"><img class="timeline__img" src="images/imagesbox/FrontpageLaMobilisation.JPG"/></a>
+          <h2> Début Août 1914</h2>
+          <h3 class="timeline__content-desc">La mobilisation est proclamée le 1er Août 1914, au pire moment pour les paysans, juste avant les moissons. Gabriel rejoint immédiatement le dépôt de son régiment à Roanne, Auguste et Antoine sont alors
+            au service militaire à Epinal et se voient engagés dans la guerre sans délai. Les trois frères participent très tôt aux combats et les évènements s’enchaînent à grande vitesse tout au long du mois d’août. A la ferme, ne restent que le
+            père, la mère et les sœurs pour s’occuper de l’exploitation …</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="PREMIERES BLESSURES">
+        <div><a href="parcoursbox5.html"><img class="timeline__img" src="images/imagesbox/FrontpagePremieresBlessures.JPG"/></a>
+          <h2>Fin Août 1914</h2>
+          <h3 class="timeline__content-desc">Incorporés dans l’infanterie, les trois frères sont en première ligne dans une guerre de mouvement destinée à arrêter le mouvement des troupes allemandes. Auguste est le premier à être blessé dès la
+            fin du mois d’Août, puis ce sera le tour de Gabriel et Antoine peu après dans les premières semaines de Septembre. Chacune de ces blessures aura une importance primordiale sur le destin des trois hommes …</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="CONVALESCENCE">
+        <div><a href="parcoursbox6.html"><img class="timeline__img" src="images/imagesbox/FrontpageConvalescence.JPG"/></a>
+          <h2> Automne 1914</h2>
+          <h3 class="timeline__content-desc">Pendant une courte période, les trois frères se retrouvent ensemble à Lyon et décrivent leur convalescence à la famille inquiète. Gabriel est le premier rétabli et sera le premier à retourner au front.
+            Auguste et Antoine restent à Lyon encore quelque temps …</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="CONVOIS">
+        <div><a href="parcoursbox6a.html"><img class="timeline__img" src="images/imagesbox/FrontpageConvoi.JPG"/></a>
+          <h2> Hiver 1914</h2>
+          <h3 class="timeline__content-desc">Auguste est guéri mais ne repart pas tout de suite au front, il est affecté aux convois et comme on dit chez nous, il va voir du pays ...</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="GABRIEL DE RETOUR AU FRONT">
+        <div><a href="parcoursbox7.html"><img class="timeline__img" src="images/imagesbox/FrontpageRAFGabriel.JPG"/></a>
+          <h2> Printemps 1915</h2>
+          <h3 class="timeline__content-desc">Gabriel est le premier des frères à être rétabli, et il est donc le premier à repartir au front. Il retrouve une guerre bien différente, c’est maintenant une guerre de position et le conflit s’est enlisé. Il parle à demi-mots de son expérience dans les tranchées et tâche d’envoyer des messages rassurants aux parents et sœurs …</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="AUGUSTE DE RETOUR AU FRONT">
+        <div><a href="parcoursbox7a.html"><img class="timeline__img" src="images/imagesbox/FrontpageRetourAuFront.JPG"/></a>
+          <h2> Eté 1915</h2>
+          <h3 class="timeline__content-desc"></h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="ANTOINE ET L'APPAREIL">
+        <div><a href="parcoursbox8a.html"><img class="timeline__img" src="images/imagesbox/FrontpageAppareil.JPG"/></a>
+          <h2> Août 1915</h2>
+          <h3 class="timeline__content-desc"></h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="IN THE BLEAK MIDWINTER">
+        <div><a href="parcoursbox8b.html"><img class="timeline__img" src="images/imagesbox/FrontpageBleak.JPG"/></a>
+          <h2> Hiver 1915</h2>
+          <h3 class="timeline__content-desc"></h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="MORT AU COMBAT">
+        <div><a href="parcoursbox8.html"><img class="timeline__img" src="images/imagesbox/FrontpageMortAuCombat.JPG"/></a>
+          <h2> Printemps 1916</h2>
+          <h3 class="timeline__content-desc"></h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="UN RENDEZ-VOUS MANQUE">
+        <div><a href="parcoursbox9.html"><img class="timeline__img" src="images/imagesbox/FrontpageRendezVous.JPG"/></a>
+          <h2> Printemps 1916</h2>
+          <h3 class="timeline__content-desc"></h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="SECONDE BLESSURE">
+        <div><a href="parcoursbox10.html"><img class="timeline__img" src="images/imagesbox/FrontpageSecondeBlessure.JPG"/></a>
+          <h2> Août 1916</h2>
+          <h3 class="timeline__content-desc"></h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="RETOUR A LA MAISON">
+        <div><a href="parcoursbox11.html"><img class="timeline__img" src="images/imagesbox/FrontpageRetourMaison.JPG"/></a>
+          <h2> 1916 - 1917</h2>
+          <h3 class="timeline__content-desc"></h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="APRES-GUERRE">
+        <div><a href="parcoursbox12.html"><img class="timeline__img" src="images/imagesbox/FrontpageApresGuerre.JPG"/></a>
+          <h2> 1919 </h2>
+          <h3 class="timeline__content-desc"></h3>
+        </div>
       </div>
     </div>
-  </section>
+</div>
 
+  
+  
   <!--  Focus  -->
 
   <a name="focus"></a>
@@ -688,6 +826,52 @@
   </section>
 
 
+<script type="text/javascript">
+
+    (function ($) {
+    $.fn.timeline = function () {
+      var selectors = {
+        id: $(this),
+        item: $(this).find(".timeline-item"),
+        activeClass: "timeline-item--active",
+        img: ".timeline__img"
+      };
+      selectors.item.eq(0).addClass(selectors.activeClass);
+      selectors.id.css(
+        "background-image",
+        "url(" + selectors.item.first().find(selectors.img).attr("src") + ")"
+      );
+      var itemLength = selectors.item.length;
+      $(window).scroll(function () {
+        var max, min;
+        var pos = $(this).scrollTop();
+        selectors.item.each(function (i) {
+          min = $(this).offset().top;
+          max = $(this).height() + $(this).offset().top;
+          var that = $(this);
+          if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
+            selectors.item.removeClass(selectors.activeClass);
+            selectors.id.css(
+              "background-image",
+              "url(" + selectors.item.last().find(selectors.img).attr("src") + ")"
+            );
+            selectors.item.last().addClass(selectors.activeClass);
+          } else if (pos <= max - 40 && pos >= min) {
+            selectors.id.css(
+              "background-image",
+              "url(" + $(this).find(selectors.img).attr("src") + ")"
+            );
+            selectors.item.removeClass(selectors.activeClass);
+            $(this).addClass(selectors.activeClass);
+          }
+        });
+      });
+    };
+  })(jQuery);
+
+  $("#timeline-1").timeline();
+
+  </script>
 
 
 
