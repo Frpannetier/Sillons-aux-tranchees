@@ -1,0 +1,2502 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Des Sillons aux Tranchées</title>
+
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Merriweather&family=Montserrat:wght@500&family=Sacramento&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheet, Bootstrap and Favicon -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="shortcut icon" href="favicon (2).ico">
+
+<!-- CSS Les Acteurs -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+
+  <!-- Font Awesome -->
+
+  <script src="https://kit.fontawesome.com/cc4dcc56d7.js" crossorigin="anonymous"></script>
+
+
+<style media="screen">
+
+.lune {
+  background-image: url(images/LuneCrouzille.jpg);
+  height: 55rem;
+}
+
+/*  Parcours CSS  */
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Merriweather&family=Montserrat:wght@500&family=Sacramento&display=swap");
+.timeline {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 700px;
+  position: relative;
+}
+.timeline__content-title {
+  font-weight: normal;
+  font-size: 66px;
+  margin: -10px 0 0 0;
+  transition: 0.4s;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.timeline__content-desc {
+  margin: 0;
+  font-size: 15px;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: normal;
+  line-height: 25px;
+}
+.timeline:before {
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  margin-left: -1px;
+  content: "";
+  background: rgba(255, 255, 255, 0.07);
+}
+@media only screen and (max-width: 767px) {
+  .timeline:before {
+    left: 40px;
+  }
+}
+.timeline-item {
+  padding: 40px 0;
+  padding-top: 300px;
+  opacity: 0.3;
+  filter: blur(2px);
+  transition: 0.5s;
+  box-sizing: border-box;
+  width: calc(50% - 40px);
+  display: flex;
+  position: relative;
+  transform: translateY(-80px);
+}
+.timeline-item:before {
+  content: attr(data-text);
+  letter-spacing: 3px;
+  width: 100%;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.5);
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  top: 70%;
+  margin-top: -5px;
+  padding-left: 15px;
+  opacity: 0;
+  right: calc(-100% - 56px);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #d97e57;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+}
+.timeline-item:nth-child(even) {
+  align-self: flex-end;
+}
+.timeline-item:nth-child(even):before {
+  right: auto;
+  text-align: right;
+  left: calc(-100% - 56px);
+  padding-left: 0;
+  border-left: none;
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+  padding-right: 15px;
+}
+.timeline-item--active {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0px);
+}
+.timeline-item--active:before {
+  top: 50%;
+  transition: 0.3s all 0.2s;
+  opacity: 1;
+}
+.timeline-item--active .timeline__content-title {
+  margin: -50px 0 20px 0;
+}
+@media only screen and (max-width: 767px) {
+  .timeline-item {
+    align-self: baseline !important;
+    width: 100%;
+    padding: 0 30px 150px 80px;
+  }
+  .timeline-item:before {
+    left: 10px !important;
+    padding: 0 !important;
+    top: 50px;
+    text-align: center !important;
+    width: 60px;
+    border: none !important;
+  }
+  .timeline-item:last-child {
+    padding-bottom: 40px;
+  }
+}
+.timeline__img {
+  max-width: 100%;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+}
+.timeline-container {
+  width: 100%;
+  position: relative;
+  padding: 80px 0;
+  transition: 0.3s ease 0s;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.timeline-container:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(99, 99, 99, 0.8);
+  content: "";
+}
+.timeline-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0px;
+  position: relative;
+  height: 50px;
+}
+
+
+.demo-footer {
+  padding: 60px 0;
+  text-align: center;
+}
+.demo-footer a {
+  color: #999;
+  display: inline-block;
+}
+
+
+/*  Lieux CSS  */
+
+/*
+body {
+
+  font-size: 16px;
+  line-height: 1.75;
+}
+*/
+
+#timeline {
+  display: flex;
+  background-color: #031625;
+}
+#timeline:hover .tl-item {
+  width: 23.3333%;
+}
+
+.tl-item {
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 25%;
+  height: 100vh;
+  min-height: 600px;
+  color: #fff;
+  overflow: hidden;
+  transition: width 0.5s ease;
+}
+.tl-item:before, .tl-item:after {
+  transform: translate3d(0, 0, 0);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.tl-item:after {
+  background: rgba(3, 22, 37, 0.85);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.tl-item:before {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 75%);
+  z-index: 1;
+  opacity: 0;
+  transform: translate3d(0, 0, 0) translateY(50%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.tl-item:hover {
+  width: 30% !important;
+}
+.tl-item:hover:after {
+  opacity: 0;
+}
+.tl-item:hover:before {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) translateY(0);
+  transition: opacity 1s ease, transform 1s ease 0.25s;
+}
+.tl-item:hover .tl-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.75s ease 0.5s;
+}
+.tl-item:hover .tl-bg {
+  filter: grayscale(0);
+}
+
+.tl-content {
+  transform: translate3d(0, 0, 0) translateY(25px);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 1.618em;
+  top: 55%;
+  opacity: 0;
+}
+.tl-content h1 {
+  font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #d97e57;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+.tl-year {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  border-top: 3px solid #d97e57;
+  border-bottom: 3px solid #d97e57;
+}
+.tl-year p {
+  font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1.44rem;
+  line-height: 0;
+}
+
+.tl-bg {
+  transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: filter 0.5s ease;
+  filter: grayscale(100%);
+}
+
+/* Acteurs CSS */
+
+/*
+html,
+body,
+.container {
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+*/
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  flex-direction: column;
+}
+
+.tomeline {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 5px 25px 5px rgba(0, 0, 0, 0.2);
+}
+.tomeline .swiper-container {
+  height: 1000px;
+  width: 100%;
+  position: relative;
+}
+.tomeline .swiper-wrapper {
+  transition: 2s cubic-bezier(0.68, -0.4, 0.27, 1.34) 0.2s;
+}
+.tomeline .swiper-slide {
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.tomeline .swiper-slide::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  right: -115%;
+  bottom: -10%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: -230px 0 150px 60vw rgba(0, 0, 0, 0.7);
+  border-radius: 100%;
+}
+.tomeline .swiper-slide-content {
+  position: absolute;
+  text-align: center;
+  width: 80%;
+  max-width: 310px;
+  right: 50%;
+  top: 13%;
+  transform: translate(50%, 0);
+  font-size: 12px;
+  z-index: 2;
+}
+.tomeline .swiper-slide .timeline-year {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  margin-bottom: 50px;
+  transform: translate3d(20px, 0, 0);
+  color: #d97e57;
+  font-weight: 900;
+  opacity: 0;
+  transition: 0.2s ease 0.4s;
+}
+.tomeline .swiper-slide .timeline-title {
+  font-weight: 800;
+  font-size: 34px;
+  margin: 0 0 30px;
+  opacity: 0;
+  transform: translate3d(20px, 0, 0);
+  transition: 0.2s ease 0.5s;
+}
+.tomeline .swiper-slide .timeline-text {
+  line-height: 1.5;
+  opacity: 0;
+  transform: translate3d(20px, 0, 0);
+  transition: 0.2s ease 0.6s;
+}
+.tomeline .swiper-slide-active .timeline-year {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: 0.4s ease 1.6s;
+}
+.tomeline .swiper-slide-active .timeline-title {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: 0.4s ease 1.7s;
+}
+.tomeline .swiper-slide-active .timeline-text {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: 0.4s ease 1.8s;
+}
+.tomeline .swiper-pagination {
+  right: 15% !important;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  z-index: 1;
+}
+.tomeline .swiper-pagination::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.tomeline .swiper-pagination-bullet {
+  width: auto;
+  height: auto;
+  text-align: center;
+  opacity: 1;
+  background: transparent;
+  color: #d97e57;
+  margin: 15px 0 !important;
+  position: relative;
+}
+.tomeline .swiper-pagination-bullet::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -32.5px;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: #d97e57;
+  transform: scale(0);
+  transition: 0.2s;
+}
+.tomeline .swiper-pagination-bullet-active {
+  color: #d97e57;
+}
+.tomeline .swiper-pagination-bullet-active::before {
+  transform: scale(1);
+}
+.tomeline .swiper-button-next,
+.tomeline .swiper-button-prev {
+  background-size: 20px 20px;
+  top: 15%;
+  width: 20px;
+  height: 20px;
+  margin-right: 60px;
+  margin-top: 0;
+  z-index: 2;
+  transition: 0.2s;
+}
+.tomeline .swiper-button-prev {
+  left: 8%;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23d4a024'%2F%3E%3C%2Fsvg%3E");
+}
+.tomeline .swiper-button-prev:hover {
+  transform: translateX(-3px);
+}
+.tomeline .swiper-button-next {
+  right: 8%;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23d4a024'%2F%3E%3C%2Fsvg%3E");
+}
+.tomeline .swiper-button-next:hover {
+  transform: translateX(3px);
+}
+@media screen and (min-width: 768px) {
+  .tomeline .swiper-slide::after {
+    right: -30%;
+    bottom: -8%;
+    width: 240px;
+    height: 50%;
+    box-shadow: -230px 0 150px 50vw rgba(0, 0, 0, 0.7);
+  }
+  .tomeline .swiper-slide-content {
+    right: 30%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 310px;
+    font-size: 11px;
+    text-align: right;
+  }
+  .tomeline .swiper-slide .timeline-year {
+    margin-bottom: 0;
+    font-size: 32px;
+  }
+  .tomeline .swiper-slide .timeline-title {
+    font-size: 46px;
+    margin: 0;
+  }
+  .tomeline .swiper-pagination {
+    display: flex;
+  }
+  .tomeline .swiper-button-prev {
+    top: 15%;
+    left: auto;
+    right: 15%;
+    transform: rotate(90deg) translate(0, 10px);
+  }
+  .tomeline .swiper-button-prev:hover {
+    transform: rotate(90deg) translate(-3px, 10px);
+  }
+  .tomeline .swiper-button-next {
+    top: auto;
+    bottom: 15%;
+    right: 15%;
+    transform: rotate(90deg) translate(0, 10px);
+  }
+  .tomeline .swiper-button-next:hover {
+    transform: rotate(90deg) translate(3px, 10px);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .tomeline .swiper-slide::after {
+    right: -20%;
+    bottom: -12%;
+    width: 240px;
+    height: 50%;
+    box-shadow: -230px 0 150px 39vw rgba(0, 0, 0, 0.7);
+  }
+  .tomeline .swiper-slide-content {
+    right: 25%;
+  }
+}
+
+/*  Focus Accordeon CSS  */
+
+
+.continer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20vmin;
+  margin-top:10vmin;
+  margin-left: 30vmin;
+  overflow: hidden;
+  transform: skew(5deg);
+}
+.continer .card {
+  flex: 1;
+  transition: all 1s ease-in-out;
+  height: 75vmin;
+  position: relative;
+}
+.continer .card .card__head {
+  color:  #fff3ee;
+  background:  linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+  padding: 0.5em;
+  transform: rotate(-90deg);
+  transform-origin: 0% 0%;
+  transition: all 0.5s ease-in-out;
+  min-width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1.5em;
+  white-space: nowrap;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+}
+.continer .card:hover {
+  flex-grow: 10;
+}
+.continer .card:hover img {
+  filter: grayscale(0);
+}
+.continer .card:hover .card__head {
+  text-align: center;
+  top: calc(100% - 2em);
+  color: #e05b22;
+  background: rgba(0, 0, 0, 0.5);
+  transform: rotate(0deg) skew(-5deg);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+}
+.continer .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s ease-in-out;
+  filter: grayscale(100%);
+}
+.continer .card:not(:nth-child(6)) {
+  margin-right: 2em;
+}
+
+
+/*  Book CSS  */
+
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+
+/* * {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+*/
+
+
+
+.imgLoader {
+  position: fixed;
+  -webkit-animation: preLoad 1s steps(1);
+          animation: preLoad 1s steps(1);
+  width: 1px;
+  height: 1px;
+}
+@-webkit-keyframes preLoad {
+  0% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+  }
+  10% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+  }
+  20% {
+    background-image: url(images/PicAL.JPG);
+  }
+  30% {
+    background-image: url(images/PicGirl.jpg);
+  }
+  40% {
+    background-image: url(images/PicPB.JPG);
+  }
+  100% {
+    display: none;
+  }
+}
+@keyframes preLoad {
+  0% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+  }
+  10% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+  }
+  20% {
+    background-image: url(images/PicAL.JPG);
+  }
+  30% {
+    background-image: url(images/PicGirl.jpg);
+  }
+  40% {
+    background-image: url(images/PicPB.JPG);
+  }
+  100% {
+    display: none;
+  }
+}
+
+.contoner {
+  position: relative;
+  width: 420px;
+  right:60px;
+  border-radius: 4px;
+  height: 420px;
+}
+
+
+.book {
+  position: relative;
+  perspective: 630px;
+  perspective-origin: center 50px;
+  transform: scale(1.2);
+  filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.25));
+}
+
+.page {
+  width: 210px;
+  height: 300px;
+  background-color: #bbb;
+  position: absolute;
+  top: 0px;
+  right: 50%;
+  transform-origin: 100% 100%;
+  border: solid #555 2px;
+  background-size: 420px 300px;
+  background-position: center;
+  transform-style: preserve-3d;
+}
+.page:nth-child(1) {
+  transform: rotateX(60deg) rotateY(3deg);
+}
+.page:nth-child(2) {
+  transform: rotateX(60deg) rotateY(4.5deg);
+}
+.page:nth-child(3) {
+  transform: rotateX(60deg) rotateY(6deg);
+  -webkit-animation: nextPage 25s infinite -24s steps(1);
+          animation: nextPage 25s infinite -24s steps(1);
+  background-size: 420px 300px;
+  background-position: -2px -2px;
+}
+.page:nth-child(4) {
+  transform: rotateX(60deg) rotateY(177deg);
+}
+.page:nth-child(5) {
+  transform: rotateX(60deg) rotateY(175.5deg);
+}
+.page:nth-child(6) {
+  transform: rotateX(60deg) rotateY(174deg);
+  overflow: hidden;
+}
+.page:nth-child(6)::after {
+  content: "";
+  width: 210px;
+  height: 300px;
+  position: absolute;
+  top: 0px;
+  right: 0%;
+  transform-origin: center;
+  transform: rotateY(180deg);
+  -webkit-animation: nextPage 25s -20s infinite steps(1);
+          animation: nextPage 25s -20s infinite steps(1);
+  background-size: 420px 300px;
+  background-position: 100% -2px;
+}
+@-webkit-keyframes nextPage {
+  0% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+  }
+  20% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+  }
+  40% {
+    background-image: url(images/PicAL.JPG);
+  }
+  60% {
+    background-image: url(images/PicGirl.jpg);
+  }
+  80% {
+    background-image: url(images/PicPB.JPG);
+  }
+}
+@keyframes nextPage {
+  0% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+  }
+  20% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+  }
+  40% {
+    background-image: url(images/PicAL.JPG);
+  }
+  60% {
+    background-image: url(images/PicGirl.jpg);
+  }
+  80% {
+    background-image: url(images/PicPB.JPG);
+  }
+}
+
+.gap {
+  width: 10px;
+  height: 300px;
+  background: none;
+  transform: rotateX(60deg);
+  transform-origin: bottom;
+  position: absolute;
+  top: 0px;
+  left: calc(50% - 5px);
+}
+.gap::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: #555;
+  width: 10px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.pages, .flips {
+  transform-style: preserve-3d;
+}
+
+.flip {
+  width: 32px;
+  height: 300px;
+  position: absolute;
+  top: 0px;
+  transform-origin: 100% 100%;
+  right: 100%;
+  border: solid #555;
+  border-width: 2px 0px;
+  perspective: 4200px;
+  perspective-origin: center;
+  transform-style: preserve-3d;
+  background-size: 420px 300px;
+}
+.flip::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0%;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  background-size: 420px 300px;
+}
+.flip.flip1 {
+  right: 50%;
+  -webkit-animation: flip1 5s infinite ease-in-out;
+          animation: flip1 5s infinite ease-in-out;
+  border-width: 2px 2px 2px 0;
+}
+.flip.flip1::after {
+  -webkit-animation: nextFlip1 25s -20s infinite steps(1);
+          animation: nextFlip1 25s -20s infinite steps(1);
+}
+.flip:not(.flip1) {
+  right: calc(100% - 2px);
+  top: -2px;
+  transform-origin: right;
+  -webkit-animation: flip2 5s ease-in-out infinite;
+          animation: flip2 5s ease-in-out infinite;
+}
+.flip.flip2::after {
+  -webkit-animation: nextFlip2 25s -20s infinite steps(1);
+          animation: nextFlip2 25s -20s infinite steps(1);
+}
+.flip.flip3::after {
+  -webkit-animation: nextFlip3 25s -20s infinite steps(1);
+          animation: nextFlip3 25s -20s infinite steps(1);
+}
+.flip.flip4::after {
+  -webkit-animation: nextFlip4 25s -20s infinite steps(1);
+          animation: nextFlip4 25s -20s infinite steps(1);
+}
+.flip.flip5::after {
+  -webkit-animation: nextFlip5 25s -20s infinite steps(1);
+          animation: nextFlip5 25s -20s infinite steps(1);
+}
+.flip.flip6::after {
+  -webkit-animation: nextFlip6 25s -20s infinite steps(1);
+          animation: nextFlip6 25s -20s infinite steps(1);
+}
+.flip.flip7::after {
+  -webkit-animation: nextFlip7 25s -20s infinite steps(1);
+          animation: nextFlip7 25s -20s infinite steps(1);
+}
+.flip.flip7 {
+  width: 30px;
+  border-width: 2px 0px 2px 2px;
+}
+.flip.flip7::after {
+  -webkit-animation: nextFlip7 25s -20s infinite steps(1);
+          animation: nextFlip7 25s -20s infinite steps(1);
+}
+@-webkit-keyframes flip1 {
+  0%, 20% {
+    transform: rotateX(60deg) rotateY(6deg);
+  }
+  80%, 100% {
+    transform: rotateX(60deg) rotateY(174deg);
+  }
+}
+@keyframes flip1 {
+  0%, 20% {
+    transform: rotateX(60deg) rotateY(6deg);
+  }
+  80%, 100% {
+    transform: rotateX(60deg) rotateY(174deg);
+  }
+}
+@-webkit-keyframes flip2 {
+  0%, 20% {
+    transform: rotateY(0deg) translateY(0px);
+  }
+  50% {
+    transform: rotateY(-15deg) translateY(0px);
+  }
+}
+@keyframes flip2 {
+  0%, 20% {
+    transform: rotateY(0deg) translateY(0px);
+  }
+  50% {
+    transform: rotateY(-15deg) translateY(0px);
+  }
+}
+
+@-webkit-keyframes nextFlip1 {
+  0% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -178px -2px;
+    transform: rotateY(0deg);
+  }
+  10% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -210px -2px;
+    transform: rotateY(180deg);
+  }
+  20% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -178px -2px;
+    transform: rotateY(0deg);
+  }
+  30% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -210px -2px;
+    transform: rotateY(180deg);
+  }
+  40% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -178px -2px;
+    transform: rotateY(0deg);
+  }
+  50% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -210px -2px;
+    transform: rotateY(180deg);
+  }
+  60% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -178px -2px;
+    transform: rotateY(0deg);
+  }
+  70% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -210px -2px;
+    transform: rotateY(180deg);
+  }
+  80% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -178px -2px;
+    transform: rotateY(0deg);
+  }
+  90% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -210px -2px;
+    transform: rotateY(180deg);
+  }
+}
+
+@keyframes nextFlip1 {
+  0% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -178px -2px;
+    transform: rotateY(0deg);
+  }
+  10% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -210px -2px;
+    transform: rotateY(180deg);
+  }
+  20% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -178px -2px;
+    transform: rotateY(0deg);
+  }
+  30% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -210px -2px;
+    transform: rotateY(180deg);
+  }
+  40% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -178px -2px;
+    transform: rotateY(0deg);
+  }
+  50% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -210px -2px;
+    transform: rotateY(180deg);
+  }
+  60% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -178px -2px;
+    transform: rotateY(0deg);
+  }
+  70% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -210px -2px;
+    transform: rotateY(180deg);
+  }
+  80% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -178px -2px;
+    transform: rotateY(0deg);
+  }
+  90% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -210px -2px;
+    transform: rotateY(180deg);
+  }
+}
+@-webkit-keyframes nextFlip2 {
+  0% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -148px -2px;
+    transform: rotateY(0deg);
+  }
+  10.5% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -238px -2px;
+    transform: rotateY(180deg);
+  }
+  20% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -148px -2px;
+    transform: rotateY(0deg);
+  }
+  30.5% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -238px -2px;
+    transform: rotateY(180deg);
+  }
+  40% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -148px -2px;
+    transform: rotateY(0deg);
+  }
+  50.5% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -238px -2px;
+    transform: rotateY(180deg);
+  }
+  60% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -148px -2px;
+    transform: rotateY(0deg);
+  }
+  70.5% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -238px -2px;
+    transform: rotateY(180deg);
+  }
+  80% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -148px -2px;
+    transform: rotateY(0deg);
+  }
+  90.5% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -238px -2px;
+    transform: rotateY(180deg);
+  }
+}
+@keyframes nextFlip2 {
+  0% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -148px -2px;
+    transform: rotateY(0deg);
+  }
+  10.5% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -238px -2px;
+    transform: rotateY(180deg);
+  }
+  20% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -148px -2px;
+    transform: rotateY(0deg);
+  }
+  30.5% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -238px -2px;
+    transform: rotateY(180deg);
+  }
+  40% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -148px -2px;
+    transform: rotateY(0deg);
+  }
+  50.5% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -238px -2px;
+    transform: rotateY(180deg);
+  }
+  60% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -148px -2px;
+    transform: rotateY(0deg);
+  }
+  70.5% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -238px -2px;
+    transform: rotateY(180deg);
+  }
+  80% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -148px -2px;
+    transform: rotateY(0deg);
+  }
+  90.5% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -238px -2px;
+    transform: rotateY(180deg);
+  }
+}
+@-webkit-keyframes nextFlip3 {
+  0% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -118px -2px;
+    transform: rotateY(0deg);
+  }
+  11% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -268px -2px;
+    transform: rotateY(180deg);
+  }
+  20% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -118px -2px;
+    transform: rotateY(0deg);
+  }
+  31% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -268px -2px;
+    transform: rotateY(180deg);
+  }
+  40% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -118px -2px;
+    transform: rotateY(0deg);
+  }
+  51% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -268px -2px;
+    transform: rotateY(180deg);
+  }
+  60% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -118px -2px;
+    transform: rotateY(0deg);
+  }
+  71% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -268px -2px;
+    transform: rotateY(180deg);
+  }
+  80% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -118px -2px;
+    transform: rotateY(0deg);
+  }
+  91% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -268px -2px;
+    transform: rotateY(180deg);
+  }
+}
+@keyframes nextFlip3 {
+  0% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -118px -2px;
+    transform: rotateY(0deg);
+  }
+  11% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -268px -2px;
+    transform: rotateY(180deg);
+  }
+  20% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -118px -2px;
+    transform: rotateY(0deg);
+  }
+  31% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -268px -2px;
+    transform: rotateY(180deg);
+  }
+  40% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -118px -2px;
+    transform: rotateY(0deg);
+  }
+  51% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -268px -2px;
+    transform: rotateY(180deg);
+  }
+  60% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -118px -2px;
+    transform: rotateY(0deg);
+  }
+  71% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -268px -2px;
+    transform: rotateY(180deg);
+  }
+  80% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -118px -2px;
+    transform: rotateY(0deg);
+  }
+  91% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -268px -2px;
+    transform: rotateY(180deg);
+  }
+}
+@-webkit-keyframes nextFlip4 {
+  0% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -88px -2px;
+    transform: rotateY(0deg);
+  }
+  11.5% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -298px -2px;
+    transform: rotateY(180deg);
+  }
+  20% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -88px -2px;
+    transform: rotateY(0deg);
+  }
+  31.5% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -298px -2px;
+    transform: rotateY(180deg);
+  }
+  40% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -88px -2px;
+    transform: rotateY(0deg);
+  }
+  51.5% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -298px -2px;
+    transform: rotateY(180deg);
+  }
+  60% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -88px -2px;
+    transform: rotateY(0deg);
+  }
+  71.5% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -298px -2px;
+    transform: rotateY(180deg);
+  }
+  80% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -88px -2px;
+    transform: rotateY(0deg);
+  }
+  91.5% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -298px -2px;
+    transform: rotateY(180deg);
+  }
+}
+@keyframes nextFlip4 {
+  0% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -88px -2px;
+    transform: rotateY(0deg);
+  }
+  11.5% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -298px -2px;
+    transform: rotateY(180deg);
+  }
+  20% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -88px -2px;
+    transform: rotateY(0deg);
+  }
+  31.5% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -298px -2px;
+    transform: rotateY(180deg);
+  }
+  40% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -88px -2px;
+    transform: rotateY(0deg);
+  }
+  51.5% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -298px -2px;
+    transform: rotateY(180deg);
+  }
+  60% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -88px -2px;
+    transform: rotateY(0deg);
+  }
+  71.5% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -298px -2px;
+    transform: rotateY(180deg);
+  }
+  80% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -88px -2px;
+    transform: rotateY(0deg);
+  }
+  91.5% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -298px -2px;
+    transform: rotateY(180deg);
+  }
+}
+@-webkit-keyframes nextFlip5 {
+  0% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -58px -2px;
+    transform: rotateY(0deg);
+  }
+  12% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -328px -2px;
+    transform: rotateY(180deg);
+  }
+  20% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -58px -2px;
+    transform: rotateY(0deg);
+  }
+  32% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -328px -2px;
+    transform: rotateY(180deg);
+  }
+  40% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -58px -2px;
+    transform: rotateY(0deg);
+  }
+  52% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -328px -2px;
+    transform: rotateY(180deg);
+  }
+  60% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -58px -2px;
+    transform: rotateY(0deg);
+  }
+  72% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -328px -2px;
+    transform: rotateY(180deg);
+  }
+  80% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -58px -2px;
+    transform: rotateY(0deg);
+  }
+  92% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -328px -2px;
+    transform: rotateY(180deg);
+  }
+}
+@keyframes nextFlip5 {
+  0% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -58px -2px;
+    transform: rotateY(0deg);
+  }
+  12% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -328px -2px;
+    transform: rotateY(180deg);
+  }
+  20% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -58px -2px;
+    transform: rotateY(0deg);
+  }
+  32% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -328px -2px;
+    transform: rotateY(180deg);
+  }
+  40% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -58px -2px;
+    transform: rotateY(0deg);
+  }
+  52% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -328px -2px;
+    transform: rotateY(180deg);
+  }
+  60% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -58px -2px;
+    transform: rotateY(0deg);
+  }
+  72% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -328px -2px;
+    transform: rotateY(180deg);
+  }
+  80% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -58px -2px;
+    transform: rotateY(0deg);
+  }
+  92% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -328px -2px;
+    transform: rotateY(180deg);
+  }
+}
+@-webkit-keyframes nextFlip6 {
+  0% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -28px -2px;
+    transform: rotateY(0deg);
+  }
+  12.5% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -358px -2px;
+    transform: rotateY(180deg);
+  }
+  20% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -28px -2px;
+    transform: rotateY(0deg);
+  }
+  32.5% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -358px -2px;
+    transform: rotateY(180deg);
+  }
+  40% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -28px -2px;
+    transform: rotateY(0deg);
+  }
+  52.5% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -358px -2px;
+    transform: rotateY(180deg);
+  }
+  60% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -28px -2px;
+    transform: rotateY(0deg);
+  }
+  72.5% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -358px -2px;
+    transform: rotateY(180deg);
+  }
+  80% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -28px -2px;
+    transform: rotateY(0deg);
+  }
+  92.5% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -358px -2px;
+    transform: rotateY(180deg);
+  }
+}
+@keyframes nextFlip6 {
+  0% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -28px -2px;
+    transform: rotateY(0deg);
+  }
+  12.5% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -358px -2px;
+    transform: rotateY(180deg);
+  }
+  20% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -28px -2px;
+    transform: rotateY(0deg);
+  }
+  32.5% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -358px -2px;
+    transform: rotateY(180deg);
+  }
+  40% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -28px -2px;
+    transform: rotateY(0deg);
+  }
+  52.5% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -358px -2px;
+    transform: rotateY(180deg);
+  }
+  60% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -28px -2px;
+    transform: rotateY(0deg);
+  }
+  72.5% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -358px -2px;
+    transform: rotateY(180deg);
+  }
+  80% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -28px -2px;
+    transform: rotateY(0deg);
+  }
+  92.5% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -358px -2px;
+    transform: rotateY(180deg);
+  }
+}
+@-webkit-keyframes nextFlip7 {
+  0% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -2px -2px;
+    transform: rotateY(0deg);
+  }
+  13% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -388px -2px;
+    transform: rotateY(180deg);
+  }
+  20% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -2px -2px;
+    transform: rotateY(0deg);
+  }
+  33% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -388px -2px;
+    transform: rotateY(180deg);
+  }
+  40% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -2px -2px;
+    transform: rotateY(0deg);
+  }
+  53% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -388px -2px;
+    transform: rotateY(180deg);
+  }
+  60% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -2px -2px;
+    transform: rotateY(0deg);
+  }
+  73% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -388px -2px;
+    transform: rotateY(180deg);
+  }
+  80% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -2px -2px;
+    transform: rotateY(0deg);
+  }
+  93% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -388px -2px;
+    transform: rotateY(180deg);
+  }
+}
+@keyframes nextFlip7 {
+  0% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -2px -2px;
+    transform: rotateY(0deg);
+  }
+  13% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -388px -2px;
+    transform: rotateY(180deg);
+  }
+  20% {
+    background-image: url(images/imagesbox/Box5/PicVir1.JPG);
+    background-position: -2px -2px;
+    transform: rotateY(0deg);
+  }
+  33% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -388px -2px;
+    transform: rotateY(180deg);
+  }
+  40% {
+    background-image: url(images/PicAL.JPG);
+    background-position: -2px -2px;
+    transform: rotateY(0deg);
+  }
+  53% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -388px -2px;
+    transform: rotateY(180deg);
+  }
+  60% {
+    background-image: url(images/PicGirl.jpg);
+    background-position: -2px -2px;
+    transform: rotateY(0deg);
+  }
+  73% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -388px -2px;
+    transform: rotateY(180deg);
+  }
+  80% {
+    background-image: url(images/PicPB.JPG);
+    background-position: -2px -2px;
+    transform: rotateY(0deg);
+  }
+  93% {
+    background-image: url(images/Protegez-Le-Soldat.JPG);
+    background-position: -388px -2px;
+    transform: rotateY(180deg);
+  }
+}
+
+
+  </style>
+
+<!-- Les acteurs -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+
+<!-- Parcours -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
+</head>
+
+<body>
+  <section id="Accueil" class="colored-page">
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid navigation-accueil">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="images/logo1.png" alt="logo-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#row-pictures-accueil" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">INTRODUCTION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#les-acteurs" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES ACTEURS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#leslieux" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES LIEUX</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#parcours" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PARCOURS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#focus" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">FOCUS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Ressources" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">RESSOURCES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="plan.html" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PLAN DES TRANCHEES</a>
+            </li>
+            <li class="nav-item">
+              <table cellpadding=0 cellspacing=0 border=0 >
+              <tr>
+              	<td  style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+              		<center><table width="90%" cellpadding=0 cellspacing=0 border=0  style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+              		</table></center>
+              		<form style="margin:0px; margin-top:5px;" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+              		<input type="hidden" name="si" value="75939983">
+              		<input type="hidden" name="pid" value="r">
+              		<input type="hidden" name="n" value="0">
+              		<input type="hidden" name="_charset_" value="">
+              		<input type="hidden" name="bcd" value="&#247;">
+              		<input type="text" name="query" size="15">
+              		<input type="submit" value="search" style="font-family: Arial, Helvetica, sans-serif; font-size: 13pt; text-transform: uppercase; color: white; background: rgba(76, 175, 80, 0); border: none; font-weight: bold;">
+              		</form>
+              	</td>
+              </tr>
+              </table>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--  Title  -->
+    <div class="row lune">
+      <div class="col-lg-6 accueil-text-box">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 class="title" style="padding-left:2rem">DES SILLONS AUX TRANCHEES</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="sub-title" style="padding-left:2rem"> UNE PETITE HISTOIRE DANS LA GRANDE HISTOIRE</h2>
+      </div>
+      <div class="col-lg-6 image-box">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="carouselExampleSlidesOnly">
+
+
+        <div class="imgLoader"></div>
+
+        <div class="contoner">
+
+        <div class="book">
+          <div class="gap"></div>
+          <div class="pages">
+            <div class="page"></div>
+            <div class="page"></div>
+            <div class="page"></div>
+            <div class="page"></div>
+            <div class="page"></div>
+            <div class="page"></div>
+          </div>
+          <div class="flips">
+            <div class="flip flip1">
+              <div class="flip flip2">
+                <div class="flip flip3">
+                  <div class="flip flip4">
+                    <div class="flip flip5">
+                      <div class="flip flip6">
+                        <div class="flip flip7"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+          <div class="audiobutton musique-accueil" style="margin-right:17rem">
+            <audio id="audio" controls>
+              <source src="audios/Gymnopedie.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+
+          </div>
+        </div>
+
+
+
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <h4 style="padding-left:6rem">        Lever de Lune sur la Crouzille - Discrète Crouzillote</h4>
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- Introduction -->
+
+  <section id="row-pictures-accueil" class="white-page">
+    <div class="container-fluid">
+      <a name="introduction"></a>
+      <div class="row box-3pics">
+        <div class="col-lg-4">
+          <img class="row-pictures img-fluid" src="images/Faucheurs.jpg" alt="Faucheurs-img">
+        </div>
+        <div class="col-lg-4">
+          <img class="row-pictures img-fluid" src="images/Protegez-le-soldat.JPG" alt="Protegez-le-soldat-img">
+        </div>
+        <div class="col-lg-4">
+          <img class="row-pictures img-fluid" src="images/Fort-de-Douaumont.JPG" alt="Fort-de-Douaumont-img">
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Ce site raconte l'histoire ordinaire de trois frères, trois paysans, trois soldats durant la guerre de 14-18.
+            Il a été créé sur la base de leur correspondance avec leurs soeurs restées à la ferme durant le conflit.
+            Deux frères reviendront blessés et le troisième tombera au combat à la bataille de Verdun en 1916. Leur correspondance est composée
+            d'environ 400 cartes postales, chaque carte postale est à la fois le miroir de la propagande de guerre, mais également le révélateur
+            des sentiments des frères partis à la guerre et des angoisses de leurs soeurs restées au pays.</h2>
+          <br>
+          <br>
+          <h2>L'une des quatre soeurs s'appelle Léa. Léa est ma grand-mère maternelle et cette histoire revêt donc une importance
+            tout à fait particulière à mes yeux et mon coeur.</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="detailed-intro" class="colored-page">
+
+    <div class="row first-row-intro">
+      <div class="col-lg-8 text-detailed1-intro">
+        <h3 class="Textintro">En France, chaque village a son monument aux morts, chaque monument au mort a sa liste de soldats tombés à la guerre de 14-18, et derrière chaque nom se cache une histoire et une famille. Ces monuments font partie du
+          paysage
+          et on est tellement habitué à les voir qu’on ne les voit plus. Bien sûr, on nous apprend l’histoire de la grande Guerre à l’école et on a une pensée un peu plus marquée pour cette période tous les jours de 11 Novembre, mais comme dit la
+          chanson,
+          on y pense et puis on oublie.</h3>
+        <br>
+        <h3 class="Textintro">On y pense et puis on oublie, parce que c’est loin dans le temps et que malheureusement la guerre de 14 apparait aujourd’hui comme un autre épisode sanglant dans le long cortège d’atrocités du siècle précédent. Mais on
+          oublie
+          surtout parce qu’il nous est quelquefois difficile de se sentir intimement concerné, ne l’ayant pas vécu dans notre propre chair et les acteurs de l’époque ayant disparu depuis longtemps.</h3>
+        <br>
+        <h3 class="Textintro">C’est cette touche personnelle qu’apporte la correspondance des soldats avec leurs sœurs, ce sont leurs mots simples et le non-dit de leurs lettres qui nous aident à mieux comprendre le vécu de cette époque. L’Auvergnat
+          est économe de mots et certains disent qu’il peut-être taiseux et c’est justement cela qui donne autant de poids aux paroles des frères.</h3>
+        <br>
+      </div>
+      <div class="col-lg-4 pic-monument">
+        <img src="images/MonumentMorts.jpg" alt="Monument-aux-morts-img">
+      </div>
+    </div>
+    <div class="col-lg-12 text-detailed2-intro">
+      <h3 class="Textintro">Jeunes hommes simples, honnêtes et durs à la tâche, Gabriel, Auguste et Antoine ne se plaignent jamais et s’efforcent de rassurer la famille. Jeunes filles robustes, résilientes et d’une grande foi, Marie et Maria
+        cachent leurs angoisses au mieux. Encore petites, Augustine et Lea prient pour le retour de leurs frères et aident maladroitement au travail de la ferme.</h3>
+        <br>
+      <h3 class="Textintro">Quand on lit cette correspondance et qu’on la met en perspective avec les récits et la littérature de l’Après-Guerre, on a alors un éclairage complet sur l’expérience des soldats au front et des familles à l’arrière. La
+        littérature nous aide à mieux comprendre ce que les frères gardent cachés et la correspondance donne soudainement un relief particulier à cette littérature et une intimité unique avec les textes.</h3>
+        <br>
+      <h3 class="Textintro">Mais quand on se penche sur cette époque, pour mieux la comprendre, il faut tenter de la lire avec les préjugés et les idées reçues du début du siècle précédent. Tout cela dans une atmosphère envahissante de propagande et un carcan d'éducation bien serré. Nous, nous savons les conséquences et l'horreur de cette guerre et de celle qui suivra - notre système de valeurs est en grande partie le fruit du rejet de ces deux conflits. Eux, ils n'en savent rien encore et n'apportent sans doute pas le même regard sur leur expérience.</h3>
+      <br>
+      <h3 class="Textintro">Rien n’illustre mieux l’ambiance du moment que les cartes postales ” de propagande“ de l’époque. Avant de visiter le site, regardez-donc ce petit montage à la mode du cinéma muet réalisé à partir d’une sélection des cartes échangées par les frères et leurs sœurs.</h3>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-lg-5">
+        </div>
+        <div class="col-lg-4">
+          <a class="btn btn-lg btn-block btn-outline-secondary col-6 cinema" role="button" href="https://rosalie1914.github.io/Artillery/" target="_blank"><i class="fa fa-film"></i>  Accès au cinématographe </a>
+        </div>
+        <div class="col-lg-3">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Les acteurs -->
+
+<a name="acteurs"></a>
+
+<section id="les-acteurs" class="white-page">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 texte-box-les-lieux">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 class="titre-les-lieux">Les acteurs <img class="logo" src="images/logo1.png" alt="logo-img"></h1>
+        <h3 class="texte-les-lieux">Faites connaissance avec les principaux acteurs de cette histoire …</h3>
+        <br>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <div>
+    <div class="tomeline">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url(images/GabCheval.jpg" data-year="GABRIEL">
+            <div class="swiper-slide-content" style="margin-right:25px"><span class="timeline-year">GABRIEL</span>
+              <br>
+              <h3>Ainé des garcons, il trace la voie pour ses deux frères.</h3>
+              <br>
+                <a class="btn btn-lg btn-block btn-outline-secondary" role="button" href="gabriel.html" target="_blank" style="width: 200px;"><i class="fas fa-archive"></i>   En savoir plus</a>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url(images/Antoine-Auguste1short.jpg" data-year="AUGUSTE">
+            <div class="swiper-slide-content" style="margin-right:25px"><span class="timeline-year">AUGUSTE</span>
+              <br>
+              <h3>Frère jumeau d’Antoine et parrain d’Augustine.</h3>
+              <br>
+                <a class="btn btn-lg btn-block btn-outline-secondary" role="button" href="auguste.html" target="_blank" style="width: 200px;"><i class="fas fa-archive"></i>   En savoir plus</a>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url(images/AntoineHopital.jpg" data-year="ANTOINE">
+            <div class="swiper-slide-content" style="margin-right:25px"><span class="timeline-year">ANTOINE</span>
+              <br>
+              <h3>Frère jumeau d’Auguste et parrain de Léa.</h3>
+              <br>
+                <a class="btn btn-lg btn-block btn-outline-secondary" role="button" href="antoine.html" target="_blank" style="width: 200px;"><i class="fas fa-archive"></i>   En savoir plus</a>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url(images/Marie.jpg" data-year="MARIE & MARIA">
+            <div class="swiper-slide-content" style="margin-right:25px"><span class="timeline-year">MARIE & MARIA</span>
+              <br>
+              <h3>Marie tient la ferme, et Maria s'occupe des petites soeurs</h3>
+              <br>
+              <a class="btn btn-lg btn-block btn-outline-secondary" role="button" href="Marie-Maria.html" target="_blank" style="width: 200px;"><i class="fas fa-archive"></i>   En savoir plus</a>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url(images/AML.jpg" data-year="AUGUSTINE & LEA">
+            <div class="swiper-slide-content" style="margin-right:25px"><span class="timeline-year">AUGUSTINE & LEA</span>
+              <br>
+              <h3>Les deux petites jumelles qui adorent leurs grands frères</h3>
+              <br>
+                <a class="btn btn-lg btn-block btn-outline-secondary" role="button" href="Augustine-Lea.html" target="_blank" style="width: 200px;"><i class="fas fa-archive"></i>   En savoir plus</a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Les lieux  -->
+
+  <a name="leslieux"></a>
+
+  <section id="les-lieux" class="white-page">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 texte-box-les-lieux">
+          <br>
+          <h1 class="titre-les-lieux">Les lieux <img class="logo" src="images/logo1.png" alt="logo-img"></h1>
+          <h3 class="texte-les-lieux">Traditionnellement, on voyage peu à la campagne, tout simplement parce que l’on a pas besoin de le faire et que toute la vie se passe au village et ses alentours. Quand on le fait, quant on voit du pays, c’est
+            une expérience non seulement pour celui ou celle qui part, mais aussi pour ceux qui restent à la ferme.</h3>
+          <br>
+          <h3 class="texte-les-lieux">Le service militaire est bien souvent la première et unique raison de partir loin, et la guerre sera également un incroyable catalyste pour découvrir des contrées plus lointaines. Ainsi, les cartes envoyées par
+            les trois frères sont révélatrices à deux titres, leur écrit mais également les images qu’ils choisissent. On ne peut qu’imaginer avec quelle curiosité et excitation ces images étaient analysées dans les moindres détails par les sœurs les
+            plus jeunes.</h3>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="timeline">
+
+    <div class="tl-item">
+
+      <div class="tl-bg" style="background-image: url(images/La-Crouzille.JPG)"></div>
+
+      <div class="tl-year">
+        <h2 class="f2 heading--sanSerif" style ="margin-top: 8px; color: #d97e57; font-size: 1.85rem;">CROUZILLE</h2>
+      </div>
+
+      <div class="tl-content">
+        <h1 class="f3 text--accent ttu">Le village de la famille</h1>
+        <h3>Aux confins de l’Auvergne, du Limousin et du Bourbonnais, c‘est ici que tout commence, au hameau des Raynauds …</h3>
+        <br>
+        <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="crouzille.html" target="_blank"><i class="fas fa-archive"></i>   Accès</a>
+      </div>
+
+    </div>
+
+    <div class="tl-item">
+
+      <div class="tl-bg" style="background-image: url(images/Vosges1.JPG)"></div>
+
+      <div class="tl-year">
+        <h2 class="f2 heading--sanSerif" style ="margin-top: 8px; color: #d97e57;font-size: 1.85rem;">VOSGES</h2>
+      </div>
+
+      <div class="tl-content">
+        <h1 class="f3 text--accent ttu">Premières armes</h1>
+        <h3>Auguste et Antoine y apprennent la pratique de la guerre à Epinal, et les trois frères vivront leur première bataille dans les montagnes des Vosges …</h3>
+        <br>
+        <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="Vosges.html" target="_blank"><i class="fas fa-archive"></i>   Accès</a>
+      </div>
+
+    </div>
+
+    <div class="tl-item">
+
+      <div class="tl-bg" style="background-image: url(images/Lyon-et-Roanne.JPG)"></div>
+
+      <div class="tl-year">
+        <h2 class="f2 heading--sanSerif" style ="margin-top: 8px; color: #d97e57;font-size: 1.85rem;">LYON</h2>
+      </div>
+
+      <div class="tl-content">
+        <h1 class="f3 text--accent ttu">Le temps du repos</h1>
+        <br>
+        <h3>Le dépôt du régiment et la ville où l’on soigne ses blessures avant de repartir au front …</h3>
+        <br>
+        <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="lyon.html" target="_blank"><i class="fas fa-archive"></i>   Accès</a>
+      </div>
+
+    </div>
+
+    <div class="tl-item">
+
+      <div class="tl-bg" style="background-image: url(images/Verdun.JPG)"></div>
+
+      <div class="tl-year">
+        <h2 class="f2 heading--sanSerif" style ="margin-top: 8px; color: #d97e57;font-size: 1.85rem;">BATAILLES</h2>
+      </div>
+
+      <div class="tl-content">
+        <h1 class="f3 text--accent ttu">La Somme, l'Artois et Verdun</h1>
+        <br>
+        <h3>Au fil des champs de bataille et sur le front, la France au plus fort des combats …</h3>
+        <br>
+        <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="verdun.html" target="_blank"><i class="fas fa-archive"></i>   Accès</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!--  Parcours  -->
+
+  <a name="parcours"></a>
+
+  <section id="parcours-intro" class="white-page">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 texte-box-les-lieux">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h1 class="titre-les-lieux">Parcours <img class="logo" src="images/logo1.png" alt="logo-img"></h1>
+          <h3 class="texte-les-lieux">Au fil des cartes postales et des correspondances, nous suivons le parcours de la famille durant la période allant de 1909 à 1917.</h3>
+          <br>
+          <h3 class="texte-les-lieux">Cette période est composée de plusieurs tableaux, chacun de ces tableaux donnant un éclairage particulier sur les expériences vécues par chacun des membres de la famille.</h3>
+          <br>
+          <h3 class="texte-les-lieux">Au fil des années, découvrez chaque période en cliquant sur l’image …</h3>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="timeline-container" id="timeline-1">
+    <div class="timeline-header">
+    </div>
+    <div class="timeline">
+      <div class="timeline-item" data-text="AVANT-GUERRE">
+        <div><a href="parcoursbox1.html"><img class="timeline__img" src="images/imagesbox/Frontpage.JPG"/></a>
+          <h2>1909</h2>
+          <h3 class="timeline__content-desc">Toute la famille vivant au hameau des Raynauds, il n’y a pas de correspondance entre frères et sœurs pour cette période. Les quelques cartes postales disponibles, souvent écrites entre amies, donnent
+            cependant quelques indications sur la vie quotidienne de la famille – une vie sans souçis majeurs, avec les préoccupations traditionnelles de jeunes filles dans leur vingt-ans pour Marie et Maria …<</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="LE SERVICE MILITAIRE DE GABRIEL">
+        <div><a href="parcoursbox2.html"><img class="timeline__img" src="images/imagesbox/FrontpageServiceMilitaire.JPG"/></a>
+          <h2>1911</h2>
+          <h3 class="timeline__content-desc">C’est un évènement majeur dans la vie de la famille, et un véritable rite de passage pour les trois garçons. Gabriel commence son service en 1909, il est basé à Roanne. Il écrit principalement à
+            Augustine et Léa qui sont encore toutes petites (elles ont huit ans) et elles s’appliquent également à écrire leurs propres cartes …</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="A L'ECOLE">
+        <div><a href="parcoursbox1a.html"><img class="timeline__img" src="images/imagesbox/FrontpageEcole.JPG"/></a>
+          <h2>1912</h2>
+          <h3 class="timeline__content-desc">Pour Augustine et Maria, ce sont les années d'école primaire à l'Institut du Sacré Coeur de Montaigut en Combraille. Elles y reçoivent une éducation robuste, mais gare aux fautes d'orthographe ...</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="LE SERVICE MILITAIRE D'AUGUSTE ET ANTOINE">
+        <div><a href="parcoursbox3.html"><img class="timeline__img" src="images/imagesbox/FrontpageServiceMilitaireAA.JPG"/></a>
+          <h2>1913</h2>
+          <h3 class="timeline__content-desc">Auguste et Antoine partent en 1913 pour Epinal. On voyage peu à cette époque, et c’est l’occasion de voir du pays ce qui donne lieu à une correspondance fournie. Il est clair qu’Augustine et Léa
+            adorent recevoir ses images de contrées lointaines …</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="LA MOBILISATION">
+        <div><a href="parcoursbox4.html"><img class="timeline__img" src="images/imagesbox/FrontpageLaMobilisation.JPG"/></a>
+          <h2> Début Août 1914</h2>
+          <h3 class="timeline__content-desc">La mobilisation est proclamée le 1er Août 1914, au pire moment pour les paysans, juste avant les moissons. Gabriel rejoint immédiatement le dépôt de son régiment à Roanne, Auguste et Antoine sont alors
+            au service militaire à Epinal et se voient engagés dans la guerre sans délai. Les trois frères participent très tôt aux combats et les évènements s’enchaînent à grande vitesse tout au long du mois d’août. A la ferme, ne restent que le
+            père, la mère et les sœurs pour s’occuper de l’exploitation …</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="PREMIERES BLESSURES">
+        <div><a href="parcoursbox5.html"><img class="timeline__img" src="images/imagesbox/FrontpagePremieresBlessures.JPG"/></a>
+          <h2>Fin Août 1914</h2>
+          <h3 class="timeline__content-desc">Incorporés dans l’infanterie, les trois frères sont en première ligne dans une guerre de mouvement destinée à arrêter le mouvement des troupes allemandes. Auguste est le premier à être blessé dès la
+            fin du mois d’Août, puis ce sera le tour de Gabriel et Antoine peu après dans les premières semaines de Septembre. Chacune de ces blessures aura une importance primordiale sur le destin des trois hommes …</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="CONVALESCENCE">
+        <div><a href="parcoursbox6.html"><img class="timeline__img" src="images/imagesbox/FrontpageConvalescence.JPG"/></a>
+          <h2> Automne 1914</h2>
+          <h3 class="timeline__content-desc">Pendant une courte période, les trois frères se retrouvent ensemble à Lyon et décrivent leur convalescence à la famille inquiète. Gabriel est le premier rétabli et sera le premier à retourner au front.
+            Auguste et Antoine restent à Lyon encore quelque temps …</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="CONVOIS">
+        <div><a href="parcoursbox6a.html"><img class="timeline__img" src="images/imagesbox/FrontpageConvoi.JPG"/></a>
+          <h2> Hiver 1914</h2>
+          <h3 class="timeline__content-desc">Auguste est guéri mais ne repart pas tout de suite au front, il est affecté aux convois et comme on dit chez nous, il va voir du pays ...</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="GABRIEL DE RETOUR AU FRONT">
+        <div><a href="parcoursbox7.html"><img class="timeline__img" src="images/imagesbox/FrontpageRAFGabriel.JPG"/></a>
+          <h2> Printemps 1915</h2>
+          <h3 class="timeline__content-desc">Gabriel est le premier des frères à être rétabli, et il est donc le premier à repartir au front. Il retrouve une guerre bien différente, c’est maintenant une guerre de position et le conflit s’est enlisé. Il parle à demi-mots de son expérience dans les tranchées et tâche d’envoyer des messages rassurants aux parents et sœurs …</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="AUGUSTE DE RETOUR AU FRONT">
+        <div><a href="parcoursbox7a.html"><img class="timeline__img" src="images/imagesbox/FrontpageRetourAuFront.JPG"/></a>
+          <h2> Eté 1915</h2>
+          <h3 class="timeline__content-desc">Après Gabriel, c’est au tour d’Auguste de repartir au Front et très vite il se trouve engagé dans plusieurs batailles emblématiques de la guerre de 14-18 …</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="ANTOINE ET L'APPAREIL">
+        <div><a href="parcoursbox8a.html"><img class="timeline__img" src="images/imagesbox/FrontpageAppareil.JPG"/></a>
+          <h2> Août 1915</h2>
+          <h3 class="timeline__content-desc">Blessé plus sérieusement, Antoine reste à Lyon et va connaître l’usine. Au travers de quelques permissions et de son expérience et goût pour la mécanique, Il aide cependant à la ferme …</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="IN THE BLEAK MIDWINTER">
+        <div><a href="parcoursbox8b.html"><img class="timeline__img" src="images/imagesbox/FrontpageBleak.JPG"/></a>
+          <h2> Hiver 1915</h2>
+          <h3 class="timeline__content-desc">Un autre hiver, un autre triste triste Noël …</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="MORT AU COMBAT">
+        <div><a href="parcoursbox8.html"><img class="timeline__img" src="images/imagesbox/FrontpageMortAuCombat.JPG"/></a>
+          <h2> Printemps 1916</h2>
+          <h3 class="timeline__content-desc">La mauvaise nouvelle tant redoutée arrive aux Raynauds en Mars 1916. Gabriel est tué dans les premières semaines de la bataille de Verdun …</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="UN RENDEZ-VOUS MANQUE">
+        <div><a href="parcoursbox9.html"><img class="timeline__img" src="images/imagesbox/FrontpageRendezVous.JPG"/></a>
+          <h2> Printemps 1916</h2>
+          <h3 class="timeline__content-desc">Cette guerre brise les hommes, mais elle brise aussi les cœurs. Difficile d’en être sûr, mais une correspondance entre Maria (alors dans ses vingt ans) et un autre soldat semble suggérer le début d’une
+            idylle interrompue par le conflit. On y décèle plus de tendresse, tout cela voilé par beaucoup de pudeur. Est-ce un rendez-vous manqué ?….</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="SECONDE BLESSURE">
+        <div><a href="parcoursbox10.html"><img class="timeline__img" src="images/imagesbox/FrontpageSecondeBlessure.JPG"/></a>
+          <h2> Août 1916</h2>
+          <h3 class="timeline__content-desc">Gabriel est mort, Antoine est toujours à Lyon en convalescence, mais Auguste est au front. Exposé au danger lui aussi à Verdun, il est blessé une deuxième fois, un an jour pour jour après sa première
+            blessure …</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="RETOUR A LA MAISON">
+        <div><a href="parcoursbox11.html"><img class="timeline__img" src="images/imagesbox/FrontpageRetourMaison.JPG"/></a>
+          <h2> 1916 - 1917</h2>
+          <h3 class="timeline__content-desc">Commence une nouvelle période de convalescence au terme de laquelle Auguste rentre à la maison comme son frère Antoine. Au cours de cette période, la correspondance d’Auguste nous fait découvrir
+            d’autres lieux de passage de la Creuse et de l’Allier …</h3>
+        </div>
+      </div>
+      <div class="timeline-item" data-text="APRES-GUERRE">
+        <div><a href="parcoursbox12.html"><img class="timeline__img" src="images/imagesbox/FrontpageApresGuerre.JPG"/></a>
+          <h2> 1919 </h2>
+          <h3 class="timeline__content-desc">La guerre finie et les deux frères jumeaux revenus au village, la correspondance devient plus éparse mais les quelques cartes conservées montrent un retour au cours normal des choses. Avec quelques
+            références cependant à l’épidémie du moment, la grippe espagnole …</h3>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+  <!--  Focus  -->
+
+
+  <section id="focus" class="white-page">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 texte-box-les-lieux">
+          <br>
+          <br>
+          <br>
+          <a name="focus"></a>
+          <br>
+          <br>
+          <h1 class="titre-les-lieux">Focus <img class="logo" src="images/logo1.png" alt="logo-img"></h1>
+          <br>
+          <h3 class="texte-les-lieux">Pour mieux comprendre le contexte de l’époque, et si le cœur vous en dit, approfondissez votre connaissance sur quelques thèmes importants …</h3>
+        </div>
+      </div>
+      <div class="continer">
+        <div class="card">
+          <img src="images/Eglise.jpg">
+          <a href="eglise.html"><div class="card__head">EGLISE</div></a>
+        </div>
+        <div class="card">
+          <img src="images/Boches.jpg">
+          <a href="boches.html"><div class="card__head">BOCHES</div></a>
+        </div>
+        <div class="card">
+          <img src="images/Courier.jpg">
+          <a href="courrier.html"><div class="card__head">COURIER</div></a>
+        </div>
+        <div class="card">
+          <img src="images/Argot.jpg">
+          <a href="argot.html"><div class="card__head">ARGOT</div></a>
+        </div>
+        <div class="card">
+          <img src="images/Chansons.jpg">
+          <a href="chansons.html"><div class="card__head">CHANSONS</div></a>
+        </div>
+        <div class="card">
+          <img src="images/Chronologie.jpg">
+          <a href="chronologie.html"><div class="card__head">CHRONOLOGIE</div></a>
+        </div>
+      </div>
+      <br><br><br>
+
+    </div>
+  </section>
+
+
+  <!--  Ressources -->
+
+  <section id="Ressources" class="white-page">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 texte-box-les-lieux">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h1 class="titre-les-lieux">Ressources <img class="logo" src="images/logo1.png" alt="logo-img"></h1>
+          <h3 class="texte-les-lieux"></h3>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 ressources-column">
+          <div class="card">
+            <div class="card-header">
+              <img src="images/AuvergneBibli.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <br>
+              <br>
+              <h3 class="card-text"> Découvrir la presse auvergnate de l'époque </h3>
+              <br>
+              <br>
+              <br>
+              <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="https://www.bibliotheques-clermontmetropole.eu/overnia/collection_presse.php?titre=La%20presse%20auvergnate" target="_blank"><i class="fas fa-archive"></i>   Accès</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 ressources-column">
+          <div class="card">
+            <div class="card-header">
+              <img src="images/BnFGallica.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <br>
+              <br>
+              <h3 class="card-text"> Explorer l'intégralité des journeaux de tranchées </h3>
+              <br>
+              <br>
+              <br>
+              <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="https://gallica.bnf.fr/html/und/presse-et-revues/journaux-de-tranchees?mode=desktop" target="_blank"><i class="fas fa-archive"></i>   Accès</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 ressources-column">
+          <div class="card">
+            <div class="card-header">
+              <img src="images/ResArchivesPDD.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <br>
+              <br>
+              <h3 class="card-text"> Explorer les registres paroissiaux et de l'Etat Civil de la commune de la Crouzille</h3>
+              <br>
+              <br>
+              <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="https://www.archivesdepartementales.puy-de-dome.fr/n/rechercher/n:149" target="_blank"><i class="fas fa-archive"></i>   Accès</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 ressources-column">
+          <div class="card">
+            <div class="card-header">
+              <img src="images/MemoireDesHommes.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <br>
+              <br>
+              <h3 class="card-text"> Lire les Journeaux de Marche des régiments</h3>
+              <br>
+              <br>
+              <br>
+              <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="https://www.memoiredeshommes.sga.defense.gouv.fr/fr/article.php%3Flarub%3D2%26titre%3Djournaux-des-unites-engagees-dans-la-premiere-guerre-mondiale" target="_blank"><i class="fas fa-archive"></i>   Accès</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 ressources-column">
+          <div class="card">
+            <div class="card-header">
+              <img src="images/ResArchivesPDD.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <br>
+              <br>
+              <h3 class="card-text"> Retrouver un livret militaire </h3>
+              <br>
+              <br>
+              <br>
+              <br>
+              <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="https://www.archivesdepartementales.puy-de-dome.fr/archive/recherche/matricules/n:113" target="_blank"><i class="fas fa-archive"></i>   Accès</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 ressources-column">
+          <div class="card">
+            <div class="card-header">
+              <img src="images/Bnf.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <br>
+              <br>
+              <h3 class="card-text"> Feuilleter les revues illustrées durant la Grande Guerre </h3>
+              <br>
+              <br>
+              <br>
+              <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="https://gallica.bnf.fr/html/und/presse-et-revues/revues-illustrees-durant-la-grande-guerre?mode=desktop" target="_blank"><i class="fas fa-archive"></i>   Accès</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 ressources-column">
+          <div class="card">
+            <div class="card-header">
+              <img src="images/MemoireDesHommes.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <br>
+              <br>
+              <h3 class="card-text"> Découvrir les historiques régimentaires des unités militaires </h3>
+              <br>
+              <br>
+              <br>
+              <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="https://www.memoiredeshommes.sga.defense.gouv.fr/fr/article.php?larub=51&titre=historiques-regimentaires-des-unites-engagees-dans-la-1re-guerre-mondiale" target="_blank"><i class="fas fa-archive"></i>   Accès</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 ressources-column">
+          <div class="card">
+            <div class="card-header">
+              <img src="images/LaContemporaine.jpg" alt="">
+            </div>
+            <div class="card-body">
+              <br>
+              <br>
+              <h3 class="card-text"> Creuser dans les archives</h3>
+              <br>
+              <br>
+              <br>
+              <br>
+              <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="https://argonnaute.parisnanterre.fr/" target="_blank"><i class="fas fa-archive"></i>   Accès</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+<!-- Script Parcours -->
+
+  <script type="text/javascript">
+
+    (function ($) {
+    $.fn.timeline = function () {
+      var selectors = {
+        id: $(this),
+        item: $(this).find(".timeline-item"),
+        activeClass: "timeline-item--active",
+        img: ".timeline__img"
+      };
+      selectors.item.eq(0).addClass(selectors.activeClass);
+      selectors.id.css(
+        "background-image",
+        "url(" + selectors.item.first().find(selectors.img).attr("src") + ")"
+      );
+      var itemLength = selectors.item.length;
+      $(window).scroll(function () {
+        var max, min;
+        var pos = $(this).scrollTop();
+        selectors.item.each(function (i) {
+          min = $(this).offset().top;
+          max = $(this).height() + $(this).offset().top;
+          var that = $(this);
+          if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
+            selectors.item.removeClass(selectors.activeClass);
+            selectors.id.css(
+              "background-image",
+              "url(" + selectors.item.last().find(selectors.img).attr("src") + ")"
+            );
+            selectors.item.last().addClass(selectors.activeClass);
+          } else if (pos <= max - 40 && pos >= min) {
+            selectors.id.css(
+              "background-image",
+              "url(" + $(this).find(selectors.img).attr("src") + ")"
+            );
+            selectors.item.removeClass(selectors.activeClass);
+            $(this).addClass(selectors.activeClass);
+          }
+        });
+      });
+    };
+  })(jQuery);
+
+  $("#timeline-1").timeline();
+
+
+<!-- Script Les acteurs -->
+
+
+    var timelineSwiper = new Swiper ('.tomeline .swiper-container', {
+      direction: 'vertical',
+      loop: false,
+      speed: 1600,
+      pagination: '.swiper-pagination',
+      paginationBulletRender: function (swiper, index, className) {
+        var year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
+        return '<span class="' + className + '">' + year + '</span>';
+      },
+      paginationClickable: true,
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+      breakpoints: {
+        768: {
+          direction: 'horizontal',
+        }
+      }
+    });
+
+  </script>
+
+
+
+
+
+</body>
+
+</html>
