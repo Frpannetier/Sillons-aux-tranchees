@@ -508,3 +508,12 @@ padding-left: 25%;
   height: 70px;
 }
 
+/** Footer  **/
+
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #c0836a;
+   text-align: right;
+}
