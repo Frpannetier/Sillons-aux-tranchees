@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Un rendez-vous manque</title>
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Merriweather&family=Montserrat:wght@500&family=Sacramento&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheet, Bootstrap and Favicon -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon (2).ico">
+
+  <!-- Font Awesome -->
+
+  <script src="https://kit.fontawesome.com/cc4dcc56d7.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      background-image: linear-gradient(to right top, #d97e57, #d5815c, #d08460, #cc8665, #c7896a, #c68d6f, #c59174, #c49579, #c69c7f, #c9a386, #cbaa8d, #ceb194);
+    }
+
+    .map {
+      background-image: url(images/imagesbox/Box5/map26Aout.jpg);
+      height: 90rem;
+    }
+
+    .couv17 {
+      padding-top: 47rem;
+      padding-right: 5rem;
+    }
+
+    .couv98 {
+      padding-top: 10rem;
+    }
+
+    .mapChipotte {
+      background-image: url(images/imagesbox/Box5/ColdelaChipotte.jpg);
+      text-align: left;
+    }
+
+    .mapFrance {
+      background-image: url(images/imagesbox/Box6a/Mapconvois.jpg);
+      text-align: left;
+    }
+
+    .mapStRemy {
+      background-image: url(images/imagesbox/Box5/StRemy.jpg);
+      text-align: left;
+    }
+
+    .mapEMMarne {
+      background-image: url(images/imagesbox/Box5/MapEMMarne.jpg);
+      text-align: left;
+    }
+
+    .PicChipotte {
+      padding-top: 25rem;
+    }
+
+    .PicMarne {
+      padding-top: 0rem;
+
+    }
+
+    .fraternite {
+      padding-left: 6.5rem;
+    }
+
+    .title-parcours {
+      padding-top: 10%;
+      padding-bottom: 1%;
+    }
+
+    .textcarte {
+      font-family: 'Sacramento', cursive;
+      font-size: 200%;
+      color: #434144;
+      font-weight: 600;
+    }
+
+    .texte-legend {
+      font-size: 100%;
+    }
+
+    .image-box {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 10rem 0rem;
+    }
+
+    .image-boxExcep {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 20rem 0rem;
+    }
+
+
+    .image-boxms {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 5rem 0rem;
+    }
+
+    .text-box {
+      height: 40rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxExcep {
+      height: 55rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxconvois {
+      height: 30rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxbergougnan {
+      height: 20rem;
+      text-align: left;
+      padding-top: 2%;
+    }
+
+    .text-boxchamond {
+      height: 20rem;
+      text-align: left;
+      padding-top: 0%;
+    }
+
+    .text-boxmichelin {
+      height: 20rem;
+      text-align: left;
+      padding-top: 1%;
+    }
+
+
+    .text-box1 {
+      height: 40rem;
+      text-align: left;
+      padding-top: 1%;
+    }
+
+    .text-boxjourneaux {
+      height: 45rem;
+      text-align: center;
+    }
+
+    .text-boxdepart {
+      height: 25rem;
+      text-align: center;
+    }
+
+    .text-boxgiono {
+
+      height: 67rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+
+    .text-boxgiono2 {
+
+      height: 67rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+    .text-boxgenevoix {
+
+      height: 60rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+    .text-boxjmo17 {
+
+      height: 38rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 1.5%;
+
+    }
+
+
+
+    h4 {
+      color: #434144;
+    }
+
+    .Pica {
+      padding: 20px;
+      width: 18rem;
+      height: 18rem;
+      box-shadow: 4px 5px 10px 10px rgba(20, 20, 20, 0.4);
+    }
+
+    .Picc {
+      width: 70rem;
+      height: 20rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+    .Picd {
+      width: 20rem;
+      height: 30rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+    .Pice {
+      width: 25rem;
+      height: 37rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+
+    .picms {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 15rem;
+      height: 20rem;
+      margin-left: 3rem;
+    }
+
+    .pich {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 30rem;
+      height: 20rem;
+    }
+
+    .picv {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 20rem;
+      height: 30rem;
+    }
+
+    .picrot-15 {
+      transform: rotate(-15deg);
+    }
+
+    .ppich {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 20rem;
+      height: 14rem;
+    }
+
+    .PicConscrits {
+      width: 36rem;
+      height: 24rem;
+    }
+
+    .piclaguerre {
+      width: 40rem;
+      height: 12rem;
+    }
+
+    .picBergougnan {
+      width: 15rem;
+      height: 22rem;
+    }
+
+    .picMichelin {
+      width: 22rem;
+      height: 16rem;
+    }
+
+    .picChamond3 {
+      width: 50rem;
+      height: 15rem;
+    }
+
+    .picBrun {
+      width: 15rem;
+      height: 15rem;
+    }
+
+    .audiobutton {
+      padding-bottom: 3%;
+    }
+
+    audio::-webkit-media-controls-panel {
+      background-color: #DFAA93
+    }
+
+    audio {
+      height: 1.5rem;
+      width: 14rem;
+    }
+
+
+    @media (max-width:990px) {
+
+      .Pic1a,
+      .Pic1b {
+        position: static;
+        transform: rotate(0);
+      }
+
+    }
+
+    /* Static Carousel pictures */
+
+
+
+    em {
+      color: #232027;
+    }
+
+    .wrapper {
+      width: 66%;
+      margin: 40px auto;
+    }
+
+    .wrapper1 {
+      width: 50%;
+      margin: 40px auto;
+    }
+
+    .wrapper2 {
+      width: 90%;
+      margin: 40px auto;
+    }
+
+    div.gallery {
+      margin-top: 30px;
+    }
+
+    div.gallery ul {
+      list-style-type: none;
+      margin-left: 35px;
+    }
+
+    /* animation */
+    div.gallery ul li,
+    div.gallery li img {
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      -o-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
+    }
+
+    div.gallery ul li {
+      position: relative;
+      float: left;
+      width: 375px;
+      height: 370px;
+      margin: 5px;
+      padding: 5px;
+      z-index: 0;
+    }
+
+    /* Make sure z-index is higher on hover */
+    /* Ensure that hover image overlapped the others */
+    div.gallery ul li:hover {
+      z-index: 5;
+    }
+
+    /* Image is position nicely under li */
+    div.gallery ul li img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 1px solid #dddddd;
+      padding: 5px;
+      width: 375px;
+      height: 375px;
+      background: #f0f0f0;
+    }
+
+    div.gallery ul li img:hover {
+      width: 600px;
+      height: 600px;
+      margin-top: -250px;
+      margin-left: -375px;
+      top: 65%;
+      left: 65%;
+    }
+
+    p.attribution {
+      font-family: 'Consolas';
+      color: #000;
+      clear: both;
+      text-align: center;
+      line-height: 25px;
+      padding-top: 30px;
+    }
+
+    p.attribution a {
+      color: #4c8d7c;
+    }
+
+    /* Responsive hack */
+    @media only screen and (min-width: 499px) and (max-width: 1212px) {
+      .wrapper {
+        width: 500px;
+      }
+    }
+
+    @media only screen and (max-width: 498px) {
+      .wrapper {
+        width: 300px;
+      }
+
+      div.gallery ul {
+        list-style-type: none;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="box-page1"></a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid navigation-accueil blip">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="images/logo1.png" alt="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html#introduction" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">INTRODUCTION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#les-acteurs" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES ACTEURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#leslieux" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES LIEUX</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#parcours" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PARCOURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#focus" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">FOCUS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#Ressources" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">RESSOURCES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plan.html" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PLAN DES TRANCHEES</a>
+          </li>
+          <li class="nav-item">
+            <table cellpadding=0 cellspacing=0 border=0>
+              <tr>
+                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+                  <center>
+                    <table width="90%" cellpadding=0 cellspacing=0 border=0 style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+                    </table>
+                  </center>
+                  <form style="margin:0px; margin-top:5px;" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+                    <input type="hidden" name="si" value="75939983">
+                    <input type="hidden" name="pid" value="r">
+                    <input type="hidden" name="n" value="0">
+                    <input type="hidden" name="_charset_" value="">
+                    <input type="hidden" name="bcd" value="&#247;">
+                    <input type="text" name="query" size="15">
+                    <input type="submit" value="search" style="font-family: Arial, Helvetica, sans-serif; font-size: 13pt; text-transform: uppercase; color: white; background: rgba(76, 175, 80, 0); border: none; font-weight: bold;">
+                  </form>
+                </td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="cont">
+          <div class="scroller">
+            <div class="img"><img src="audios/Cerises1.JPG" alt=""></div>
+            <div class="img"><img src="audios/Partition1.JPG" alt=""></div>
+            <div class="img"><img src="audios/Cerises2.JPG" alt=""></div>
+            <div class="img"><img src="audios/Partition2.JPG" alt=""></div>
+            <div class="img"><img src="audios/Cerises1.JPG" alt=""></div>
+            <div class="img"><img src="audios/Partition1.JPG" alt=""></div>
+            <div class="img"><img src="audios/Cerises2.JPG" alt=""></div>
+            <div class="img"><img src="audios/Partition2.JPG" alt=""></div>
+          </div>
+        </div>
+        <br>
+        <div class="audiobutton">
+          <audio id="audio" controls>
+            <source src="audios/Temps des cerises.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+      <div class="col-lg-8">
+      </div>
+    </div>
+    <h1 class="title-parcours">Un rendez-vous manqué</h1>
+    <br>
+    <br>
+    <br>
+    <h3>Des quatres sœurs, seule l’une d’entre-elles se mariera, ma grand-mère Léa. Marie, Maria et Augustine resteront célibataires et vivront ensemble à la ferme jusqu’à leurs vieux jours. D’elles, je n’ai qu’un souvenir de trois figures ridées par
+      le soleil et le vent, de trois silhouettes se courbant avec le temps et s’éteignant l’une après l’autre.</h3>
+    <br>
+    <h3>C’est donc avec émotion que j’ai découvert une correspondance entretenue par Maria avec un autre jeune homme du pays envoyé à la guerre, Désiré Beaune. On y décèle les tout débuts d’une idylle qui ne se dit pas encore mais qui se lie entre
+      les mots. Et comme on regrette les beaux jours et le temps des cerises, sans doute Maria a-t-elle dû souvent penser aux jours meilleurs d’avant la guerre …</h3>
+    <br>
+    <h3>Désiré est originaire d’un hameau du village de Virlet, à proximité du hameau des Raynauds. Comme les trois frères, il est agriculteur. Comme Auguste et Antoine il a rejoint le 17ème Régiment d’infanterie et participera aux mêmes batailles du
+      mois d’Août dans les Vosges. Comme Antoine, il participera également à la bataille de la Marne. Comme Auguste il sera dans les tranchées de Notre Dame de Lorette. Comme Gabriel, son nom sera inscrit en lettres d’or sur le monument aux morts de
+      son village …</h3>
+    <br>
+    <h3>C’est dans une carte d’Antoine datée du 29 Mars 1915 que l’on entend parler de Désiré pour la première fois. Né en Juillet 1892, Désiré fait partie de la même classe qu'Auguste et Antoine, la Classe 1912 comme en atteste son livret militaire.
+    </h3>
+    <br>
+    <h3>Désiré est donc à la fois un copain d’enfance, un camarade de régiment du 17eme d’Infanterie et il est clair qu’il entretient une correspondance directe avec Maria.</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chers Parents,</h3>
+        <br>
+        <h3 class="textcarte">Je pensais bien voir Auguste mais il n’a pas pu venir à Lyon. Il avait un peu de travail pour son lieutenant. Je l’attend un de ces jours puis je m’arrangerai pour aller le voir soit demain, soit dimanche.</h3>
+        <h3 class="textcarte">Je suis allé attendre Désiré à Perrache à une heure et demie. Il m’a donné de vos nouvelles, il m’a dit que Maria lui avait dit que je n’écrivais pas assez souvent. Ce n’est pourtant pas le temps qui me manque mais la
+          semaine dernière, j’attendais toujours du nouveau pour Auguste. C’est ce qui a fait que j’ai resté quelques jours sans vous écrire. Mais je me rattraperai cette semaine.</h3>
+        <h3 class="textcarte">Auguste vous aura sans doute écrit, il a eu du travail ces jours.</h3>
+        <h3 class="textcarte">Je vous embrasse tous.</h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Antoine</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box9/Pic27a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box9/Pic27b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box9/Pic28a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box9/Pic28b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ma chère Maria,</h3>
+        <br>
+        <h3 class="textcarte">J’ai fait un bon voyage.</h3>
+        <h3 class="textcarte">Votre frère Antoine m’attendait à la gare. Nous avons fini de passer la soirée ensemble.</h3>
+        <h3 class="textcarte">Nous avons une petite chambre pour tous les deux. Nous ne nous en faisons pas.</h3>
+        <h3 class="textcarte">Bonjour chez vous et à vous aussi.</h3>
+        <br>
+        <h3 class="textcarte">Désiré Beaune</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>A cette époque, Désiré vient en fait de finir sa convalescence suite à une première blessure sur le front d’Artois le 19 Décembre 1914, dans le secteur de Notre Dame de Lorette.</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-6 text-boxmichelin">
+        <h3>Après la guerre des frontières dans les Vosges en Août 1914, puis la bataille de la Marne, Désiré a pris part à la première bataille d’Artois. Cette bataille est la première tentative de percée du front allemand après que le front se soit
+          enlisé de la Mer du Nord à la Suisse. L’Allemagne a alors envahi la Belgique et une grande partie du Nord de la France où se trouvent les bassins miniers et une grande partie de l’industrie française ; faire reculer l’armée allemande et
+          reprendre le contrôle de la région est donc un objectif majeur.</h3>
+        <br>
+        <h3>Dans ce contexte la prise du plateau de Notre Dame de Lorette occupé par les troupes allemandes est vital puisque ce plateau est la seule véritable hauteur dans ce paysage de plaine, son contrôle permettant d’assurer un feu nourri
+          d’artillerie sur la plaine environnante. Au sein du 21eme Corps d’Armée, le 17eme régiment d’infanterie est justement chargé de conquérir les tranchées de la crête de Notre Dame de Lorette.</h3>
+        <br>
+        <h3>Pour en savoir plus sur la premiere bataille d'Artois :</h3>
+        <br>
+        <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="https://www.archivespasdecalais.fr/Decouvrir/Chroniques-de-la-Grande-Guerre/Histoires-de-la-Grande-Guerre/La-premiere-bataille-d-Artois" target="_blank"><i
+            class="fas fa-archive"></i> En Savoir Plus</a>
+        <br>
+      </div>
+      <div class="col-lg-4">
+        <img src="images/imagesbox/Box9/Artois1.JPG" alt="">
+      </div>
+      <div class="col-lg-1">
+      </div>
+    </div>
+    <br>
+    <br>
+    <h3>Menée par les généraux Joffre et Foch et supposée ne durer que du 17 au 19 Décembre, l’offensive sera un échec, en grande partie dû à un temps épouvantable transformant le champ de bataille en un véritable bourbier où les soldats s’enfoncent
+      jusqu’aux genoux et où les tranchées sont quasiment inondées.</h3>
+    <br>
+    <h3>De cette bataille, Désiré ramènera sa première blessure décrite avec précision dans son livret militaire « Plaie talon droit par éclat d’obus – projectile non extrait ». S’ensuit une période à l’hôpital militaire et une convalescence comme
+      les trois frères quelques mois plus tôt.</h3>
+    <br>
+    <h3>Fin Mars, Désiré rejoint donc à nouveau le dépôt du 17eme à Lyon et il retrouve Antoine, son camarade de Classe et de Feu. C’est une brève période de repos et relative insouciance, après une campagne éprouvante d’Août à Décembre 1914.</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <br>
+        <br>
+        <h3 class="textcarte">Cher frère,</h3>
+        <br>
+        <h3 class="textcarte">Je t’écris ce soir pour te remercier des belles cartes que tu nous a envoyées pour la fête de Pâques. Remercie donc bien Désiré à ma place.</h3>
+        <h3 class="textcarte">Nous avons reçu des nouvelles d'Auguste. Ce que j’attends maintenant, c’est ta photo, J’aurais bien voulu que tu aies pu passer les fêtes avec nous ainsi que Auguste et Gabriel. Nous sommes tous en bonne santé.</h3>
+        <h3 class="textcarte">Cher Antoine, je suis été contente de la carte que tu as envoyée. Je l’ai envoyée à Gabriel, ça le désennuiera un petit moment. Se plaint-il quand il t’écrit.</h3>
+        <h3 class="textcarte">Je t’embrasse bien fort ainsi que tous.</h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Bonjour à Désiré</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box9/Pic29a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box9/Pic29b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box9/Pic31a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box9/Pic31b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3 class="textcarte">Bonne et heureuse fête.</h3>
+        <h3 class="textcarte">Souvenir de Lyon</h3>
+        <br>
+        <h3 class="textcarte">Désiré Beaune</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Mais la trêve ne dure pas longtemps. Désiré est rétabli et il doit rejoindre son régiment en camp d’entrainement à Nyons, dans la Drôme. De toute évidence, Désiré est un vaillant soldat passé Caporal à la fin Août 1914. Auprès des classes
+      plus jeunes, il fait sans doute figure de vétéran et il a la responsabilité d’une escouade importante.</h3>
+    <br>
+    <h3>Les premières cartes sont pour ses frères d’arme …</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3 class="textcarte">Amitiés et bon souvenir d’un copain.</h3>
+        <br>
+        <h3 class="textcarte">Beaune</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box9/Pic30a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box9/Pic30b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box9/Pic32a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box9/Pic32b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <br>
+        <br>
+        <h3 class="textcarte">J’ai fait un bon voyage, suis arrivé ici à 4 heures du soir.</h3>
+        <h3 class="textcarte">C’est plus chaud qu’à Lyon. Nous partons demain pour un petit patelin à 6 kilomètres d’ici pour faire des tirs.</h3>
+        <h3 class="textcarte">J’ai une escouade de 40 poilus.</h3>
+        <h3 class="textcarte">Bonjour à tous. </h3>
+        <br>
+        <h3 class="textcarte">Désiré</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Mais très vite, il envoie une carte à Maria avec un brin de mimosa et Maria s’empresse d’en informer son frère.</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère Maria,</h3>
+        <br>
+        <h3 class="textcarte">J’ai quitté votre frère dimanche dernier.</h3>
+        <h3 class="textcarte">J’étais bien habitué avec lui, mais ils n’ont pas voulu m’y laisser. On m’a envoyé à Nyons et en arrivant à Nyons, on a envoyé ma Compagnie un peu plus loin, à 7 kilomètres, afin de faire de la place pour la classe 16
+          qui rentrait.</h3>
+        <h3 class="textcarte">Je vous dirais que Nyons est plus chaud que Lyon.</h3>
+        <h3 class="textcarte">Je vous envoie une petite branche de mimosas. Vous voyez que le pays est chaud pour qu’ils poussent ici.</h3>
+        <h3 class="textcarte">Bonjour à tous. Votre ami qui vous embrasse.</h3>
+        <br>
+        <h3 class="textcarte">Désiré</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box9/Pic33a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box9/Pic33b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box9/Pic34a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box9/Pic34b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Bien cher frère,</h3>
+        <br>
+        <h3 class="textcarte">Deux mots ce soir pour te dire que nous sommes en bonne santé, je désire que tu sois de même.</h3>
+        <h3 class="textcarte">Je t’envoie l’adresse de ton copain qui t’ayant perdu voudrait savoir de tes nouvelles. Gabriel a écrit hier, il va bien. Auguste n’a pas encore écrit.</h3>
+        <h3 class="textcarte">Nous avons acheté des nourins au cousin de Muratel, 37 francs pièce, ils sont bien jolis.</h3>
+        <h3 class="textcarte">Cher Antoine, j’ai reçu une carte de Désiré et une belle fleur de son pays.</h3>
+        <br>
+        <h3 class="textcarte">Je t’embrasse. Maria</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Cette fois-ci, c’est une pensée que Désiré attache à sa carte pour Maria.</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ma chère Maria,</h3>
+        <br>
+        <h3 class="textcarte">J’ai reçu des nouvelles de votre frère Antoine. Il me dit que son frère est dans la Somme. C’est sans doute Auguste qu’il veut dire.</h3>
+        <h3 class="textcarte">Envoyez-moi donc son adresse, vous me ferez bien plaisir.</h3>
+        <h3 class="textcarte">On forme ici un nouveau bataillon de marche, moi j’en fais partie. Je ne sais pas à quand nous partirons ni où nous irons.</h3>
+        <h3 class="textcarte">Bien le bonjour chez vous.</h3>
+        <h3 class="textcarte">Un baiser de votre ami. </h3>
+        <br>
+        <h3 class="textcarte">Désiré</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box9/Pic35a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box9/Pic35b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Mais déjà, la menace du départ au front se rapproche, même si Désiré semble avoir un sursis. Sans doute Maria lui demande t’il si il partira bientôt, mais ses cartes et lettres à Désiré resteront un secret …</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box9/Pic36a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box9/Pic36b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ma chère Maria,</h3>
+        <br>
+        <h3 class="textcarte">C’est toujours avec un grand plaisir que je reçois vos cartes, seulement il y en a qui mettent trop longtemps pour venir. C’est vrai que je suis dans un pays complètement perdu. Celle du 28 a mis cinq jours, je viens de
+          la recevoir à l’instant.</h3>
+        <h3 class="textcarte">J’écris en même temps à votre frère Auguste. Je ne sais pas si Antoine est à Nyons, j’attends de ses nouvelles pour aller le voir.</h3>
+        <h3 class="textcarte">Je dois vous dire que je ne pars pas encore. Le bataillon de marche est dissous. Hier, il en est parti 460 pour la 29eme Compagnie à Nyons, et de là pour le front.</h3>
+        <h3 class="textcarte">Un baiser de votre ami.</h3>
+        <br>
+        <h3 class="textcarte">Désiré</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ma chère Maria,</h3>
+        <br>
+        <h3 class="textcarte">Antoine doit être content d’être réformé. Il a eu de la chance.</h3>
+        <h3 class="textcarte">J’espère que vous avez toujours de bonnes nouvelles de Gabriel et d’Auguste.</h3>
+        <h3 class="textcarte">Moi je vais bien pour le moment et désire que vous soyez de même.</h3>
+        <h3 class="textcarte">Bonjour à vos parents et à Antoine.</h3>
+        <h3 class="textcarte">Bons baisers de votre ami.</h3>
+        <br>
+        <h3 class="textcarte">Désiré</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box9/Pic37a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box9/Pic37b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box9/Pic38a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box9/Pic38b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ma chère Maria,</h3>
+        <br>
+        <h3 class="textcarte">C’est avec un grand plaisir que je reçois de vos nouvelles.</h3>
+        <h3 class="textcarte">Nous avons quitté les Pilles, maintenant nous sommes à Nyons. Mais ce n’est pas pour longtemps, car nous allons partir. Il fait trop chaud dans ce pays. Nous allons près de Lyon.</h3>
+        <h3 class="textcarte">J’ai eu des nouvelles d’Auguste hier, il va bien. Il n’est pas encore au front.</h3>
+        <h3 class="textcarte">Cette maudite guerre sera-t-elle bientôt finie. Il serait temps qu’elle s’achève.</h3>
+        <h3 class="textcarte">Je vais bien et désire que vous soyez de même.</h3>
+        <br>
+        <h3 class="textcarte">Bonjour à tous. Bons baisers</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Voici deux cartes entre copains de régiment – sur l’une d’entre elles, on y voit Désiré en compagnie d’autres soldats lors de la campagne du 17eme RI dans la Somme en 1914.</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte"></h3>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3 class="textcarte">Je suis chez Cornillac et nous t’envoyons le bonjour ainsi qu’à Paul s’il est toujours à Lyon.</h3>
+        <h3 class="textcarte">Ton ami qui te serre la main.</h3>
+        <br>
+        <h3 class="textcarte">Désiré Beaune</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box9/Pic39a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box9/Pic39b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box9/Pic40a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box9/Pic40b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Mon cher Antoine,</h3>
+        <br>
+        <h3 class="textcarte">Comment ça se fait que tu n’écris plus. Je t’ai écris une lettre il y a quelque temps, tu n’as pas encore répondu.</h3>
+        <h3 class="textcarte">Ecris moi tout de suite cher Antoine, tu me feras trop plaisir. Beaune m’a écrit la semaine passée, il me dit que tu n’as pas de mes nouvelles. Tu as peut-être pas reçu ma lettre, enfin écris moi de suite.</h3>
+        <h3 class="textcarte">Beaune me dit que tu lui as dit dans ta lettre que tu allais en permission. Je te dirais que j’ai toujours des nouvelles de Collin, il m’écrit encore assez souvent. As-tu des nouvelles de ton frère.</h3>
+        <h3 class="textcarte">Je termine , mon cher Antoine, en te serrant la main. Ton copain qui pense à toi.</h3>
+        <h3 class="textcarte">Beaune m’a envoyé sa photo où il est avec d’autres caporaux.</h3>
+        <br>
+        <h3 class="textcarte">Où il y a une croix, il y a trois boches d’enterrés.</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Arrive l’été 2015 et Désiré obtient finalement une permission agricole et rentre au pays pour quinze jours. Par chez nous, les paysans sont durs à la tâche et bien souvent les choses de la terre l’emportent sur les choses du cœur. Sans doute,
+      cette idylle naissante entre Maria et Désiré ne s’avoue pas encore. Peut être, par timidité, par pruderie mal placée, par souçi du quand dire t’on, ils ne se rencontreront pas.</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ma chère Maria,</h3>
+        <br>
+        <h3 class="textcarte">Je ne suis plus à Nyons depuis une douzaine de jours.</h3>
+        <h3 class="textcarte">Nous sommes dans un pays moins chaud que Nyons, c’est à peu près comme chez nous. Les montagnes sont moins hautes qu’à Nyons aussi.</h3>
+        <h3 class="textcarte">J’ai reçu une lettre d’Antoine quand il est arrivé à Lyon.</h3>
+        <h3 class="textcarte">Bonjour à tous. </h3>
+        <h3 class="textcarte">Votre ami qui vous embrasse.</h3>
+        <br>
+        <h3 class="textcarte">Désiré Beaune</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box9/Pic41a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box9/Pic41b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box9/Pic42a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box9/Pic42b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ma chère Maria,</h3>
+        <br>
+        <h3 class="textcarte">Excusez-moi si j’ai resté si longtemps sans vous écrire.</h3>
+        <h3 class="textcarte">Je suis allé en permission pour 15 jours, permission agricole, et pendant ces quinze jours, je n’ai pas cessé de travailler. Nous avons fait toutes nos moissons.</h3>
+        <h3 class="textcarte">Voici une semaine que je suis revenu ici et je ne suis pas encore habitué. Cette guerre ne veut sans doute pas finir encore. Vous avez sans doute toujours de bonnes nouvelles de vos frères.</h3>
+        <h3 class="textcarte">Bonjour à tous. </h3>
+        <h3 class="textcarte">Baisers de votre ami.</h3>
+        <br>
+        <h3 class="textcarte">Désiré Beaune</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>C’est un rendez-vous manqué que Maria a dû regretter longtemps, puisque Désiré ne rentrera plus jamais au pays. Comme le dit Désiré dans sa carte, cette maudite guerre ne veut donc pas finir et dans les années qui suivront le conflit, Maria
+      songera sans doute à ce qui aurait pu être mais qui n’a pas été ...</h3>
+    <br>
+    <h3>Dans le Grand Troupeau, Jean Giono décrit bien cette attente de celle qui reste au pays, et l’excitation et le bonheur qu’apportent le retour de l’être aimé. Dans l’extrait qui suit, Madeleine va à la rencontre d’Olivier, son ami exilé à la
+      guerre et de retour, pour un temps, au village …</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-6 text-boxgiono" style="height: 60rem;">
+        <h4>… Olivier mâche le bout d’un figeon de figuier : une passion de son jeune âge. Elle est revenue. Il a retrouvé l’ancien geste de ses petites mains, il a mâché la tige laiteuse et, tout d’un coup, la vie lui a paru large. Il oublie; il
+          serre dans ses dents ce morceau de bois vivant, jeune, gonflé de lait, et il suce la sève amère.</h4>
+        <h4>« Tu as déjà fait la vaisselle? demande Julia.</h4>
+        <h4>— Oui.» Madeleine rougit et elle se met à chercher dans la corbeille à ouvrage.</h4>
+        <h4>« Et la soupe aux cochons?» Madeleine relève la tête. Son visage est tout rouge avec le sang à pleines joues et, au milieu de ce rouge, son regard est tout doux.</h4>
+        <h4>Le grand ménage de la ferme est déjà fait. C'est propre, astiqué et lavé. On a passé la peau humide sur les dalles. Les chaises sont rangées contre le mur. La table est nette comme une pierre.</h4>
+        <h4>«Tu es bien en avance», dit Julia. Elle s’en va sur la vague de ses hanches rondes. En tirant la porte elle regarde du côté de Madeleine. Madeleine cherche dans la corbeille à ouvrage.</h4>
+        <br>
+        <div class="row">
+          <div class="col-lg-6">
+            <br>
+            <br>
+            <img src="images/imagesbox/Box9/JG1.JPG" alt="Troupeau-img">
+          </div>
+          <div class="col-lg-6">
+            <h4>Dans la chambre de Julia l’épais volet fermé à bloc retient l'ombre. On entend les abeilles du dehors qui bourdonnent contre le joint des planches. Le vent frappe les murs du plat de la main.</h4>
+            <h4>Elle est là debout dans l’ombre, dans la fraîcheur, dans l'odeur des raisins et des abricots qui sèchent sur les éclisses de cannes.</h4>
+            <h4>Toujours seule, alors! Seule avec ces fruits doux et ces bruits. Seule avec la vie. Elle en a les lèvres brûlées. Elle passe sa belle langue sur ses lèvres. Avant il y avait aussi cette révolte du sang. Mais le Joseph était là avec
+              ses bras nus, sa poitrine fourrée comme un dos de bélier. La terre tout autour gardait la marque de ses pas et de tous les clous de ses souliers.</h4>
+            <h4>En bas, une porte crie doucement. Julia va pousser le volet et regarde. C’est Madeleine. Elle sort, comme hier, à la même heure, bousculée de vent, avec son visage extasié.</h4>
+            <h4>La terre commande.</h4>
+          </div>
+        </div>
+        <br>
+        <h4>« Comme un jésus de plâtre, Il est comme un jésus de plâtre. Olivier, Olivier ! »</h4>
+        <h4>Madeleine court dans les vignes.</h4>
+        <h4>Le ciel solitaire et tout nu pèse de son bord tranchant sur l'horizon des collines. Rien sur le plateau que le vent. Les arbres sautent autour de leurs ombres comme des chèvres attachées.</h4>
+        <h4>À la couleur du jour elle sait qu’il est déjà là-bas à l’attendre, à l’espérer de tout son corps d'homme, sur cette pente des genêts, dans les lits d'herbe de la terre. Ahl elle en a le souffle coupé, et de ce vent, et de ce désir, et de
+          ce besoin d’obéir à la grande obéissance. Le premier jour qu’il était là, c’était six heures d’automne, avec ce grand soir de sang du commencement du vent, et il a sifflé. </h4>
+        <h4></h4>
+        <h4></h4>
+        <h4></h4>
+        <h4></h4>
+        <h4></h4>
+      </div>
+      <div class="col-lg-6 text-boxgiono" style="height: 60rem;">
+        <h4>Il l'avait serrée dans ses bras, Il ronronnait doucement. </h4>
+        <h4>Il est comme un jésus de plâtre. Ah ! ce qu’il a fallu donner !</h4>
+        <h4>Non, elle a tout donné de bon vouloir et de plein consentement, avec la belle joie de donner tout ce qu’on a à ce qu'on aime... Obéir ! mais ne plus jamais revoir ce qu'il a fallu voir à ce premier rendez-vous : cet Olivier tout
+          frémissant comme un cheval battu, cet Olivier plein de faim et de soif, cet homme tout défait à force de mort et de bataille.</h4>
+        <h4></h4>
+        <div class="row">
+          <div class="col-lg-6">
+            <br>
+            <h4>Elle était le pain. Elle a dit : « Mange-moi ! » Elle est venue d’elle-même sous la dent, avec sa lèvre toute chaude et son corps ouvert. Elle est le pain avec la mie et la croûte, le léger et le lourd. Se mêler à lui, se joindre à
+              lui par tout son corps, l’apaiser, le nourrir, le faire téter à sa chair de femme neuve ; lui donner son lit de paix et de joie; se donner, puisqu’elle est le pain de cette grande faim d’homme et de malheur. </h4>
+            <h4>Quand elle y pense dans le jour elle en a le feu dans le visage. Mais la couleur de l’heure et du moment est venue, Il attend. Il est là-bas dans le lit d’herbe. II attend qu’elle vienne s’allonger contre lui.</h4>
+            <h4>Hier, elle est allée voir la maman.</h4>
+            <h4>« Les premières nuits, a dit la maman, il sautait dans son lit comme un diablon; je me suis levée pour le recouvrir et lui parler. Il n’entendait pas; il soufflait dans ses dents serrées ; il avait des ronds de coudes qui m'ont fait
+              presque sauter la lampe des doigts. Maintenant, il est docile au sommeil comme un petit saint : pas plus de bruit qu’un jésus de plâtre. » </h4>
+          </div>
+          <div class="col-lg-6">
+            <img src="images/imagesbox/Box9/JG2.JPG" alt="Pensee-img" style="margin-left:auto; margin-right:auto; display:block;">
+          </div>
+        </div>
+        <br>
+        <h4>Madeleine court dans les vignes sans regarder derrière elle et elle tape avec le plat des mains sur ses jupes qui ballonnent.</h4>
+        <br>
+        <br>
+        <br>
+        <img src="images/imagesbox/Box4/GrandTroupeau.jpg" alt="Pensee-img">
+        <h4 style="color:black;font-style:italic"> Extraits - Le Grand Troupeau - Jean GIONO </h4>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Cette carte de Maria à Antoine n’est pas datée mais tout laisse à penser qu’elle est écrite en Septembre ou Octobre. C’est dans cette carte que nous apprenons, la disparition et vraisemblablement la mort de Désiré … « Ils le croient perdu »
+      écrit Maria.</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Je t’ai écris hier.</h3>
+        <br>
+        <h3 class="textcarte">Je te disais que nous ne savions rien de l’étau. La lettre d’avis est arrivée hier. Le cousin l’aura bien aujourd’hui.</h3>
+        <h3 class="textcarte">C’est vrai que depuis quelques temps, Désiré n’a pas écrit. Ils le croient perdu. Tu sauras peut-être de ses nouvelles .</h3>
+        <h3 class="textcarte">Je termine en t’embrassant, Augustine est contente de sa carte.</h3>
+        <h3 class="textcarte">Les femmes vont être soldats.</h3>
+        <h3 class="textcarte">Ta sœur qui pense à toi.</h3>
+        <br>
+        <h3 class="textcarte">Maria</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box9/Pic43a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box9/Pic43b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Après sa permission agricole du mois d'Août, Désiré a rejoint le dépôt du régiment et de là a été à nouveau envoyé au front. Il retourne en fait dans le même secteur où il a été blessé, la plaine d’Artois et le plateau de Notre Dame de
+      Lorette.</h3>
+    <br>
+    <h3>Depuis son départ en Décembre 1914, la ligne de front a peu changé dans le secteur malgré une offensive majeure lancée en Mai 1915 connue sous le nom de 2eme bataille d’Artois. Cette bataille dure jusqu’en Juillet 1915, sans réel vainqueur,
+      et ce sera la dernière offensive d’envergure sur le front de l’Ouest avant la 3eme bataille d’Artois en Septembre.</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-4">
+        <br>
+        <br>
+        <img src="images/imagesbox/Box9/Artois2.JPG" alt="">
+      </div>
+      <div class="col-lg-6 text-boxmichelin" style="height: 40rem;">
+        <h3>La Compagnie de Désiré fait partie des renforts qui retournent en Artois début Septembre en préparation de cette nouvelle bataille. L’offensive franco-britannique est dirigée par le général Foch et s’étend sur 32 kilomètres de front entre
+          La Bassée et Arras. Elle doit se produire de façon simultanée avec l’attaque majeure menée par l’armée française en Champagne.</h3>
+        <br>
+        <h3>Le plan d’attaque est simple et brutal : écraser les positions ennemies par quatre jours de bombardements ininterrompus, avec un final apocalyptique de quatre heures juste avant que l’infanterie ne sorte des tranchées. L’assaut doit être
+          massif et continu, les réserves ayant cette fois été acheminées au plus près du front.</h3>
+        <br>
+        <h3>À l’instant prévu, 12 h 25 le 25 Septembre, les soldats français s’élancent hors des tranchées sur tout le front. Ils se heurtent immédiatement aux feux terribles de mitrailleuses, en même temps que l’ennemi exécute un violent tir de
+          barrage d’artillerie lourde, tout cela dans un enfer de boue.</h3>
+        <br>
+        <h3>Pour en savoir plus sur la troisième bataille d'Artois :</h3>
+        <br>
+        <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="https://www.archivespasdecalais.fr/Decouvrir/Chroniques-de-la-Grande-Guerre/Histoires-de-la-Grande-Guerre/La-troisieme-bataille-d-Artois-acte-1"
+          target="_blank"><i class="fas fa-archive"></i> En Savoir Plus</a>
+        <br>
+      </div>
+      <div class="col-lg-1">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>À l’été 2015, l’écrivain Roland Dorgeles sert dans un régiment d’infanterie et participe à la 2eme bataille d’Artois à Neuville-Saint-Vaast. C’est dans les tranchées qu’il commence à écrire Les Croix de Bois, roman qu’il publiera juste après la guerre en 1919.</h3>
+    <br>
+    <h3>Dans l’extrait suivant, Dorgeles décrit une attaque et la sortie des tranchées dans la bataille pour Notre Dame de Lorette, qu’il renomme affectueusement Notre Dame des Biffins (en argot, le biffin est un soldat d’infanterie). C’est à une telle bataille qu’Auguste et Désiré prendront part en Septembre 1915.</h3>
+    <br>
+    <h3>Cette bataille sera d’ailleurs reconstituée dans le film Les Croix de Bois, 14 ans après la fin du conflit. Ce film est tourné sur les lieux précis de Notre Dame de Lorette, sur une terre encore marquée par les séquelles de la guerre, et avec des acteurs dont la plupart sont des anciens combattants … cela lui donne une légitimité et une véracité uniques.</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-6 text-boxgiono" style="height: 79rem;">
+        <h4>La compagnie entière était entassée là, grand bouclier vivant de casques rapprochés, devant quatre échelles grossières. La couverture roulée, pas de sac, l'outil au côté : « Tenue de gala », avait blagué Gilbert.</h4>
+        <h4>À notre droite, empilée dans la même parallèle, une compagnie d’un régiment de jeunes classes venait de mettre baïonnette au canon : ils devaient sortis avec nous, en première vague. Toutes les sapes, toutes les tranchées étaient pleines,
+          et de se sentir ainsi pressés, reins à reins, par centaines, par milliers, on éprouvait une confiance brutale. Hardi ou résigné, on n'était plus qu’un grain dans cette masse humaine. L'armée, ce matin-là, avait une âme de victoire. </h4>
+        <h4>Des camarades, l’œil luisant, les joues rouges, parlaient vite, gagnés par une sorte de fièvre. D’autres restaient muets, tout pâles, et le menton tremblant un peu.</h4>
+        <h4>Par-dessus les sacs à terre on regardait les lignes allemandes, ensevelies sous un panache de fumée où craquaient des éclairs ; plus loin encore, dans la plaine, trois villages semblaient brûler, et notre artillerie tirait toujours, dans
+          un tonnerre rejaillissant où se confondaient les arrivées et les départs. Les champs tanguaient sous cette fureur, et je sentais, contre mon coude, la tranchée frémir et s’effriter.</h4>
+        <br>
+        <div class="row">
+          <div class="col-lg-6">
+            <iframe width="400" height="400" src="https://www.youtube.com/embed/uXQ9ieTJuZE">
+            </iframe>
+          </div>
+          <div class="col-lg-6">
+            <h4>À tout moment, Gilbert regardait sa montre. Cette attente angoissante lui crispait le cœur ; il eût voulu entendre le signal, partir tout de suite, en finir. ll pensa tout haut :</h4>
+            <h4>— Ils font durer le plaisir.</h4>
+            <h4>Sur le parapet, entre deux touffes d’herbe, deux bêtes se battaient : un gros scarabée mordoré à la cuirasse épaisse et un insecte bleu aux fines antennes. Gilbert les regardait, et, quand le scarabée allait écraser l’autre, il le
+              renversait sur le dos, du bout du doigt. De son front une goutte de sueur tomba sur la petite bête bleue, qui secoua ses ailes bigarrées. </h4>
+            <h4>— Attention, il va être l'heure, prévint un officier sur notre droite.</h4>
+            <h4>Plus près, Cruchet commanda :</h4>
+            <h4>— Baïonnette au canon... Les grenadiers en tête.</h4>
+          </div>
+        </div>
+        <br>
+        <h4>Un frisson d’acier courut tout le long de la tranchée, Penché, Gilbert observait toujours ses insectes, n'écoutant pas battre son cœur. Le scarabée secouait sa lourde carapace, mais l’autre l’avait saisi entre ses longues antennes, et il
+          le maintenait, ne le lâchait plus. Posément, Cruchet serrait sa jugulaire. Debout sur la première marche d’un escalier de sacs à terre, il nous dominait tous. Il nous regarda.</h4>
+        <h4>- Mes amis... Ttt... Ttt... C’est pour la France, hein !.. Une belle attaque... Nous allons enlever ça …</h4>
+        <h4>Était-ce l’émotion, il me sembla que sa voix était moins sèche, moins coupante qu’à l’ordinaire. Comme une brusque révélation, on comprenait ce mot : un chef, On serrait le ceinturon, on repoussait l’outil qui battait la cuisse. Au pied
+          d’une échelle, Berthier était prêt à sortir. En tournant la tête, il vit Morache, le visage décomposé.</h4>
+        <h4>- Après vous, mon lieutenant, fit-il militairement, en s’écartant d’un pas.</h4>
+        <h4>L'autre, défait, vit un prétexte.</h4>
+        <h4>- Quoi, bredouilla-t-il... Vous avez peur de sortir le premier ?.…. Sans rien dire, le sous-lieutenant se retourna et remit le pied sur l’échelon. De dos, on vit simplement son haussement d’épaules.</h4>
+        <h4>- Morache qui se dégonfle ! cria Vieublé dans le bruit.</h4>
+        <h4>Le lieutenant avait peut-être entendu, mais il ne broncha pas. Montant de ce tas d'hommes hérissé de baïonnettes, la voix gouapeuse continuait :</h4>
+        <h4>- Ça ne suffit plus maintenant d’avoir de la gueule … Il faut y aller … C’est plus dur que de foutre les types en taule … On est tous égal, ce coup-ci.</h4>
+        <h4>On n’entendait plus que cette voix railleuse sous le canon, et les copains riaient, sans colère, comme si ces mots les avaient soulagés.</h4>
+
+        <br>
+      </div>
+      <div class="col-lg-6 text-boxgiono" style="height:79rem;">
+        <h4>Les corps prêts à surgir se balançaient, battant déjà le parapet, comme un jusant.</h4>
+        <h4>En jets aigus, des 75 sifflèrent et, au même instant, le grondement de la lourde parut se taire ou s'éloigner.</h4>
+        <h4>- Nous y sommes ?... demanda Cruchet, d'une voix plus forte.</h4>
+        <h4>Les cœurs sautèrent un grand coup, ou un seul cœur pour cette foule armée. </h4>
+        <h4>— T'as bien l'adresse de chez moi ? dit encore Sulphart à Gilbert, d'une voix saccadée dont l’émotion entrechoquait les mots.</h4>
+        <h4>Tiens, le scarabée doré ne bougeait plus, l’insecte l'emportait.. Oh! cette poudre, quelle âcre puanteur !… Une rumeur monta vers la droite, des cris ou une chanson. « Les zouaves sont sortis ! » Une rafale de 105 éclata, cinq coups de
+          cymbales.… </h4>
+        <h4>— En avant la troisième ! cria le capitaine.</h4>
+        <h4>— En avant !.…</h4>
+        <h4>Des cris, une bousculade, un homme qui retombe en jurant, des fusils qui s’accrochent... Les tempes bourdonnantes on s’agrippe au parapet, puis on se redresse, les jambes un peu molles. On regarde la plaine immense, la plaine nue... « En
+          avant ! » On est sorti, on court …</h4>
+        <div class="row">
+          <div class="col-lg-6">
+            <br>
+            <h4>… Épuisés, haletants, nous ne courions plus. Une route coupait les ruines et une mitrailleuse invisible la criblait, soulevant un petit nuage à ras de terre. « Tous dans le boyau ! », cria un adjudant.</h4>
+            <h4>Sans regarder, on y sauta. En touchant du pied ce fond mou, un dégoût surhumain me rejeta en arrière, épouvanté. C'était un entassement infâme, une exhumation monstrueuse de Bavarois cireux sur d’autres déjà noirs, dont les bouches
+              tordues exhalaient une haleine pourrie ; tout un amas de chairs déchiquetées, avec des cadavres qu'on eût dit dévissés, les pieds et les genoux complètement retournés, et, pour les veiller tous, un seul mort resté debout, adossé à la
+              paroi, étayé par un monstre sans tête, Le premier de notre file n'osait pas avancer sur ce charnier : on éprouvait comme une crainte religieuse à marcher sur ces cadavres, à écraser du pied ces figures d'hommes. Pourtant, chassés par la
+              mitrailleuse, les derniers sautaient quand même, et la fosse commune parut déborder.</h4>
+          </div>
+          <div class="col-lg-6">
+            <img src="images/imagesbox/Box9/NDL2.JPG" alt="Pensee-img">
+          </div>
+        </div>
+        <h4>- Avancez, nom de Dieu !….</h4>
+        <h4>On hésitait encore à fouler ce dallage qui s’enfonçait, puis, poussés par les autres, on avança sans regarder, pataugeant dans la Mort... Par un caprice démoniaque, elle n'avait épargné que les choses : sur dix mètres de boyau, intacts
+          dans leurs petites niches, des casques à pointe étaient rangés, habillés d’un manchon de toile, Des camarades s’en emparèrent. D'autres décrochaient des musettes, des bidons.</h4>
+        <h4>- Vise la belle paire de pompes ! beugla Sulphart, agitant deux bottes jaunes.</h4>
+        <h4>À La sortie du boyau, un sergent accroupi criait :</h4>
+        <h4>« À gauche, en tirailleurs, à gauche !» et la file repartait en courant sur une petite route que bordait un fossé, Plus loin, dans les champs, on ne voyait qu'un réseau de fils de fer, à demi caché par l'herbe folle... Et pas une
+          tranchée, pas un Allemand, pas un coup de feu.</h4>
+        <br>
+        <img src="images/imagesbox/Box9/NDL3.JPG" alt="Pensee-img">
+        <h4 style="color:black;font-style:italic"> Extraits - Les Croix de bois - Roland DORGELES </h4>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-6 text-boxmichelin" style="height: 25rem;">
+        <br>
+        <br>
+        <h3>… Désiré meurt au combat le 27 Septembre 1915, au sortir des tranchées, dans une charge à la baïonnette …</h3>
+        <br>
+        <h3>… De lui restent une citation dans son livret militaire et son nom sur le monument aux morts de Virlet …</h3>
+        <br>
+        <h3>… Maria restera toute sa vie à la ferme des Raynauds et ne se mariera jamais.</h3>
+      </div>
+      <div class="col-lg-4">
+        <br>
+        <br>
+        <img src="images/imagesbox/Box9/DBcitation.JPG" alt="">
+      </div>
+      <div class="col-lg-1">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+    <div class="footer">
+      <div class="row">
+        <div class="col-lg-9">
+          <hr style="border-top: 3px solid; margin-top: 25px; color: white;">
+        </div>
+        <div class="col-lg-2">
+          <p style="padding-top: 10px; text-align: left;">Des Sillons aux Tranchées </p>
+        </div>
+        <div class="col-lg-1">
+          <p><img class="logo" src="images/logo1.png" alt="logo-img" style="height:30px; width:30px; display: block;
+  margin-left: auto;
+  margin-right: auto;"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Auguste au front</title>
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Merriweather&family=Montserrat:wght@500&family=Sacramento&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheet, Bootstrap and Favicon -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon (2).ico">
+
+  <!-- Font Awesome -->
+
+  <script src="https://kit.fontawesome.com/cc4dcc56d7.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      background-image: linear-gradient(to right top, #d97e57, #d5815c, #d08460, #cc8665, #c7896a, #c68d6f, #c59174, #c49579, #c69c7f, #c9a386, #cbaa8d, #ceb194);
+    }
+
+    .map {
+      background-image: url(images/imagesbox/Box5/map26Aout.jpg);
+      height: 90rem;
+    }
+
+    .couv17 {
+      padding-top: 47rem;
+      padding-right: 5rem;
+    }
+
+    .couv98 {
+      padding-top: 10rem;
+    }
+
+    .mapChipotte {
+      background-image: url(images/imagesbox/Box5/ColdelaChipotte.jpg);
+      text-align: left;
+    }
+
+    .mapFrance {
+      background-image: url(images/imagesbox/Box6a/Mapconvois.jpg);
+      text-align: left;
+    }
+
+    .mapStRemy {
+      background-image: url(images/imagesbox/Box5/StRemy.jpg);
+      text-align: left;
+    }
+
+    .mapEMMarne {
+      background-image: url(images/imagesbox/Box5/MapEMMarne.jpg);
+      text-align: left;
+    }
+
+    .PicChipotte {
+      padding-top: 25rem;
+    }
+
+    .PicMarne {
+      padding-top: 0rem;
+
+    }
+
+    .fraternite {
+      padding-left: 6.5rem;
+    }
+
+    .title-parcours {
+      padding-top: 10%;
+      padding-bottom: 1%;
+    }
+
+    .textcarte {
+      font-family: 'Sacramento', cursive;
+      font-size: 200%;
+      color: #434144;
+      font-weight: 600;
+    }
+
+    .texte-legend {
+      font-size: 100%;
+    }
+
+    .image-box {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 10rem 0rem;
+    }
+
+    .image-boxExcep {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 20rem 0rem;
+    }
+
+
+    .image-boxms {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 5rem 0rem;
+    }
+
+    .text-box {
+      height: 40rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxExcep {
+      height: 55rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxconvois {
+      height: 30rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxbergougnan {
+      height: 20rem;
+      text-align: left;
+      padding-top: 2%;
+    }
+
+    .text-boxchamond {
+      height: 20rem;
+      text-align: left;
+      padding-top: 0%;
+    }
+
+    .text-boxmichelin {
+      height: 20rem;
+      text-align: left;
+      padding-top: 1%;
+    }
+
+
+    .text-box1 {
+      height: 40rem;
+      text-align: left;
+      padding-top: 1%;
+    }
+
+    .text-boxjourneaux {
+      height: 45rem;
+      text-align: center;
+    }
+
+    .text-boxdepart {
+      height: 25rem;
+      text-align: center;
+    }
+
+    .text-boxgiono {
+
+      height: 67rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+
+    .text-boxgiono2 {
+
+      height: 67rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+    .text-boxgenevoix {
+
+      height: 60rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+    .text-boxjmo17 {
+
+      height: 38rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 1.5%;
+
+    }
+
+
+
+    h4 {
+      color: #434144;
+    }
+
+    .Pica {
+      padding: 20px;
+      width: 18rem;
+      height: 18rem;
+      box-shadow: 4px 5px 10px 10px rgba(20, 20, 20, 0.4);
+    }
+
+    .Picc {
+      width: 70rem;
+      height: 20rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+    .Picd {
+      width: 20rem;
+      height: 30rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+    .Pice {
+      width: 25rem;
+      height: 37rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+
+    .picms {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 15rem;
+      height: 20rem;
+      margin-left: 3rem;
+    }
+
+    .pich {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 30rem;
+      height: 20rem;
+    }
+
+    .picv {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 20rem;
+      height: 30rem;
+    }
+
+    .picrot-15 {
+      transform: rotate(-15deg);
+    }
+
+    .ppich {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 20rem;
+      height: 14rem;
+    }
+
+    .PicConscrits {
+      width: 36rem;
+      height: 24rem;
+    }
+
+    .piclaguerre {
+      width: 40rem;
+      height: 12rem;
+    }
+
+    .picBergougnan {
+      width: 15rem;
+      height: 22rem;
+    }
+
+    .picMichelin {
+      width: 22rem;
+      height: 16rem;
+    }
+
+    .picChamond3 {
+      width: 50rem;
+      height: 15rem;
+    }
+
+    .picBrun {
+      width: 15rem;
+      height: 15rem;
+    }
+
+    .audiobutton {
+      padding-bottom: 3%;
+    }
+
+    audio::-webkit-media-controls-panel {
+      background-color: #DFAA93
+    }
+
+    audio {
+      height: 1.5rem;
+      width: 14rem;
+    }
+
+
+    @media (max-width:990px) {
+
+      .Pic1a,
+      .Pic1b {
+        position: static;
+        transform: rotate(0);
+      }
+
+    }
+
+    /* Static Carousel pictures */
+
+
+
+    em {
+      color: #232027;
+    }
+
+    .wrapper {
+      width: 66%;
+      margin: 40px auto;
+    }
+
+    .wrapper1 {
+      width: 50%;
+      margin: 40px auto;
+    }
+
+    .wrapper2 {
+      width: 90%;
+      margin: 40px auto;
+    }
+
+    div.gallery {
+      margin-top: 30px;
+    }
+
+    div.gallery ul {
+      list-style-type: none;
+      margin-left: 35px;
+    }
+
+    /* animation */
+    div.gallery ul li,
+    div.gallery li img {
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      -o-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
+    }
+
+    div.gallery ul li {
+      position: relative;
+      float: left;
+      width: 375px;
+      height: 370px;
+      margin: 5px;
+      padding: 5px;
+      z-index: 0;
+    }
+
+    /* Make sure z-index is higher on hover */
+    /* Ensure that hover image overlapped the others */
+    div.gallery ul li:hover {
+      z-index: 5;
+    }
+
+    /* Image is position nicely under li */
+    div.gallery ul li img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 1px solid #dddddd;
+      padding: 5px;
+      width: 375px;
+      height: 375px;
+      background: #f0f0f0;
+    }
+
+    div.gallery ul li img:hover {
+      width: 600px;
+      height: 600px;
+      margin-top: -250px;
+      margin-left: -375px;
+      top: 65%;
+      left: 65%;
+    }
+
+    p.attribution {
+      font-family: 'Consolas';
+      color: #000;
+      clear: both;
+      text-align: center;
+      line-height: 25px;
+      padding-top: 30px;
+    }
+
+    p.attribution a {
+      color: #4c8d7c;
+    }
+
+    /* Responsive hack */
+    @media only screen and (min-width: 499px) and (max-width: 1212px) {
+      .wrapper {
+        width: 500px;
+      }
+    }
+
+    @media only screen and (max-width: 498px) {
+      .wrapper {
+        width: 300px;
+      }
+
+      div.gallery ul {
+        list-style-type: none;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="box-page1"></a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid navigation-accueil blip">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="images/logo1.png" alt="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html#introduction" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">INTRODUCTION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#les-acteurs" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES ACTEURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#leslieux" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES LIEUX</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#parcours" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PARCOURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#focus" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">FOCUS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#Ressources" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">RESSOURCES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plan.html" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PLAN DES TRANCHEES</a>
+          </li>
+          <li class="nav-item">
+            <table cellpadding=0 cellspacing=0 border=0>
+              <tr>
+                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+                  <center>
+                    <table width="90%" cellpadding=0 cellspacing=0 border=0 style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+                    </table>
+                  </center>
+                  <form style="margin:0px; margin-top:5px;" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+                    <input type="hidden" name="si" value="75939983">
+                    <input type="hidden" name="pid" value="r">
+                    <input type="hidden" name="n" value="0">
+                    <input type="hidden" name="_charset_" value="">
+                    <input type="hidden" name="bcd" value="&#247;">
+                    <input type="text" name="query" size="15">
+                    <input type="submit" value="search" style="font-family: Arial, Helvetica, sans-serif; font-size: 13pt; text-transform: uppercase; color: white; background: rgba(76, 175, 80, 0); border: none; font-weight: bold;">
+                  </form>
+                </td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="cont">
+          <div class="scroller">
+            <div class="img"><img src="audios/Ferre1.JPG" alt=""></div>
+            <div class="img"><img src="audios/Partition1.JPG" alt=""></div>
+            <div class="img"><img src="audios/Ferre2.JPG" alt=""></div>
+            <div class="img"><img src="audios/Partition2.JPG" alt=""></div>
+            <div class="img"><img src="audios/Ferre1.JPG" alt=""></div>
+            <div class="img"><img src="audios/Partition1.JPG" alt=""></div>
+            <div class="img"><img src="audios/Ferre2.JPG" alt=""></div>
+            <div class="img"><img src="audios/Partition2.JPG" alt=""></div>
+          </div>
+        </div>
+        <br>
+        <div class="audiobutton">
+          <audio id="audio" controls>
+            <source src="audios/LeoFerre.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+      <div class="col-lg-8">
+      </div>
+    </div>
+    <h1 class="title-parcours">Auguste de retour au front</h1>
+    <br>
+    <br>
+    <br>
+    <h3>Avril 1915, c’est au tour d’Auguste de repartir pour le front. Là-bas, les pertes en hommes sont déjà considérables, la ”parenthèse des convois“ ne pouvait durer qu’un temps et il faut envoyer la relève. De convoyeur, Auguste redevient soldat
+      envoyé sur la ligne de feu.</h3>
+    <br>
+    <h3>Bien-sûr, la famille est inquiète … un autre des frères est au danger, il en est revenu la première fois, en reviendra t‘il cette fois encore. Ecoutez cette chanson de Léo Ferré créée sur un extrait du poème d’Aragon, La Guerre et ce qui
+      s’ensuivit …</h3>
+    <br>
+    <h3>C’est un nouveau régiment qu’Auguste rejoint, un nouveau régiment bâti sur les restes d’autres régiments décimés par les premiers mois de guerre et renforcé par l’arrivée des classes plus jeunes. Ainsi, on mélange les blessés guéris et
+      aguerris par les premiers combats, avec la classe 1915 encore toute fraîche et ignorante de ce qui l’attend. Le 414ème régiment d’infanterie comprend 3 bataillons et 12 compagnies formés par différents dépôts du 14e corps d'armée.</h3>
+    <br>
+    <h3>En fait, Auguste a de la chance, il est alors ordonnance d’un lieutenant et à ce titre il rejoindra d’abord la Compagnie Hors Rang du régiment qui comprend notamment l’Etat Major du régiment– en d’autres termes, il n’est pas immédiatement sur
+      la ligne de feu. Il restera dans cette Compagnie jusqu’au 14 Août 1915.</h3>
+    <br>
+    <h3>Dans une carte attendrissante et amusante, la cousine Louise prodigue ses conseils à Auguste ...</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Cher cousin,</h3>
+        <br>
+        <h3 class="textcarte">Tu voudras bien m’excuser de ne t’avoir pas écrit plus tôt. Seulement, je n’étais pas chez nous, j’étais à La Villate depuis Jeudi et je ne suis revenu que Mardi.</h3>
+        <h3 class="textcarte">Tu me dis que tu vas repartir bientôt. Ça ne te fait donc pas de peine de retourner voir ces vilains Allemands. Tu sais, ils sont coquins. Fais bien attention de ne pas te laisser toucher cette fois.</h3>
+        <h3 class="textcarte">Au moins tu pourras venir nous raconter ta campagne de 1914.</h3>
+        <h3 class="textcarte">Nous te souhaitons tous de la chance. Ta cousine qui t’embrasse bien affectueusement.</h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Louise</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box7a/Pic56a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box7a/Pic56b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Et la première carte est pour Augustine ...</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box7a/Pic25a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box7a/Pic25b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère filleule,</h3>
+        <br>
+        <h3 class="textcarte">Je t’envoie ma photo avec mes camarades.</h3>
+        <h3 class="textcarte">Derrière, tu verras le vieux farceur où nous sommes et son beau château. Je n’ai pas ma capote, c’est ma veste de velours et le képi blanc.</h3>
+        <h3 class="textcarte">Antoine t’en enverra des plus jolies de Lyon.</h3>
+        <br>
+        <h3 class="textcarte">Ton parrain qui pense à toi et qui t’aime.</h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Cher cousin,</h3>
+        <br>
+        <h3 class="textcarte">Un mot seulement pour te remercier de la carte que tu m’as envoyée. </h3>
+        <h3 class="textcarte">Je l’ai reçue dimanche avec beaucoup de plaisir en apprenant que tu es toujours en bonne santé. Nous aussi, nous allons bien pour le moment.</h3>
+        <h3 class="textcarte">Tu me dis qu’Auguste est ordonnance d’un officier d’Etat Major et qu’il est à la Valbonne. Je lui ai écrit deux fois. Je n’ai pas eu de réponse, c’est sans doute que mes cartes ne l’ont pas trouvé à Lyon. Enfin, j’espère
+          quand il sera installé à son nouveau poste qu’il nous écrira de nouveau.</h3>
+        <h3 class="textcarte">Mon frère est toujours à Roanne. Il est venu dimanche pour 24 heures, ça était vite passé mais enfin nous avons eu le bonheur de passer un moment ensemble.</h3>
+        <h3 class="textcarte">Je termine en t’embrassant bien fort.</h3>
+        <br>
+        <h3 class="textcarte">Ta cousine Marie</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box7a/Pic27a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box7a/Pic27b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>C‘est une période de calme et comme en atteste le Journal de Marche du régiment, les pertes sont minimales jusqu’en Août et dues simplement à quelques « escarmouches » avec les allemands. Auguste décrit ses activités qui paraissent bien
+      routinières mais sont cependant bien rassurantes pour ceux des Raynauds.</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box7a/Pic43a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box7a/Pic43b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère filleule,</h3>
+        <br>
+        <h3 class="textcarte">Je fais réponse à ta belle carte que j’ai reçue hier. Il y a avait déjà longtemps que j’avais pas eu de tes nouvelles.</h3>
+        <h3 class="textcarte">Hier soir, j’ai reçu 5 lettres, deux de Gabriel, de Chez Chamard et d’Antoine. Il me dit qu’il est définitivement dans l’auxiliaire.</h3>
+        <h3 class="textcarte">Moi tout va bien, j’ai travaillé ces jours pour installer une nouvelle chambre.</h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère sœur,</h3>
+        <br>
+        <h3 class="textcarte">Je t’écris ce matin ces deux mots pour te dire que j’ai reçu tes lettres. Je vois que vous n’avez pas reçu toutes les miennes. Je vous écrirai tous les deux ou trois jours.</h3>
+        <h3 class="textcarte">Tu me demandes si j’ai besoin de quelque chose. Ce n’est pas la peine de porter peine de moi, où je suis, je peux trouver tout ce que je veux. Dans mon sac, je me suis acheté tout ce qu’il me faut.</h3>
+        <h3 class="textcarte">Ici, ce n’est pas aussi bien qu‘à Corbie. Là-bas, je m’ennuyais pas, j’étais bien couché et les gens étaient mieux qu’ici. La sœur de la femme où j’avais couché voulait t’écrire, ils étaient tous bien bon pour les
+          soldats – elle avait ses trois frères au feu.</h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box7a/Pic44a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box7a/Pic44b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Comme Gabriel, Auguste prend souvent soin d’envoyer une carte à chacune des deux petites jumelles, surtout sur les sujets importants comme le travail des chiens au front …</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box7a/Pic47a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box7a/Pic47b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère filleule,</h3>
+        <br>
+        <h3 class="textcarte">Je t’écris ce soir ces deux mots pour te dire que je suis en très bonne santé.</h3>
+        <h3 class="textcarte">Hier, comme c’était fête, je suis allé à la messe. Je viens de recevoir une carte de Gabriel, il va bien.</h3>
+        <h3 class="textcarte">Je t’envoie cette carte pour te faire voir le travail des chiens au 414eme, nous en avons trois.</h3>
+        <h3 class="textcarte">Ton frère qui t’embrasse bien fort.</h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère sœur,</h3>
+        <br>
+        <h3 class="textcarte">Je t’envoie cette carte pour te montrer le service que font nos chiens à la guerre, au 414eme nous en avons trois.</h3>
+        <h3 class="textcarte">J’ai été à la messe, ici c’est bien tranquille.</h3>
+        <h3 class="textcarte">J’ai reçu ta lettre du 8 Mai, je vois que vous vous débrouillez bien. Tu me dis qu’il a fait mauvais temps, ici voilà un mois qu’il fait beau.</h3>
+        <h3 class="textcarte">J’ai reçu aussi la belle image que tu m’as envoyée.</h3>
+        <h3 class="textcarte">Ton frère qui t’embrasse bien fort. </h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box7a/Pic48a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box7a/Pic48b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box7a/Pic50a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box7a/Pic50b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ma chère petite Léa,</h3>
+        <br>
+        <h3 class="textcarte">Tu crois peut-être que je t’ai oubliée, mais ce n’est pas vrai. Je pense à toi et je t’écris ces quelques mots avant d’aller dormir dans mon bon petit lit avec mon copain.</h3>
+        <h3 class="textcarte">Je suis en très bonne santé. Ce soir, j’ai reçu une lettre de Maria, et le mandat et une carte-lettre du 13. Je vois que vous vous portez tous bien.</h3>
+        <h3 class="textcarte">J’en ai reçu de Gabriel et d’Antoine. Il est content d’être réformé et de se débarrasser de ce métier. Moi je suis toujours bien tranquille, jamais je suis été aussi heureux.</h3>
+        <h3 class="textcarte">Aujourd’hui, on n’a pas entendu le canon. Nous sommes toujours dans le même village, à Caix près Rosières Somme. Tu regarderas sur la petite carte que j’ai envoyée. C’est encore loin des boches. Voilà deux jours qu’il
+          fait mauvais temps.</h3>
+        <h3 class="textcarte">Ma chère petite Léa, je termine en t’embrassant bien fort. Demain, je ferai une plus grande lettre à Maria.</h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère Maria,</h3>
+        <br>
+        <h3 class="textcarte">Ce matin, je pense à toi et je t’écris ces deux mots. Je suis toujours en très bonne santé, je désire que tu en soies de même ainsi que tous.</h3>
+        <h3 class="textcarte">Depuis quelques jours il fait chaud. Il ne faut pas trop travailler, quand nous seront rentrés, nous travaillerons mieux. Tu diras à la marraine de se reposer aussi, cette année elle doit travailler encore plus que
+          d’habitude et surtout elle doit bien se faire du mauvais sang.</h3>
+        <h3 class="textcarte">Surtout, tu lui diras de pas s’en faire pour moi. Je suis plus heureux que vous tous. Je vous écris tous les 3 ou 4 jours. J’avais envoyé des cartes, à Léa et à Augustine, des chiens. Tu me diras si elles les ont reçues.
+        </h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Ton frère Auguste qui t’embrasse bien fort.</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box7a/Pic52a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box7a/Pic52b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box7a/Pic53a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box7a/Pic53b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère sœur,</h3>
+        <br>
+        <h3 class="textcarte">Je t’écris ces deux mots pour te dire que j’ai reçu ta lettre du 27 ce soir ainsi que le mandat.</h3>
+        <h3 class="textcarte">Je n’avais pas besoin d’argent, je me soigne bien sans trop de dépenses. Vous avez assez de peine pour le gagner.</h3>
+        <h3 class="textcarte">J’ai reçu une lettre de Marcel Gidel, je lui ai pas écris, j’ai perdu son adresse. Quand tu m’écriras, tu me la donneras</h3>
+        <h3 class="textcarte">Il fait tous les jours bien beau, et je me fais toujours pas de bile.</h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>S’il fallait le rappeler, se sont tous les hommes jeunes qui sont partis à la guerre. Maria, Marie et les jumelles sont aussi les cousines d’autres soldats … et les soldats s’écrivent entre eux parlant d’autres champs de bataille</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère cousine Maria,</h3>
+        <br>
+        <h3 class="textcarte"> C’est avec plaisir que j’ai lu les quelques lignes que tu avais écrites dans la lettre de Marie et je vois que ma convalescence passera pas inaperçue. Enfin, pourvu que tu ailles bien et que la guerre finisse au plus
+          tôt … je n’aurais pas crû passer trois mois ici sans voir la fin, mais elle viendra bien un jour.</h3>
+        <h3 class="textcarte">Le peuple n’a pas trop l’air de se soumettre à la loi de Dieu, car vois-tu il y a encore des quantités qui ne croient pas en lui, mais il viendra un jour où il règlera leur compte aussi.</h3>
+        <h3 class="textcarte">Je ne reçois rien plus de Tatène. Est-il chez toi ou comment va-t-il ? Tu me le diras car le temps me dure qu’il soit chez vous. J’espère que tes bons parents sont en bonne santé, c’est bien ce qui est l’essential
+          pendant cette année.</h3>
+        <h3 class="textcarte">Ici, il a fait un temps affreux, tous les jours de l’eau et il fait bien chaud. Ça ne fait que le temps de l’herbe. Gabriel m’a écrit, il ne se plaint pas trop mais le temps doit bien aussi lui durer.</h3>
+        <h3 class="textcarte">En attendant de tes bonnes nouvelles, reçois petite Maria un bon baiser et un bonjour affectueux à tes chers parents.</h3>
+        <br>
+        <h3 class="textcarte">Ton cousin. Annet</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box7a/Pic54a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box7a/Pic54b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box7a/Pic55a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box7a/Pic55b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Mon cher Ami,</h3>
+        <br>
+        <h3 class="textcarte">Je t’écris ces deux mots pour te donner de mes nouvelles qui sont très bonnes pour le moment et je désire que tu sois de même.</h3>
+        <h3 class="textcarte">Maintenant, je vais te dire que je ne suis plus au 17eme. Je n’y suis resté que 3 jours à Notre Dame de Lorette, on était en réserve. Mais tu peux croire qu’il n’y fait pas bon, on entend qu’un roulement d’obus.</h3>
+        <h3 class="textcarte">Enfin moi, j’ai demandé d’aller au bataillon de marche et jusqu’à présent je m’en plains pas. Nous sommes en arrière et nous faisons l’exercise en attendant qu’ils aient besoin de nous pour renforcer. Enfin, je ne
+          demanderais que à rester ici quelques jours.</h3>
+        <h3 class="textcarte">Tu me diras si Paul est toujours à Nyons, et si tu lui écris, dis lui le bonjour pour moi en attendant que je lui écrive.</h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte"></h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Nous sommes en Juin et comme Gabriel, Auguste est inquiet pour ceux de la ferme. C’est la saison des foins et puis ce sera le temps des moissons, que feront les sœurs sans les bras des hommes … </h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ma chère filleule,</h3>
+        <br>
+        <h3 class="textcarte">Tu dois te dire que ton parrain t’oublie. Ce n’est pas vrai, tous les jours je pense à toi.</h3>
+        <h3 class="textcarte">Je suis toujours en bonne santé. Hier, je vous ai écrit. Le temps ne me dure pas trop, je trouve même que ça passe vite. Je suis très tranquille, je n’ai pas beaucoup à faire. Il fait beau dans le bois, on est au frais.
+        </h3>
+        <h3 class="textcarte">Chère Augustine, c’est bien embêtant que tu n’aurais pas pu garder Antoine avec toi, il vous aurait aidé et puis il serait mieux qu’à Lyon, malgré que dans l’auxiliaire il ne sera pas trop mal.</h3>
+        <h3 class="textcarte">Maintenant qu’il fait chaud, il faudra pas trop travailler. Tu es bien forte mais encore trop jeune.</h3>
+        <h3 class="textcarte">Ton petit parrain qui t’embrasse bien fort et qui pense à toi.</h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box7a/Pic57a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box7a/Pic57b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box7a/Pic58a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box7a/Pic58b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Cher frère et parrain,</h3>
+        <br>
+        <h3 class="textcarte">Je pense à toi ce soir.</h3>
+        <h3 class="textcarte">Je t’envoie ces quelques lignes pour te remercier de la carte que tu m’as envoyée. Elle est bien belle, je la conserve pour te la montrer bientôt.</h3>
+        <h3 class="textcarte">Aujourd’hui, je t’envoie ma photo. Ce n’est pas très bien réussi, mais enfin tu seras content de nous voir avec Léa. Tu vois, j’ai grandi, je suis forte à présent.</h3>
+        <h3 class="textcarte">Antoine est toujours avec nous. Nous en avons envoyé une à Gabriel, hier. Nous sommes tous en parfaite santé. Tu me dis que tu es bien, le temps me dure de voir si tu as engraissé. Je désire que tu conserves ta place et
+          surtout la santé.</h3>
+        <h3 class="textcarte">Ta petite Augustine qui t’embrasse bien fort.</h3>
+        <br>
+        <h3 class="textcarte">Augustine</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère sœur,</h3>
+        <br>
+        <h3 class="textcarte">Je t’écris deux mots seulement. Je suis toujours en bonne santé et je désire que ma carte te trouvera de même.</h3>
+        <h3 class="textcarte">Depuis Lundi soir, nous sommes au village. Moi, j’aime mieux être dans mon petit bois. On est à l’ombre et moins de travail.</h3>
+        <h3 class="textcarte">Vous devez travailler dans les foins, ici il fait beau. Il ne faut pas trop travailler, tu n’es encore pas assez forte.</h3>
+        <h3 class="textcarte">Ton frère qui t’embrasse.</h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box7a/Pic59a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box7a/Pic59b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>On l’oublie bien souvent, mais les soldats sont jeunes, très jeunes. Ainsi, Auguste va tout juste sur ses 23 ans quand il écrit cette lettre à sa sœur Maria. La lettre est légère, bravache, taquine et presque insouciante comme on écrit les
+      lettres quand on a 23 ans et la vie devant soi …</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="images/imagesbox/Box7a/PicCLa.jpg" alt="">
+      </div>
+      <div class="col-lg-4 text-boxjmo17" style="height:47rem;">
+        <h4>Chère Maria,</h4>
+        <br>
+        <h4>Je réponds à ta lettre du 30 Juin que j’ai reçue ce soir.</h4>
+        <br>
+        <h4>Tu me dis que j’ai beaucoup de travail parce que j’avais pas mis l’adresse de la carte de Léa moi-même. C’est le cuisinier qui a fait ça pour rigoler. Tu sais, on devient tellement gosse dans ce métier.</h4>
+        <br>
+        <h4>Je voudrais bien que tu n’aies pas plus de travail que moi, tu serais heureuse. Une heure le matin pour faire la chambre et nettoyer les affaires du vieux, après je lave quelques assiettes, je balaye un peu et si je veux bien, je fais
+          quelques commissions.</h4>
+        <br>
+        <h4>Hier, j’ai aidé rentrer le foin du patron où nous sommes. Il est très chic, sa vieille aussi. Elle m’a donné un litre de lait, de la salade à volonté.</h4>
+        <br>
+        <h4>Chère Maria, voilà le travail que je fais à la guerre, laver les assiettes et balayer les rues.</h4>
+        <br>
+        <h4>Chère Maria, j’ai reçu une lettre d’Antoine. Comme je vois, il sera bien au Lycée, il aura bien une autre perme. Il m’a envoyé cinq francs que la Marraine lui avait donné pour moi. Tu la remercieras bien de ma part et surtout tu lui diras
+          de pas tant travailler et de pas se faire de mauvais sang pour moi.</h4>
+        <br>
+        <h4>Tu me demandes si j’ai besoin de quelque chose, le linge, l’argent, j’en ai que trop.</h4>
+        <br>
+        <h4>Auguste</h4>
+      </div>
+      <div class="col-lg-4">
+        <img src="images/imagesbox/Box7a/PicCLb.jpg" alt="">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>C’est ce même esprit de camaraderie et de rigolade un peu lourde que l’on retrouve dans les journaux de tranchées. Dès 1915, les journaux de tranchées, écrits dans et pour les tranchées, apparaissent dans différents régiments et servent bien
+      souvent d’antidote à la presse officielle muselée par la censure.</h3>
+    <br>
+    <h3>Quelquefois, c’est une simple feuille de papier avec des textes écrits à la main et des dessins griffonnés au fuseau. Mais la qualité des textes est toujours au rendez-vous, car il faut dire, qu’au front, il y a pléthore de journalistes,
+      écrivains, poètes et autres scribouilleurs en tout genre.</h3>
+    <br>
+    <h3>Les textes sont frais, francs et sans filtre et on n’y épargne, ni le boche, ni l’embusqué, ni le haut gradé restant bien en arrière. Mais par-dessus tout, c’est plein d’humour … avec le quart de pinard, ce sont sans doute ces journaux qui
+      soutiennent le moral des troupes.</h3>
+    <br>
+    <h3>Voici un extrait du journal « En Attendant », une histoire courte écrite par Pierre Vergez, un affichiste-humoriste célèbre de l’époque. C’est les pieds nickelés avant l’heure et c’est gouailleux comme un après-midi d’automne dans les tranchées de
+      la Somme …</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-6 text-boxgiono">
+        <h4>LE MOT HISTORIQUE</h4>
+        <br>
+        <h4>_ N’empêche, déclara Poulot, en balançant une boîte de conserves vide par-dessus le parapet de la tranchée, n’empêche que les Poilus, les vrais, ceux-là qui dégotent , les plus poilus des poilus, c’est ceux-là qui, en mourant, doivent
+          lâcher une phrase, vous envoyer un bobard rigolo ou patriotique, quelque chose de court et de tapé … </h4>
+        <h4>_¬ Un mot historique, quoi ! trancha Vertemousque, qui avait des lettres.</h4>
+        <br>
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="images/imagesbox/Box7a/Chichi1.jpg" alt="Troupeau-img">
+          </div>
+          <div class="col-lg-8">
+            <br>
+            <h4>Cette conversation pourtant banale produisit une impression énorme sur Chignole, dit Chichi, occupé pour l’instant à s’humecter le gosier d’un vague pinard. Un brusque réflexe secoua la peau de bouc gonflée qu’il tenait élevée au bout
+              de ses longs bras ; et la trajectoire du liquide vermeil vint s’éparpiller, en l’inondant, sur toute sa large face, soudain attentive.</h4>
+            <h4>Dès l’instant, ledit Chignole, dit Chichi parut sombre, absorbé, soucieux. Lui, d’ordinaire si enjoué, si recherché des copains pour sa verve sans cesse en éveil, pour son inépuisable répertoire de calembours et de chansons, il devint
+              clos, silencieux, hermétique. La corvée de soupe, qu’il égayait de coutume par ses boniments, cessa de ressembler á un joyeux monôme pour prendre des allures de convoi funèbre ; et les marmites boches purent siffler et éclater tout á
+              leur aise, sans être saluées par ses habituels lazzis.</h4>
+          </div>
+        </div>
+        <br>
+        <h4>Taciturne, le casque sur les yeux, le front barré, la pite basse, il allait, mâchonnant des paroles inintelligibles, désintéressé du service et des copains. Même, Poulot le surprit une nuit, pendant sa veille, faisant de mystérieuses
+          confidences à son créneau.</h4>
+        <h4>_ Chignole devient loufoque, ma parole, confia-t-‘il aux camarades. Le v’là, à c’te heure, qui dégoise tout seul !</h4>
+        <h4>_ Chichi, prononça Vertemousque, qui avait des lettres, y a simplement qu’il fait de la neurasthénie.</h4>
+        <h4>Or, Vertemousque et Poulot se foutaient tout bonnement le doigt dans l’œil. La vérité vraie, c’est que Chignole, dit Chichi … cherchait sont mot historique.</h4>
+        <h4>Un matin – enfin ! – il apparut radieux à l’entrée de la guitoune, la face baignée de joie, toute son âme Gavroche aux lèvres.</h4>
+        <h4>Une ovation tumultueuse l’accueillit :</h4>
+        <h4>_ Ah ! la bonne heure ! Chignole ! Voilà comment qu’on t’aime ! …. Vive Chichi ! …. Demandez la résurrection de Chichi !</h4>
+        <h4>Enfin ! Il le tenait son MOT HISTORIQUE ! Ah ! Ç’avait été long et pénible. Mais enfin, il le tenait : lorsque, à l’attaque, la marmite ou la grenade fatales viendraient disloquer son académie poilue, de toutes ses forces il gueulerait,
+          comme à l’auberge, lorsqu’un verre se brise : Boum ! Faites chauffer la colle ! </h4>
+        <h4>Evidemment, cela ne cassait rien. Mais, tout de même, cela avait de l’allure, C’était gai, c’était enlevé. Cela ferait rigoler les copains en leur donnant du cœur au ventre. Et puis, cela ne ferait pas mal du tout dans les journaux.</h4>
+      </div>
+      <div class="col-lg-6 text-boxgiono">
+        <h4>Naturellement, tous les gars de l’escouade voulurent savoir. Tous en furent pour leur frais.</h4>
+        <h4>_ Rien à faire, les petits ! Plus souvent que j’irais vous le dire mon Mot, pour que vous alliez me le chiper, n’est-ce pas ? Pour le connaître, faudra attendre que Chichi y soye amoché, et sérieusement, encore. In-estrémisse comme dit le
+          curé du patelin. Avant ça, des nèfles, les aminches.</h4>
+        <br>
+        <h4>Une reconnaissance a été décidée hier et organisée. Un vieil entonnoir se creuse à 50 mètres de la tranchée, entre les deux lignes. Il fallait savoir si les Boches l’occupent. On a demandé des volontaires à la Compagnie. L’escouade
+          entière s’est faite inscrire. Du moment que Chichi en était, tout le monde a marché. Les plus peureux ont confiance aux côtés de ce grand escogriffe qui n’a peur de rien. Et puis, ce Chignole, chacun le considère comme un porte-veine.</h4>
+        <h4>Seulement l’affaire n’a pas marché aussi bien que l’on escomptait. Malgré les précautions prises, malgré la nuit sans lune, l’ennemi a éventé le petit groupe, éparpillé, rampant. Vingt fusées l’ont rapidement signalé, tapi, sans souffle,
+          aux guetteurs boches attentifs. Une rafale de 77 s’est amenée, précise et drue, faisant de la mort dans du noir.</h4>
+        <br>
+        <h4>Quatre ne sont pas revenus. Chichi est du nombre. Dans la guitoune, les rescapés, atterrés ou rageurs, pleurent le camarade dont la verve gavroche et l’entrain les ont si souvent réconfortés. _ A les salauds ! ne cesse de répéter Poulot,
+          le poing dans un geste de menace.</h4>
+        <h4>Puis soudain : _ A propos, dites-donc, ce pauvre Chichi, il l’a pas dit, tout de même, son MOT ! …</h4>
+        <div class="row">
+          <div class="col-lg-6">
+            <br>
+            <h4>Puis soudain : _ A propos, dites-donc, ce pauvre Chichi, il l’a pas dit, tout de même, son MOT ! …</h4>
+            <h4>_ Il l’a dit, proteste Vertemousque, d’un air pincé. Même que c’était pas la peine vraiment de se torturer le ciboulot comme il l’a fait, pendant une semaine, pour n’accoucher que de çà. Si i se figure qu’on peut mettre ça dans les
+              journaux !...</h4>
+            <h4>_ Dis le quand-même, va, Vertemousque, implora Poulot puisque Chichi il est défunt à c’te heure.</h4>
+            <h4>Et Vertemousque, qui avait des lettres , révéla le MOT qui, lui, n’en avait que cinq.</h4>
+          </div>
+          <div class="col-lg-6">
+            <br>
+            <br>
+            <img src="images/imagesbox/Box7a/Chichi2.JPG" alt="Pensee-img" style="margin-left:auto; margin-right:auto; display:block;">
+          </div>
+        </div>
+        <br>
+        <br>
+        <img src="images/imagesbox/Box7a/Enattendant.jpg" alt="Pensee-img">
+        <h4 style="color:black;font-style:italic"> Extraits - Journal de Tranchées - VERGEZ </h4>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-4 text-boxmichelin">
+        <br>
+        <br>
+        <br>
+        <h3>Pour découvrir plus de détails sur les lettres et les croquis de Pierre Vergez, visitez-donc le site suivant </h3>
+        <br>
+        <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="https://journals.openedition.org/insitu/11495" target="_blank"><i class="fas fa-archive"></i> En Savoir Plus</a>
+        <br>
+        <br>
+        <h3>Par ailleurs, vous pouvez consulter l’intégralité des journaux de tranchées dans la partie RESSOURCES de ce site … cela vaut le détour !</h3>
+      </div>
+      <div class="col-lg-3">
+        <img src="images/imagesbox/Box7a/Chichi3.JPG" alt="">
+      </div>
+      <div class="col-lg-3">
+        <img src="images/imagesbox/Box7a/Chichi4.JPG" alt="">
+      </div>
+      <div class="col-lg-1">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Pour Auguste, la période d’accalmie continue, ponctuée par les cartes avec ses sœurs, et celles reçues d’autres soldats. On parle de saucisson, d’espoir de permission et de jours meilleurs avec les petites demoiselles …</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box7a/Pic60a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box7a/Pic60b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Cher frère,</h3>
+        <br>
+        <h3 class="textcarte">Nous venons de lire ce soir ta gentille lettre du 1er Juillet.</h3>
+        <h3 class="textcarte">Nous sommes contents d’avoir la photo de ce petit, il a l’air trop mignon. Tu remercieras ton lieutenant de nous l’avoir envoyée. C’est un beau souvenir, nous sommes tous été contents de regarder ce bambin. Quelle tenue il a pour son âge.</h3>
+        <h3 class="textcarte">Cher Auguste, nous voyons que tu es bien nourri, cela nous console un peu. Surtout que tu es avec de bonnes gens. Tu bois du lait, ça te fera du bien. Nous serions bien contents de voir ta photo avec tes camarades.</h3>
+        <h3 class="textcarte">Moi je lui ferai prendre à Annet pour te l’envoyer et à Gabriel. </h3>
+        <h3 class="textcarte">Nous sommes tous en bonne santé, je désire que tu sois pareil. Je termine en t’embrassant.</h3>
+        <br>
+        <h3 class="textcarte">Ta sœur. Maria</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte"></h3>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3 class="textcarte">Meilleures amitiés.</h3>
+        <h3 class="textcarte">Merci pour l’envoi de mes lettres.</h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte"></h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box7a/Pic61a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box7a/Pic61b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box7a/Pic62a.jpg" alt="image">
+        <img class="picv" src="images/imagesbox/Box7a/Pic62b.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Cher frère,</h3>
+        <br>
+        <h3 class="textcarte">Je t’écris ce soir samedi pour te dire que nous t’envoyons un petit colis, des petits beurres, du saucisson..</h3>
+        <h3 class="textcarte">J’ai mis dans la boîte de biscuits, des pastilles Vichy. J’espère qu’elles ne fondront pas. Si tu as besoin de quelque chose, dis-nous le toujours.</h3>
+        <h3 class="textcarte">Comme tu parles de permission, ton tour sera bientôt. Nous serons trop content de te voir quelques jours. Nous attendons tous les jours la lettre nous apprenant ton arrivée. Surtout, tu nous le fera dire. </h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Nous irons t’attendre en gare.</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte"></h3>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3 class="textcarte">Tiens, voilà encore une jolie petite demoiselle.</h3>
+        <h3 class="textcarte">Je crois qu’il y en a deux. T’en donneras une à Polyte, parce que si bien toi, comme lui et moi, cela nous ferait tant plaisir ce petit monde.</h3>
+        <h3 class="textcarte">Surtout celles la, elles ne sont pas vilaines et on peut les embrasser comme des médailles. Elles ne bougent pas plus que si elles étaient de bois.</h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte"></h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box7a/Pic63a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box7a/Pic63b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Nous sommes en Août, les foins et les moissons se sont bien passés, et Auguste va même recevoir sa part de brioche … mais déjà, on sent les prémices des temps plus difficiles à venir, les soldats ne sont plus autorisés à cacheter leurs lettres … vont-ils aller à la bataille à nouveau ?...</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box7a/Pic63c.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box7a/Pic63d.jpg" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère petite Léa,</h3>
+        <br>
+        <h3 class="textcarte">Je t’écris deux mots pour te dire que je suis toujours en très bonne santé et je désire que ma carte te trouvera comme elle me quitte.</h3>
+        <h3 class="textcarte">J’ai reçu une carte de Gabriel, il est cuisinier. Il a trouvé un bon poste, il sera mieux que creuser des galeries.</h3>
+        <h3 class="textcarte">Vous avez du beaucoup travailler pour faire les foins et les moissons. Vous avez de l’avance maintenant, vous serez plus tranquille, vous pourrez un peu vous reposer.</h3>
+        <h3 class="textcarte">Chère petite Léa, je suis toujours assez heureux. Je trouve pas le temps trop long mais je voudrais bien que ça finisse pour aller te revoir. Tu embrasseras bien fort la marraine et le tonton pour moi. Alexandre des Cros est parti ce matin, nous pour le moment nous restons ici.</h3>
+        <h3 class="textcarte">Ton frère qui t’aime et pense à toi. Auguste</h3>
+        <br>
+        <h3 class="textcarte">A partir du 10 Aout, on ne pourra pas cacheter les lettres, j’écrirai des cartes. Je t’envoie des petites fleurs.</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Cher frère,</h3>
+        <br>
+        <h3 class="textcarte">Je t’écris ce soir, la veille de l’anniversaire que tu as été blessé.</h3>
+        <h3 class="textcarte">La cousine de Muratel a fait une brioche pour toi. Ils battent à la batteuse aujourd’hui. Si elle est un peu sèche, tu la feras chauffer à la cuisine.</h3>
+        <h3 class="textcarte">Elle a été heureuse de penser à vous, à Gabriel ainsi qu’à Antoine.</h3>
+        <h3 class="textcarte">Nous ne savons pas encore quand nous battrons. Cellier n’est pas venu. Antoine ne sait encore rien au sujet de sa demande. Nous allons tous bien, je désire que tu sois pareil.</h3>
+        <h3 class="textcarte">Je termine en t’embrassant.</h3>
+        <br>
+        <h3 class="textcarte">Maria</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box7a/Pic64a.jpg" alt="image">
+        <img class="pich" src="images/imagesbox/Box7a/Pic64b.jpg" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-boxbergougnan">
+        <h3 class="texte-parcours">La lettre à Léa du 8 Août est la dernière écrite par Auguste à cette époque et pour cause. Il quittte la Compagnie Hors rang du régiment le 14 Août pour rejoindre la 3ème Compagnie du 1er Bataillon … en d’autres termes il se retrouve dans les tranchées de première ligne.</h3>
+        <br>
+        <h3>Jusqu’à présent, comme Aragon l’écrit si bien, il a glissé le long de la ligne de feu mais cette période de relative insouciance et confort arrive à sa fin. Plus beaucoup de temps pour envoyer des cartes, et sous le feu des marmites allemandes, sans doute le cœur y est-il moins pour envoyer des nouvelles rassurantes.</h3>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/imagesbox/Box7a/Somme.jpg" alt="">
+      </div>
+      <div class="col-lg-1">
+      </div>
+    </div>
+    <br>
+    <br>
+  <h3>Le soldat est souvent plus bavard quand il est en cantonnement et que sa vie reprend un semblant de normalité, mais le temps des tranchées revenu, il est plus difficile de mentir et décrire son quotidien ne ferait qu’alarmer davantage la famille au village. Il en va de même avec Auguste.</h3>
+    <br>
+    <h3>De fin Juillet à fin Août, Auguste est dans les tranchées à Cappy sur les bords de la Somme. Peut-être a-t’il alors croisé, au détour d’un boyau, le célèbre écrivain et aventurier Blaise Cendrars qui se trouve dans le secteur de la Grenouillère, à deux pas de Cappy. </h3>
+    <br>
+    <h3>Certes les deux hommes sont bien différents ; Auguste est soldat par nécessité et devoir, Cendrars lui est engagé volontaire dans la Légion et attiré par l’aventure. Mais ils font tous deux face à la même réalité et vivent la même expérience.</h3>
+    <br>
+    <h3>Lire La Main Coupée de Blaise Cendrars, c’est donc lire ce qu’Auguste n’écrit pas à la famille, la monotonie morbide et industrielle de cette guerre de tranchées, l’horreur qui surgit subitement au milieu d’une belle matinée d’été …</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-6 text-boxgiono" style="height: 75rem;">
+        <h4>… L'on restait quatre jours en ligne et l’on redescendait pour quatre jours à l'arrière, et l’on remontait à l'avant pour quatre jours, et ainsi de suite jusqu'à la fin s'il devait jamais ÿ avoir une fin à cette triste histoire. Les poilus étaient découragés. Ce va-et-vient était bien Îa plus grande saloperie de cette guerre, et la plus démoralisatrice, et il ne manquait qu’une sirène à l'entrée des boyaux — une sirène et une horloge et un système de contrôle à poinçon qui leur aurait délivré une fiche et un petit portillon de fer à fermeture automatique — pour rappeler aux pauvres bougres leur boulot à l’usine, sans rien dire des blessés qui croyaient en être quittes et qui remontaient, et qui remettaient ça, à l’usine de la mort, une fois, deux fois, trois fois quatre jours en première ligne, quatre jours dans les cantonnements de l’arrière. </h4>
+        <br>
+        <h4></h4>
+        <br>
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="images/imagesbox/Box7a/Cendrars2.jpg" alt="Troupeau-img">
+          </div>
+          <div class="col-lg-6">
+            <br>
+            <h4>Ces cantonnements étaient la deuxième grande saloperie de cette guerre. Il y avait de quoi vous foutre le cafard. On logeait dans des granges déglinguées. On couchait sur de la paille pourrie dans laquelle les hommes enfouissaient non pas jeurs pauvres guibolles esquintées, mais ces saucissons de Chicago qui schlinguaient, qu’on appelait de « la viande électrique » car aussitôt portée à la bouche elle vous soulevait le cœur (c'était instantané!) et dont les rats se régalaient comme de bonne merde. Mais plus fumiers que les rats qui empestaient nos cantonnements étaient
+nos gradés à l’arrière. On ne voyait qu'eux!</h4>
+          </div>
+        </div>
+        <br>
+        <h4>Nous autres, on serait bien restés jusqu’à la fin de la guerre à La Grenouillère, tellement on y était pépère ; mais quand on descendait, on ne savait jamais si l’on allait y remonter, et cela c'était bien la troisième grande saloperie de cette guerre que de ne jamais savoir si l’on reverrait le coin tranquille que vaille que vaille on s'était aménagé, et même dans le secteur le plus chahuté, les cagnas que l’on avait construites avec tant de peines, le peu de confort que l’on avait pu se procurer à ses risques et périls, la tranchée que l’on avait mise en état avec tant de travail, de courage, de constance, d’entêtement exténuant car il avait fallu s’y reprendre des centaines et des milliers de fois, écrasés sous les rondins, les bobines, de barbelés, les poutres, les plaques de blindage ou les feuilles de tôle ondulée, les fardeaux de toute sortes, les corvées de munitions, et la défendant plus souvent avec la pelle, avec la pioche qu’à coups de fusil. Ces souffrances étaient sans grandeur. Tout cela manquait de gloire. </h4>
+        <br>
+        <h4>Mais j'ai connu plus d’un type qui finissait par chérir son créneau, même s’il y était planté tout l’hiver dans l’eau et jusqu’au ventre, car c'était là le seul coin de cette terre aimée de France qu'il posséderait jamais en propre, et qu'il était venu défendre, ce trou d’homme qui le moulait, qui avait fini par épouser sa forme tellement il s'y était accoudé, adossé, frotté par devant et par derrière durant ses heures de veille épuisante et de cafard, et même si dans la journée son horizon était bouché par la trogne d’un macchabée ou borné par le créneau d'en face, ce trou d’homme qui s’éboulait en revêtant le soldat d’un uniforme de boue et où, à chaque relève, l’un ou l’autre restait enseveli comme dans une chiotte sans issue, douce France, Ô mon beau tombeau!...</h4>
+        <br>
+      </div>
+      <div class="col-lg-6 text-boxgiono" style="height:75rem;">
+        <h4>...Tilloloy. C'était le bon coin, A part les obusiers qui tapaient sur Beuvraignes à midi, il ne s’y passait jamais rien. J’en ai gardé le souvenir d’une robinsonnade, la plupart d’entre nous ayant construit des huttes de feuillage et les autres dressé les tentes, les Boches se trouvant au diable vauvert, quelque part, au fond de la plaine, du côté de Roye.</h4>
+        <h4>Par une belle matinée du mois de juin, nous étions assis dans l’herbe qui envahissait notre parapet et cachait nos barbelés et qu'il allait falloir faucher et faner, nous étions assis dans l’herbe haute, devisant paisiblement en attendant la soupe et comparant les mérites du nouveau cuistot à ceux de Garnéro que nous avions perdu à la crête de Vimy, quand, tout à coup, cet idiot de Faval bondit sur ses pieds, tendit le bras droit
+l'index pointé, détourna la tête la main gauche sur les yeux et se mit à pousser des cris lugubres comme un chien qui hurle à la mort :</h4>
+        <h4>_ Oh, oh, regardez!... Quelle horreur!...Oh, oh, oh!...</h4>
+        <h4>Nous avions bondi et regardions avec stupeur, à trois pas de Faval, planté dans l’herbe comme une grande fleur épanouie, un lys rouge, un bras humain tout ruisselant de sang, un bras droit sectionné au-dessus du coude et dont la main encore vivante fouissait le sol des doigts comme pour y prendre racine et dont la tige sanglante se balançait doucement avant de tenir son équilibre.</h4>
+        <h4>
+D'instinct nous levâmes la tête, inspectant le ciel pour y chercher un aéroplane. Nous ne comprenions pas. Le ciel était vide. D'où venait cette main coupée ? Il n’y avait pas eu un coup de canon de la matinée. Alors, nous secouâmes Faval, Les hommes devenaient fous.</h4>
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>— … Parle, espèce d’idiot! D'où vient cette main? Qu'est-ce que tu as vu?</h4>
+            <h4>Mais Faval ne savait rien.</h4>
+            <h4>— … Je l’ai vue tomber du ciel, bredouillait-il en sanglotant les mains sur les yeux et claquant des dents. Elle s’est posée sur nos barbelés et a sauté à terre comme un oiseau. J’ai d’abord cru que c'était un pigeon. J’ai peur. Quelle horreur!...</h4>
+            <h4>ll n'y avait pas eu un avion de Îa matinée, pas un coup de canon, pas une explosion proche ou lointaine. Le ciel était tendre, Le soleil, doux, L’herbe printanière, pleine d'’abeilles et de papillon. Ii ne s'était rien passé. Nous ne comprenions pas.</h4>
+            <h4>À qui était cette main, ce bras droit, ce sang qui coulait comme la sève?</h4>
+          </div>
+          <div class="col-lg-6">
+            <img src="images/imagesbox/Box7a/Cendrars1.jpg" alt="Pensee-img">
+          </div>
+        </div>
+        <h4>— À la soupe ! cria le nouveau cuistot qui s’amenait hilare avec sa marmite fumante, ses boules emmanchées, ses gamelles, ses boites de conserve, son pinard,</h4>
+        <h4>— Ta gueule, salaud! lui répondit-on.</h4>
+        <h4>Et les hommes se dispersèrent et pour la première fois depuis que nous étions dans ce secteur où il ne se passait jamais rien, ils allèrent se tasser dans les abris, descendirent se mettre sous terre.</h4>
+        <h4>Il faisait beau. Le plus beau jour de l’année. Seul Faval sanglotait dans l'herbe chaude, secoué de spasmes.</h4>
+        <h4>Des mouches bleues vinrent se poser sur cette main. Jamais nous n’eûmes la clef de l’énigme.</h4>
+        <br>
+        <br>
+        <img src="images/imagesbox/Box7a/Maincoupee.jpg" alt="Pensee-img">
+        <h4 style="color:black;font-style:italic"> Extraits - La main coupée - Blaise CENDRARS </h4>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-6 text-boxmichelin">
+        <br>
+        <br>
+        <br>
+        <h3>Par un hasard de l’histoire, la petite et la grande, après avoir séjourné non loin d’Auguste, Blaise Cendrars rejoind Tilloloy, à proximité du Bois des Loges, le secteur où se trouve Gabriel durant l’année 1915.</h3>
+        <br>
+        <h3>Pour découvrir la vie incroyable de Cendrars, cliquez sur le lien suivant :</h3>
+        <br>
+        <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="images/imagesbox/Box7a/VieCendrars.pdf" target="_blank"><i class="fas fa-archive"></i> En Savoir Plus</a>
+      </div>
+      <div class="col-lg-4">
+        <img src="images/imagesbox/Box7a/Cendrars3.JPG" alt="">
+      </div>
+      <div class="col-lg-1">
+      </div>
+    </div>
+    <br>
+    <br>
+    <h3>Jusque-là, et comme en témoigne le journal de marche du 414eme régiment d’infanterie, c’est la guerre ordinaire, chaque jour amenant son lot de tués et blessés dans des normes sans doute considérées raisonnables par l’ Etat Major. Mais les évènements vont s’accélérer à partir de Septembre.</h3>
+    <br>
+    <h3>Le 21 Septembre, le premier bataillon est relevé par les troupes anglaises et va à Villiers-Bretonneux pour embarquer un train, direction Conteville. Bivouac à Neuvilette, puis direction Barly et participation à l’attaque de tranchées allemandes dans le secteur de Warlus (à l’ouest d’Arras) dès le 25 Septembre. Le lendemain, le régiment est transféré sur Villers au Bois dans le secteur de Notre Dame de Lorette (à proximité de Lens).</h3>
+    <br>
+    <h3></h3>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-6">
+        <img src="images/imagesbox/Box7a/JMO414.JPG" alt="">
+      </div>
+      <div class="col-lg-4 text-boxmichelin">
+        <h3>Commence alors une période particulièrement éprouvante pour les hommes du 414ème qui sont au cœur de la troisième bataille d’Artois. Et, avec la précision diaboliquement administrative des journaux de marche, le décompte des morts et des blessés s’accélère … T pour tués, B pour blessés, D pour disparus …</h3>
+        <br>
+        <h3>Dès le 27 Septembre, le 414ème reçoit l’ordre d’occuper les tranchées du plateau de Lorette. Bombardement ennemi intense le 30 Septembre, dans le secteur du bataillon d’Auguste qui se trouve en première ligne (5 tués, 1 disparu, 20 blessés).</h3>
+        <br>
+        <h3>Le régiment est en cantonnement jusqu’au 19 Octobre dans le secteur de Souchez, puis retourne au front dans ce même secteur. Combat féroce jusqu’au 26 Octobre, encore 42 tués et 213 blessés dans le bataillon d’Auguste. Au total, au cours du mois d’Octobre, sur les 1016 hommes qui constituent le premier bataillon, on compte 63 tués et 281 blessés, soit un tiers de l’effectif !</h3>
+      </div>
+      <div class="col-lg-1">
+      </div>
+    </div>
+    <br>
+    <br>
+    <h3>La bataille de Notre Dame de Lorette dure jusqu’à la fin Novembre,  le régiment va ensuite dans le secteur du Grand-Servins puis est transféré par automobiles à Valhuon.</h3>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-4 text-boxmichelin">
+        <br>
+        <h3>De là, grand mouvement par train le 3 Décembre jusqu’à Genevreuille en Haute Sâone. Cantonnement de repos à Vy-les-Lures à partir du 5 Décembre jusqu’au 10 Janvier 1916. De mi à fin Janvier, exercices d’entraînement au camp de Raon-Basse non loin d’Epinal, puis mouvement à nouveau jusqu’à Chavanatte toujours dans les Vosges. Le régiment reste dans le secteur, en première ligne pendant le mois de Février, puis période de cantonnement à partir de mi-Mars à Réchésy, puis retour en première ligne.</h3>
+        <br>
+        <h3>Le 3 Avril, départ en train de Plancher-Bas pour Révigny dans la région de Bar-le-Duc, puis mouvement sur Watronville dans le secteur de Verdun le 23 Avril.</h3>
+        <br>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/imagesbox/Box7a/FranceAuguste.JPG" alt="">
+      </div>
+    </div>
+    <br>
+    <br>
+
+    
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+</body>
+
+</html>
