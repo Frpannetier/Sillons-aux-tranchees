@@ -3,8 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Des Sillons aux Tranchées</title>
-
+  <title>In the bleak Midwinter</title>
 
   <!-- Google Fonts -->
 
@@ -23,33 +22,930 @@
 
   <script src="https://kit.fontawesome.com/cc4dcc56d7.js" crossorigin="anonymous"></script>
 
-<style media="screen">
+  <style>
+    body {
+      background-image: linear-gradient(to right top, #d97e57, #d5815c, #d08460, #cc8665, #c7896a, #c68d6f, #c59174, #c49579, #c69c7f, #c9a386, #cbaa8d, #ceb194);
+    }
 
-.retour{
-  margin-left: 0rem;
-}
+    .map {
+      background-image: url(images/imagesbox/Box5/map26Aout.jpg);
+      height: 90rem;
+    }
 
-</style>
+    .couv17 {
+      padding-top: 47rem;
+      padding-right: 5rem;
+    }
+
+    .couv98 {
+      padding-top: 10rem;
+    }
+
+    .mapChipotte {
+      background-image: url(images/imagesbox/Box5/ColdelaChipotte.jpg);
+      text-align: left;
+    }
+
+    .mapFrance {
+      background-image: url(images/imagesbox/Box6a/Mapconvois.jpg);
+      text-align: left;
+    }
+
+    .mapStRemy {
+      background-image: url(images/imagesbox/Box5/StRemy.jpg);
+      text-align: left;
+    }
+
+    .mapEMMarne {
+      background-image: url(images/imagesbox/Box5/MapEMMarne.jpg);
+      text-align: left;
+    }
+
+    .PicChipotte {
+      padding-top: 25rem;
+    }
+
+    .PicMarne {
+      padding-top: 0rem;
+
+    }
+
+    .fraternite {
+      padding-left: 6.5rem;
+    }
+
+    .title-parcours {
+      padding-top: 10%;
+      padding-bottom: 1%;
+    }
+
+    .textcarte {
+      font-family: 'Sacramento', cursive;
+      font-size: 200%;
+      color: #434144;
+      font-weight: 600;
+    }
+
+    .texte-legend {
+      font-size: 100%;
+    }
+
+    .image-box {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 10rem 0rem;
+    }
+
+    .image-boxExcep {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 20rem 0rem;
+    }
 
 
+    .image-boxms {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 5rem 0rem;
+    }
+
+    .text-box {
+      height: 40rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxExcep {
+      height: 55rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxconvois {
+      height: 30rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxbergougnan {
+      height: 20rem;
+      text-align: left;
+      padding-top: 2%;
+    }
+
+    .text-boxchamond {
+      height: 20rem;
+      text-align: left;
+      padding-top: 0%;
+    }
+
+    .text-boxmichelin {
+      height: 20rem;
+      text-align: left;
+      padding-top: 1%;
+    }
+
+
+    .text-box1 {
+      height: 40rem;
+      text-align: left;
+      padding-top: 1%;
+    }
+
+    .text-boxjourneaux {
+      height: 45rem;
+      text-align: center;
+    }
+
+    .text-boxdepart {
+      height: 25rem;
+      text-align: center;
+    }
+
+    .text-boxgiono {
+
+      height: 67rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+
+    .text-boxgiono2 {
+
+      height: 67rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+    .text-boxgenevoix {
+
+      height: 60rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+    .text-boxjmo17 {
+
+      height: 38rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 1.5%;
+
+    }
+
+
+
+    h4 {
+      color: #434144;
+    }
+
+    .Pica {
+      padding: 20px;
+      width: 18rem;
+      height: 18rem;
+      box-shadow: 4px 5px 10px 10px rgba(20, 20, 20, 0.4);
+    }
+
+    .Picc {
+      width: 70rem;
+      height: 20rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+    .Picd {
+      width: 20rem;
+      height: 30rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+    .Pice {
+      width: 25rem;
+      height: 37rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+
+    .picms {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 15rem;
+      height: 20rem;
+      margin-left: 3rem;
+    }
+
+    .pich {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 30rem;
+      height: 20rem;
+    }
+
+    .picv {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 20rem;
+      height: 30rem;
+    }
+
+    .picrot-15 {
+      transform: rotate(-15deg);
+    }
+
+    .ppich {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 20rem;
+      height: 14rem;
+    }
+
+    .PicConscrits {
+      width: 36rem;
+      height: 24rem;
+    }
+
+    .piclaguerre {
+      width: 40rem;
+      height: 12rem;
+    }
+
+    .picBergougnan {
+      width: 15rem;
+      height: 22rem;
+    }
+
+    .picMichelin {
+      width: 22rem;
+      height: 16rem;
+    }
+
+    .picChamond3 {
+      width: 50rem;
+      height: 15rem;
+    }
+
+    .picBrun {
+      width: 15rem;
+      height: 15rem;
+    }
+
+    .audiobutton {
+      padding-bottom: 3%;
+    }
+
+    audio::-webkit-media-controls-panel {
+      background-color: #DFAA93
+    }
+
+    audio {
+      height: 1.5rem;
+      width: 14rem;
+    }
+
+
+    @media (max-width:990px) {
+
+      .Pic1a,
+      .Pic1b {
+        position: static;
+        transform: rotate(0);
+      }
+
+    }
+
+    /* Static Carousel pictures */
+
+
+
+    em {
+      color: #232027;
+    }
+
+    .wrapper {
+      width: 66%;
+      margin: 40px auto;
+    }
+
+    .wrapper1 {
+      width: 50%;
+      margin: 40px auto;
+    }
+
+    .wrapper2 {
+      width: 90%;
+      margin: 40px auto;
+    }
+
+    div.gallery {
+      margin-top: 30px;
+    }
+
+    div.gallery ul {
+      list-style-type: none;
+      margin-left: 35px;
+    }
+
+    /* animation */
+    div.gallery ul li,
+    div.gallery li img {
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      -o-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
+    }
+
+    div.gallery ul li {
+      position: relative;
+      float: left;
+      width: 375px;
+      height: 370px;
+      margin: 5px;
+      padding: 5px;
+      z-index: 0;
+    }
+
+    /* Make sure z-index is higher on hover */
+    /* Ensure that hover image overlapped the others */
+    div.gallery ul li:hover {
+      z-index: 5;
+    }
+
+    /* Image is position nicely under li */
+    div.gallery ul li img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 1px solid #dddddd;
+      padding: 5px;
+      width: 375px;
+      height: 375px;
+      background: #f0f0f0;
+    }
+
+    div.gallery ul li img:hover {
+      width: 600px;
+      height: 600px;
+      margin-top: -250px;
+      margin-left: -375px;
+      top: 65%;
+      left: 65%;
+    }
+
+    p.attribution {
+      font-family: 'Consolas';
+      color: #000;
+      clear: both;
+      text-align: center;
+      line-height: 25px;
+      padding-top: 30px;
+    }
+
+    p.attribution a {
+      color: #4c8d7c;
+    }
+
+    /* Responsive hack */
+    @media only screen and (min-width: 499px) and (max-width: 1212px) {
+      .wrapper {
+        width: 500px;
+      }
+    }
+
+    @media only screen and (max-width: 498px) {
+      .wrapper {
+        width: 300px;
+      }
+
+      div.gallery ul {
+        list-style-type: none;
+        margin: 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
-<br>
-<br>
-<br>
-<h1>En travaux ... <a href="index.html">
-  <img class="logo retour" src="images/logo1.png" alt="logo-img">
-</a></h1>
-<br>
-<br>
-<h1>On a un petit problème avec le plan</h1>
-<br>
-<br>
-<br>
-<iframe src="https://giphy.com/embed/PLXUFxOBxCfuU1qOZD" width="480" height="365" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/wwi-great-war-first-world-PLXUFxOBxCfuU1qOZD">via GIPHY</a></p>
+  <a href="box-page1"></a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid navigation-accueil blip">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="images/logo1.png" alt="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html#introduction" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">INTRODUCTION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#les-acteurs" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES ACTEURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#leslieux" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES LIEUX</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#parcours" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PARCOURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#focus" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">FOCUS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#Ressources" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">RESSOURCES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plan.html" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PLAN DES TRANCHEES</a>
+          </li>
+          <li class="nav-item">
+            <table cellpadding=0 cellspacing=0 border=0>
+              <tr>
+                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+                  <center>
+                    <table width="90%" cellpadding=0 cellspacing=0 border=0 style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+                    </table>
+                  </center>
+                  <form style="margin:0px; margin-top:5px;" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+                    <input type="hidden" name="si" value="75939983">
+                    <input type="hidden" name="pid" value="r">
+                    <input type="hidden" name="n" value="0">
+                    <input type="hidden" name="_charset_" value="">
+                    <input type="hidden" name="bcd" value="&#247;">
+                    <input type="text" name="query" size="15">
+                    <input type="submit" value="search" style="font-family: Arial, Helvetica, sans-serif; font-size: 13pt; text-transform: uppercase; color: white; background: rgba(76, 175, 80, 0); border: none; font-weight: bold;">
+                  </form>
+                </td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="cont">
+          <div class="scroller">
+            <div class="img"><img src="audios/Midwinter1.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition1.jpg" alt=""></div>
+            <div class="img"><img src="audios/Midwinter2.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition2.jpg" alt=""></div>
+            <div class="img"><img src="audios/Midwinter1.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition1.jpg" alt=""></div>
+            <div class="img"><img src="audios/Midwinter2.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition2.jpg" alt=""></div>
+          </div>
+        </div>
+        <br>
+        <div class="audiobutton">
+          <audio id="audio" controls>
+            <source src="audios/Midwinter.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+      <div class="col-lg-8">
+      </div>
+    </div>
+    <h1 class="title-parcours">In the bleak Midwinter</h1>
+    <br>
+    <br>
+    <br>
+    <h3>Décembre 1915, voilà maintenant 16 mois que la guerre a commencé et personne n’en voit la fin. Les espoirs d’une guerre courte sont maintenant oubliés et c’est un deuxième hiver dans les tranchées que vivent les soldats.</h3>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-6 text-boxmichelin">
+        <h3>Noël 1914 avait créé une brève lueur d’espoir, quand, dans la région d’Ypres, soldats allemands et anglais avaient fraternisés dans le No Man’s Land qui séparait leurs tranchées. Un moment d’humanité rare et spontané après le choc des quatre premiers mois de guerre. Un moment de répit où chaque camp enterra ses morts et échangea des hymnes et chants de Noël. Un moment de fraternité au cours duquel anglais et allemands jouèrent même un match de football …</h3>
+        <br>
+      <h3>Mais les Etats-Majors ne voyaient pas ces velléités de fraternisation d’un bon œil, et très vite ils reprirent les choses en mains. Aucune trêve de Noël n’aura plus jamais lieu jusqu’à la fin de la guerre, sous peine de trahison et passage au peloton d’exécution.</h3>
+        <br>
+        <h3>Pour en savoir plus sur cette épisode de la guerre :</h3>
+        <br>
+        <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="https://www.ledevoir.com/monde/427612/le-noel-ou-les-armes-se-sont-tues" target="_blank"><i
+            class="fas fa-archive"></i> En Savoir Plus</a>
+        <br>
+      </div>
+      <div class="col-lg-4">
+        <br>
+        <br>
+        <img src="images/imagesbox/Box8b/DailyMirror.jpg" alt="">
+      </div>
+      <div class="col-lg-1">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Auguste et Gabriel connaissent en fait une période de calme pour ce Noël 1915. Après avoir subi des pertes très importantes lors de la bataille pour Notre Dame de Lorette, leurs régiments ont été envoyés en cantonnement prolongé. Il s’agit de reposer les hommes mais aussi de reconstituer les compagnies avec du sang neuf et de nouvelles recrues pour les batailles qui s’annoncent.</h3>
+    <br>
+    <h3>Ainsi Auguste est du côté de Lure en Haute Saône et Gabriel revient d’un entraînement à Compiègne … il appelle cela aller à l’école !...</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ma chère petite Léa,</h3>
+        <br>
+        <h3 class="textcarte">Tu m’excuseras si j’ai tant tardé à t’écrire.</h3>
+        <h3 class="textcarte">Je suis toujours en très bonne santé et je pense que ma carte te trouveras de même. Je t’envoie une vue du coin à six kilomètres où nous sommes.</h3>
+        <h3 class="textcarte">Tu n’as qu’à regarder sur la carte, tu le trouveras – nous sommes au Nord.</h3>
+        <h3 class="textcarte">Ma petite Léa, il faut bien te soigner et soigne aussi la marraine et le tonton.</h3>
+        <h3 class="textcarte">Je termine en t’embrassant bien fort.</h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box8b/Pic1a.JPG" alt="image">
+        <img class="pich" src="images/imagesbox/Box8b/Pic1b.JPG" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box8b/Pic2a.JPG" alt="image">
+        <img class="pich" src="images/imagesbox/Box8b/Pic2b.JPG" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chers Parents,</h3>
+        <br>
+        <h3 class="textcarte">Je suis rentré hier de Compiègne en bonne santé.</h3>
+        <h3 class="textcarte">J’ai trouvé en arrivant la lettre et le colis, rien ne s’est âbimé. J’avais aussi deux lettres d’Auguste qui m’attendaient.</h3>
+        <h3 class="textcarte">Je me suis pas ennuyé à l’école, malgré que la saison n’est pas bien bonne pour ça, seulement ça change un peu.</h3>
+        <h3 class="textcarte">Maria me dit qu’elle conduit bien Mouton à présent, il est donc toujours bien sage.</h3>
+        <h3 class="textcarte">Rien de nouveau. Je termine en vous embrassant.</h3>
+        <br>
+        <h3 class="textcarte">Gabriel</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Arrive la saison des vœux. Chacun est triste d’être séparé, mais chacun trouve du réconfort dans la pensée d’avoir survécu à cette première année de guerre. Et bien sûr, tout le monde souhaite que le Noël de 1916 sera un Noël de paix …</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chères Léa et Augustine,</h3>
+        <br>
+        <h3 class="textcarte">Je vous envoie ces deux cartes pour vous dire que je suis en très bonne santé.</h3>
+        <h3 class="textcarte">Je viens de lire à l’instant deux lettres de Maria, j’ai trouvé le mandat que vous m’avez envoyé. Le colis n’est pas arrivé aujourd’hui, mais je l’aurai demain. Avec ça, je peux bien passer cette fête de Noël qui réunit
+          si bien les familles en temps de paix.</h3>
+        <h3 class="textcarte">Il faut donc encore cette année la passer loin les uns des autres mais estimons-nous encore heureux d’être tous en bonne santé après avoir passé tant de mauvaises journées.</h3>
+        <h3 class="textcarte">Je suis revenu de Compiègne dimanche soir. Beaune y a pas été encore, il va pas tarder à aller en ...</h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte"></h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box8b/Pic3a.JPG" alt="image">
+        <img class="picv" src="images/imagesbox/Box8b/Pic3b.JPG" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box8b/Pic4a.JPG" alt="image">
+        <img class="picv" src="images/imagesbox/Box8b/Pic4b.JPG" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">... permission, il est bien tranquille en ce moment. Il fait le travail d’un adjudant qui est de St Eloy. Je tâcherais de m’arranger avec lui pour que vous puissiez le voir.</h3>
+        <h3 class="textcarte">J’ai reçu un colis de ma filleule hier, elle m’a envoyé aussi un flacon – rien ne s’est abîmé en route.</h3>
+        <h3 class="textcarte">Enfin, tâchez de bien passer cette fête sans vous faire de mauvais sang pour nous. Auguste m’a écrit aujourd’hui, nous sommes pas trop malheureux pour le moment. La lampe d’Antoine marche très bien.</h3>
+        <h3 class="textcarte">Je termine en vous embrassant tous du fond du cœur.</h3>
+        <br>
+        <h3 class="textcarte">Gabriel</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ma chère filleule,</h3>
+        <br>
+        <h3 class="textcarte">Je t’envoie mes meilleurs souhaits de bonne année.</h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box8b/Pic5a.JPG" alt="image">
+        <img class="pich" src="images/imagesbox/Box8b/Pic5b.JPG" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box8b/Pic6a.JPG" alt="image">
+        <img class="pich" src="images/imagesbox/Box8b/Pic6b.JPG" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ma chère petite Léa,</h3>
+        <br>
+        <h3 class="textcarte">Je te souhaite une bonne et heureuse année.</h3>
+        <h3 class="textcarte">J’espère qu’elle sera plus heureuse pour nous que celle que nous venons de passer.</h3>
+        <h3 class="textcarte">Embrasse bien fort tous nos chers parents pour moi.</h3>
+        <h3 class="textcarte">Ton frère qui t’embrasse bien fort.</h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Cher parrain,</h3>
+        <br>
+        <h3 class="textcarte">A l’occasion du nouvel an, je viens t’offrir mes bons souhaits de bonne année.</h3>
+        <h3 class="textcarte">Souhaitons que l’année 1916 soit meilleure que celle qui s’est écoulée. Oui, un Noël passé loin de chez soi, c’est bien long.</h3>
+        <h3 class="textcarte">Nous t’embrassons bien affectueusement.</h3>
+        <h3 class="textcarte">Ta filleule qui t’aime.</h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Louise</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box8b/Pic7a.JPG" alt="image">
+        <img class="picv" src="images/imagesbox/Box8b/Pic7b.JPG" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box8b/Pic8a.JPG" alt="image">
+        <img class="pich" src="images/imagesbox/Box8b/Pic8b.JPG" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Cher Gabriel.</h3>
+        <br>
+        <h3 class="textcarte">A l’occasion du nouvel an, nous nous unissons tous pour t’exprimer de grand cœur tous nos meilleurs vœux de bonheur.</h3>
+        <h3 class="textcarte">Nous souhaitons que l’an 1916 te soit très favorable</h3>
+        <h3 class="textcarte">Crois toujours à la bonne sympathie de nous tous et accepte nos souhaits très sincères.</h3>
+        <h3 class="textcarte">Tes petites amies. </h3>
+        <br>
+        <h3 class="textcarte">Louise et Germaine Legay
+
+        </h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ma chère petite filleule,</h3>
+        <br>
+        <h3 class="textcarte">Je t’envoie deux mots pour te souhaiter une bonne fête de Noël.</h3>
+        <h3 class="textcarte">Je la passerai loin de toi, mais j’espère que ce sera pour la dernière fois.</h3>
+        <h3 class="textcarte">Ton petit parrain qui t’aime et qui t’oublie pas.</h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box8b/Pic9a.JPG" alt="image">
+        <img class="picv" src="images/imagesbox/Box8b/Pic9b.JPG" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box8b/Pic10a.JPG" alt="image">
+        <img class="picv" src="images/imagesbox/Box8b/Pic10b.JPG" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère Maria,</h3>
+        <br>
+        <h3 class="textcarte">Je t’écris deux mots pour te souhaiter une bonne fête.</h3>
+        <h3 class="textcarte">Moi ici je la passerai, mais loin de vous tous.</h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Un bonjour de ton parrain.</h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box8b/Pic11a.JPG" alt="image">
+        <img class="pich" src="images/imagesbox/Box8b/Pic11b.JPG" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>C’est à l’occasion de toutes ces fêtes de famille manquées que la cruauté et l’absurdité sont ressenties le plus vivement par les soldats et ceux et celles restés au village.</h3>
+    <br>
+    <h3>Dans Le Feu d’Henri Barbusse, un autre classique sur la Grande Guerre, il est un passage qui exprime parfaitement cette absurdité. Des soldats français et allemands qui prient le même Dieu dans des tranchées qui se font face … un Dieu qui ne sait pas quoi faire face à cette folie humaine.</h3>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-6 text-boxmichelin" style="height:10rem;">
+      <h3>C’est comme si les soldats chantaient le même cantique, le même chant de Noël. Un peu comme cette version de Still, Still, Still chantée en allemand et anglais par Bryn Terfel …</h3>
+      </div>
+      <div class="col-lg-5 text-boxmichelin" style="height:10rem;">
+        <div class="cont">
+          <div class="scroller">
+            <div class="img"><img src="audios/Still1.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition1.jpg" alt=""></div>
+            <div class="img"><img src="audios/Still2.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition2.jpg" alt=""></div>
+            <div class="img"><img src="audios/Still1.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition1.jpg" alt=""></div>
+            <div class="img"><img src="audios/Still2.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition2.jpg" alt=""></div>
+          </div>
+        </div>
+        <br>
+        <div class="audiobutton">
+          <audio id="audio" controls>
+            <source src="audios/Still.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+      <div class="col-lg-1">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 text-boxgiono" style="height: 60rem;">
+        <h4>… Il y eut un silence. L'aviateur s'écria :</h4>
+        <h4>— Les officiants essayaient, des deux côtés, de se couvrir la voix!</h4>
+        <h4>— Qu'est-ce que c'est que ça ? fit le zouave étonné,</h4>
+        <h4>— C'est’ qu’ tu déménages, mon pauv’ vieux ? demanda un chasseur blessé à la main, un bras lié au corps, en quittant un instant des yeux sa main momifiée pour considérer l'aviateur.</h4>
+        <br>
+        <div class="row">
+          <div class="col-lg-6">
+            <img src="images/imagesbox/Box8b/Messe1.jpg" alt="Troupeau-img">
+          </div>
+          <div class="col-lg-6">
+            <br>
+            <h4>Celui-ci avait les regards perdus, et essayait de traduire un mystérieux tableau que partout il portait devant ses yeux</h4>
+            <h4>— D'en haut, du ciel, on ne voit pas grand-chose, vous savez. Dans les carrés des champs et les petits tas de villages, les chemins font comme du fil blanc. On découvre aussi certains filaments creux qui ont l’air d’avoir été tracés
+              par la pointe d’une épingle qui écorcherait du sable fin. Ces réseaux qui festonnent la plaine d’un trait régulièrement tremblé, c’est les tranchées. </h4>
+            <h4></h4>
+            <h4></h4>
+            <h4></h4>
+          </div>
+        </div>
+        <br>
+        <h4>Dimanche matin, je survolais la ligne de feu. Entre les bords extrêmes, entre les franges des deux armées immenses qui sont là, l’une contre l'autre à se regarder et à ne pas se voir en attendant — il n'y a pas beaucoup de distance : des
+          fois quarante mètres, des fois soixante. À moi, il me paraissait qu’il n'y avait qu'un pas à cause de la hauteur géante où je planais.</h4>
+        <br>
+        <h4>Et voici que je distingue, chez les Boches et chez nous, dans ces lignes parallèles qui semblaient se toucher, deux remuements pareils : une masse, Un noyau animé et, autour, comme des grains de sable noirs éparpillés sur du sable gris.
+          Ça ne bougeait guère; ça n'avait pas l'air d'une alerte! Je suis descendu quelques tours pour comprendre.</h4>
+        <br>
+        <h4>« J'ai compris. C'était dimanche et c'étaient deux messes qui étaient célébrées sous mes yeux : l'autel, le prêtre et le troupeau des types, Plus je descendais, plus je voyais que ces deux agitations étaient pareilles, si exactement
+          pareilles que ça avait l'air idiot. Une des cérémonies —au choix — était le reflet de l'autre. Il me semblait que je voyais double. </h4>
+        <h4></h4>
+        <h4></h4>
+      </div>
+      <div class="col-lg-6 text-boxgiono" style="height: 60rem;">
+        <h4>Je suis descendu encore; on ne me tirait pas dessus. Pourquoi ? Je n'en sais rien. Alors, j'ai entendu. J'ai entendu un murmure — un seul. Je ne recueillais qu’une prière qui s'élevait en bloc, qu'un seul bruit de cantique qui montait au
+          ciel an passant par moi. J'allais et venais dans l’espace pour écouter ce vague mélange de chants qui étaient l’un contre l’autre, mais qui se mêlaient tout de même —et plus ils essayaient de se surmonter l’un l’autre, plus ils s’unissaient
+          dans les hauteurs du ciel où je me trouvais suspendu.</h4>
+        <h4>«J'ai reçu des shrapnells au moment où, très bas, je distinguais les deux cris terrestres dont était fait leur cri : «Gott mit uns ! » et « Dieu est avec nous! » — et je me suis renvolé. »</h4>
+        <h4></h4>
+        <h4></h4>
+        <div class="row">
+          <div class="col-lg-6">
+            <br>
+            <h4>Le jeune homme hocha sa tête couverte de linges. Il était comme affolé par ce souvenir.</h4>
+            <h4>— Je me suis dit, à ce moment : «Je suis fou! »</h4>
+            <h4>— C'est la vérité des choses qu'est folle, dit le zouave.</h4>
+            <h4>Les yeux luisants de délire, le narrateur tâchait de rendre la grande impression émouvante qui l'assiégeait et contre laquelle il se débattait.</h4>
+            <h4>— Non! mais quoi ! fit-il. Figurez-vous ces deux masses identiques qui hurlent des choses identiques et pourtant contraires, ces cris ennemis qui ont la même forme Qu'est-ce que le Bon Dieu doit dire, en somme ! Je sais bien qu'il
+              sait tout ; mais, même sachant tout, il ne doit pas savoir quoi faire.</h4>
+            <h4>— Quelle histoire ! cria le zouave.</h4>
+            <h4>— I' s’ fout bien de nous, va, t'en fais pas.</h4>
+          </div>
+          <div class="col-lg-6">
+            <img src="images/imagesbox/Box8b/Messe2.jpg" alt="Pensee-img" style="margin-left:auto; margin-right:auto; display:block;">
+          </div>
+        </div>
+        <br>
+        <h4>— Et pis, qu'est-ce que ça a de rigolo, tout ça ? Les coups de fusil parlent bien la même langue, pas, et ça n'empêche pas les peuples de s'engueuler avec, et comment!</h4>
+        <h4>— Oui, dit l'aviateur, mais il n'y a qu'un seul Dieu. Ce n'est pas le départ des prières que je ne comprends pas, c'est leur arrivée …</h4>
+        <br>
+        <img src="images/imagesbox/Box8b/LeFeu.jpg" alt="Pensee-img">
+        <h4 style="color:black;font-style:italic"> Extraits - Le Feu - Henri Barbusse </h4>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Voici l’une des dernières cartes de Gabriel. Une carte où il souhaite que l’année 1916 soit meilleure que l’année passée … deux mois plus tard, il mourra sur le champ de bataille.</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box8b/Pic12a.JPG" alt="image">
+        <img class="picv" src="images/imagesbox/Box8b/Pic12b.JPG" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chers parents,</h3>
+        <br>
+        <h3 class="textcarte">Je vous écris pour vous donner de mes nouvelles qui sont très bonnes pour l’instant.</h3>
+        <h3 class="textcarte">Je profite en même temps de l’occasion pour vous souhaiter à tous une bonne et heureuse année, et surtout une parfaite santé.</h3>
+        <h3 class="textcarte">L’année dernière, on avait tous l’espérance de n’être plus en guerre pour cette nouvelle année, mais malheureusement on ne peut même pas savoir si dans un an ce sera tout fini.</h3>
+        <h3 class="textcarte">Enfin, les souhaits de bonne année que nous nous sommes faits ont été bien exaucés quand même puisque nous avons passé cette année toute la famille en bonne santé.</h3>
+        <h3 class="textcarte">J’espère que cette nouvelle année, ce passera la même chose.</h3>
+        <h3 class="textcarte">Auguste m’a écrit hier, il est en bonne santé.</h3>
+        <h3 class="textcarte">Rien de nouveau à vous apprendre. Je termine en vous embrassant du fond du cœur.</h3>
+        <br>
+        <h3 class="textcarte">Gabriel</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
 
 
+    <br>
+    <br>
+
+
+
+
+    <br>
+    <div class="row">
+      <div class="footer">
+        <div class="row">
+          <div class="col-lg-9">
+            <hr style="border-top: 3px solid; margin-top: 25px; color: white;">
+          </div>
+          <div class="col-lg-2">
+            <p style="padding-top: 10px; text-align: left;">Des Sillons aux Tranchées </p>
+          </div>
+          <div class="col-lg-1">
+            <p><img class="logo" src="images/logo1.png" alt="logo-img" style="height:30px; width:30px; display: block;
+  margin-left: auto;
+  margin-right: auto;"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+  </div>
 
 </body>
 
