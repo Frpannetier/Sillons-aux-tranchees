@@ -487,6 +487,12 @@ padding-left: 25%;
   position: relative;
 }
 
+.cont11 {
+  height: 214px;
+  overflow-x: hidden;
+  position: relative;
+}
+
 .scroller {
   position: absolute;
   top: 0;
