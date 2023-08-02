@@ -3,8 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Des Sillons aux Tranchées</title>
-
+  <title>Mort au combat</title>
 
   <!-- Google Fonts -->
 
@@ -23,32 +22,924 @@
 
   <script src="https://kit.fontawesome.com/cc4dcc56d7.js" crossorigin="anonymous"></script>
 
-<style media="screen">
+  <style>
+    body {
+      background-image: linear-gradient(to right top, #d97e57, #d5815c, #d08460, #cc8665, #c7896a, #c68d6f, #c59174, #c49579, #c69c7f, #c9a386, #cbaa8d, #ceb194);
+    }
 
-.retour{
-  margin-left: 0rem;
-}
+    .map {
+      background-image: url(images/imagesbox/Box5/map26Aout.jpg);
+      height: 90rem;
+    }
 
-</style>
+    .couv17 {
+      padding-top: 47rem;
+      padding-right: 5rem;
+    }
+
+    .couv98 {
+      padding-top: 10rem;
+    }
+
+    .mapChipotte {
+      background-image: url(images/imagesbox/Box5/ColdelaChipotte.jpg);
+      text-align: left;
+    }
+
+    .mapFrance {
+      background-image: url(images/imagesbox/Box6a/Mapconvois.jpg);
+      text-align: left;
+    }
+
+    .mapStRemy {
+      background-image: url(images/imagesbox/Box5/StRemy.jpg);
+      text-align: left;
+    }
+
+    .mapEMMarne {
+      background-image: url(images/imagesbox/Box5/MapEMMarne.jpg);
+      text-align: left;
+    }
+
+    .PicChipotte {
+      padding-top: 25rem;
+    }
+
+    .PicMarne {
+      padding-top: 0rem;
+
+    }
+
+    .fraternite {
+      padding-left: 6.5rem;
+    }
+
+    .title-parcours {
+      padding-top: 10%;
+      padding-bottom: 1%;
+    }
+
+    .textcarte {
+      font-family: 'Sacramento', cursive;
+      font-size: 200%;
+      color: #434144;
+      font-weight: 600;
+    }
+
+    .texte-legend {
+      font-size: 100%;
+    }
+
+    .image-box {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 10rem 0rem;
+    }
+
+    .image-boxExcep {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 20rem 0rem;
+    }
 
 
+    .image-boxms {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 5rem 0rem;
+    }
+
+    .text-box {
+      height: 40rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxExcep {
+      height: 55rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxconvois {
+      height: 30rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxbergougnan {
+      height: 20rem;
+      text-align: left;
+      padding-top: 2%;
+    }
+
+    .text-boxchamond {
+      height: 20rem;
+      text-align: left;
+      padding-top: 0%;
+    }
+
+    .text-boxmichelin {
+      height: 20rem;
+      text-align: left;
+      padding-top: 1%;
+    }
+
+
+    .text-box1 {
+      height: 40rem;
+      text-align: left;
+      padding-top: 1%;
+    }
+
+    .text-boxjourneaux {
+      height: 45rem;
+      text-align: center;
+    }
+
+    .text-boxdepart {
+      height: 25rem;
+      text-align: center;
+    }
+
+    .text-boxgiono {
+
+      height: 67rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+
+    .text-boxgiono2 {
+
+      height: 67rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+    .text-boxgenevoix {
+
+      height: 60rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+    .text-boxjmo17 {
+
+      height: 38rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 1.5%;
+
+    }
+
+    .text-boxprevert2 {
+
+      height: 86rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+      padding-left: 3%;
+
+    }
+
+
+
+
+    h4 {
+      color: #434144;
+    }
+
+    .Pica {
+      padding: 20px;
+      width: 18rem;
+      height: 18rem;
+      box-shadow: 4px 5px 10px 10px rgba(20, 20, 20, 0.4);
+    }
+
+    .Picc {
+      width: 70rem;
+      height: 20rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+    .Picd {
+      width: 20rem;
+      height: 30rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+    .Pice {
+      width: 25rem;
+      height: 37rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+
+    .picms {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 15rem;
+      height: 20rem;
+      margin-left: 3rem;
+    }
+
+    .pich {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 30rem;
+      height: 20rem;
+    }
+
+    .picv {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 20rem;
+      height: 30rem;
+    }
+
+    .picrot-15 {
+      transform: rotate(-15deg);
+    }
+
+    .ppich {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 20rem;
+      height: 14rem;
+    }
+
+    .PicConscrits {
+      width: 36rem;
+      height: 24rem;
+    }
+
+    .piclaguerre {
+      width: 40rem;
+      height: 12rem;
+    }
+
+    .picBergougnan {
+      width: 15rem;
+      height: 22rem;
+    }
+
+    .picMichelin {
+      width: 22rem;
+      height: 16rem;
+    }
+
+    .picChamond3 {
+      width: 50rem;
+      height: 15rem;
+    }
+
+    .picBrun {
+      width: 15rem;
+      height: 15rem;
+    }
+
+    .audiobutton {
+      padding-bottom: 3%;
+    }
+
+    audio::-webkit-media-controls-panel {
+      background-color: #DFAA93
+    }
+
+    audio {
+      height: 1.5rem;
+      width: 14rem;
+    }
+
+
+    @media (max-width:990px) {
+
+      .Pic1a,
+      .Pic1b {
+        position: static;
+        transform: rotate(0);
+      }
+
+    }
+
+    /* Static Carousel pictures */
+
+
+
+    em {
+      color: #232027;
+    }
+
+    .wrapper {
+      width: 66%;
+      margin: 40px auto;
+    }
+
+    .wrapper1 {
+      width: 50%;
+      margin: 40px auto;
+    }
+
+    .wrapper2 {
+      width: 90%;
+      margin: 40px auto;
+    }
+
+    div.gallery {
+      margin-top: 30px;
+    }
+
+    div.gallery ul {
+      list-style-type: none;
+      margin-left: 35px;
+    }
+
+    /* animation */
+    div.gallery ul li,
+    div.gallery li img {
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      -o-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
+    }
+
+    div.gallery ul li {
+      position: relative;
+      float: left;
+      width: 375px;
+      height: 370px;
+      margin: 5px;
+      padding: 5px;
+      z-index: 0;
+    }
+
+    /* Make sure z-index is higher on hover */
+    /* Ensure that hover image overlapped the others */
+    div.gallery ul li:hover {
+      z-index: 5;
+    }
+
+    /* Image is position nicely under li */
+    div.gallery ul li img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 1px solid #dddddd;
+      padding: 5px;
+      width: 375px;
+      height: 375px;
+      background: #f0f0f0;
+    }
+
+    div.gallery ul li img:hover {
+      width: 600px;
+      height: 600px;
+      margin-top: -250px;
+      margin-left: -375px;
+      top: 65%;
+      left: 65%;
+    }
+
+    p.attribution {
+      font-family: 'Consolas';
+      color: #000;
+      clear: both;
+      text-align: center;
+      line-height: 25px;
+      padding-top: 30px;
+    }
+
+    p.attribution a {
+      color: #4c8d7c;
+    }
+
+    /* Responsive hack */
+    @media only screen and (min-width: 499px) and (max-width: 1212px) {
+      .wrapper {
+        width: 500px;
+      }
+    }
+
+    @media only screen and (max-width: 498px) {
+      .wrapper {
+        width: 300px;
+      }
+
+      div.gallery ul {
+        list-style-type: none;
+        margin: 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
-<br>
-<br>
-<br>
-<h1>En travaux ... <a href="index.html">
-  <img class="logo retour" src="images/logo1.png" alt="logo-img">
-</a></h1>
-<br>
-<br>
-<h1>On déblaye ...</h1>
-<br>
-<br>
-<br>
-<iframe src="https://giphy.com/embed/RPYxEOq8nzNGLICdWG" width="480" height="366" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/wwi-great-war-first-world-RPYxEOq8nzNGLICdWG">via GIPHY</a></p>
+  <a href="box-page1"></a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid navigation-accueil blip">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="images/logo1.png" alt="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html#introduction" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">INTRODUCTION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#les-acteurs" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES ACTEURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#leslieux" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES LIEUX</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#parcours" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PARCOURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#focus" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">FOCUS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#Ressources" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">RESSOURCES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plan.html" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PLAN DES TRANCHEES</a>
+          </li>
+          <li class="nav-item">
+            <table cellpadding=0 cellspacing=0 border=0>
+              <tr>
+                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+                  <center>
+                    <table width="90%" cellpadding=0 cellspacing=0 border=0 style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+                    </table>
+                  </center>
+                  <form style="margin:0px; margin-top:5px;" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+                    <input type="hidden" name="si" value="75939983">
+                    <input type="hidden" name="pid" value="r">
+                    <input type="hidden" name="n" value="0">
+                    <input type="hidden" name="_charset_" value="">
+                    <input type="hidden" name="bcd" value="&#247;">
+                    <input type="text" name="query" size="15">
+                    <input type="submit" value="search" style="font-family: Arial, Helvetica, sans-serif; font-size: 13pt; text-transform: uppercase; color: white; background: rgba(76, 175, 80, 0); border: none; font-weight: bold;">
+                  </form>
+                </td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="cont">
+          <div class="scroller">
+            <div class="img"><img src="audios/RavelAdagio1.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition1.jpg" alt=""></div>
+            <div class="img"><img src="audios/RavelAdagio2.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition2.jpg" alt=""></div>
+            <div class="img"><img src="audios/RavelAdagio1.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition1.jpg" alt=""></div>
+            <div class="img"><img src="audios/RavelAdagio2.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition2.jpg" alt=""></div>
+          </div>
+        </div>
+        <br>
+        <div class="audiobutton">
+          <audio id="audio" controls>
+            <source src="audios/RavelAdagio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+      <div class="col-lg-8">
+      </div>
+    </div>
+    <h1 class="title-parcours">Mort au combat</h1>
+    <br>
+    <br>
+    <br>
+    <h3>Janvier 1916, une nouvelle année commence … Gabriel est au front dans le secteur de Ribécourt, à proximité de Cambrai.</h3>
+    <br>
+    <h3>C’est une période de guerre ordinaire, une période de calme relatif et en ce début d’année, Gabriel semble s’installer dans cette routine soldatesque. Comme dans cet adagio de Ravel, pour un temps on se laisse emporter par cette harmonie
+      passagère, mais derrière cette mélodie on pressent la menace et les souffrances des jours à venir.</h3>
+    <br>
+    <h3>Ainsi les premières cartes postales sont pour les deux petites Augustine et Léa. Une fois encore, Gabriel semble avoir pris grand soin pour choisir les images, des images dans lesquelles les deux sœurs peuvent aisément se refléter.</h3>
+    <br>
+    <h3>Au travers du texte, on devine un Gabriel lassé et fatigué par cette guerre mais c’est avec beaucoup de tendresse qu’il leur rappelle les bons moments et les rassure sur l’avenir.</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère Augustine,</h3>
+        <br>
+        <h3 class="textcarte">Je t’envoie cette carte ce soir du 1er Janvier pour te dire que j’ai passé une bonne journée, comme nous sommes en repos. J’ai bien dormi la nuit.</h3>
+        <h3 class="textcarte">Je serais bien été content d’être chez nous pour ces fêtes mais il faut espérer que nous pourrons nous revoir sans tarder. En attendant, je me décourage pas et je serai fier d’avoir fait mon devoir.</h3>
+        <h3 class="textcarte">Tâche de tenir la marraine bien chaude la nuit. Elle doit souvent se faire du mauvais sang pour nous.</h3>
+        <h3 class="textcarte">Enfin, je termine en t’embrassant ainsi que tous chez nous.</h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Gabriel</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box8/Pic1a.JPG" alt="image">
+        <img class="picv" src="images/imagesbox/Box8/Pic1b.JPG" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box8/Pic1c.JPG" alt="image">
+        <img class="picv" src="images/imagesbox/Box8/Pic1d.JPG" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère petite soeur Léa,</h3>
+        <br>
+        <h3 class="textcarte">J’ai reçu ta lettre qui m’a fait plaisir. Je vois que tu m’oublies pas.</h3>
+        <h3 class="textcarte">Tu me dis si je suis pas trop malheureux ? Je souffre pas trop pour le moment. Pourvu que j’ai toujours bien la santé, je ferai bien la campagne.</h3>
+        <h3 class="textcarte">D’ailleurs, ça durera pas toujours, nous nous retrouverons ensemble un jour, tous.</h3>
+        <h3 class="textcarte">J’ai mangé les pralines et les cigarettes qui étaient très bonnes. J’ai passé une bonne nuit, j’étais mieux que dans la tranchée.</h3>
+        <h3 class="textcarte">Encore une fois, je t’embrasse sur tes deux petites joues.</h3>
+        <h3 class="textcarte">Ton Dodole qui t’oublie pas.</h3>
+        <br>
+        <h3 class="textcarte">Gabriel</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Mi-Janvier, Gabriel est de nouveau au repos. Il alterne présence au feu dans les tranchées et périodes de repos, périodes pendant lesquelles il a le temps de correspondre avec la famille. Dans cette carte à Antoine, on devine la frustration
+      du soldat qui bien souvent galère pour améliorer son quotidien dans les villages près du front.</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Cher frère,</h3>
+        <br>
+        <h3 class="textcarte">Je t’envoie le village où je suis en repos depuis hier pour quatre jours.</h3>
+        <h3 class="textcarte">C’est un petit patelin qui a 600 habitants. Les maisons sont en briques, dans ce pays on ne trouve pas de pierres. Le jour de l’an, il a été un peu bombardé mais depuis il a rien reçu.</h3>
+        <h3 class="textcarte">J’ai mangé la grillade que chez nous ont envoyée hier en buvant un canon. On y trouve du vin, mais il faut encore faire des grimaces pour l’avoir. Tu sais, il y en a qui font les cons et c’est les autres qui souffrent.
+        </h3>
+        <h3 class="textcarte">Je suis en bonne santé. Il fait un peu plus froid que d’habitude.</h3>
+        <h3 class="textcarte">Ton frère qui pense à vous autres.</h3>
+        <br>
+        <h3 class="textcarte">Gabriel</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box8/Pic2a.JPG" alt="image">
+        <img class="pich" src="images/imagesbox/Box8/Pic2b.JPG" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>… Et bientôt, Gabriel retourne dans les tranchées pour, comme il le dit, remuer un peu de terre …</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box8/Pic3a.JPG" alt="image">
+        <img class="picv" src="images/imagesbox/Box8/Pic3b.JPG" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère Augustine,</h3>
+        <br>
+        <h3 class="textcarte">Je t’envoie de mes nouvelles ce soir, en attendant que j’aille remuer un peu plus de terre. Je suis en très bonne santé pour le moment.</h3>
+        <h3 class="textcarte">Quand tu m’écriras, tu me diras si tu couches toujours avec la marraine.</h3>
+        <h3 class="textcarte">Tu dois être bien contente d’avoir Antoine avec toi. Maintenant c’est encore pas complet mais le jour viendra où nous serons tous réunis.</h3>
+        <h3 class="textcarte">Je sais que tu pries beaucoup pour ça, la Sainte Vierge t’écoutera.</h3>
+        <h3 class="textcarte">Je t’embrasse bien, ainsi que toute la famille.</h3>
+        <br>
+        <h3 class="textcarte">Gabriel</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Au pays les nouvelles sont bonnes … Antoine est définitivement de retour à la ferme et c’est un grand soulagement pour la famille. Cela veut dire plus de bras pour le travail de la ferme même si Antoine souffre encore des séquelles de sa
+      blessure, mais cela veut également dire que l’un des frères est hors de danger. Comme on dit par chez nous, on commence à en voir le bout et cela donne un peu d’espoir à tout le monde.</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Je viens de recevoir votre lettre du 9, comme c’est le quinze, elle a donc mis 6 jours.</h3>
+        <h3 class="textcarte">J’ai reçu celle de chez nous aussi et une de Antoine. Il m’envoie sa photographie. Comme il me dit, il va pas tarder d’être avec vous. Ça sera toujours un de moins au danger.</h3>
+        <h3 class="textcarte">Il fait très beau aujourd’hui. Comme Marie me dit, c’est la même chose chez nous. Je suis toujours en très bonne santé. Je n’ai pas à me plaindre sur ce point depuis que je suis ici, et je crois que c’est bien
+          l’essentiel.</h3>
+        <h3 class="textcarte">Auguste m’écrit assez souvent. Comme il me dit, il est pas trop malheureux non plus. Espérons que ça continuera comme ça jusqu’à la fin.</h3>
+        <h3 class="textcarte">Je vous embrasse bien fort.</h3>
+        <br>
+        <h3 class="textcarte">Gabriel</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box8/Pic6a.JPG" alt="image">
+        <img class="picv" src="images/imagesbox/Box8/Pic6b.JPG" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Février 1916, de passage à Corbeil, Gabriel avec ses camarades sont en route pour Verdun !</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box8/Pic5a.JPG" alt="image">
+        <img class="picv" src="images/imagesbox/Box8/Pic5b.JPG" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chers Parents,</h3>
+        <br>
+        <h3 class="textcarte">Je suis de passage à Corbeil.</h3>
+        <h3 class="textcarte">Je fais bon voyage, il fait moins froid que chez nous.</h3>
+        <h3 class="textcarte">Je vous écrirai une lettre demain.</h3>
+        <h3 class="textcarte">Votre fils qui vous embrasse.</h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Gabriel</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5">
+        <br>
+        <br>
+        <img src="images/imagesbox/Box8/Verdun1.jpg" alt="">
+      </div>
+      <div class="col-lg-6">
+        <h3>Pour beaucoup, la bataille de Verdun reste dans les mémoires comme un symbole du courage et de la résistance des combattants français. Et pour cause, sur les 95 divisions de l’armée française, 70 divisions y ont participé. La victoire
+          ultime à Verdun, c’est donc la victoire de toute l’armée française.</h3>
+        <br>
+        <h3>Arrivant à Verdun dans les premiers jours de Février, Gabriel fait partie des premiers contingents qui rejoignent le champ de de bataille.</h3>
+        <br>
+        <h3>Conçue par le général Von Falkenhayn, l’offensive de Verdun consiste avant tout à briser une ligne de front figée et reprendre l’initiative. </h3>
+        <br>
+        <h3>Verdun, c’est la guerre industrielle à outrance avec une artillerie qui laboure le champ de bataille avant l’offensive de l’infanterie. La violence des combats se justifie notamment par la très faible étendue du champ de bataille
+          (quelques kilomètres carrés) où des centaines de milliers d’hommes s'affrontent jour et nuit dans des conditions apocalyptiques.</h3>
+        <br>
+      </div>
+      <div class="col-lg-1">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Voici sans doute les dernières cartes envoyées par Gabriel. Ce sont deux cartes à Augustine et à Léa, dans lesquelles il invoque notamment la protection de la Sainte Vierge et son désir de retour au pays.</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère Augustine,</h3>
+        <br>
+        <h3 class="textcarte">Je vous envoie chacune une carte avec Léa. J’espère qu’elle vous trouvera en bonne santé.</h3>
+        <h3 class="textcarte">Maria me dit que vous êtes bien sages toutes deux, c’est ce qu’il faut faire toujours.</h3>
+        <h3 class="textcarte">Je voudrais bien pouvoir aller te voir, mais tu sais ces sales Bôches ne se dégoûtent pas si vite de la guerre. Enfin, pourvu que nous puissions nous retrouver tous bien portants, quand même que ça serait un peu long,
+          tant pis.</h3>
+        <h3 class="textcarte">Il faut bien prier la Sainte Vierge pour ça. Qu’elle oublie pas notre France et que l’on soit victorieux.</h3>
+        <h3 class="textcarte">En attendant ce jour tant désiré, reçois un doux baiser de ton Dodole.</h3>
+        <br>
+        <h3 class="textcarte">Gabriel</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box8/Pic4a.JPG" alt="image">
+        <img class="picv" src="images/imagesbox/Box8/Pic4b.JPG" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box8/Pic7a.JPG" alt="image">
+        <img class="picv" src="images/imagesbox/Box8/Pic7b.JPG" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ma chère Léa,</h3>
+        <br>
+        <h3 class="textcarte">Je t’envoie cette carte. Je pense qu’elle te trouvera en bonne santé ainsi que tous chez nous.</h3>
+        <h3 class="textcarte">Maria me dit toujours que vous êtes bien sages avec Augustine. J’en suis bien content.</h3>
+        <h3 class="textcarte">Le temps me dure bien de pouvoir te causer et te faire rire un peu comme on faisait avant.</h3>
+        <h3 class="textcarte">J’espère que ça tardera peut-être pas longtemps à présent. J’aurai beaucoup de choses à te raconter.</h3>
+        <h3 class="textcarte">Ton Dodole qui pense souvent à toi.</h3>
+        <br>
+        <h3 class="textcarte">Gabriel</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-6">
+        <h3>L’offensive allemande débute le 21 Février au petit matin sur la rive droite de la Meuse par un bombardement de 800 canons. Le même jour, 60,000 soldats allemands passent à l’attaque sur un front de seulement six kilomètres.</h3>
+        <br>
+        <h3>Les soldats français résistent tant bien qu’ils peuvent mais subissent une véritable pluie d’obus. Les statistiques parlent d’elles-mêmes, en deux jours ils reçoivent deux millions d’obus !</h3>
+        <br>
+        <h3>Le fort de Douaumont est pris par les allemands, mais bientôt les poilus parviennent à bloquer l’avance ennemie. Avec l’appui de près de 300 pièces d’artillerie et ‘envoi de deux divisions en renfort, le front est stabilisé à nouveau.</h3>
+        <br>
+        <h3>Joffre décide alors d’envoyer la 2eme armée à Verdun, sous le commandement du général Pétain.</h3>
+        <br>
+      </div>
+      <div class="col-lg-5">
+        <br>
+        <br>
+        <img src="images/imagesbox/Box8/Verdun2.jpg" alt="">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Il est maintenant clair pour l’Etat Major français que les allemands tentent de percer le front à Verdun. Il faut tenir à tout prix et pour ce faire il convient de renforcer le système de défense.</h3>
+    <br>
+    <h3>C’est dans ce contexte que le 4ème régiment du Génie joue un rôle primordial et construit à la hâte de nouvelles tranchées et de nouveaux abris, notamment dans le secteur du Mort Homme sur la rive gauche de la Meuse.</h3>
+    <br>
+    <h3>Voici les croquis des systèmes de défense à la construction desquels Gabriel a sans doute participé dans le secteur des Bois Bourrus, au pied de a colline du Mort Homme.</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="images/imagesbox/Box8/Verdun3.jpg" alt="">
+      </div>
+      <div class="col-lg-4">
+        <img src="images/imagesbox/Box8/Verdun5.jpg" alt="">
+      </div>
+      <div class="col-lg-4">
+        <img src="images/imagesbox/Box8/Verdun4.jpg" alt="">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-5">
+        <br>
+        <iframe width="650" height="400" src="https://www.youtube.com/embed/83R76K3FbfE">
+        </iframe>
+      </div>
+      <div class="col-lg-6">
+        <br>
+        <br>
+        <h3>Les canons français placés sur la colline du Mort Homme pilonnent les tranchées allemandes sur l’autre rive de la Meuse. En conséquence, la prise du Mort Homme devient un objectif stratégique pour les allemands.</h3>
+        <br>
+        <h3>La bataille du Mort Homme et de ses alentours, dont les Bois Bourrus, commence le 6 Mars et durera jusqu’au 15 Mars.</h3>
+        <br>
+        <h3>Une fois encore, le paysage entier est détruit et labouré. C’est dans cet enfer que Gabriel trouve la mort le 10 Mars 1916 , sans doute occupé à réparer des tranchées détruites par les obus.</h3>
+        <br>
+        <h3>Du 4ème Régiment du Génie, ils sont sept à périr ce jour là. Les films d’actualité de l’époque sur Verdun se passent de commentaires …</h3>
+        <br>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>De la mort de Gabriel, on ne sait pas beaucoup au-delà de sa citation militaire. Alors qu’il est fait mention de nombre de ses camarades à la nécropole d’Esnes en Argonne à proximité des Bois Bourrus, nulle mention de Gabriel. Qu’il repose en paix.</h3>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-6 text-boxmichelin" style="height:10rem;">
+      <h3>Oui, Gabriel, ses camarades soldats et leurs adversaires dans les tranchées, l’ont bien gagné leur coin de paradis …</h3>
+      </div>
+      <div class="col-lg-5 text-boxmichelin" style="height:10rem;">
+        <div class="cont">
+          <div class="scroller">
+            <div class="img"><img src="audios/Paradisum1.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition1.jpg" alt=""></div>
+            <div class="img"><img src="audios/Paradisum2.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition2.jpg" alt=""></div>
+            <div class="img"><img src="audios/Paradisum1.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition1.jpg" alt=""></div>
+            <div class="img"><img src="audios/Paradisum2.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition2.jpg" alt=""></div>
+          </div>
+        </div>
+        <br>
+        <div class="audiobutton">
+          <audio id="audio" controls>
+            <source src="audios/In Paradisum.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+      <div class="col-lg-1">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3 class="accitation" style="color:black;">"Sapeur d'élite, sur le front depuis le début. A donné de sa bravoure et de son énergie maints exemples dans des circonstances où il n'a du qu'à la chance d’échapper à la mort. Mort pour la France, à Germonville, le 10
+      Mars 1916, aux plus fortes attaques de Verdun. A été cité."</h3>
+      <br>
+      <br>
+      <br>
+      <h3>Au fond du tiroir de l’armoire, dans la chambre du haut de la ferme des Raynauds, il y avait une enveloppe avec une carte bien singulière. Ecornée par quelques dents de souris, cette carte a heureusement survécue …</h3>
+      <br>
+      <br>
+      <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chers Monsieur et Madame Bouchardon,</h3>
+        <br>
+        <h3 class="textcarte">Je viens d’être profondément touché en apprenant la cruelle perte que vous éprouvez en la personne de votre fils Gabriel.</h3>
+        <h3 class="textcarte">Je ne saurais rester indifférent au terrible malheur qui vous frappe.</h3>
+        <h3 class="textcarte">De cœur je porte le deuil de mon brave camarade et ami sincère qui est tombé si glorieusement au champ d’honneur pour le droit et la liberté.</h3>
+        <h3 class="textcarte">Je m’associe à vous pour en supporter la douleur et très ému, je vous adresse mes profondes condoléances pour le cher disparu.</h3>
+        <h3 class="textcarte">Marcel Passat</h3>
+        <br>
+        <h3 class="textcarte">Caporal 28eme Bataillon – Hôpital auxiliaire No10 Aix-Les-Bains Savoie</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box8/Pic8a.JPG" alt="image">
+        <img class="pich" src="images/imagesbox/Box8/Pic8b.JPG" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Avec cette carte se trouvaient également trois cartes postales de Verdun. Trois cartes sans message et dont la légende suggère qu’elles datent d’après la guerre. Sans doute furent t’elles ramenées de Verdun par l’un ou l’une visitant les lieux où Gabriel périt et cherchant ce qui était ou aurait pu être sa tombe.</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-4">
+        <img src="images/imagesbox/Box8/Pic9.JPG" alt="">
+      </div>
+      <div class="col-lg-4">
+        <img src="images/imagesbox/Box8/Pic10.JPG" alt="">
+      </div>
+      <div class="col-lg-4">
+        <img src="images/imagesbox/Box8/Pic11.JPG" alt="">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="footer">
+        <div class="row">
+          <div class="col-lg-9">
+            <hr style="border-top: 3px solid; margin-top: 25px; color: white;">
+          </div>
+          <div class="col-lg-2">
+            <p style="padding-top: 10px; text-align: left;">Des Sillons aux Tranchées </p>
+          </div>
+          <div class="col-lg-1">
+            <p><img class="logo" src="images/logo1.png" alt="logo-img" style="height:30px; width:30px; display: block;
+  margin-left: auto;
+  margin-right: auto;"></p>
+          </div>
+        </div>
+      </div>
+    </div>
 
+
+
+
+
+
+
+
+
+  </div>
 
 </body>
 

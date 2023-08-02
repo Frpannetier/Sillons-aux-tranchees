@@ -3,8 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Des Sillons aux Tranchées</title>
-
+  <title>Seconde Blessure</title>
 
   <!-- Google Fonts -->
 
@@ -23,34 +22,982 @@
 
   <script src="https://kit.fontawesome.com/cc4dcc56d7.js" crossorigin="anonymous"></script>
 
-<style media="screen">
+  <style>
+    body {
+      background-image: linear-gradient(to right top, #d97e57, #d5815c, #d08460, #cc8665, #c7896a, #c68d6f, #c59174, #c49579, #c69c7f, #c9a386, #cbaa8d, #ceb194);
+    }
 
-.retour{
-  margin-left: 0rem;
-}
+    .map {
+      background-image: url(images/imagesbox/Box5/map26Aout.jpg);
+      height: 90rem;
+    }
 
-</style>
+    .couv17 {
+      padding-top: 47rem;
+      padding-right: 5rem;
+    }
+
+    .couv98 {
+      padding-top: 10rem;
+    }
+
+    .mapChipotte {
+      background-image: url(images/imagesbox/Box5/ColdelaChipotte.jpg);
+      text-align: left;
+    }
+
+    .mapFrance {
+      background-image: url(images/imagesbox/Box6a/Mapconvois.jpg);
+      text-align: left;
+    }
+
+    .mapStRemy {
+      background-image: url(images/imagesbox/Box5/StRemy.jpg);
+      text-align: left;
+    }
+
+    .mapEMMarne {
+      background-image: url(images/imagesbox/Box5/MapEMMarne.jpg);
+      text-align: left;
+    }
+
+    .PicChipotte {
+      padding-top: 25rem;
+    }
+
+    .PicMarne {
+      padding-top: 0rem;
+
+    }
+
+    .fraternite {
+      padding-left: 6.5rem;
+    }
+
+    .title-parcours {
+      padding-top: 10%;
+      padding-bottom: 1%;
+    }
+
+    .textcarte {
+      font-family: 'Sacramento', cursive;
+      font-size: 200%;
+      color: #434144;
+      font-weight: 600;
+    }
+
+    .texte-legend {
+      font-size: 100%;
+    }
+
+    .image-box {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 10rem 0rem;
+    }
+
+    .image-boxExcep {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 20rem 0rem;
+    }
 
 
+    .image-boxms {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 5rem 0rem;
+    }
+
+    .text-box {
+      height: 40rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxExcep {
+      height: 55rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxconvois {
+      height: 30rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxbergougnan {
+      height: 20rem;
+      text-align: left;
+      padding-top: 2%;
+    }
+
+    .text-boxchamond {
+      height: 20rem;
+      text-align: left;
+      padding-top: 0%;
+    }
+
+    .text-boxmichelin {
+      height: 20rem;
+      text-align: left;
+      padding-top: 1%;
+    }
+
+
+    .text-box1 {
+      height: 40rem;
+      text-align: left;
+      padding-top: 1%;
+    }
+
+    .text-boxjourneaux {
+      height: 45rem;
+      text-align: center;
+    }
+
+    .text-boxdepart {
+      height: 25rem;
+      text-align: center;
+    }
+
+    .text-boxgiono {
+
+      height: 67rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+
+    .text-boxgiono2 {
+
+      height: 67rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+    .text-boxgenevoix {
+
+      height: 60rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+    .text-boxjmo17 {
+
+      height: 38rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 1.5%;
+
+    }
+
+    .text-boxprevert2 {
+
+      height: 86rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+      padding-left: 3%;
+
+    }
+
+
+
+
+    h4 {
+      color: #434144;
+    }
+
+    .Pica {
+      padding: 20px;
+      width: 18rem;
+      height: 18rem;
+      box-shadow: 4px 5px 10px 10px rgba(20, 20, 20, 0.4);
+    }
+
+    .Picc {
+      width: 70rem;
+      height: 20rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+    .Picd {
+      width: 20rem;
+      height: 30rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+    .Pice {
+      width: 25rem;
+      height: 37rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+
+    .picms {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 15rem;
+      height: 20rem;
+      margin-left: 3rem;
+    }
+
+    .pich {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 30rem;
+      height: 20rem;
+    }
+
+    .picv {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 20rem;
+      height: 30rem;
+    }
+
+    .picrot-15 {
+      transform: rotate(-15deg);
+    }
+
+    .ppich {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 20rem;
+      height: 14rem;
+    }
+
+    .PicConscrits {
+      width: 36rem;
+      height: 24rem;
+    }
+
+    .piclaguerre {
+      width: 40rem;
+      height: 12rem;
+    }
+
+    .picBergougnan {
+      width: 15rem;
+      height: 22rem;
+    }
+
+    .picMichelin {
+      width: 22rem;
+      height: 16rem;
+    }
+
+    .picChamond3 {
+      width: 50rem;
+      height: 15rem;
+    }
+
+    .picBrun {
+      width: 15rem;
+      height: 15rem;
+    }
+
+    .audiobutton {
+      padding-bottom: 3%;
+    }
+
+    audio::-webkit-media-controls-panel {
+      background-color: #DFAA93
+    }
+
+    audio {
+      height: 1.5rem;
+      width: 14rem;
+    }
+
+
+    @media (max-width:990px) {
+
+      .Pic1a,
+      .Pic1b {
+        position: static;
+        transform: rotate(0);
+      }
+
+    }
+
+    /* Static Carousel pictures */
+
+
+
+    em {
+      color: #232027;
+    }
+
+    .wrapper {
+      width: 66%;
+      margin: 40px auto;
+    }
+
+    .wrapper1 {
+      width: 50%;
+      margin: 40px auto;
+    }
+
+    .wrapper2 {
+      width: 90%;
+      margin: 40px auto;
+    }
+
+    div.gallery {
+      margin-top: 30px;
+    }
+
+    div.gallery ul {
+      list-style-type: none;
+      margin-left: 35px;
+    }
+
+    /* animation */
+    div.gallery ul li,
+    div.gallery li img {
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      -o-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
+    }
+
+    div.gallery ul li {
+      position: relative;
+      float: left;
+      width: 375px;
+      height: 370px;
+      margin: 5px;
+      padding: 5px;
+      z-index: 0;
+    }
+
+    /* Make sure z-index is higher on hover */
+    /* Ensure that hover image overlapped the others */
+    div.gallery ul li:hover {
+      z-index: 5;
+    }
+
+    /* Image is position nicely under li */
+    div.gallery ul li img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 1px solid #dddddd;
+      padding: 5px;
+      width: 375px;
+      height: 375px;
+      background: #f0f0f0;
+    }
+
+    div.gallery ul li img:hover {
+      width: 600px;
+      height: 600px;
+      margin-top: -250px;
+      margin-left: -375px;
+      top: 65%;
+      left: 65%;
+    }
+
+    p.attribution {
+      font-family: 'Consolas';
+      color: #000;
+      clear: both;
+      text-align: center;
+      line-height: 25px;
+      padding-top: 30px;
+    }
+
+    p.attribution a {
+      color: #4c8d7c;
+    }
+
+    /* Responsive hack */
+    @media only screen and (min-width: 499px) and (max-width: 1212px) {
+      .wrapper {
+        width: 500px;
+      }
+    }
+
+    @media only screen and (max-width: 498px) {
+      .wrapper {
+        width: 300px;
+      }
+
+      div.gallery ul {
+        list-style-type: none;
+        margin: 0;
+      }
+    }
+  </style>
 </head>
 
 <body>
-<br>
-<br>
-<br>
-<h1>En travaux ... <a href="index.html">
-  <img class="logo retour" src="images/logo1.png" alt="logo-img">
-</a></h1>
-<br>
-<br>
-<h1>Ho hisse ....</h1>
-<br>
-<br>
-<br>
-<iframe src="https://giphy.com/embed/PMpYZ0Fey755AEY5J0" width="480" height="365" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/wwi-great-war-first-world-PMpYZ0Fey755AEY5J0">via GIPHY</a></p>
+  <a href="box-page1"></a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid navigation-accueil blip">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="images/logo1.png" alt="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html#introduction" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">INTRODUCTION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#les-acteurs" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES ACTEURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#leslieux" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES LIEUX</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#parcours" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PARCOURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#focus" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">FOCUS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#Ressources" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">RESSOURCES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plan.html" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PLAN DES TRANCHEES</a>
+          </li>
+          <li class="nav-item">
+            <table cellpadding=0 cellspacing=0 border=0>
+              <tr>
+                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+                  <center>
+                    <table width="90%" cellpadding=0 cellspacing=0 border=0 style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+                    </table>
+                  </center>
+                  <form style="margin:0px; margin-top:5px;" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+                    <input type="hidden" name="si" value="75939983">
+                    <input type="hidden" name="pid" value="r">
+                    <input type="hidden" name="n" value="0">
+                    <input type="hidden" name="_charset_" value="">
+                    <input type="hidden" name="bcd" value="&#247;">
+                    <input type="text" name="query" size="15">
+                    <input type="submit" value="search" style="font-family: Arial, Helvetica, sans-serif; font-size: 13pt; text-transform: uppercase; color: white; background: rgba(76, 175, 80, 0); border: none; font-weight: bold;">
+                  </form>
+                </td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="cont">
+          <div class="scroller">
+            <div class="img"><img src="audios/Couperin1.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition1.jpg" alt=""></div>
+            <div class="img"><img src="audios/Couperin2.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition2.jpg" alt=""></div>
+            <div class="img"><img src="audios/Couperin1.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition1.jpg" alt=""></div>
+            <div class="img"><img src="audios/Couperin2.jpg" alt=""></div>
+            <div class="img"><img src="audios/Partition2.jpg" alt=""></div>
+          </div>
+        </div>
+        <br>
+        <div class="audiobutton">
+          <audio id="audio" controls>
+            <source src="audios/Couperin.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+      </div>
+      <div class="col-lg-8">
+      </div>
+    </div>
+    <h1 class="title-parcours">Seconde Blessure</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Février 1916 … Auguste et son régiment sont en Alsace. Auguste et ses camarades défendent un bout de terre française comme le font tous les soldats sur la ligne de front qui s’est figée. Tous s’installent dans cette guerre et dans la routine
+      quotidienne des tranchées comme en atteste cette carte à Augustine.</h3>
+    <br>
+    <h3>Mais le bruit et la fureur des grandes batailles ne sont jamais loin … Déjà Gabriel a rejoint Verdun et bientôt, l’Etat Major va dresser les plans qui enverront Auguste comme la plupart des soldats français à cette grande bataille de Verdun.
+    </h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ma chère Augustine,</h3>
+        <br>
+        <h3 class="textcarte">Je prends ma plume pour t’écrire deux mots. Je suis toujours en très bonne santé. Depuis que je suis revenu de permission, je me suis toujours très bien porté.</h3>
+        <h3 class="textcarte">L’hiver n’a encore pas été mauvais , le mois de Janvier a été très bon. Nous avons fait de bonnes marches, mais je m’en suis très bien tiré. Ces jours, on a de la pluie, aujourd’hui il gèle un peu.</h3>
+        <h3 class="textcarte">Je suis bien habitué avec mon nouveau Capitaine, il est toujours content.</h3>
+        <h3 class="textcarte">Hier, j’ai reçu une carte de Gabriel, il est de nouveau rentré à sa Compagnie. Il est content de sa permission. Moi, je compte aller te voir dans un mois ou un mois et demi.</h3>
+        <h3 class="textcarte">Reçois d'Alsace, les meilleurs souhaits de ton parrain.</h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box10/Pic1a.JPG" alt="image">
+        <img class="pich" src="images/imagesbox/Box10/Pic1b.JPG" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Le régiment d’Auguste est envoyé a Verdun au mois de Mars. Peut-être Auguste sait-il alors que son frère Gabriel est mort au combat et que c’est maintenant son tour de faire face au même danger.</h3>
+    <br>
+    <h3>Il est facile d’imaginer les angoisses de la famille aux Raynauds. Ils viennent de perdre un fils et un grand frère, et la guerre menace à présent de leur en prendre un autre. Mais la machine de guerre s’en moque bien, bien huilée et d’une
+      diabolique précision administrative, elle fait preuve d’une redoutable efficacité … comme la Voie Sacrée qui achemine les Poilus sur Verdun !</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-6">
+        <h3>La Voie Sacrée était la seule route, véritable artère logistique vitale, reliant le front de Verdun à l’arrière, vers Bar-le-Duc. C’est par elle que transitèrent, nuit et jour durant dix mois, près de 2 400 000 hommes et des milliers de
+          tonnes de munitions et de matériels. C'est l'écrivain Maurice Barrès qui lui donna ce nom de Voie Sacrée après une visite à Verdun.</h3>
+        <br>
+        <h3>Pour résister face aux assauts allemands, il faut des hommes, des munitions et du ravitaillement. En stratège avisé, Pétain instaure la relève systématique des soldats. Tous les cinq jours environ, les troupes qui viennent de combattre
+          sont remplacées par de nouveaux contingents, censés être moins éprouvés. Cette mesure, qualifiée de « tourniquet », aura pour conséquence de faire passer, à Verdun, la quasi-totalité des régiments de l’armée française. </h3>
+        <br>
+        <h3>C’est une véritable noria qui se met ainsi en place. Un camion toutes les quinze secondes. Et ce, de jour comme de nuit.</h3>
+        <br>
+        <h3></h3>
+        <br>
+      </div>
+      <div class="col-lg-5">
+        <iframe width="650" height="400" src="https://www.youtube.com/embed/TKUSsYUDrpI">
+        </iframe>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-6">
+        <h3>Pour en apprendre plus sur la Voie Sacrée, cliquez sur le lien suivant :</h3>
+      </div>
+      <div class="col-lg-5">
+        <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="https://www.fondationberliet.org/ressources-documentaires/archive-article-dossier-camion-berliet/verdun/" target="_blank"><i class="fas fa-archive"></i> En Savoir
+          Plus</a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-5">
+        <iframe width="650" height="400" src="images/imagesbox/Box10/Ravel.JPG">
+        </iframe>
+      </div>
+      <div class="col-lg-5">
+        <br>
+        <h3>Hasards de l’Histoire … Il se trouve que parmi les conducteurs de camions sur la Voie Sacrée, il y a un certain Maurice Ravel ! Engagé volontaire à 41 ans, Ravel a troqué son piano pour un camion Berliet et Adélaide, sa camionette
+          Panhard.</h3>
+        <br>
+        <h3>On se plait à penser qu’il a peut-être conduit Auguste au front. On sait en tout cas qu’il a passé une semaine avec sa camionette en panne dans le secteur des Bois Bourrus où Gabriel a trouvé la mort quelques semaines plus tôt.</h3>
+        <br>
+        <h3>Ravel sera fortement marqué par son expérience de Verdun et quelques années plus tard, il composera le Tombeau de Couperin en hommage à certains de ses camarades soldats. C’est d’ailleurs la musique qui accompagne cette page.</h3>
+        <br>
+        <h3></h3>
+        <br>
+      </div>
+      <div class="col-lg-1">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-6">
+        <h3>Visitez le site suivant pour découvrir l’expérience de Ravel sur la Voie Sacrée : </h3>
+      </div>
+      <div class="col-lg-5">
+        <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="https://www.radiofrance.fr/franceinter/podcasts/la-marche-de-l-histoire/maurice-ravel-conduit-son-camion-sur-la-voie-sacree-5789759" target="_blank"><i
+            class="fas fa-archive"></i> En Savoir Plus</a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>De cette période à Verdun, on ne retrouve aucune carte d’Auguste. Difficile de dire si les cartes se sont perdues ou si Auguste n’écrit pas. Seule une carte d’Antoine fait état d’une correspondance entre les deux frères jumeaux.</h3>
+    <br>
+    <h3>Datée du 25 Août 1916, elle est écrite la veille de la seconde blessure d’Auguste et celui-ci la lira sans doute sur son lit d’hôpital …</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box10/Pic2a.JPG" alt="image">
+        <img class="pich" src="images/imagesbox/Box10/Pic2b.JPG" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Cher Frère,</h3>
+        <br>
+        <h3 class="textcarte">J’ai reçu ta carte du 18. Je suis en bonne santé et désire que tu sois de même.</h3>
+        <h3 class="textcarte">Je pense que tu auras reçu le colis. Pierre Fradin est rentré au dépôt, il t’envoie le bonjour.</h3>
+        <h3 class="textcarte">Paul m’a écrit, il ne doit pas être bien loin de toi.</h3>
+        <h3 class="textcarte">Je vois pas autre chose à te dire.</h3>
+        <h3 class="textcarte">Je termine en t’embrassant bien fort.</h3>
+        <br>
+        <h3 class="textcarte">Antoine</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-4">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>Auguste est arrivé le 23 Avril avec son régiment dans le secteur de Watronville, à proximité de Verdun. Le 414ème d’Infanterie est alors engagé dans la défense des abords du Fort de Douaumont et se retrouve au plus fort de la bataille au
+          début du mois d’Août, comme en atteste la comptabilité scrupuleuse du journal de marche du régiment.</h3>
+        <br>
+        <h3>Après cette période éprouvante, et en ligne avec la stratégie de Pétain, le régiment est remplacé par des troupes fraîches et renvoyé un temps à l’arrière pour être reconstituer. </h3>
+        <br>
+      </div>
+      <div class="col-lg-4">
+        <iframe width="380" height="560" src="images/imagesbox/Box10/JMOVerdun1.JPG">
+        </iframe>
+      </div>
+      <div class="col-lg-4">
+        <iframe width="380" height="560" src="images/imagesbox/Box10/JMOVerdun2.JPG">
+        </iframe>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-6">
+        <br>
+        <iframe width="601" height="147" src="images/imagesbox/Box10/EclatObus.JPG">
+        </iframe>
+      </div>
+      <div class="col-lg-5">
+        <h3>Dès la mi-Août, le régiment est affecté au front mais cette fois-ci dans un secteur plus calme en Argonne, à proximité de Sainte Menehould. Le secteur est sans doute plus calme que Verdun, mais il y tombe aussi des obus allemands.</h3>
+        <br>
+        <h3>Affecté à une corvée de déchargement de munitions en gare de Vienne La Ville, Auguste est blessé par éclat d’obus à la cuisse gauche, le 26 Août … deux ans jour pour jour après sa première blessure.</h3>
+      </div>
+      <div class="col-lg-1">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Commence alors pour Auguste un périple sanitaire, de son évacuation du front à un hôpital de l’arrière. Curieusement, il se trouve que le futur écrivain Julien Green, trichant sur on âge (il a seulement seize ans), est l’un des conducteurs d’automobiles sanitaires basées à Clermont en Argonne, tout près de Sainte Menehould.</h3>
+    <br>
+    <h3>Alors peut-être qu’après Maurice Ravel, c’est Julien Green qui fait faire un tour d’automobile à Auguste !</h3>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-8">
+        <h3>La logistique d’évacuation des blessés est aussi impressionnante que la logistique d’acheminement des soldats au front, on roule simplement dans l’autre sens : de l’Enfer au Paradis aseptisé des hôpitaux de l’arrière comme décrit dans ce dossier du site Chemins de Mémoire.</h3>
+      </div>
+      <div class="col-lg-4">
+        <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="https://www.cheminsdememoire.gouv.fr/fr/de-lenfer-au-paradis-les-hopitaux-de-larriere-en-1916" target="_blank"><i
+            class="fas fa-archive"></i> Accès au site </a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Début Octobre … C’est finalement à Chalons sur Marne qu’Auguste est hospitalisé. Comme à Lyon, deux ans plus tôt, l’hôpital est un lycée reconverti pour accueillir les blessés.</h3>
+    <br>
+    <h3>Voici sa première carte à Augustine</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ma chère petite filleule,</h3>
+        <br>
+        <h3 class="textcarte">Je prends ma plume pour t’écrire deux mots. Tu dois te dire que je t’ai oubliée, mais je pense souvent à toi.</h3>
+        <h3 class="textcarte">J’ai souffert les premiers temps mais maintenant ça va très bien. Je marche tous les jours un peu. Le temps me dure bien moins.</h3>
+        <h3 class="textcarte">Ton parrain qui t’embrasse bien fort.</h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box10/Pic3a.JPG" alt="image">
+        <img class="pich" src="images/imagesbox/Box10/Pic3b.JPG" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Suivent des cartes au reste de la famille, dans lesquelles Auguste fait état de l’amélioration de sa santé … toujours soucieux de les rassurer.</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box10/Pic4a.JPG" alt="image">
+        <img class="picv" src="images/imagesbox/Box10/Pic4b.JPG" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Cher frère,</h3>
+        <br>
+        <h3 class="textcarte">Je t’écris deux mots pour te dire que ça va assez bien.</h3>
+        <h3 class="textcarte">Le plâtre me fait toujours un peu mal mais je n’en ai plus que pour 9 jours.</h3>
+        <h3 class="textcarte">Je ne vois pas autre chose à te dire.</h3>
+        <h3 class="textcarte">Ce matin il pleut.</h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ma chère petite Léa,</h3>
+        <br>
+        <h3 class="textcarte">Deux mots pour te dire que je vas toujours bien.</h3>
+        <h3 class="textcarte">Je serai qu’évacué la semaine prochaine.</h3>
+        <h3 class="textcarte">Marie m’a écrit que tu travailles toujours bien.</h3>
+        <h3 class="textcarte">Tu embrasseras le tonton et la tante pour moi.</h3>
+        <h3 class="textcarte">Je voudrais bien être avec vous pour vous aider.</h3>
+        <br>
+        <h3 class="textcarte">Ton frère. Auguste</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box10/Pic5a.JPG" alt="image">
+        <img class="picv" src="images/imagesbox/Box10/Pic5b.JPG" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Cette fois-ci, la blessure est plus sérieuse et tout laisse à penser qu’elle sera sans doute suffisante pour éviter un retour rapide au front. La famille est sans doute soulagée …</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box10/Pic6a.JPG" alt="image">
+        <img class="picv" src="images/imagesbox/Box10/Pic6b.JPG" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère sœur,</h3>
+        <br>
+        <h3 class="textcarte">J’ai reçu ton aimable lettre avec le petit journal bleu avec plaisir. J’aime bien lire tes grandes lettres.</h3>
+        <h3 class="textcarte">Vous avez tous beaucoup travaillé pour les semailles.</h3>
+        <h3 class="textcarte">Chère sœur, il me semble que tu portes peine de moi. Il ne faut pas porter peine. Vois, les premiers temps j’ai un peu souffert mais je me suis pas fait de mauvais sang. Mais depuis que je n’ai plus d’appareil, je ne
+          souffre plus.</h3>
+        <h3 class="textcarte">Je suis très bien. Je t’assure que je suis plus heureux qu’au front. Ma jambe va très bien. J’aurai un peu de raccourcissement. Plus que je croyais. Ça me vaudra peut -être de passer dans l’auxiliaire et ma jambe sera
+          aussi solide qu’avant.</h3>
+        <h3 class="textcarte">Je me porte bien depuis quelques jours. J’ai ramassé de bonnes joues. Maintenant ça va bien.</h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Chère sœur,</h3>
+        <br>
+        <h3 class="textcarte">J’ai reçu ta lettre du 6 hier soir et aussi le paquet.</h3>
+        <h3 class="textcarte">Rien n’était abîmé. Tu prends beaucoup de peine pour moi. J’en avais pas besoin, mais j’en mangerai de temps en temps. Le fondant est très bon.</h3>
+        <h3 class="textcarte">La semaine dernière, j’ai fait apporter des marrons, ils étaient très bons. Tu sais, à l’hôpital, on a toutes les envies … Tu me diras si vous en avez.</h3>
+        <h3 class="textcarte">Chère sœur, ça va très bien. Je vas me lever dans 5 ou 6 jours. Le temps me dure pas quand je souffre pas, Ça va bien.</h3>
+        <h3 class="textcarte">Je vois que Justin est pas loin de chez lui. Je ne sais pas quand je serai évacué. Encore quelques jours et je serai mieux guéri.</h3>
+        <br>
+        <h3 class="textcarte">Ton frère. Auguste</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box10/Pic7a.JPG" alt="image">
+        <img class="picv" src="images/imagesbox/Box10/Pic7b.JPG" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Début Décembre … Le séjour d’Auguste en hôpital semble plus long que prévu et le temps lui dure de partir en convalescence.</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box10/Pic8a.JPG" alt="image">
+        <img class="picv" src="images/imagesbox/Box10/Pic8b.JPG" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Cher frère,</h3>
+        <br>
+        <h3 class="textcarte">Je t’envoie une carte pour te dire que ça va toujours très bien.</h3>
+        <h3 class="textcarte">Je marche de mieux en mieux. Ces jours, il fait très beau. Tous les jours, il y a promenade. J’ai sorti trois fois. Hier, j’ai visité le cimetière militaire. C’est assez bien, ça fait passer le temps.</h3>
+        <h3 class="textcarte">Je compte que je vas partir cette semaine.</h3>
+        <h3 class="textcarte">Je ne pensais pas rester aussi longtemps à Chalons. Il n’y a pas beaucoup de blessés, c’est pour ça qu’on nous garde plus longtemps que d’habitude.</h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Ton frère. Auguste</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Cher cousin,</h3>
+        <br>
+        <h3 class="textcarte">Je réponds à ta carte du 3.</h3>
+        <h3 class="textcarte">Je suis été tout heureux de te savoir en bonne santé et que tu avais réussi à ta commission.</h3>
+        <h3 class="textcarte">Pour moi, je vois qu’il n’y a guère à faire maintenant. Je crois que je vais bientôt retourner voir le camp d’instruction une autre fois. Mais enfin, je ne m’en fais pas à présent, le cafard a passé.</h3>
+        <h3 class="textcarte">Ici, rien de nouveau, sauf le froid.</h3>
+        <h3 class="textcarte">Reçois de ton cousin ses meilleures amitiés.</h3>
+        <br>
+        <h3 class="textcarte">Félicien</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box10/Pic9a.JPG" alt="image">
+        <img class="pich" src="images/imagesbox/Box10/Pic9b.JPG" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>Cette fois-ci, c’est fait … Auguste a finalement quitté l’hôpital et on le retrouve fin Décembre dans le département de la Creuse où il a commencé sa convalescence.</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="pich picrot-15" src="images/imagesbox/Box10/Pic10a.JPG" alt="image">
+        <img class="picv" src="images/imagesbox/Box10/Pic10b.JPG" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Cher frère,</h3>
+        <br>
+        <h3 class="textcarte">Je t’écris deux mots pour te dire que je vas toujours assez bien. J’espère que ma carte vous trouvera tous de même.</h3>
+        <h3 class="textcarte">Cher frère, pour faire mon dossier, il me faut un certificat d’émargement comme quoi vous pouvez me recevoir. Ça ne presse pas. Quand il sera fait, tu me l’enverras. Ça fait que quand on me le demandera, je l’aurai.</h3>
+        <h3 class="textcarte">Ce matin, il fait beau, les neiges sont parties.</h3>
+        <h3 class="textcarte">Je ne vois pas autre chose à te dire.</h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">Auguste</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>C’est la saison des vœux, et une nouvelle fois, chacun espère que l’année passée sera la dernière année de guerre.</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Ma chère Maria,</h3>
+        <br>
+        <h3 class="textcarte">Quoique ces tristes années l’on ne songe pas aux souhaits, permets moi de te dire que je ne t’oublie pas et que mes vœux les meilleurs sont formés pour ton bonheur.</h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <br>
+        <h3 class="textcarte">L. Lanetière</h3>
+      </div>
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box10/Pic11a.JPG" alt="image">
+        <img class="pich" src="images/imagesbox/Box10/Pic11b.JPG" alt="image">
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-lg-7 image-box">
+        <img class="picv picrot-15" src="images/imagesbox/Box10/Pic12a.JPG" alt="image">
+        <img class="pich" src="images/imagesbox/Box10/Pic12b.JPG" alt="image">
+      </div>
+      <div class="col-lg-5 text-box">
+        <h3 class="textcarte">Mille vœux et souhaits de bonheur pour 1917.</h3>
+        <br>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte"></h3>
+        <h3 class="textcarte">Affectueux bonjour de nous tous.</h3>
+        <br>
+        <h3 class="textcarte">Marie</h3>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="footer">
+        <div class="row">
+          <div class="col-lg-9">
+            <hr style="border-top: 3px solid; margin-top: 25px; color: white;">
+          </div>
+          <div class="col-lg-2">
+            <p style="padding-top: 10px; text-align: left;">Des Sillons aux Tranchées </p>
+          </div>
+          <div class="col-lg-1">
+            <p><img class="logo" src="images/logo1.png" alt="logo-img" style="height:30px; width:30px; display: block;
+  margin-left: auto;
+  margin-right: auto;"></p>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
+
+
+
+
+
+
+  </div>
 
 </body>
 
