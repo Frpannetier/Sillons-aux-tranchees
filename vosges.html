@@ -3,8 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Des Sillons aux Tranchées</title>
-
+  <title>Les Vosges</title>
 
   <!-- Google Fonts -->
 
@@ -23,35 +22,690 @@
 
   <script src="https://kit.fontawesome.com/cc4dcc56d7.js" crossorigin="anonymous"></script>
 
-<style media="screen">
+  <style>
+    body {
+      background-image: linear-gradient(to right top, #d97e57, #d5815c, #d08460, #cc8665, #c7896a, #c68d6f, #c59174, #c49579, #c69c7f, #c9a386, #cbaa8d, #ceb194);
+    }
 
-.retour{
-  margin-left: 0rem;
-}
+    .italic {
+      font-style: italic;
+    }
 
-</style>
+    .mapCrouzille {
+      background-image: url(images/imagesbox/BoxCrouzille/GoogleCrouzille.jpg);
+      height: 40rem;
+      width: 100%;
+    }
+
+    .mapcadastre {
+      background-image: url(images/imagesbox/BoxCrouzille/CadastreCrouzille.jpg);
+    }
+
+    .couv17 {
+      padding-top: 47rem;
+      padding-right: 5rem;
+    }
+
+    .couv98 {
+      padding-top: 10rem;
+    }
+
+    .mapChipotte {
+      background-image: url(images/imagesbox/Box5/ColdelaChipotte.jpg);
+      text-align: left;
+    }
+
+    .mapXafevillers {
+      background-image: url(images/imagesbox/Box5/Xafevillers.jpg);
+      text-align: left;
+    }
+
+    .mapStRemy {
+      background-image: url(images/imagesbox/Box5/StRemy.jpg);
+      text-align: left;
+    }
+
+    .mapEMMarne {
+      background-image: url(images/imagesbox/Box5/MapEMMarne.jpg);
+      text-align: left;
+    }
+
+    .PicChipotte {
+      padding-top: 25rem;
+    }
+
+    .PicMarne {
+      padding-top: 0rem;
+
+    }
+
+    .fraternite {
+      padding-left: 6.5rem;
+    }
+
+    .title-parcours {
+      padding-top: 10%;
+      padding-bottom: 1%;
+    }
+
+    .textcarte {
+      font-family: 'Sacramento', cursive;
+      font-size: 200%;
+      color: #434144;
+      font-weight: 600;
+    }
+
+    .texte-legend {
+      font-size: 100%;
+    }
+
+    .image-box {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 10rem 0rem;
+    }
+
+    .image-boxms {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 5rem 0rem;
+    }
+
+    .text-box {
+      height: 40rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-box1 {
+      height: 40rem;
+      text-align: left;
+      padding-top: 1%;
+    }
+
+    .text-boxjourneaux {
+      height: 45rem;
+      text-align: center;
+    }
+
+    .text-boxdepart {
+      height: 25rem;
+      text-align: center;
+    }
+
+    .text-boxgiono2 {
+
+      height: 67rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+    .text-boxgenevoix {
+
+      height: 60rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+    .text-boxceline {
+      height: 45rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxchevallier {
+      height: 45rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxjmo17 {
+
+      height: 38rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 1.5%;
+
+    }
 
 
+
+    h4 {
+      color: #434144;
+    }
+
+    .Pica {
+      padding: 20px;
+      width: 18rem;
+      height: 18rem;
+      box-shadow: 4px 5px 10px 10px rgba(20, 20, 20, 0.4);
+    }
+
+    .Picc {
+      width: 70rem;
+      height: 20rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+    .Picd {
+      width: 20rem;
+      height: 30rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+    .Pice {
+      width: 25rem;
+      height: 37rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+
+    .picms {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 15rem;
+      height: 20rem;
+      margin-left: 3rem;
+    }
+
+    .pich {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 30rem;
+      height: 20rem;
+    }
+
+    .nbcr {
+      filter: grayscale(1) opacity(.8);
+    }
+
+    .nbcr:hover {
+      filter: grayscale(0) opacity(1);
+    }
+
+    .picv {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 20rem;
+      height: 30rem;
+    }
+
+    .piccr {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 35rem;
+      height: 42rem;
+    }
+
+    .blasonC {
+      width: 8rem;
+      height: 10rem;
+    }
+
+    .picrot-15 {
+      transform: rotate(-15deg);
+    }
+
+    .ppich {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 20rem;
+      height: 14rem;
+    }
+
+    .PicConscrits {
+      width: 36rem;
+      height: 24rem;
+    }
+
+    .piclaguerre {
+      width: 40rem;
+      height: 12rem;
+    }
+
+
+    .audiobutton {
+      padding-bottom: 3%;
+    }
+
+    audio::-webkit-media-controls-panel {
+      background-color: #DFAA93
+    }
+
+    audio {
+      height: 1.5rem;
+      width: 14rem;
+    }
+
+
+    @media (max-width:990px) {
+
+      .Pic1a,
+      .Pic1b {
+        position: static;
+        transform: rotate(0);
+      }
+
+    }
+
+    /* Static Carousel pictures */
+
+
+
+    em {
+      color: #232027;
+    }
+
+    .wrapper {
+      width: 66%;
+      margin: 40px auto;
+    }
+
+    .wrapper1 {
+      width: 50%;
+      margin: 40px auto;
+    }
+
+    .wrapper2 {
+      width: 90%;
+      margin: 40px auto;
+    }
+
+    div.gallery {
+      margin-top: 30px;
+    }
+
+    div.gallery ul {
+      list-style-type: none;
+      margin-left: 35px;
+    }
+
+    /* animation */
+    div.gallery ul li,
+    div.gallery li img {
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      -o-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
+    }
+
+    div.gallery ul li {
+      position: relative;
+      float: left;
+      width: 375px;
+      height: 250px;
+      margin: 5px;
+      padding: 5px;
+      z-index: 0;
+    }
+
+    /* Make sure z-index is higher on hover */
+    /* Ensure that hover image overlapped the others */
+    div.gallery ul li:hover {
+      z-index: 5;
+    }
+
+    /* Image is position nicely under li */
+    div.gallery ul li img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 1px solid #dddddd;
+      padding: 5px;
+      width: 375px;
+      height: 250px;
+      background: #f0f0f0;
+    }
+
+    div.gallery ul li img:hover {
+      width: 750px;
+      height: 500px;
+      margin-top: -250px;
+      margin-left: -375px;
+      top: 65%;
+      left: 65%;
+    }
+
+    p.attribution {
+      font-family: 'Consolas';
+      color: #000;
+      clear: both;
+      text-align: center;
+      line-height: 25px;
+      padding-top: 30px;
+    }
+
+    p.attribution a {
+      color: #4c8d7c;
+    }
+
+    /* Responsive hack */
+    @media only screen and (min-width: 499px) and (max-width: 1212px) {
+      .wrapper {
+        width: 500px;
+      }
+    }
+
+    @media only screen and (max-width: 498px) {
+      .wrapper {
+        width: 300px;
+      }
+
+      div.gallery ul {
+        list-style-type: none;
+        margin: 0;
+      }
+    }
+
+    /* Turning Carousel pictures */
+
+
+    #slideshow {
+      margin: 0 auto;
+      padding-top: 50px;
+      height: 600px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+
+
+    .entire-content {
+      margin: auto;
+      width: 190px;
+      perspective: 1000px;
+      position: relative;
+      padding-top: 40px;
+    }
+
+    .content-carrousel {
+      width: 100%;
+      position: absolute;
+      float: right;
+      animation: rotar 40s infinite linear;
+      transform-style: preserve-3d;
+    }
+
+    .content-carrousel:hover {
+      animation-play-state: paused;
+      cursor: pointer;
+    }
+
+    .content-carrousel figure {
+      width: 160%;
+      height: 200px;
+      border: 1px solid #3b444b;
+      overflow: hidden;
+      position: absolute;
+    }
+
+    .content-carrousel figure:nth-child(1) {
+      transform: rotateY(0deg) translateZ(450px);
+    }
+
+    .content-carrousel figure:nth-child(2) {
+      transform: rotateY(40deg) translateZ(450px);
+    }
+
+    .content-carrousel figure:nth-child(3) {
+      transform: rotateY(80deg) translateZ(450px);
+    }
+
+    .content-carrousel figure:nth-child(4) {
+      transform: rotateY(120deg) translateZ(450px);
+    }
+
+    .content-carrousel figure:nth-child(5) {
+      transform: rotateY(160deg) translateZ(450px);
+    }
+
+    .content-carrousel figure:nth-child(6) {
+      transform: rotateY(200deg) translateZ(450px);
+    }
+
+    .content-carrousel figure:nth-child(7) {
+      transform: rotateY(240deg) translateZ(450px);
+    }
+
+    .content-carrousel figure:nth-child(8) {
+      transform: rotateY(280deg) translateZ(450px);
+    }
+
+    .content-carrousel figure:nth-child(9) {
+      transform: rotateY(320deg) translateZ(450px);
+    }
+
+    .content-carrousel figure:nth-child(10) {
+      transform: rotateY(360deg) translateZ(450px);
+    }
+
+    .shadow {
+      position: absolute;
+      box-shadow: 0px 0px 20px 0px #000;
+      border-radius: 1px;
+      filter: grayscale(1) opacity(.8);
+    }
+
+    .content-carrousel img {
+      image-rendering: auto;
+      transition: all 300ms;
+      width: 100%;
+      height: 100%;
+    }
+
+    .content-carrousel img:hover {
+      transform: scale(1);
+      filter: grayscale(0) opacity(1);
+      transition: all 5000ms;
+    }
+
+    .shadow:hover {
+      filter: grayscale(0) opacity(1);
+    }
+
+    @keyframes rotar {
+      from {
+        transform: rotateY(0deg);
+      }
+
+      to {
+        transform: rotateY(360deg);
+      }
+    }
+
+    .bg-image2 {
+      /* The image used */
+      background-image: url(images/imagesbox/BoxCrouzille/Vosges.jpg);
+
+      /* Add the blur effect */
+      filter: blur(2px);
+      -webkit-filter: blur(2px);
+
+      /* Full height */
+      height: 110rem;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .bg-text {
+      position: absolute;
+      top: 15%;
+
+    }
+
+    .bg-text1 {
+      position: absolute;
+      top: 21%;
+      left: 10%;
+      z-index: 1;
+
+    }
+
+    .bg-text2 {
+      position: absolute;
+      top: 120%;
+
+    }
+  </style>
 </head>
 
 <body>
-<br>
-<br>
-<br>
-<h1>En travaux ... <a href="index.html">
-  <img class="logo retour" src="images/logo1.png" alt="logo-img">
-</a></h1>
-<br>
-<br>
-<h1>Encore, deux ou trois choses à trier</h1>
-<br>
-<br>
-<br>
-<iframe src="https://giphy.com/embed/CG4ovp4EeA1UhbtnKp" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/wwi-great-war-first-world-CG4ovp4EeA1UhbtnKp">via GIPHY</a></p>
+  <a href="box-page1"></a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid navigation-accueil blip">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="images/logo1.png" alt="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html#introduction" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">INTRODUCTION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#les-acteurs" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES ACTEURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#leslieux" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES LIEUX</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#parcours" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PARCOURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#focus" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">FOCUS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#Ressources" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">RESSOURCES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plan.html" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PLAN DES TRANCHEES</a>
+          </li>
+          <li class="nav-item">
+            <table cellpadding=0 cellspacing=0 border=0>
+              <tr>
+                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+                  <center>
+                    <table width="90%" cellpadding=0 cellspacing=0 border=0 style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+                    </table>
+                  </center>
+                  <form style="margin:0px; margin-top:5px;" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+                    <input type="hidden" name="si" value="75939983">
+                    <input type="hidden" name="pid" value="r">
+                    <input type="hidden" name="n" value="0">
+                    <input type="hidden" name="_charset_" value="">
+                    <input type="hidden" name="bcd" value="&#247;">
+                    <input type="text" name="query" size="15">
+                    <input type="submit" value="search" style="font-family: Arial, Helvetica, sans-serif; font-size: 13pt; text-transform: uppercase; color: white; background: rgba(76, 175, 80, 0); border: none; font-weight: bold;">
+                  </form>
+                </td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container-fluid">
 
 
+  <div class="bg-image2">
+  </div>
 
 
+  <div class="bg-text">
+    <h1 class="title-parcours">Les Vosges</h1>
+    <br>
+    <br>
+    <br>
+    <img class="blasonC" src="images/imagesbox/BoxCrouzille/BlasonVosges.png" alt="">
+    <br>
+    <br>
+    <br>
+    <h3>La région des Vosges occupe une place primordiale dans cette histoire. C’est en effet dans les Vosges que les trois frères participeront aux premières batailles de la Grande Guerre. Mais pour Auguste et Antoine, c’est également l’endroit où ils font leur service militaire … leur premier vrai voyage au-delà des frontières auvergnates … et cela compte dans la vie d’un paysan attaché à sa terre natale.</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row" style="margin-left: 10px;margin-right: 0px;">
+      <div class="col-lg-1">
+      </div>
+      <div class="col-lg-4">
+        <div class="cont" style="height:25rem;">
+          <div class="scroller2">
+            <div class=""><img src="images/imagesbox/BoxCrouzille/Epinal1.jpg" alt="" style=height:25rem;width:32rem;></div>
+            <div class=""><img src="images/imagesbox/BoxCrouzille/Epinal2.jpg" alt="" style=height:25rem;width:32rem;></div>
+            <div class=""><img src="images/imagesbox/BoxCrouzille/Epinal4.jpg" alt="" style=height:25rem;width:32rem;></div>
+            <div class=""><img src="images/imagesbox/BoxCrouzille/Epinal5.jpg" alt="" style=height:25rem;width:32rem;></div>
+            <div class=""><img src="images/imagesbox/BoxCrouzille/Epinal6.jpg" alt="" style=height:25rem;width:32rem;></div>
+            <div class=""><img src="images/imagesbox/BoxCrouzille/Epinal7.jpg" alt="" style=height:25rem;width:32rem;></div>
+            <div class=""><img src="images/imagesbox/BoxCrouzille/Epinal8.jpg" alt="" style=height:25rem;width:32rem;></div>
+            <div class=""><img src="images/imagesbox/BoxCrouzille/Epinal1.jpg" alt="" style=height:25rem;width:32rem;></div>
+            <div class=""><img src="images/imagesbox/BoxCrouzille/Epinal2.jpg" alt="" style=height:25rem;width:32rem;></div>
+            <div class=""><img src="images/imagesbox/BoxCrouzille/Epinal4.jpg" alt="" style=height:25rem;width:32rem;></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7">
+        <br>
+        <h3>Il est une ville qui joue un rôle particulier, Epinal.</h3>
+        <br>
+        <h3>Après la guerre de 1870, Epinal fût occupée un temps par les allemands, puis devînt une ville de garnison importante pour la France. Ainsi en 1914, ce sont plus de dix milles soldats qui sont casernés dans la ville … parmi eux, Auguste et Antoine.</h3>
+        <br>
+        <h3>Mais dans l’imaginaire français, Epinal c’est aussi la cité des images. Ces fameuses images d’Epinal, bien dessinées, bien colorées et bien pensantes.</h3>
+        <br>
+        <h3>Regardez plutôt cette Série de Guerre produite par l’imagerie Pellerin et destinée aux enfants de l’époque. Des images à découper qui illustrent la vie sur le front. Scènes à jouer, elles rapprochaient les enfants de la vie de leurs pères, tout en entretenant une propagande touchant toute la famille. L’enfant pouvait alors vivre sa guerre... celle que les adultes voulaient bien lui laisser imaginer.</h3>
+        <br>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row" style="margin-left: 10px;margin-right: 0px;">
+      <div class="col-lg-8">
+        <br>
+        <br>
+      <h3>En 1914, les Vosges sont une région frontalière et de l’autre côté de la ligne bleue des Vosges, il y a l’Alsace et la Lorraine, les deux provinces perdues aux allemands.</h3>
+      <br>
+      <h3>La région sera donc très tôt emportée dans la guerre et la ligne de front s’y établira jusqu’en 1918.</h3>
+      <br>
+      <h3>Cliquez sur l’image pour découvrir les hauts lieux de combat.</h3>
+      <br>
+      </div>
+      <div class="col-lg-4">
+        <a href="https://www.france.fr/fr/massif-des-vosges/article/ce-faut-savoir-front-vosges-pendant-guerre-14-18" target="_blank"><img src="images/imagesbox/BoxCrouzille/LigneBleue.jpg" alt=""></a>
+      </div>
+    </div>
+
+  </div>
+
+    <div class="row" style="margin-right: 0px;margin-left: 0px;">
+      <div class="footer">
+        <div class="row">
+          <div class="col-lg-9">
+            <hr style="border-top: 3px solid; margin-top: 25px; color: white;">
+          </div>
+          <div class="col-lg-2">
+            <p style="padding-top: 10px; text-align: left;">Des Sillons aux Tranchées </p>
+          </div>
+          <div class="col-lg-1">
+            <p><img class="logo" src="images/logo1.png" alt="logo-img" style="height:30px; width:30px; display: block;
+  margin-left: auto;
+  margin-right: auto;"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
 </body>
 
 </html>
