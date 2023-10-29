@@ -3,8 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Des Sillons aux Tranchées</title>
-
+  <title>Chronologie</title>
 
   <!-- Google Fonts -->
 
@@ -19,36 +18,655 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="favicon (2).ico">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+
   <!-- Font Awesome -->
 
   <script src="https://kit.fontawesome.com/cc4dcc56d7.js" crossorigin="anonymous"></script>
 
-<style media="screen">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-.retour{
-  margin-left: 0rem;
-}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
 
-</style>
+  <style>
+
+    .navbar{
+      background-image:linear-gradient(to right top, #d37f5c, #cd8161, #c68265, #c0836a, #c18c71, #c3957a, #c49e83, #ceb194, #d7c4a6, #e2d6bb, #ede9d0);
+    }
+
+    .title-parcours {
+      padding-top: 10%;
+      padding-bottom: 1%;
+    }
+
+    .textcarte {
+      font-family: 'Sacramento', cursive;
+      font-size: 200%;
+      color: #434144;
+      font-weight: 600;
+    }
+
+    .image-box {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 10rem 0rem;
+    }
+
+    .text-box {
+      height: 40rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-box1{
+      height: 40rem;
+      text-align: left;
+      padding-top: 1%;
+    }
+
+    .Pica {
+      padding: 20px;
+      width: 18rem;
+      height: 18rem;
+      box-shadow: 4px 5px 10px 10px rgba(20, 20, 20, 0.4);
+    }
+
+
+    .pich{
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 30rem;
+      height: 20rem;
+    }
+
+    .picv{
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 20rem;
+      height: 30rem;
+    }
+
+    .picrot-15{
+      transform: rotate(-15deg);
+    }
+
+
+    .audiobutton {
+      padding-bottom: 3%;
+    }
+
+    audio::-webkit-media-controls-panel {
+      background-color: #DFAA93
+    }
+
+    audio {
+      height: 1.5rem;
+      width: 14rem;
+    }
+
+
+    @media (max-width:990px) {
+
+      .Pic1a,
+      .Pic1b {
+        position: static;
+        transform: rotate(0);
+      }
+
+    }
+
+    /*  CSS History timeline */
+
+
+    body {
+      background-color: black;
+    }
+
+    * {
+      outline: none;
+    }
+
+    .timeline-carousel {
+      padding: 86px 6.9444% 90px 6.9444%;
+      position: relative;
+      overflow: hidden;
+    }
+    .timeline-carousel:after, .timeline-carousel:before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      height: 100%;
+      width: 6.9444%;
+      background-color: black ;
+      z-index: 3;
+      width: 6.9444%;
+    }
+    .timeline-carousel:after {
+      left: 0;
+    }
+    .timeline-carousel:before {
+      right: 0;
+      opacity: 0;
+    }
+    .timeline-carousel .slick-list {
+      overflow: visible;
+    }
+    .timeline-carousel .slick-dots {
+      bottom: -73px;
+    }
+    .timeline-carousel h1 {
+      color: #d37f5c;
+      font-size: 55px;
+      line-height: 50pd;
+      margin-bottom: 40px;
+      font-weight: 900;
+    }
+    .timeline-carousel__image {
+      padding-right: 10px;
+      height:450px;
+      width:700px;
+    }
+    .timeline-carousel__item {
+      cursor: pointer;
+    }
+    .timeline-carousel__item .media-wrapper {
+      opacity: 0.4;
+      padding-bottom: 71.4%;
+      -webkit-transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+      -o-transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+      transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    }
+    .timeline-carousel__item:last-child .timeline-carousel__item-inner:after {
+      width: calc(100% - 30px);
+    }
+    .timeline-carousel__item-inner {
+      position: relative;
+      padding-top: 20px;
+    }
+    .timeline-carousel__item-inner:after {
+      position: absolute;
+      width: 25%;
+      top: 45px;
+      left: 0;
+      content: "";
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .timeline-carousel__item-inner .year {
+      font-size: 2rem;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 36px;
+      color: #d37f5c;
+      display: table;
+      letter-spacing: 5px;
+      padding-right: 10px;
+      background-color: #1d1d1e;
+      z-index: 1;
+      position: relative;
+      margin: -15px 0 20px;
+      font-weight: 900;
+    }
+    .timeline-carousel__item-inner .year:after {
+      content: "";
+      position: absolute;
+      display: block;
+      left: -10px;
+      top: 0;
+      height: 100%;
+      width: 10px;
+      background-color: #1d1d1e;
+      z-index: 3;
+    }
+    .timeline-carousel__item-inner .month {
+      font-size: 20px;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      color: #d37f5c;
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 900;
+    }
+    .timeline-carousel__item-inner p {
+      font-size: 12px;
+      line-height: 18px;
+      color: white;
+      width: 60%;
+      font-weight: 400;
+      margin-bottom: 15px;
+    }
+    .timeline-carousel__item-inner .read-more {
+      font-size: 12px;
+      color: #d37f5c;
+      display: table;
+      margin-bottom: 10px;
+      font-weight: 900;
+      text-decoration: none;
+      position: relative;
+    }
+    .timeline-carousel__item-inner .read-more:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 0;
+      border-bottom: 2px solid #d37f5c;
+      -webkit-transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+      -o-transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+      transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    }
+    .timeline-carousel__item-inner .read-more:hover:after {
+      width: 100%;
+    }
+    .timeline-carousel__item-inner .pointer {
+      height: 29px;
+      position: relative;
+      z-index: 1;
+      margin: -4px 0 16px;
+    }
+    .timeline-carousel__item-inner .pointer:after, .timeline-carousel__item-inner .pointer:before {
+      position: absolute;
+      content: "";
+    }
+    .timeline-carousel__item-inner .pointer:after {
+      width: 9px;
+      height: 9px;
+      border-radius: 100%;
+      top: 0;
+      left: 0;
+      background-color: #d37f5c;
+    }
+    .timeline-carousel__item-inner .pointer:before {
+      width: 1px;
+      height: 100%;
+      top: 0;
+      left: 4px;
+      background-color: #d37f5c;
+    }
+    .timeline-carousel .slick-active .media-wrapper {
+      opacity: 1 !important;
+    }
+
+    .slick-dots {
+      bottom: 60px;
+      list-style: none;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      text-align: center;
+      z-index: 2;
+    }
+    .slick-dots li {
+      cursor: pointer;
+      display: inline-block;
+      margin: 0 6px;
+      position: relative;
+      width: 10px;
+      height: 10px;
+    }
+    .slick-dots li:last-child {
+      margin-right: 0;
+    }
+    .slick-dots li.slick-active button {
+      background: #d37f5c;
+      border-color: #d37f5c;
+    }
+    .slick-dots li button {
+      display: block;
+      font-size: 0;
+      width: 10px;
+      height: 10px;
+      padding: 0;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-color: rgba(255, 255, 255, 0.6);
+      cursor: pointer;
+      -webkit-transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+      -o-transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+      transition: all 0.4s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    }
+    .slick-dots li button:hover {
+      background: #d37f5c;
+      border-color: #d37f5c;
+    }
+
+    .link {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 20px;
+      z-index: 9999;
+    }
+    .link a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #fff;
+    }
+    .link .fa {
+      font-size: 28px;
+      margin-right: 8px;
+      color: #fff;
+    }
+
+
+
+  </style>
+
 
 
 </head>
 
 <body>
-<br>
-<br>
-<br>
-<h1>En travaux ... <a href="index.html">
-  <img class="logo retour" src="images/logo1.png" alt="logo-img">
-</a></h1>
-<br>
-<br>
-<h1>Allo, Houston, we have a problem </h1>
-<br>
-<br>
-<br>
-<iframe src="https://giphy.com/embed/o19eRi89E0DxTKlaBp" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/wwi-great-war-first-world-o19eRi89E0DxTKlaBp">via GIPHY</a></p>
+  <a href="box-page1"></a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid navigation-accueil blip">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="images/logo1.png" alt="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html#introduction" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">INTRODUCTION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#les-acteurs" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES ACTEURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#leslieux" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES LIEUX</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#parcours" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PARCOURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#focus" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">FOCUS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#Ressources" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">RESSOURCES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plan.html" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PLAN DES TRANCHEES</a>
+          </li>
+          <li class="nav-item">
+            <table cellpadding=0 cellspacing=0 border=0 >
+            <tr>
+              <td  style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+                <center><table width="90%" cellpadding=0 cellspacing=0 border=0  style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+                </table></center>
+                <form style="margin:0px; margin-top:5px;" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+                <input type="hidden" name="si" value="75939983">
+                <input type="hidden" name="pid" value="r">
+                <input type="hidden" name="n" value="0">
+                <input type="hidden" name="_charset_" value="">
+                <input type="hidden" name="bcd" value="&#247;">
+                <input type="text" name="query" size="15">
+                <input type="submit" value="search" style="font-family: Arial, Helvetica, sans-serif; font-size: 13pt; text-transform: uppercase; color: white; background: rgba(76, 175, 80, 0); border: none; font-weight: bold;">
+                </form>
+              </td>
+            </tr>
+            </table>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <!-- Page -->
+  <!--Timeline carousel-->
+  <div class="container-fluid" style="background-color: black;">
+
+<section class="timeline-carousel">
+  <br>
+  <br>
+   <h1>Chronologie</h1>
+   <div class="timeline-carousel__item-wrapper" data-js="timeline-carousel">
+      <!--Timeline item-->
+      <div class="timeline-carousel__item">
+         <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url(images/Chro1.jpg) center center; background-size:cover;"></div>
+         </div>
+         <div class="timeline-carousel__item-inner">
+            <span class="year">1914</span>
+            <span class="month">June 28</span>
+            <h4>Assassinat à Sarajevo de l’archiduc François Ferdinand, héritier du trône des Habsbourg</h4>
+            <a href="#" class="read-more"></a>
+         </div>
+      </div>
+      <!--/Timeline item-->
+
+      <!--Timeline item-->
+      <div class="timeline-carousel__item">
+         <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url(images/Chro2.jpg) center center; background-size:cover;"></div>
+         </div>
+         <div class="timeline-carousel__item-inner">
+            <div class="pointer"></div>
+            <span class="month">Début Août </span>
+            <h4>Le 1er Août, ordre de mobilisations générale en France. Le 3 août, l’Allemagne déclare la guerre à la France.</h4>
+            <a href="parcoursbox4.html" class="read-more"> En savoir plus sur le départ des trois frères</a>
+         </div>
+      </div>
+
+      <div class="timeline-carousel__item">
+         <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url(images/Chro3.jpg) center center; background-size:cover;"></div>
+         </div>
+         <div class="timeline-carousel__item-inner">
+            <div class="pointer"></div>
+            <span class="month">Août </span>
+            <h4>Guerre des frontières. La France envahit l'Alsace-Lorraine, et contre offensive allemande.</h4>
+            <a href="parcoursbox5.html#Chipotte" class="read-more">En savoir plus sur Auguste à la bataille du Col de la Chipotte</a>
+         </div>
+      </div>
+
+      <div class="timeline-carousel__item">
+         <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url(images/Chro4.jpg) center center; background-size:cover;"></div>
+         </div>
+         <div class="timeline-carousel__item-inner">
+            <div class="pointer"></div>
+            <span class="month">Début Septembre </span>
+            <h4>Contre offensive française et bataille de la Marne. Les taxis de la Marne ...</h4>
+            <a href="parcoursbox5.html#Marne" class="read-more">En savoir plus sur Antoine à la bataille de la Marne</a>
+         </div>
+      </div>
+
+      <div class="timeline-carousel__item">
+         <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url(images/imagesbox/Box7/PicLoges1.jpg) center center; background-size:cover;"></div>
+         </div>
+         <div class="timeline-carousel__item-inner">
+            <div class="pointer"></div>
+            <span class="month">Septembre à Décembre </span>
+            <h4>Course à la mer et stabilisation du front. Fin de la guerre de mouvement.</h4>
+            <a href="parcoursbox7.html#Loges" class="read-more">En savoir plus sur Gabriel dans le secteur des Loges</a>
+         </div>
+      </div>
+      <!--/Timeline item-->
+
+      <!--Timeline item-->
+      <div class="timeline-carousel__item">
+         <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url(images/imagesbox/Box6a/Michelin2.jpg) center center; background-size:cover;"></div>
+         </div>
+         <div class="timeline-carousel__item-inner">
+            <span class="year">1915</span>
+            <span class="month">Printemps 1915</span>
+            <h4>La guerre s’est enlisée, les principaux belligérants convertissent leur économie en économie de guerre.</h4>
+            <a href="parcoursbox6a.html" class="read-more">En savoir plus sur Auguste qui sillonne le pays et les villes engagées dans l’effort de guerre.</a>
+         </div>
+      </div>
+      <!--/Timeline item-->
+
+      <!--Timeline item-->
+      <div class="timeline-carousel__item">
+         <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url(images/Chro5.jpg) center center; background-size:cover;"></div>
+         </div>
+         <div class="timeline-carousel__item-inner">
+            <div class="pointer"></div>
+            <span class="month">Eté 1915</span>
+            <h4>Le maréchal Joffre lancent des offensives en Artois et Champagne ... beaucoup de pertes, peu de succès.</h4>
+            <a href="parcoursbox9.html#Lorette" class="read-more">En savoir plus sur Désiré à Notre Dame de Lorette.</a>
+         </div>
+      </div>
+
+      <div class="timeline-carousel__item">
+         <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url(images/Chro6.jpg) center center; background-size:cover;"></div>
+         </div>
+         <div class="timeline-carousel__item-inner">
+            <div class="pointer"></div>
+            <span class="month">Decembre</span>
+            <h4>Apparition des premiers tanks à chenilles sur les champs de bataille.</h4>
+            <br>
+            <div style="text-align: center;">
+              <a href="parcoursbox6a.html#chars" class="read-more">En savoir plus sur la fabrication des premiers chars.</a>
+            </div>
+
+         </div>
+      </div>
+      <!--/Timeline item-->
+
+      <!--Timeline item-->
+      <div class="timeline-carousel__item">
+         <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url(images/Chro7.jpg) center center; background-size:cover;"></div>
+         </div>
+         <div class="timeline-carousel__item-inner">
+            <span class="year">1916</span>
+            <span class="month">Février à Juin</span>
+            <h4>Les allemands lancent une vaste offensive dans la région de Verdun. La bataille durera six mois et fera plusieurs centaines de milliers de morts dans les deux camps.</h4>
+            <a href="parcoursbox8.html#Verdun" class="read-more">En savoir plus sur Gabriel et Auguste à Verdun.</a>
+         </div>
+      </div>
+      <!--/Timeline item-->
+
+      <!--Timeline item-->
+      <div class="timeline-carousel__item">
+         <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url(images/Chro8.jpg) center center; background-size:cover;"></div>
+         </div>
+         <div class="timeline-carousel__item-inner">
+            <div class="pointer"></div>
+            <span class="month">Juillet a Decembre</span>
+            <h4>Contre-offensive franco-britannique lancée en Juillet sur la Somme. Pendant près de cinq mois, plus d’un million d’hommes des deux camps y perdront la vie.</h4>
+            <a href="#" class="read-more"></a>
+         </div>
+      </div>
+      <!--/Timeline item-->
+      <div class="timeline-carousel__item">
+         <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url(images/Chro9.jpg) center center; background-size:cover;"></div>
+         </div>
+         <div class="timeline-carousel__item-inner">
+            <span class="year">1917</span>
+            <span class="month">Fevrier</span>
+            <h4>Revolution de Février en Russie et chute du Tsar</h4>
+            <a href="#" class="read-more"></a>
+         </div>
+      </div>
+      <!--/Timeline item-->
+
+      <!--Timeline item-->
+      <div class="timeline-carousel__item">
+         <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url(images/Chro9b.jpg) center center; background-size:cover;"></div>
+         </div>
+         <div class="timeline-carousel__item-inner">
+            <div class="pointer"></div>
+            <span class="month">Avril à Mai </span>
+            <h4>Les Alliés reprennent l’offensive sur le Chemin des Dames avec des pertes humaines considérables. Premiers cas officiels de mutinerie dans l’armée française, 49 soldats seront fusillés pour l’exemple.</h4>
+            <a href="parcoursbox11.html#Soviet" class="read-more">En savoir plus sur le soviet du camp de la Courtine</a>
+         </div>
+      </div>
+      <!--/Timeline item-->
+      <div class="timeline-carousel__item">
+         <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url(images/Chro10.jpg) center center; background-size:cover;"></div>
+         </div>
+         <div class="timeline-carousel__item-inner">
+            <div class="pointer"></div>
+            <span class="month">Novembre</span>
+            <h4>Révolution d’Octobre en Russie. Les bolcheviks s’emparent du pouvoir et entament aussitôt des négociations de paix avec les allemands. Arrivée des soldats américains sur le front.</h4>
+            <a href="#" class="read-more"></a>
+         </div>
+      </div>
+      <!--/Timeline item-->
+      <div class="timeline-carousel__item">
+         <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url(images/Chro11.jpg) center center; background-size:cover;"></div>
+         </div>
+         <div class="timeline-carousel__item-inner">
+            <span class="year">1918</span>
+            <span class="month">Mars</span>
+            <h4>Signature du traité de paix de Brest-Litovsk entre les empires centraux et la Russie.Offensive allemande victorieuse en Picardie.Début des bombardements de Paris par un canon à longue portée, la Grosse Bertha.</h4>
+            <a href="#" class="read-more"></a>
+         </div>
+      </div>
+      <!--/Timeline item-->
+      <div class="timeline-carousel__item">
+         <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url(images/Chro12.jpg) center center; background-size:cover;"></div>
+         </div>
+         <div class="timeline-carousel__item-inner">
+            <div class="pointer"></div>
+            <span class="month">Mai à Septembre</span>
+            <h4>Offensives allemandes sur l’Aisne et en Champagne. Contre-offensive victorieuse de Foch. Deuxième bataille de la Marne. Foch lance une contre-offensive générale sur le front occidental.</h4>
+            <a href="#" class="read-more"></a>
+         </div>
+      </div>
+      <!--/Timeline item-->
+      <div class="timeline-carousel__item">
+         <div class="timeline-carousel__image">
+            <div class="media-wrapper media-wrapper--overlay" style="background: url(images/Chro13.jpg) center center; background-size:cover;"></div>
+         </div>
+         <div class="timeline-carousel__item-inner">
+            <div class="pointer"></div>
+            <span class="month">Novembre</span>
+            <h4>9 novembre - Abdication et fuite aux Pays-Bas de l’empereur Guillaume II. 11 novembre - L’Allemagne signe l’armistice à Rethondes.</h4>
+            <a href="#" class="read-more"></a>
+         </div>
+      </div>
+
+
+
+
+   </div>
+</section>
+
+</div>
+
+<script type="text/javascript">
+
+
+$.js = function (el) {
+  return $('[data-js=' + el + ']')
+};
+
+function carousel() {
+$.js('timeline-carousel').slick({
+  infinite: false,
+  arrows: false,
+  dots: true,
+  autoplay: false,
+  speed: 1100,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  responsive: [
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }]
+});
+}
+
+carousel();
+
+</script>
 
 
 </body>

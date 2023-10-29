@@ -3,8 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Des Sillons aux Tranchées</title>
-
+  <title>Eglise</title>
 
   <!-- Google Fonts -->
 
@@ -23,31 +22,620 @@
 
   <script src="https://kit.fontawesome.com/cc4dcc56d7.js" crossorigin="anonymous"></script>
 
-<style media="screen">
+  <style>
+    body {
+      background-image: linear-gradient(to right top, #d97e57, #d5815c, #d08460, #cc8665, #c7896a, #c68d6f, #c59174, #c49579, #c69c7f, #c9a386, #cbaa8d, #ceb194);
+    }
 
-.retour{
-  margin-left: 0rem;
-}
+    .map {
+      background-image: url(images/imagesbox/Box5/map26Aout.jpg);
+      height: 90rem;
+    }
 
-</style>
+    .couv17 {
+      padding-top: 47rem;
+      padding-right: 5rem;
+    }
+
+    .couv98 {
+      padding-top: 10rem;
+    }
+
+    .mapChipotte {
+      background-image: url(images/imagesbox/Box5/ColdelaChipotte.jpg);
+      text-align: left;
+    }
+
+    .mapFrance {
+      background-image: url(images/imagesbox/Box6a/Mapconvois.jpg);
+      text-align: left;
+    }
+
+    .mapStRemy {
+      background-image: url(images/imagesbox/Box5/StRemy.jpg);
+      text-align: left;
+    }
+
+    .mapEMMarne {
+      background-image: url(images/imagesbox/Box5/MapEMMarne.jpg);
+      text-align: left;
+    }
+
+    .PicChipotte {
+      padding-top: 25rem;
+    }
+
+    .PicMarne {
+      padding-top: 0rem;
+
+    }
+
+    .fraternite {
+      padding-left: 6.5rem;
+    }
+
+    .title-parcours {
+      padding-top: 10%;
+      padding-bottom: 1%;
+    }
+
+    .title-parcoursf {
+      padding-top: 1%;
+      padding-bottom: 1%;
+    }
 
 
+    .textcarte {
+      font-family: 'Sacramento', cursive;
+      font-size: 200%;
+      color: #434144;
+      font-weight: 600;
+    }
+
+    .texte-legend {
+      font-size: 100%;
+    }
+
+    .image-box {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 10rem 0rem;
+    }
+
+    .image-boxExcep {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 20rem 0rem;
+    }
+
+
+    .image-boxms {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 5rem 0rem;
+    }
+
+    .text-box {
+      height: 40rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxExcep {
+      height: 55rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxconvois {
+      height: 30rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxbergougnan {
+      height: 20rem;
+      text-align: left;
+      padding-top: 2%;
+    }
+
+    .text-boxchamond {
+      height: 20rem;
+      text-align: left;
+      padding-top: 0%;
+    }
+
+    .text-boxmichelin {
+      height: 20rem;
+      text-align: left;
+      padding-top: 1%;
+    }
+
+
+    .text-box1 {
+      height: 40rem;
+      text-align: left;
+      padding-top: 1%;
+    }
+
+    .text-boxjourneaux {
+      height: 45rem;
+      text-align: center;
+    }
+
+    .text-boxdepart {
+      height: 25rem;
+      text-align: center;
+    }
+
+    .text-boxgiono {
+
+      height: 67rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+
+    .text-boxgiono2 {
+
+      height: 67rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+    .text-boxgenevoix {
+
+      height: 60rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+    .text-boxjmo17 {
+
+      height: 38rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 1.5%;
+
+    }
+
+    .text-boxprevert2 {
+
+      height: 86rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+      padding-left: 3%;
+
+    }
+
+
+
+
+    h4 {
+      color: #434144;
+    }
+
+    .Pica {
+      padding: 20px;
+      width: 18rem;
+      height: 18rem;
+      box-shadow: 4px 5px 10px 10px rgba(20, 20, 20, 0.4);
+    }
+
+    .Picc {
+      width: 70rem;
+      height: 20rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+    .Picd {
+      width: 20rem;
+      height: 30rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+    .Pice {
+      width: 25rem;
+      height: 37rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+
+    .picms {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 15rem;
+      height: 20rem;
+      margin-left: 3rem;
+    }
+
+    .pich {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 30rem;
+      height: 20rem;
+    }
+
+    .picv {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 20rem;
+      height: 30rem;
+    }
+
+    .picrot-15 {
+      transform: rotate(-15deg);
+    }
+
+    .ppich {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 20rem;
+      height: 14rem;
+    }
+
+    .PicConscrits {
+      width: 36rem;
+      height: 24rem;
+    }
+
+    .piclaguerre {
+      width: 40rem;
+      height: 12rem;
+    }
+
+    .picBergougnan {
+      width: 15rem;
+      height: 22rem;
+    }
+
+    .picMichelin {
+      width: 22rem;
+      height: 16rem;
+    }
+
+    .picChamond3 {
+      width: 50rem;
+      height: 15rem;
+    }
+
+    .picBrun {
+      width: 15rem;
+      height: 15rem;
+    }
+
+    .audiobutton {
+      padding-bottom: 3%;
+    }
+
+    audio::-webkit-media-controls-panel {
+      background-color: #DFAA93
+    }
+
+    audio {
+      height: 1.5rem;
+      width: 14rem;
+    }
+
+
+    @media (max-width:990px) {
+
+      .Pic1a,
+      .Pic1b {
+        position: static;
+        transform: rotate(0);
+      }
+
+    }
+
+    /* Static Carousel pictures */
+
+
+
+    em {
+      color: #232027;
+    }
+
+    .wrapper {
+      width: 66%;
+      margin: 40px auto;
+    }
+
+    .wrapper1 {
+      width: 50%;
+      margin: 40px auto;
+    }
+
+    .wrapper2 {
+      width: 90%;
+      margin: 40px auto;
+    }
+
+    div.gallery {
+      margin-top: 30px;
+    }
+
+    div.gallery ul {
+      list-style-type: none;
+      margin-left: 35px;
+    }
+
+    /* animation */
+    div.gallery ul li,
+    div.gallery li img {
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      -o-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
+    }
+
+    div.gallery ul li {
+      position: relative;
+      float: left;
+      width: 375px;
+      height: 370px;
+      margin: 5px;
+      padding: 5px;
+      z-index: 0;
+    }
+
+    /* Make sure z-index is higher on hover */
+    /* Ensure that hover image overlapped the others */
+    div.gallery ul li:hover {
+      z-index: 5;
+    }
+
+    /* Image is position nicely under li */
+    div.gallery ul li img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 1px solid #dddddd;
+      padding: 5px;
+      width: 375px;
+      height: 375px;
+      background: #f0f0f0;
+    }
+
+    div.gallery ul li img:hover {
+      width: 600px;
+      height: 600px;
+      margin-top: -250px;
+      margin-left: -375px;
+      top: 65%;
+      left: 65%;
+    }
+
+    p.attribution {
+      font-family: 'Consolas';
+      color: #000;
+      clear: both;
+      text-align: center;
+      line-height: 25px;
+      padding-top: 30px;
+    }
+
+    p.attribution a {
+      color: #4c8d7c;
+    }
+
+    /* Responsive hack */
+    @media only screen and (min-width: 499px) and (max-width: 1212px) {
+      .wrapper {
+        width: 500px;
+      }
+    }
+
+    @media only screen and (max-width: 498px) {
+      .wrapper {
+        width: 300px;
+      }
+
+      div.gallery ul {
+        list-style-type: none;
+        margin: 0;
+      }
+    }
+
+
+
+    /* background */
+
+    .bg-image1 {
+      /* The image used */
+      background-image: url(images/Eglise1.JPG);
+
+      /* Add the blur effect */
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+
+      /* Full height */
+      height: 105rem;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .bg-text {
+      position: absolute;
+      top: 15%;
+
+    }
+
+    .bg-text1 {
+      position: absolute;
+      top: 21%;
+      left: 10%;
+      z-index: 1;
+
+    }
+
+    .bg-text2 {
+      position: absolute;
+      top: 120%;
+
+    }
+  </style>
 </head>
 
 <body>
-<br>
-<br>
-<br>
-<h1>En travaux ... <a href="index.html">
-  <img class="logo retour" src="images/logo1.png" alt="logo-img">
-</a></h1>
-<br>
-<br>
-<h1>Zut, on est coincés </h1>
-<br>
-<br>
-<br>
-<iframe src="https://giphy.com/embed/iHNMwcRHi9lwaNlhkA" width="480" height="365" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/wwi-great-war-first-world-iHNMwcRHi9lwaNlhkA">via GIPHY</a></p>
+  <a href="box-page1"></a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid navigation-accueil blip">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="images/logo1.png" alt="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html#introduction" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">INTRODUCTION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#les-acteurs" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES ACTEURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#leslieux" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES LIEUX</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#parcours" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PARCOURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#focus" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">FOCUS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#Ressources" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">RESSOURCES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plan.html" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PLAN DES TRANCHEES</a>
+          </li>
+          <li class="nav-item">
+            <table cellpadding=0 cellspacing=0 border=0>
+              <tr>
+                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+                  <center>
+                    <table width="90%" cellpadding=0 cellspacing=0 border=0 style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+                    </table>
+                  </center>
+                  <form style="margin:0px; margin-top:5px;" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+                    <input type="hidden" name="si" value="75939983">
+                    <input type="hidden" name="pid" value="r">
+                    <input type="hidden" name="n" value="0">
+                    <input type="hidden" name="_charset_" value="">
+                    <input type="hidden" name="bcd" value="&#247;">
+                    <input type="text" name="query" size="15">
+                    <input type="submit" value="search" style="font-family: Arial, Helvetica, sans-serif; font-size: 13pt; text-transform: uppercase; color: white; background: rgba(76, 175, 80, 0); border: none; font-weight: bold;">
+                  </form>
+                </td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page -->
+  <br>
+  <br>
+  <div class="bg-image1">
+  </div>
+
+
+  <div class="bg-text">
+    <h1 class="title-parcoursf">Eglise</h1>
+    <br>
+    <br>
+    <br>
+    <h3>La correspondance entre frères et sœurs montre à quel point leur foi les aide à surmonter cette épreuve, et bien souvent ils invoquent la protection de la Sainte Vierge. Tous les soldats ne sont pas croyants, mais au fond tous au besoin de croire à quelque chose transcendant cet enfer.</h3>
+    <br>
+    <h3>C’est ce que Roland Dorgelès décrit dans cet extrait des Croix de Bois :</h3>
+    <br>
+    <h3>… De l'église, on n’a gardé que ce coin d'autel : La chapelle de la Vierge, et six rangs de prie-Dieu. Tout le reste a été transformé en ambulance et, de l'autre côté d’une cloison en planches, qui nous sépare de la nef, on entend les blessés gémir.</h3>
+    <br>
+    <h3>Deux cents hommes s'écrasent pour entendre la messe. Les autres se tiennent sous le porche et jusque dans le cimetière, où ils écoutent les cantiques en bavardant, assis sur des coins de tombe, Les uns arrivent de la tranchée, boueux, le teint gris, les mains terreuses ; d’autres, au contraire, sont tout rouges encore de la toilette à la pompe. On se bouscule, on s'entasse, capotes sales et vareuses d’officiers. Quelques femmes, toutes en deuil, quelques filles, qu'on lorgne en se bourrant du coude, et, à la place d'honneur, un paysan rasé, cinquante ans, très digne dans ses habits noirs du dimanche.</h3>
+    <br>
+    <h3>À chaque génuflexion du prêtre, on aperçoit sous la soutane ses molletières bleues : c’est un brancardier de chez nous qui officie. Sur l’unique marche de pierre, quatre soldats barbus égrènent leur chapelet : des prêtres encore. Le vent agite mollement des linges blancs, qui cachent les vitraux brisés.</h3>
+    <br>
+    <h3>Pas un chandelier sur l’autel : le tabernacle même a été enlevé, Il ne reste plus que la Vierge en robe bleue piquée d'étoiles, un bouquet de pâquerettes à ses pieds, Notre-Dame des Biffins…</h3>
+    <br>
+    <h3>Elle étend ses deux mains, deux petites mains roses de plâtre peint, deux mains toutes-puissantes qui sauvent qui la prie. Ils ne croient pas tous, ces soldats désœuvrés, mais tous croient à ses mains, ils veulent y croire, aveuglément, pour se sentir défendus, protégés ; ils veulent la prier comme on se serre contre un plus fort, la prier pour n'avoir plus peur et garder, ainsi qu’un talisman, le souvenir de ses deux mains …</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row" style="margin-left: 10px;margin-right: 0px;">
+      <div class="col-lg-8">
+        <br>
+        <br>
+        <h3>En 1914, l’anti-cléricalisme est encore bien vivace mais une décennie après les “lois laïques” puis la loi de  séparation des Eglises et de l’Etat, l’Eglise prend part à l'”union sacrée” pour qu’ensemble croyants ou non fassent front à la guerre. </h3>
+        <br>
+        <h3>A Rome, le Saint-Siège ne veut pas prendre parti puisqu’il y a des catholiques dans les deux camps. Pie X puis Benoît XV préfèrent en appeler à la paix blanche, sans vainqueur ni vaincu.</h3>
+        <br>
+        <h3>Cliquez sur l’image pour en découvrir plus sur le parcours des aumôniers pendant la Grande Guerre.</h3>
+        <br>
+      </div>
+      <div class="col-lg-4">
+        <a href="images/imagesbox/Focus/Eglise.pdf" target="_blank"><img src="images/imagesbox/Focus/Pretre.jpg" alt=""></a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row" style="margin-left: 10px;margin-right: 0px;">
+      <div class="col-lg-4">
+        <iframe width="350" height="350" src="https://www.youtube.com/embed/QjNpbK4s1iU">
+        </iframe>
+      </div>
+      <div class="col-lg-8">
+        <br>
+        <br>
+        <br>
+        <h3>Au fond, la France a retrouvé ses prêtres dans les tranchées, là où ils ont partagé le sort des Poilus.</h3>
+        <br>
+        <h3>Les aumôniers n’ont pas épargné leur sang. 2.949 prêtres diocésains, 1.571 religieux et 1.300 séminaristes sont tombés au champ d’honneur, et 375 religieuses sont mortes au service des soldats. En pourcentage, cela représente autant que les pertes des agriculteurs français, soit la « classe sociale » qui a fait le plus grand sacrifice pendant cette guerre.</h3>
+        <br>
+      </div>
+    </div>
+    <br>
+  </div>
+
+  <div class="row" style="margin-right: 0px;margin-left: 0px;">
+    <div class="footer">
+      <div class="row">
+        <div class="col-lg-9">
+          <hr style="border-top: 3px solid; margin-top: 25px; color: white;">
+        </div>
+        <div class="col-lg-2">
+          <p style="padding-top: 10px; text-align: left;">Des Sillons aux Tranchées </p>
+        </div>
+        <div class="col-lg-1">
+          <p><img class="logo" src="images/logo1.png" alt="logo-img" style="height:30px; width:30px; display: block;
+margin-left: auto;
+margin-right: auto;"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
 
 
 

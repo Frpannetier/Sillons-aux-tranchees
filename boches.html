@@ -3,8 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Des Sillons aux Tranchées</title>
-
+  <title>Boches</title>
 
   <!-- Google Fonts -->
 
@@ -23,31 +22,680 @@
 
   <script src="https://kit.fontawesome.com/cc4dcc56d7.js" crossorigin="anonymous"></script>
 
-<style media="screen">
+  <style>
+    body {
+      background-image: linear-gradient(to right top, #d97e57, #d5815c, #d08460, #cc8665, #c7896a, #c68d6f, #c59174, #c49579, #c69c7f, #c9a386, #cbaa8d, #ceb194);
+    }
 
-.retour{
-  margin-left: 0rem;
-}
+    .map {
+      background-image: url(images/imagesbox/Box5/map26Aout.jpg);
+      height: 90rem;
+    }
 
-</style>
+    .couv17 {
+      padding-top: 47rem;
+      padding-right: 5rem;
+    }
+
+    .couv98 {
+      padding-top: 10rem;
+    }
+
+    .mapChipotte {
+      background-image: url(images/imagesbox/Box5/ColdelaChipotte.jpg);
+      text-align: left;
+    }
+
+    .mapFrance {
+      background-image: url(images/imagesbox/Box6a/Mapconvois.jpg);
+      text-align: left;
+    }
+
+    .mapStRemy {
+      background-image: url(images/imagesbox/Box5/StRemy.jpg);
+      text-align: left;
+    }
+
+    .mapEMMarne {
+      background-image: url(images/imagesbox/Box5/MapEMMarne.jpg);
+      text-align: left;
+    }
+
+    .PicChipotte {
+      padding-top: 25rem;
+    }
+
+    .PicMarne {
+      padding-top: 0rem;
+
+    }
+
+    .fraternite {
+      padding-left: 6.5rem;
+    }
+
+    .title-parcours {
+      padding-top: 10%;
+      padding-bottom: 1%;
+    }
+
+    .title-parcoursf {
+      padding-top: 1%;
+      padding-bottom: 1%;
+    }
 
 
+    .textcarte {
+      font-family: 'Sacramento', cursive;
+      font-size: 200%;
+      color: #434144;
+      font-weight: 600;
+    }
+
+    .texte-legend {
+      font-size: 100%;
+    }
+
+    .image-box {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 10rem 0rem;
+    }
+
+    .image-boxExcep {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 20rem 0rem;
+    }
+
+
+    .image-boxms {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 5rem 0rem;
+    }
+
+    .text-box {
+      height: 40rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxExcep {
+      height: 55rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxconvois {
+      height: 30rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxbergougnan {
+      height: 20rem;
+      text-align: left;
+      padding-top: 2%;
+    }
+
+    .text-boxchamond {
+      height: 20rem;
+      text-align: left;
+      padding-top: 0%;
+    }
+
+    .text-boxmichelin {
+      height: 20rem;
+      text-align: left;
+      padding-top: 1%;
+    }
+
+
+    .text-box1 {
+      height: 40rem;
+      text-align: left;
+      padding-top: 1%;
+    }
+
+    .text-boxjourneaux {
+      height: 45rem;
+      text-align: center;
+    }
+
+    .text-boxdepart {
+      height: 25rem;
+      text-align: center;
+    }
+
+    .text-boxgiono {
+
+      height: 67rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+
+    .text-boxgiono2 {
+
+      height: 67rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+    .text-boxgenevoix {
+
+      height: 60rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+    .text-boxjmo17 {
+
+      height: 38rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 1.5%;
+
+    }
+
+    .text-boxprevert2 {
+
+      height: 86rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+      padding-left: 3%;
+
+    }
+
+
+
+
+    h4 {
+      color: #434144;
+    }
+
+    .Pica {
+      padding: 20px;
+      width: 18rem;
+      height: 18rem;
+      box-shadow: 4px 5px 10px 10px rgba(20, 20, 20, 0.4);
+    }
+
+    .Picc {
+      width: 70rem;
+      height: 20rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+    .Picd {
+      width: 20rem;
+      height: 30rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+    .Pice {
+      width: 25rem;
+      height: 37rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+
+    .picms {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 15rem;
+      height: 20rem;
+      margin-left: 3rem;
+    }
+
+    .pich {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 30rem;
+      height: 20rem;
+    }
+
+    .picv {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 20rem;
+      height: 30rem;
+    }
+
+    .picrot-15 {
+      transform: rotate(-15deg);
+    }
+
+    .ppich {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 20rem;
+      height: 14rem;
+    }
+
+    .PicConscrits {
+      width: 36rem;
+      height: 24rem;
+    }
+
+    .piclaguerre {
+      width: 40rem;
+      height: 12rem;
+    }
+
+    .picBergougnan {
+      width: 15rem;
+      height: 22rem;
+    }
+
+    .picMichelin {
+      width: 22rem;
+      height: 16rem;
+    }
+
+    .picChamond3 {
+      width: 50rem;
+      height: 15rem;
+    }
+
+    .picBrun {
+      width: 15rem;
+      height: 15rem;
+    }
+
+    .audiobutton {
+      padding-bottom: 3%;
+    }
+
+    audio::-webkit-media-controls-panel {
+      background-color: #DFAA93
+    }
+
+    audio {
+      height: 1.5rem;
+      width: 14rem;
+    }
+
+
+    @media (max-width:990px) {
+
+      .Pic1a,
+      .Pic1b {
+        position: static;
+        transform: rotate(0);
+      }
+
+    }
+
+    /* Static Carousel pictures */
+
+
+
+    em {
+      color: #232027;
+    }
+
+    .wrapper {
+      width: 66%;
+      margin: 40px auto;
+    }
+
+    .wrapper1 {
+      width: 50%;
+      margin: 40px auto;
+    }
+
+    .wrapper2 {
+      width: 90%;
+      margin: 40px auto;
+    }
+
+    div.gallery {
+      margin-top: 30px;
+    }
+
+    div.gallery ul {
+      list-style-type: none;
+      margin-left: 35px;
+    }
+
+    /* animation */
+    div.gallery ul li,
+    div.gallery li img {
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      -o-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
+    }
+
+    div.gallery ul li {
+      position: relative;
+      float: left;
+      width: 375px;
+      height: 370px;
+      margin: 5px;
+      padding: 5px;
+      z-index: 0;
+    }
+
+    /* Make sure z-index is higher on hover */
+    /* Ensure that hover image overlapped the others */
+    div.gallery ul li:hover {
+      z-index: 5;
+    }
+
+    /* Image is position nicely under li */
+    div.gallery ul li img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 1px solid #dddddd;
+      padding: 5px;
+      width: 375px;
+      height: 375px;
+      background: #f0f0f0;
+    }
+
+    div.gallery ul li img:hover {
+      width: 600px;
+      height: 600px;
+      margin-top: -250px;
+      margin-left: -375px;
+      top: 65%;
+      left: 65%;
+    }
+
+    p.attribution {
+      font-family: 'Consolas';
+      color: #000;
+      clear: both;
+      text-align: center;
+      line-height: 25px;
+      padding-top: 30px;
+    }
+
+    p.attribution a {
+      color: #4c8d7c;
+    }
+
+    /* Responsive hack */
+    @media only screen and (min-width: 499px) and (max-width: 1212px) {
+      .wrapper {
+        width: 500px;
+      }
+    }
+
+    @media only screen and (max-width: 498px) {
+      .wrapper {
+        width: 300px;
+      }
+
+      div.gallery ul {
+        list-style-type: none;
+        margin: 0;
+      }
+    }
+
+
+
+    /* background */
+
+    .bg-image1 {
+      /* The image used */
+      background-image: url(images/Bochesbis.jpg);
+
+      /* Add the blur effect */
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+
+      /* Full height */
+      height: 105rem;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .bg-text {
+      position: absolute;
+      top: 15%;
+
+    }
+
+    .bg-text1 {
+      position: absolute;
+      top: 21%;
+      left: 10%;
+      z-index: 1;
+
+    }
+
+    .bg-text2 {
+      position: absolute;
+      top: 120%;
+
+    }
+  </style>
 </head>
 
 <body>
-<br>
-<br>
-<br>
-<h1>En travaux ... <a href="index.html">
-  <img class="logo retour" src="images/logo1.png" alt="logo-img">
-</a></h1>
-<br>
-<br>
-<h1>Vraiment ? </h1>
-<br>
-<br>
-<br>
-<iframe src="https://giphy.com/embed/k7YLiwCtqSG0CXEfIU" width="480" height="368" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/wwi-great-war-first-world-k7YLiwCtqSG0CXEfIU">via GIPHY</a></p>
+  <a href="box-page1"></a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid navigation-accueil blip">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="images/logo1.png" alt="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html#introduction" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">INTRODUCTION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#les-acteurs" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES ACTEURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#leslieux" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES LIEUX</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#parcours" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PARCOURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#focus" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">FOCUS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#Ressources" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">RESSOURCES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plan.html" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PLAN DES TRANCHEES</a>
+          </li>
+          <li class="nav-item">
+            <table cellpadding=0 cellspacing=0 border=0>
+              <tr>
+                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+                  <center>
+                    <table width="90%" cellpadding=0 cellspacing=0 border=0 style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+                    </table>
+                  </center>
+                  <form style="margin:0px; margin-top:5px;" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+                    <input type="hidden" name="si" value="75939983">
+                    <input type="hidden" name="pid" value="r">
+                    <input type="hidden" name="n" value="0">
+                    <input type="hidden" name="_charset_" value="">
+                    <input type="hidden" name="bcd" value="&#247;">
+                    <input type="text" name="query" size="15">
+                    <input type="submit" value="search" style="font-family: Arial, Helvetica, sans-serif; font-size: 13pt; text-transform: uppercase; color: white; background: rgba(76, 175, 80, 0); border: none; font-weight: bold;">
+                  </form>
+                </td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page -->
+  <br>
+  <br>
+  <div class="bg-image1">
+  </div>
+
+
+  <div class="bg-text">
+    <h1 class="title-parcoursf">Boches</h1>
+    <br>
+    <br>
+    <br>
+    <h3>Depuis la guerre de 1870, on appelle les allemands les Boches. C’est une abréviation du mot d’argot Alboche désignant à l’époque une personne à fort caractère et à l’esprit un peu obtus, une tête de bois en quelque sorte.</h3>
+    <br>
+    <h3>Et l’on est pas tendre avec les Boches comme en témoigne cette chanson des tranchées, Le chien du Boche …</h3>
+    <br>
+    <br>
+    <div class="row" style="margin-left: 10px;margin-right: 0px;">
+      <div class="col-lg-3">
+        <h4 style="color:white;">Tout près du front, un chef prussien</h4>
+        <h4 style="color:white;">Voulant sans doute se distraire</h4>
+        <h4 style="color:white;">S'amusait à dresser son chien</h4>
+        <h4 style="color:white;">A garder les prisonniers d'guerre</h4>
+        <h4 style="color:white;">C'était surtout contre un français</h4>
+        <h4 style="color:white;">Que l'chef exerçait sa vengeance</h4>
+        <h4 style="color:white;">Et brutalement il rossait</h4>
+        <h4 style="color:white;">Le chien qui manquait d'vigilance</h4>
+        <h4 style="color:white;">Tristement, les yeux du toutou</h4>
+        <h4 style="color:white;">Semblait dire au petit piou-piou</h4>
+        <h4 style="color:white;">"Tu vois si j'reçois des taloches</h4>
+        <h4 style="color:white;">Toi non plus, tu n'es pas heureux</h4>
+        <h4 style="color:white;">On est pas veinard tous les deux</h4>
+        <h4 style="color:white;">D'avoir comme patron un boche"</h4>
+      </div>
+      <div class="col-lg-3">
+        <h4 style="color:white;">Ivre, un beau soir, l'allemand s'coucha</h4>
+        <h4 style="color:white;">Et l'chien, qu'avait r'çu des coups d'botte</h4>
+        <h4 style="color:white;">Du français doucement s'approcha</h4>
+        <h4 style="color:white;">Et tira sa capote</h4>
+        <h4 style="color:white;">Comme pour lui dire " - Allons suis moi"</h4>
+        <h4 style="color:white;">L'homm' le suivit avec confiance</h4>
+        <h4 style="color:white;">A travers champs, à travers bois</h4>
+        <h4 style="color:white;">Enfin ce fut la délivrance !</h4>
+        <h4 style="color:white;">" - T'es un' brave bête, dit-il tout bas</h4>
+        <h4 style="color:white;">Mais il faut s'quitter "</h4>
+        <h4 style="color:white;">" - Ne m'renvoie pas chez les prussiens</h4>
+        <h4 style="color:white;">C'est pas un métier pour un chien</h4>
+        <h4 style="color:white;">D'être policier chez les boches ! "</h4>
+      </div>
+      <div class="col-lg-3">
+        <h4 style="color:white;">" - Eh ! bien j't'emmène ! ", dit le soldat</h4>
+        <h4 style="color:white;">Soudain dans un bruit de tonnerre</h4>
+        <h4 style="color:white;">Près d'eux un obus éclata</h4>
+        <h4 style="color:white;">Blessant l'français qui tombe à terre</h4>
+        <h4 style="color:white;">Sur son visage doucement</h4>
+        <h4 style="color:white;">Le chien passa sa langue tiède</h4>
+        <h4 style="color:white;">Puis sous le ciel lugubrement</h4>
+        <h4 style="color:white;">Hurla pour appeler à l'aide</h4>
+        <h4 style="color:white;">L'animal pensait, dans la nuit</h4>
+        <h4 style="color:white;">"S'il meurt, je mourrai près de lui ! "</h4>
+        <h4 style="color:white;">Confusément dans sa caboche,</h4>
+        <h4 style="color:white;">Il songeait " On s'rait plus heureux</h4>
+        <h4 style="color:white;">Dans l'paradis, tous les deux...</h4>
+        <h4 style="color:white;">C'est l'seul endroit où y'a pas d'boches ! "</h4>
+      </div>
+      <div class="col-lg-3">
+        <h4 style="color:white;">" - Eh ! bien mon gars, te v'là sauvé</h4>
+        <h4 style="color:white;">Dit l'major avec un sourire</h4>
+        <h4 style="color:white;">V'là huit jours qu'on t'a trouvé</h4>
+        <h4 style="color:white;">Bien mal fichu, je peux le dire</h4>
+        <h4 style="color:white;">Que voudrais tu ?" - "Revoir mon chien"</h4>
+        <h4 style="color:white;">Dit le blessé d'une voix émue</h4>
+        <h4 style="color:white;">" C'est défendu, je le sais bien</h4>
+        <h4 style="color:white;">Mais j'l'entend pleurer dans la rue</h4>
+        <h4 style="color:white;">Sans lui, pour sûr, je serais mort</h4>
+        <h4 style="color:white;">- J'vais te l'chercher, dit le major"</h4>
+        <h4 style="color:white;">Bientôt d'un bond la bête s'approche</h4>
+        <h4 style="color:white;">Saut' sur le lit, joyeusement</h4>
+        <h4 style="color:white;">Cette histoire prouve simplement</h4>
+        <h4 style="color:white;">Qu'un chien a plus de coeur qu'un boche !</h4>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="row" style="margin-left: 10px;margin-right: 0px;">
+      <div class="col-lg-8">
+        <br>
+        <h3>La caricature du Boche fait partie intégrante de la propagande de guerre. On la retrouve partout, dans les chansons, sur les cartes postales, dans les journaux illustrés, dans les histoires pour enfants et bien sûr dans les journaux de
+          tranchées.</h3>
+        <br>
+        <h3>Et ce n’est pas uniquement la soldatesque allemande que l’on ridiculise, mais également les civils allemands de l’arrière. Il s’agit de démoniser, rabaisser et idiotiser l’ennemi. Ainsi, on se remonte le moral et on sait qu’on finira par
+          vaincre …</h3>
+        <br>
+        <h3>Mais sous la caricature, la réalité du soldat allemand est bien la même que celle du Poilu. Cliquez donc sur la caricature de l’empereur pour découvrir l’envers du décor …</h3>
+        <br>
+      </div>
+      <div class="col-lg-4">
+        <a href="https://www.youtube.com/watch?v=SJC9Rbdl9QA" target="_blank"><img src="images/imagesbox/Focus/Kaiser.jpg" alt=""></a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row" style="margin-left: 10px;margin-right: 0px;">
+      <div class="col-lg-4">
+        <iframe width="350" height="350" src="https://www.youtube.com/embed/2beYoAxxC8A">
+        </iframe>
+      </div>
+      <div class="col-lg-8">
+        <br>
+        <br>
+        <h3>1964 … Cinquante ans après le début du conflit, une autre guerre est passée par là, Barbara, petite fille juive, se rend à Göttingen, la cité de Goethe et des frères Grimm… Elle en fait l'une de ses plus belles chansons, Göttingen.</h3>
+        <br>
+        <h3>Cette chanson marquera son époque et symbolise encore la réconciliation entre France et Allemagne, entre français et allemands.</h3>
+        <br>
+        <h3>Aujourd’hui, Boche est devenu un vilain mot et ce sont les vers de cette chanson qui sont à l’unisson de nos pensées …  Ô faites que jamais ne revienne - Le temps du sang et de la haine - Car il y a des gens que j'aime - À Göttingen, à Göttingen …</h3>
+        <br>
+      </div>
+    </div>
+    <br>
+  </div>
+
+  <div class="row" style="margin-right: 0px;margin-left: 0px;">
+    <div class="footer">
+      <div class="row">
+        <div class="col-lg-9">
+          <hr style="border-top: 3px solid; margin-top: 25px; color: white;">
+        </div>
+        <div class="col-lg-2">
+          <p style="padding-top: 10px; text-align: left;">Des Sillons aux Tranchées </p>
+        </div>
+        <div class="col-lg-1">
+          <p><img class="logo" src="images/logo1.png" alt="logo-img" style="height:30px; width:30px; display: block;
+margin-left: auto;
+margin-right: auto;"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
 
 
 

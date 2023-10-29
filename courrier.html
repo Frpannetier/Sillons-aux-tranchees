@@ -3,8 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Des Sillons aux Tranchées</title>
-
+  <title>Courrier</title>
 
   <!-- Google Fonts -->
 
@@ -23,31 +22,626 @@
 
   <script src="https://kit.fontawesome.com/cc4dcc56d7.js" crossorigin="anonymous"></script>
 
-<style media="screen">
+  <style>
+    body {
+      background-image: linear-gradient(to right top, #d97e57, #d5815c, #d08460, #cc8665, #c7896a, #c68d6f, #c59174, #c49579, #c69c7f, #c9a386, #cbaa8d, #ceb194);
+    }
 
-.retour{
-  margin-left: 0rem;
-}
+    .map {
+      background-image: url(images/imagesbox/Box5/map26Aout.jpg);
+      height: 90rem;
+    }
 
-</style>
+    .couv17 {
+      padding-top: 47rem;
+      padding-right: 5rem;
+    }
+
+    .couv98 {
+      padding-top: 10rem;
+    }
+
+    .mapChipotte {
+      background-image: url(images/imagesbox/Box5/ColdelaChipotte.jpg);
+      text-align: left;
+    }
+
+    .mapFrance {
+      background-image: url(images/imagesbox/Box6a/Mapconvois.jpg);
+      text-align: left;
+    }
+
+    .mapStRemy {
+      background-image: url(images/imagesbox/Box5/StRemy.jpg);
+      text-align: left;
+    }
+
+    .mapEMMarne {
+      background-image: url(images/imagesbox/Box5/MapEMMarne.jpg);
+      text-align: left;
+    }
+
+    .PicChipotte {
+      padding-top: 25rem;
+    }
+
+    .PicMarne {
+      padding-top: 0rem;
+
+    }
+
+    .fraternite {
+      padding-left: 6.5rem;
+    }
+
+    .title-parcours {
+      padding-top: 10%;
+      padding-bottom: 1%;
+    }
+
+    .title-parcoursf {
+      padding-top: 1%;
+      padding-bottom: 1%;
+    }
 
 
+    .textcarte {
+      font-family: 'Sacramento', cursive;
+      font-size: 200%;
+      color: #434144;
+      font-weight: 600;
+    }
+
+    .texte-legend {
+      font-size: 100%;
+    }
+
+    .image-box {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 10rem 0rem;
+    }
+
+    .image-boxExcep {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 20rem 0rem;
+    }
+
+
+    .image-boxms {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 5rem 0rem;
+    }
+
+    .text-box {
+      height: 40rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxExcep {
+      height: 55rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxconvois {
+      height: 30rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxbergougnan {
+      height: 20rem;
+      text-align: left;
+      padding-top: 2%;
+    }
+
+    .text-boxchamond {
+      height: 20rem;
+      text-align: left;
+      padding-top: 0%;
+    }
+
+    .text-boxmichelin {
+      height: 20rem;
+      text-align: left;
+      padding-top: 1%;
+    }
+
+
+    .text-box1 {
+      height: 40rem;
+      text-align: left;
+      padding-top: 1%;
+    }
+
+    .text-boxjourneaux {
+      height: 45rem;
+      text-align: center;
+    }
+
+    .text-boxdepart {
+      height: 25rem;
+      text-align: center;
+    }
+
+    .text-boxgiono {
+
+      height: 67rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+
+    .text-boxgiono2 {
+
+      height: 67rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+    .text-boxgenevoix {
+
+      height: 60rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+    .text-boxjmo17 {
+
+      height: 38rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 1.5%;
+
+    }
+
+    .text-boxprevert2 {
+
+      height: 86rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+      padding-left: 3%;
+
+    }
+
+
+
+
+    h4 {
+      color: #434144;
+    }
+
+    .Pica {
+      padding: 20px;
+      width: 18rem;
+      height: 18rem;
+      box-shadow: 4px 5px 10px 10px rgba(20, 20, 20, 0.4);
+    }
+
+    .Picc {
+      width: 70rem;
+      height: 20rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+    .Picd {
+      width: 20rem;
+      height: 30rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+    .Pice {
+      width: 25rem;
+      height: 37rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+
+    .picms {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 15rem;
+      height: 20rem;
+      margin-left: 3rem;
+    }
+
+    .pich {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 30rem;
+      height: 20rem;
+    }
+
+    .picv {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 20rem;
+      height: 30rem;
+    }
+
+    .picrot-15 {
+      transform: rotate(-15deg);
+    }
+
+    .ppich {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 20rem;
+      height: 14rem;
+    }
+
+    .PicConscrits {
+      width: 36rem;
+      height: 24rem;
+    }
+
+    .piclaguerre {
+      width: 40rem;
+      height: 12rem;
+    }
+
+    .picBergougnan {
+      width: 15rem;
+      height: 22rem;
+    }
+
+    .picMichelin {
+      width: 22rem;
+      height: 16rem;
+    }
+
+    .picChamond3 {
+      width: 50rem;
+      height: 15rem;
+    }
+
+    .picBrun {
+      width: 15rem;
+      height: 15rem;
+    }
+
+    .audiobutton {
+      padding-bottom: 3%;
+    }
+
+    audio::-webkit-media-controls-panel {
+      background-color: #DFAA93
+    }
+
+    audio {
+      height: 1.5rem;
+      width: 14rem;
+    }
+
+
+    @media (max-width:990px) {
+
+      .Pic1a,
+      .Pic1b {
+        position: static;
+        transform: rotate(0);
+      }
+
+    }
+
+    /* Static Carousel pictures */
+
+
+
+    em {
+      color: #232027;
+    }
+
+    .wrapper {
+      width: 66%;
+      margin: 40px auto;
+    }
+
+    .wrapper1 {
+      width: 50%;
+      margin: 40px auto;
+    }
+
+    .wrapper2 {
+      width: 90%;
+      margin: 40px auto;
+    }
+
+    div.gallery {
+      margin-top: 30px;
+    }
+
+    div.gallery ul {
+      list-style-type: none;
+      margin-left: 35px;
+    }
+
+    /* animation */
+    div.gallery ul li,
+    div.gallery li img {
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      -o-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
+    }
+
+    div.gallery ul li {
+      position: relative;
+      float: left;
+      width: 375px;
+      height: 370px;
+      margin: 5px;
+      padding: 5px;
+      z-index: 0;
+    }
+
+    /* Make sure z-index is higher on hover */
+    /* Ensure that hover image overlapped the others */
+    div.gallery ul li:hover {
+      z-index: 5;
+    }
+
+    /* Image is position nicely under li */
+    div.gallery ul li img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 1px solid #dddddd;
+      padding: 5px;
+      width: 375px;
+      height: 375px;
+      background: #f0f0f0;
+    }
+
+    div.gallery ul li img:hover {
+      width: 600px;
+      height: 600px;
+      margin-top: -250px;
+      margin-left: -375px;
+      top: 65%;
+      left: 65%;
+    }
+
+    p.attribution {
+      font-family: 'Consolas';
+      color: #000;
+      clear: both;
+      text-align: center;
+      line-height: 25px;
+      padding-top: 30px;
+    }
+
+    p.attribution a {
+      color: #4c8d7c;
+    }
+
+    /* Responsive hack */
+    @media only screen and (min-width: 499px) and (max-width: 1212px) {
+      .wrapper {
+        width: 500px;
+      }
+    }
+
+    @media only screen and (max-width: 498px) {
+      .wrapper {
+        width: 300px;
+      }
+
+      div.gallery ul {
+        list-style-type: none;
+        margin: 0;
+      }
+    }
+
+
+
+    /* background */
+
+    .bg-image1 {
+      /* The image used */
+      background-image: url(images/Courier.jpg);
+
+      /* Add the blur effect */
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+
+      /* Full height */
+      height: 105rem;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .bg-text {
+      position: absolute;
+      top: 15%;
+
+    }
+
+    .bg-text1 {
+      position: absolute;
+      top: 21%;
+      left: 10%;
+      z-index: 1;
+
+    }
+
+    .bg-text2 {
+      position: absolute;
+      top: 120%;
+
+    }
+  </style>
 </head>
 
 <body>
-<br>
-<br>
-<br>
-<h1>En travaux ... <a href="index.html">
-  <img class="logo retour" src="images/logo1.png" alt="logo-img">
-</a></h1>
-<br>
-<br>
-<h1>Encore un rondin à scier </h1>
-<br>
-<br>
-<br>
-<iframe src="https://giphy.com/embed/CDWqWMk5yu0HSKBQAp" width="480" height="347" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/wwi-great-war-first-world-CDWqWMk5yu0HSKBQAp">via GIPHY</a></p>
+  <a href="box-page1"></a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid navigation-accueil blip">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="images/logo1.png" alt="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html#introduction" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">INTRODUCTION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#les-acteurs" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES ACTEURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#leslieux" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES LIEUX</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#parcours" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PARCOURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#focus" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">FOCUS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#Ressources" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">RESSOURCES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plan.html" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PLAN DES TRANCHEES</a>
+          </li>
+          <li class="nav-item">
+            <table cellpadding=0 cellspacing=0 border=0>
+              <tr>
+                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+                  <center>
+                    <table width="90%" cellpadding=0 cellspacing=0 border=0 style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+                    </table>
+                  </center>
+                  <form style="margin:0px; margin-top:5px;" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+                    <input type="hidden" name="si" value="75939983">
+                    <input type="hidden" name="pid" value="r">
+                    <input type="hidden" name="n" value="0">
+                    <input type="hidden" name="_charset_" value="">
+                    <input type="hidden" name="bcd" value="&#247;">
+                    <input type="text" name="query" size="15">
+                    <input type="submit" value="search" style="font-family: Arial, Helvetica, sans-serif; font-size: 13pt; text-transform: uppercase; color: white; background: rgba(76, 175, 80, 0); border: none; font-weight: bold;">
+                  </form>
+                </td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page -->
+  <br>
+  <br>
+  <div class="bg-image1">
+  </div>
+
+
+  <div class="bg-text">
+    <h1 class="title-parcoursf">Courrier</h1>
+    <br>
+    <br>
+    <br>
+    <h3>Il y a deux choses primordiales pour le moral du Poilu, la popotte et le courrier. Et les deux arrivent souvent au même moment. Lisez plutôt cet extrait des Croix de Bois de Roland Dorgelès.</h3>
+    <br>
+    <h3> " Le cercle bourdonnant se serra autour de la voiture, ceux des premiers rangs accroupis, d’autres faufilés entre les roues. On voulait être tout près, pour mieux entendre. C’était la meilleure ration qu'on allait partager : ce qu'on touche
+      de bonheur pour vingt-quatre heures. Éclairé par une lampe électrique de poche, dont on assourdissait la lueur sous un bonnet de police, le fourrier lisait mal. On écoutait, les mains et le cœur tendus.</h3>
+    <br>
+    <h3>_ Présent … Présent … Chaque homme, dès qu’il tenait son paquet, cherchait vite sa lettre avec des doigts mouillés, et, malgré l'ombre épaisse, malgré la pluie qui aveuglait, on la reconnaissait aussitôt, rien qu’à la forme, rien qu’au
+      toucher. Le sac fut bientôt vide. Un murmure de déception s’éleva :</h3>
+    <br>
+    <h3>_'Eh bien et nous alors ? Ÿ en a pas pour moi ? Tu es sûr, t'as bien regardé ?.. Ah, on est fade comme vaguemestre … Il doit les foutre en l'air au burlingue.</h3>
+    <br>
+    <h3>Ceux qui n’avaient rien reçu s’écartaient découragés, et pour se soulager de leur rage impuissante, ils regardaient le fourrier d’un air mauvais, comme s’ils l'avaient vraiment soupçonné de jeter leur courrier aux feuillées. _T'en fais pas,
+      il reçoit les siennes, lui. </h3>
+    <br>
+    <h3>Gilbert était heureux. En prenant son paquet, il avait tout de suite reconnu la large enveloppe de Suzy qui dépassait. Une bouffée de bonheur lui était montée à la tête. Maintenant qu'il avait sa lettre dans sa poche il n'était plus pressé de
+      la lire, il ne voulait pas dépenser toute sa joie d’un seul coup. Il la goûterait à petits mots, lentement, couché dans son trou, et s'endormirait avec leur douceur dans l'esprit."</h3>
+    <br>
+    <h3></h3>
+    <br>
+    <br>
+    <div class="row" style="margin-left: 10px;margin-right: 0px;">
+      <div class="col-lg-8">
+        <br>
+        <br>
+        <h3>Gabriel. Auguste et Antoine font partie de cette nouvelle génération de soldats instruits sachant lire et écrire, une grande différence par rapport au conflit franco-allemand de 1870. Ainsi, les autorités comprennent très vite
+          l’importance du courrier pour soutenir le moral des troupes, et pour maintenir ce trait d’union avec l’arrière. C’est en quelque sorte la première guerre racontée en direct, par chacun des Poilus pour chacune des familles !</h3>
+        <br>
+        <h3>C’est un énorme défi pour la Poste qui durant la totalité du conflit devra acheminer plus de quatre milliards de lettres et cartes postales, sans parler des colis de victuailles envoyés par les familles. Cliquez sur l’image pour en
+          découvrir plus sur le sujet.</h3>
+        <br>
+      </div>
+      <div class="col-lg-4">
+        <a href="https://www.france24.com/fr/20170114-poste-premiere-guerre-mondiale-courrier-lettres-poilus-censure-cartes-postales" target="_blank"><img src="images/imagesbox/Focus/Echange.jpg" alt=""></a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row" style="margin-left: 10px;margin-right: 0px;">
+      <div class="col-lg-4">
+        <iframe width="350" height="350" src="https://www.youtube.com/embed/2pmyiH1YEL4">
+        </iframe>
+      </div>
+      <div class="col-lg-8">
+        <br>
+        <br>
+        <h3>Toutes les lettres ou cartes sont soumises au contrôle d’un officier d’état-major régimentaire, puis à chaque étape de son acheminement.</h3>
+        <br>
+        <h3>Les courriers prélevés sont remis aux autorités supérieures pour un contrôle statistique, puisqu’aucune indication stratégique, de lieu, d’opérations ou de mouvements de troupe ne doit être mentionnée.</h3>
+        <br>
+        <h3>Un rapport est par ailleurs établi chaque semaine sur le moral des troupes au vu de la teneur des lettres examinées.</h3>
+        <br>
+        <h3>Ces mesures, souvent méconnues de la plupart des soldats, n’atteignirent pas le but recherché puisque les familles étaient informées de la grogne qui grandissait au front d’une manière ou d’une autre.</h3>
+        <br>
+      </div>
+    </div>
+    <br>
+  </div>
+
+  <div class="row" style="margin-right: 0px;margin-left: 0px;">
+    <div class="footer">
+      <div class="row">
+        <div class="col-lg-9">
+          <hr style="border-top: 3px solid; margin-top: 25px; color: white;">
+        </div>
+        <div class="col-lg-2">
+          <p style="padding-top: 10px; text-align: left;">Des Sillons aux Tranchées </p>
+        </div>
+        <div class="col-lg-1">
+          <p><img class="logo" src="images/logo1.png" alt="logo-img" style="height:30px; width:30px; display: block;
+margin-left: auto;
+margin-right: auto;"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
 
 
 
