@@ -3,8 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Des Sillons aux Tranchées</title>
-
+  <title>Apres guerre</title>
 
   <!-- Google Fonts -->
 
@@ -23,31 +22,1254 @@
 
   <script src="https://kit.fontawesome.com/cc4dcc56d7.js" crossorigin="anonymous"></script>
 
-<style media="screen">
+  <style>
+    body {
+      background-image: linear-gradient(to right top, #d97e57, #d5815c, #d08460, #cc8665, #c7896a, #c68d6f, #c59174, #c49579, #c69c7f, #c9a386, #cbaa8d, #ceb194);
+    }
 
-.retour{
-  margin-left: 0rem;
-}
+    .map {
+      background-image: url(images/imagesbox/Box5/map26Aout.jpg);
+      height: 90rem;
+    }
 
-</style>
+    .couv17 {
+      padding-top: 47rem;
+      padding-right: 5rem;
+    }
+
+    .couv98 {
+      padding-top: 10rem;
+    }
+
+    .mapChipotte {
+      background-image: url(images/imagesbox/Box5/ColdelaChipotte.jpg);
+      text-align: left;
+    }
+
+    .mapFrance {
+      background-image: url(images/imagesbox/Box6a/Mapconvois.jpg);
+      text-align: left;
+    }
+
+    .mapStRemy {
+      background-image: url(images/imagesbox/Box5/StRemy.jpg);
+      text-align: left;
+    }
+
+    .mapEMMarne {
+      background-image: url(images/imagesbox/Box5/MapEMMarne.jpg);
+      text-align: left;
+    }
+
+    .PicChipotte {
+      padding-top: 25rem;
+    }
+
+    .PicMarne {
+      padding-top: 0rem;
+
+    }
+
+    .fraternite {
+      padding-left: 6.5rem;
+    }
+
+    .title-parcours {
+      padding-top: 10%;
+      padding-bottom: 1%;
+    }
+
+    .textcarte {
+      font-family: 'Sacramento', cursive;
+      font-size: 200%;
+      color: #434144;
+      font-weight: 600;
+    }
+
+    .texte-legend {
+      font-size: 100%;
+    }
+
+    .image-box {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 10rem 0rem;
+    }
+
+    .image-boxExcep {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 20rem 0rem;
+    }
 
 
+    .image-boxms {
+      background-image: linear-gradient(to right top, #e05b22, #d25f2a, #c46232, #b7643a, #a96542, #a86a47, #a76e4d, #a67353, #b27d58, #bd885e, #c89363, #d39e69);
+      padding: 5rem 0rem;
+    }
+
+    .text-box {
+      height: 40rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxExcep {
+      height: 55rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxconvois {
+      height: 30rem;
+      text-align: left;
+      padding-top: 3%;
+    }
+
+    .text-boxbergougnan {
+      height: 20rem;
+      text-align: left;
+      padding-top: 2%;
+    }
+
+    .text-boxchamond {
+      height: 20rem;
+      text-align: left;
+      padding-top: 0%;
+    }
+
+    .text-boxmichelin {
+      height: 20rem;
+      text-align: left;
+      padding-top: 1%;
+    }
+
+
+    .text-box1 {
+      height: 40rem;
+      text-align: left;
+      padding-top: 1%;
+    }
+
+    .text-boxjourneaux {
+      height: 45rem;
+      text-align: center;
+    }
+
+    .text-boxdepart {
+      height: 25rem;
+      text-align: center;
+    }
+
+    .text-boxgiono {
+
+      height: 67rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+
+    .text-boxgiono2 {
+
+      height: 67rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+    .text-boxgenevoix {
+
+      height: 60rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+
+    }
+
+    .text-boxjmo17 {
+
+      height: 38rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 1.5%;
+
+    }
+
+    .text-boxprevert2 {
+
+      height: 86rem;
+      background-color: #fff3ee;
+      text-align: left;
+      padding-top: 3%;
+      padding-left: 3%;
+
+    }
+
+
+
+
+    h4 {
+      color: #434144;
+    }
+
+    .Pica {
+      padding: 20px;
+      width: 18rem;
+      height: 18rem;
+      box-shadow: 4px 5px 10px 10px rgba(20, 20, 20, 0.4);
+    }
+
+    .Picc {
+      width: 70rem;
+      height: 20rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+    .Picd {
+      width: 20rem;
+      height: 30rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+    .Pice {
+      width: 25rem;
+      height: 37rem;
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+    }
+
+
+    .picms {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 15rem;
+      height: 20rem;
+      margin-left: 3rem;
+    }
+
+    .pich {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 30rem;
+      height: 20rem;
+    }
+
+    .picv {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 20rem;
+      height: 30rem;
+    }
+
+    .picrot-15 {
+      transform: rotate(-15deg);
+    }
+
+    .ppich {
+      box-shadow: 4px 5px 10px 5px rgba(20, 20, 20, 0.4);
+      width: 20rem;
+      height: 14rem;
+    }
+
+    .PicConscrits {
+      width: 36rem;
+      height: 24rem;
+    }
+
+    .piclaguerre {
+      width: 40rem;
+      height: 12rem;
+    }
+
+    .picBergougnan {
+      width: 15rem;
+      height: 22rem;
+    }
+
+    .picMichelin {
+      width: 22rem;
+      height: 16rem;
+    }
+
+    .picChamond3 {
+      width: 50rem;
+      height: 15rem;
+    }
+
+    .picBrun {
+      width: 15rem;
+      height: 15rem;
+    }
+
+    .audiobutton {
+      padding-bottom: 3%;
+    }
+
+    audio::-webkit-media-controls-panel {
+      background-color: #DFAA93
+    }
+
+    audio {
+      height: 1.5rem;
+      width: 14rem;
+    }
+
+
+    @media (max-width:990px) {
+
+      .Pic1a,
+      .Pic1b {
+        position: static;
+        transform: rotate(0);
+      }
+
+    }
+
+    /* Static Carousel pictures */
+
+
+
+    em {
+      color: #232027;
+    }
+
+    .wrapper {
+      width: 66%;
+      margin: 40px auto;
+    }
+
+    .wrapper1 {
+      width: 50%;
+      margin: 40px auto;
+    }
+
+    .wrapper2 {
+      width: 90%;
+      margin: 40px auto;
+    }
+
+    div.gallery {
+      margin-top: 30px;
+    }
+
+    div.gallery ul {
+      list-style-type: none;
+      margin-left: 35px;
+    }
+
+    /* animation */
+    div.gallery ul li,
+    div.gallery li img {
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      -o-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out;
+    }
+
+    div.gallery ul li {
+      position: relative;
+      float: left;
+      width: 375px;
+      height: 370px;
+      margin: 5px;
+      padding: 5px;
+      z-index: 0;
+    }
+
+    /* Make sure z-index is higher on hover */
+    /* Ensure that hover image overlapped the others */
+    div.gallery ul li:hover {
+      z-index: 5;
+    }
+
+    /* Image is position nicely under li */
+    div.gallery ul li img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      border: 1px solid #dddddd;
+      padding: 5px;
+      width: 375px;
+      height: 375px;
+      background: #f0f0f0;
+    }
+
+    div.gallery ul li img:hover {
+      width: 600px;
+      height: 600px;
+      margin-top: -250px;
+      margin-left: -375px;
+      top: 65%;
+      left: 65%;
+    }
+
+    p.attribution {
+      font-family: 'Consolas';
+      color: #000;
+      clear: both;
+      text-align: center;
+      line-height: 25px;
+      padding-top: 30px;
+    }
+
+    p.attribution a {
+      color: #4c8d7c;
+    }
+
+    /* Responsive hack */
+    @media only screen and (min-width: 499px) and (max-width: 1212px) {
+      .wrapper {
+        width: 500px;
+      }
+    }
+
+    @media only screen and (max-width: 498px) {
+      .wrapper {
+        width: 300px;
+      }
+
+      div.gallery ul {
+        list-style-type: none;
+        margin: 0;
+      }
+    }
+
+
+
+    /* background */
+
+    .bg-image {
+      /* The image used */
+      background-image: url(images/imagesbox/Box12/Nympheaa.jpg);
+
+      /* Add the blur effect */
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+
+      /* Full height */
+      height: 105rem;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .bg-text {
+      position: absolute;
+      top: 15%;
+
+    }
+
+    .bg-text1 {
+      position: absolute;
+      top: 21%;
+      left: 10%;
+      z-index: 1;
+
+    }
+
+    .bg-text2 {
+      position: absolute;
+      top: 120%;
+
+    }
+  </style>
 </head>
 
 <body>
-<br>
-<br>
-<br>
-<h1>En travaux ... <a href="index.html">
-  <img class="logo retour" src="images/logo1.png" alt="logo-img">
-</a></h1>
-<br>
-<br>
-<h1>Ouf, c'est bientôt fini !</h1>
-<br>
-<br>
-<br>
-<iframe src="https://giphy.com/embed/iWUQnUlxJr5n02N6KD" width="480" height="365" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/wwi-great-war-first-world-iWUQnUlxJr5n02N6KD">via GIPHY</a></p>
+  <a href="box-page1"></a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid navigation-accueil blip">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="images/logo1.png" alt="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html#introduction" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">INTRODUCTION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#les-acteurs" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES ACTEURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#leslieux" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">LES LIEUX</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#parcours" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PARCOURS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#focus" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">FOCUS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#Ressources" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">RESSOURCES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="plan.html" style="font-family: Arial, Helvetica, sans-serif; font-size: 14pt;">PLAN DES TRANCHEES</a>
+          </li>
+          <li class="nav-item">
+            <table cellpadding=0 cellspacing=0 border=0>
+              <tr>
+                <td style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+                  <center>
+                    <table width="90%" cellpadding=0 cellspacing=0 border=0 style="font-family: Arial, Helvetica, sans-serif; font-size: 12pt;">
+                    </table>
+                  </center>
+                  <form style="margin:0px; margin-top:5px;" action="https://search.freefind.com/find.html" method="get" accept-charset="utf-8" target="_self">
+                    <input type="hidden" name="si" value="75939983">
+                    <input type="hidden" name="pid" value="r">
+                    <input type="hidden" name="n" value="0">
+                    <input type="hidden" name="_charset_" value="">
+                    <input type="hidden" name="bcd" value="&#247;">
+                    <input type="text" name="query" size="15">
+                    <input type="submit" value="search" style="font-family: Arial, Helvetica, sans-serif; font-size: 13pt; text-transform: uppercase; color: white; background: rgba(76, 175, 80, 0); border: none; font-weight: bold;">
+                  </form>
+                </td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="bg-image">
+  </div>
+  <div class="row" style="position:absolute;top:12%; left:2%;width:1600px;">
+    <div class="col-lg-4">
+      <div class="cont">
+        <div class="scroller">
+          <div class="img"><img src="audios/Debussy1.jpg" alt=""></div>
+          <div class="img"><img src="audios/Partition1.jpg" alt=""></div>
+          <div class="img"><img src="audios/Debussy2.jpg" alt=""></div>
+          <div class="img"><img src="audios/Partition2.jpg" alt=""></div>
+          <div class="img"><img src="audios/Debussy1.jpg" alt=""></div>
+          <div class="img"><img src="audios/Partition1.jpg" alt=""></div>
+          <div class="img"><img src="audios/Debussy2.jpg" alt=""></div>
+          <div class="img"><img src="audios/Partition2.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-8">
+    </div>
+
+
+  </div>
+  <div class="bg-text1">
+    <div class="audiobutton">
+      <audio id="audio" controls>
+        <source src="audios/Debussy.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+
+  <div class="bg-text">
+    <h1 class="title-parcours">Après guerre</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>11 Novembre 1918 … l’armistice est signé en forêt de Compiègne … la guerre est finie … Marthe Chenal, Soprano de l’Opéra comique et égérie des Poilus, chante la Marseillaise, enveloppée dans le drapeau tricolore depuis le balcon de l'Opéra
+      Garnier en présence de Georges Clémenceau et d'une foule nombreuse …</h3>
+    <br>
+    <h3>12 Novembre 1918 … Lettre de Claude Monet à Georges Clémenceau :</h3>
+    <br>
+    <h3>« Cher et grand ami, je suis à la veille de terminer deux panneaux décoratifs, que je veux signer du jour de la victoire, et viens vous demander de les offrir à l’État par votre intermédiaire. C’est peu de chose, mais c’est la seule manière
+      que j’ai de prendre part à la victoire. Je désire que ces deux panneaux soient placés au musée des Arts décoratifs et serai heureux qu’ils soient choisis par vous. Je vous admire et vous embrasse de tout mon cœur »</h3>
+    <br>
+    <br>
+    <br>
+    <div class="row" style="margin-left: 10px;margin-right: 0px;">
+      <div class="col-lg-8">
+        <br>
+        <br>
+        <h3>Suite à ce premier don, Clémenceau convaincra Monet d’offrir l’ensemble décoratif des Nymphéas que l’on peut voir au Musée de l’Orangerie. Et l’histoire des Nymphéas, c’est l’histoire d’une amitié indéfectible entre un homme d’état et un
+          peintre de génie. </h3>
+        <br>
+        <h3>Clémenceau, le Père La Victoire, écrit ainsi à Monet : « Je vous aime parce que vous êtes vous, et que vous m’avez appris à comprendre la lumière. Vous m’avez ainsi augmenté. Tout mon regret est de ne pouvoir vous le rendre. Peignez,
+          peignez toujours, jusqu’à ce que la toile en crève. Mes yeux ont besoin de votre couleur et mon cœur est heureux de vous. »</h3>
+        <br>
+      </div>
+      <div class="col-lg-4">
+        <img src="images/imagesbox/Box12/Nympheaa.jpg" alt="">
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="row" style="margin-left: 10px;margin-right: 0px;">
+      <div class="col-lg-4">
+        <img src="images/imagesbox/Box12/Nymphea1.jpg" alt="">
+      </div>
+      <div class="col-lg-8">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>Après ces années sombres de guerre, quoi de plus beau en effet pour célébrer la paix, que ces Nymphéas - symbole de cette quête incessante de la lumière par le dernier des impressionnistes. </h3>
+        <br>
+        <h3>Quand les soldats partaient aux tranchées, Monet s’attelait à l’œuvre dès 1914 et dans ces univers parallèles, les uns cotoyaient la mort et l’horreur quand le peintre saisissait calme et beauté sur sa toile.</h3>
+        <br>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h3>Ce tableau des Nymphéas marque aussi la fin d’une époque et déjà les artistes plus jeunes explorent de nouvelles sensations et créent de nouveaux mouvements. Comme la fin de la Grande Guerre, il marque la véritable césure entre 19ème et 20ème
+      siècle et un monde nouveau s’annonce où nombre de certitudes ont été mises à bas.</h3>
+    <br>
+    <h3>Certes la vie quotidienne reprend son cours, certes les soldats survivants sont rentrés aux foyers, certes les familles les accueillent avec joie et soulagement, mais tous gardent en eux les meurtrissures de la guerre comme ces cartes et
+      lettres gardées au fond des tiroirs des armoires …</h3>
+    <br>
+  </div>
+  <br>
+  <br>
+  <br>
+  <h3>Comme en attestent ces quelques cartes postales, arrivent bien vite les premières célébrations de la Victoire et immédiatement après-guerre ceux de l’arrière vont visiter les villes martyres du front et les anciens champs de bataille … soit
+    pour se recueillir sur la tombe de leurs proches, soit pour fouler la terre et embrasser le dernier paysage entrevu par ceux qui disparurent ou n’eurent jamais de sépulture ...</h3>
+  <br>
+  <br>
+  <br>
+  <div class="row" style="margin-left: 10px;margin-right: 0px;">
+    <div class="col-lg-1">
+    </div>
+    <div class="col-lg-10">
+      <div class="cont" style="height:20rem;">
+        <div class="scroller1">
+          <div class=""><img src="images/imagesbox/Box12/Pic1a.JPG" alt="" style=height:20rem;width:30rem;></div>
+          <div class=""><img src="images/imagesbox/Box12/Pic2a.JPG" alt="" style=height:20rem;width:30rem;></div>
+          <div class=""><img src="images/imagesbox/Box12/Pic3a.JPG" alt="" style=height:20rem;width:30rem;></div>
+          <div class=""><img src="images/imagesbox/Box12/Pic4a.JPG" alt="" style=height:20rem;width:30rem;></div>
+          <div class=""><img src="images/imagesbox/Box12/Pic7a.JPG" alt="" style=height:20rem;width:30rem;></div>
+          <div class=""><img src="images/imagesbox/Box12/Pic8a.JPG" alt="" style=height:20rem;width:30rem;></div>
+          <div class=""><img src="images/imagesbox/Box12/Pic9a.JPG" alt="" style=height:20rem;width:30rem;></div>
+          <div class=""><img src="images/imagesbox/Box12/Pic11a.JPG" alt="" style=height:20rem;width:30rem;></div>
+          <div class=""><img src="images/imagesbox/Box12/Pic12a.JPG" alt="" style=height:20rem;width:30rem;></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-1">
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row" style="margin-left: 10px;margin-right: 0px;">
+    <div class="col-lg-4">
+      <br>
+      <br>
+      <h3>Et une fois encore, on retrouve notre entreprise Auvergnate préférée, C’est en effet dès 1917 que Michelin publie son premier guide des champs de bataille, une première publication qui sera suivie par une véritable bibliothèque de guides
+        sur les lieux emblématiques de la Grande Guerre.</h3>
+      <br>
+      <h3>Drôle d’époque où Michelin fait la réclame des ses guides en les présentant comme un joli cadeau d'étrennes pour les enfants !...</h3>
+    </div>
+    <div class="col-lg-4">
+      <br>
+      <iframe width="540" height="300" src="images/imagesbox/Box12/Bibliguides.jpg">
+      </iframe>
+    </div>
+    <div class="col-lg-4">
+      <br>
+      <iframe width="540" height="300" src="images/imagesbox/Box12/Etrennes.jpg">
+      </iframe>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h3>Selon l’Historial de la Grande Guerre, c’est à partir de 1919, que des voyages sont organisés aux hauts lieux sacrés du front. Mais tout est toujours en désordre : les champs de combat étant dangereux, les cimetières et les monuments n’ayant
+    pas encore transformé les lieux de destruction en paisibles jardins du souvenir.</h3>
+  <br>
+  <h3>C’est à partir de la deuxième moitié des années 1920 que les visites prennent leur essor. Les familles françaises qui ont renoncé au rapatriement du corps de leur soldat tombé à la guerre ont droit à une visite gratuite annuelle.</h3>
+  <br>
+  <h3>Dans une Allemagne stabilisée, qui connaît une courte prospérité économique, on peut enfin songer à visiter l’ancien front (la traduction du guide Michelin en allemand date de 1929).</h3>
+  <br>
+  <h3>Pour les Britanniques, Australiens, et autres qui n‘ont pas eu la possibilité de rapatrier les morts – et qui n’ont su les lieux de leur disparition que par des noms exotiques – on peut enfin chercher par la visite une clôture du deuil.</h3>
+  <br>
+  <br>
+  <div class="row" style="margin-left: 10px;margin-right: 0px;">
+    <div class="col-lg-6">
+      <br>
+      <iframe width="213" height="328" src="images/imagesbox/Box12/GuideVerdun.jpg">
+      </iframe>
+    </div>
+    <div class="col-lg-5">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h3>Et puis, il y a toujours la fascination de cette guerre qui pour l’instant reste unique… et peut-être, à travers la lecture de ces guides, le besoin d’essayer de mieux comprendre et de vivre ce que chacun des Poilus a vécu. Ainsi, au hameau
+        des Raynauds, sans doute ont-ils lu le guide de la bataille de Verdun et les pages sur la bataille du MortHomme où Gabriel avait trouvé la mort.</h3>
+      <br>
+      <h3></h3>
+    </div>
+    <div class="col-lg-1">
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="row" style="margin-left: 10px;margin-right: 0px;">
+    <div class="col-lg-6">
+      <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="https://gallica.bnf.fr/ark:/12148/bpt6k999297v/f7.item" target="_blank"><i class="fas fa-archive"></i> Pour feuilleter le guide </a>
+    </div>
+    <div class="col-lg-5">
+      <h3></h3>
+    </div>
+    <div class="col-lg-1">
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h3>Mais, pour l’heure, la vie reprend son cours normal au village de la Crouzille. Les hommes, revenus à la ferme n’écrivent plus beaucoup si ce n’est à leurs copains de guerre, mais les filles continuent à s’écrire entre elles sur des sujets bien
+    moins sérieux. </h3>
+  <br>
+  <h3>Les bals, les fêtes et les noces sont de retour … autant de sujets excitants pour Augustine et Léa qui vont maintenant sur leurs vingt ans.</h3>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row" style="margin-right: 0px;margin-left: 0px;">
+    <div class="col-lg-5 text-box">
+      <h3 class="textcarte">… elles se sont bien amusées. On a fait le bal chez nous, enfin j’ai écouté la musique ainsi que la petite Léa. Nous avons pas pensé à dormir.</h3>
+      <br>
+      <h3 class="textcarte">Ils ont beaucoup dansé, c’était tous des garçons amusants. Il y avait un gendarme, il était rigolo. Mais il s’est passé une petite chose.</h3>
+      <h3 class="textcarte">La Cherdeville était invitée avec sa mère pour aider à la cuisine, mais comme il ne lui restait que Belot pour cavalier, elle ne l’a pas voulu et elle s’est en allé chez sa mère, laissant l’ouvrage de côté ainsi que le
+        déjeuner.</h3>
+      <h3 class="textcarte">Tu penses si ces garçons ont été surpris de cette moquerie. Ils ne l’aimaient pas. Je t’assure qu’ils ont parlé d’elle toute la soirée.</h3>
+      <h3 class="textcarte">Elle aurait voulu celui de la messe, c’est-à-dire Alfonse Peynet, mais il ne la voulait pas.</h3>
+      <br>
+      <h3 class="textcarte">Augustine</h3>
+    </div>
+    <div class="col-lg-7 image-box">
+      <img class="picv picrot-15" src="images/imagesbox/Box12/PicBal1a.JPG" alt="image">
+      <img class="pich" src="images/imagesbox/Box12/PicBal1b.JPG" alt="image">
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row" style="margin-right: 0px;margin-left: 0px;">
+    <div class="col-lg-7 image-box">
+      <img class="pich picrot-15" src="images/imagesbox/Box12/PicBal2a.JPG" alt="image">
+      <img class="picv" src="images/imagesbox/Box12/PicBal2b.JPG" alt="image">
+    </div>
+    <div class="col-lg-5 text-box">
+      <h3 class="textcarte">Bien chères amies,</h3>
+      <br>
+      <h3 class="textcarte">J’ai expédié le petit colis hier, donc je pense que vous l’avez reçu aujourd’hui.</h3>
+      <h3 class="textcarte">Je ne sais pas si tu les trouveras bien ma chère Gustine mais elles sont mieux que les miennes, c’est le même prix. Comme les miennes elles valaient en réclame 8,90 mais j’ai préféré de prendre les autres pour 10.30 la
+        paire. C’est des bas de 11 francs et en réclame, ils les vendent 10.30.</h3>
+      <h3 class="textcarte">Tu les trouveras peut-être trop chers. J’étais indécise mais j’ai préféré de prendre celles-là que les autres qui étaient pas belles.</h3>
+      <h3 class="textcarte">Enfin écris moi si tu l’a reçu et si ça va. </h3>
+      <br>
+      <h3 class="textcarte">J’ai fait bon voyage mais tous ces jours, j’avais le cafard. Dire qu’il y a 8 jours déjà que j’étais à la noce. Ça passe vite tout de même.</h3>
+      <br>
+      <h3 class="textcarte"></h3>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row" style="margin-right: 0px;margin-left: 0px;">
+    <div class="col-lg-5 text-box">
+      <h3 class="textcarte">Mesdemoiselles,</h3>
+      <br>
+      <h3 class="textcarte">Vous êtes invitées à venir au bal le 14 Janvier 1923 Chez Pradel à Champeaux.</h3>
+      <h3 class="textcarte"></h3>
+      <h3 class="textcarte"></h3>
+      <h3 class="textcarte"></h3>
+      <h3 class="textcarte"></h3>
+      <br>
+      <h3 class="textcarte">Meilleures salutations</h3>
+    </div>
+    <div class="col-lg-7 image-box">
+      <img class="picv picrot-15" src="images/imagesbox/Box12/PicBal3a.JPG" alt="image">
+      <img class="pich" src="images/imagesbox/Box12/PicBal3b.JPG" alt="image">
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h3>Il y a cependant encore quelques tragédies … comme en atteste ces quelques cartes, c’est maintenant la grippe espagnole qui frappe les campagnes, et quelquefois ce sont les plus jeunes qui partent les premiers.</h3>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row" style="margin-right: 0px;margin-left: 0px;">
+    <div class="col-lg-7 image-box" style="height:950px;">
+      <img class="picv picrot-15" src="images/imagesbox/Box12/PicGri1a.JPG" alt="image">
+      <img class="picv" src="images/imagesbox/Box12/PicGri1b.JPG" alt="image">
+    </div>
+    <div class="col-lg-5 text-box">
+      <h3 class="textcarte">Bien chère Léa et Augustine,</h3>
+      <br>
+      <h3 class="textcarte">Ayant reçu ta lettre depuis plusieurs jours, je suis très contente de voir que vous allez mieux. Mais avant-hier, j’ai reçu une lettre de la Germaine me disant que la mère était bien malade.</h3>
+      <h3 class="textcarte">Je pense qu’elle va mieux et que ce sera rien. Elle me disait aussi que Gustine était malade mais je pense qu’elle va mieux. Comme elle m’a parlé, la grippe fait beaucoup de mal et il y a beaucoup de malades et me disait
+        que le Marchamp s’en sauverait pas. Tu m’écriras de suite, le temps me dure d’avoir des nouvelles du village.</h3>
+      <h3 class="textcarte">Je suis été bien triste d’apprendre la mort de la mère de la Pauline Sol et du père Maxime Berthon, C’est tout de même triste cette terrible grippe. Ici, on n’en entend plus parler. J’ai bien peur que ma mère l’attrape,
+        parce que elle se soignerait pas. Tu lui donneras la lettre que j’ai mis dans la tienne.</h3>
+      <h3 class="textcarte">Hier je suis allé acheter avec mon frère une chemise pour lui et un faux col, il est bleu. Et je me suis acheté un corset pour moi. Il est bien solide. Il y a beaucoup d’affaires ici et moins cher que chez nous. Je
+        voudrais acheter quelque chose pour ma mère mais je ne sais pas quoi.</h3>
+      <h3 class="textcarte">Je finis en t’embrassant et Augustine de tout cœur.</h3>
+      <br>
+      <h3 class="textcarte">Victorine</h3>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row" style="margin-right: 0px;margin-left: 0px;">
+    <div class="col-lg-5 text-box">
+      <h3 class="textcarte">Ma chère cousine,</h3>
+      <br>
+      <h3 class="textcarte">Tu m’excuseras de ne pas t’avoir répondue plus tôt.</h3>
+      <h3 class="textcarte">J’ai voulu attendre quelques jours espérant pouvoir te dire que tout le monde serait guéri à la maison.</h3>
+      <h3 class="textcarte">Mais il n’en est pas ainsi. Ça va mieux mais pour être complètement guéris, il me semble qu’il y en aura pour longtemps.</h3>
+      <h3 class="textcarte">Nous sommes heureux de vous savoir en bonne santé. Ne vous laissez pas prendre par la grippe car c’est trop long pour s’en débarrasser.</h3>
+      <h3 class="textcarte">Affectueux bonjour vous tous.</h3>
+      <h3 class="textcarte">Je te quitte en t’embrassant bien fort et bien des fois.</h3>
+      <br>
+      <h3 class="textcarte">Marie</h3>
+    </div>
+    <div class="col-lg-7 image-box">
+      <img class="pich picrot-15" src="images/imagesbox/Box12/PicGri2a.JPG" alt="image">
+      <img class="picv" src="images/imagesbox/Box12/PicGri2b.JPG" alt="image">
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row" style="margin-right: 0px;margin-left: 0px;">
+    <div class="col-lg-7 image-box">
+      <img class="pich picrot-15" src="images/imagesbox/Box12/PicGri3a.JPG" alt="image">
+      <img class="picv" src="images/imagesbox/Box12/PicGri3b.JPG" alt="image">
+    </div>
+    <div class="col-lg-5 text-box" style="height: 1050px;">
+      <h3 class="textcarte">Bien chère Léa,</h3>
+      <br>
+      <h3 class="textcarte">Ayant reçu ta lettre depuis quelques jours, je l’ai reçu avec beaucoup de plaisir. Je suis été contente de savoir que tu étais guérie. Que tout le monde aille bien chez toi.</h3>
+      <h3 class="textcarte">Tout de même, il a pas de veine le Jean -Louis, cette petite si jolie. Je vois le chagrin qu’il doit avoir. Tu me diras si c’étaient des filles qui l’ont portée en terre.</h3>
+      <h3 class="textcarte">Moi, tout va bien pour le moment. Je ne sais pas quand nous partirons. Peut-être dans quinze jours, je n’en sais rien. Le temps me dure de revoir le patelin et de parler un peu.</h3>
+      <h3 class="textcarte">Mon frère doit être chez nous. Si tu as reçu ma lettre, en attendant qu’il parte, dis-lui de me porter des noix si ma mère en a toujours. Si il est parti, ça ne fait rien.</h3>
+      <h3 class="textcarte">Aujourd’hui dimanche, je n’ai pas pu aller me promener , il faisait trop mauvais temps. Je suis été à la messe de huit heures du matin et ce soir je suis été à vêpres à la cathédrale. C’est beau à voir, ça joue bien mieux
+        que chez nous.</h3>
+      <h3 class="textcarte">Ce matin, je suis été chercher ma robe finie. Elle me va bien, elle est toute simple mais c’est du cher. Elle m’a pris 60 francs, mais c’est vrai qu’elle a tout fourni, la soie, les boutons.</h3>
+      <h3 class="textcarte">A présent, tu feras part de ma carte à ma mère. Je lui ai écrit hier et je lui ai mis une enveloppe timbrée et du papier pour faire réponse.</h3>
+      <h3 class="textcarte">Je finis, n’ayant plus de place, en t’embrassant ta sœur et toi.</h3>
+      <br>
+      <h3 class="textcarte">Victorine</h3>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h3>Tout le monde ne reste pas à la campagne, il n’y a pas de place pour tout le monde et bien souvent les jeunes ne peuvent pas résister à l’appel de l’inconnu et préfèrent tenter leur chance en dehors du village.</h3>
+  <br>
+  <h3>Ainsi beaucoup d’amies d’Augustine et Léa quittent la Crouzille, mais la Crouzille ne les quittent jamais et elles restent en contact étroit avec les deux jumelles …</h3>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row" style="margin-right: 0px;margin-left: 0px;">
+    <div class="col-lg-5 text-box">
+      <h3 class="textcarte">Chère Lily,</h3>
+      <br>
+      <h3 class="textcarte">Je viens de recevoir ton aimable lettre. Je vois que tu m’as pas oubliée. De mon côté, je pense souvent à toi.</h3>
+      <h3 class="textcarte">Tu me dis que tu n’as pas eu beau pour t’en aller, mais ici c’est bien la même chose. Depuis quelques jours, il fait très froid.</h3>
+      <h3 class="textcarte">Tateine est aussi taquin ainsi que Marcel.</h3>
+      <h3 class="textcarte">Vois petite Lily, je t’envoie cette vue – ça te rappellera l’Auvergne. Ces jeunes filles avec ces gros sabots n’ont pas l’allure parisienne.</h3>
+      <h3 class="textcarte">Toute la maison t’envoie le bonjour et moi je t’envoie mes meilleurs baisers.</h3>
+      <h3 class="textcarte">Ecris-moi toujours quelquefois.</h3>
+      <br>
+      <h3 class="textcarte">Léa</h3>
+    </div>
+    <div class="col-lg-7 image-box">
+      <img class="pich picrot-15" src="images/imagesbox/Box12/PicTra1a.JPG" alt="image">
+      <img class="picv" src="images/imagesbox/Box12/PicTra1b.JPG" alt="image">
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h3>… Elisa va simplement travailler au café de Marcillat, le village d’à côté …</h3>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row" style="margin-right: 0px;margin-left: 0px;">
+    <div class="col-lg-7 image-box">
+      <img class="picv picrot-15" src="images/imagesbox/Box12/PicTraMa1a.JPG" alt="image">
+      <img class="pich" src="images/imagesbox/Box12/PicTraMa1b.JPG" alt="image">
+    </div>
+    <div class="col-lg-5 text-box">
+      <h3 class="textcarte">Chère Augustine,</h3>
+      <br>
+      <h3 class="textcarte">Je viens m’entretenir un instant avec toi, mais j’aimerais bien mieux causer de vive voix.</h3>
+      <h3 class="textcarte">Je compte sur vous pour dimanche prochain. Je vais bien, j’espère que ma carte vous trouve de même.</h3>
+      <h3 class="textcarte">Je suis bien habituée et très contente de ma place. Je ne m’en fait pas. Jeudi, nous avons eu beaucoup d’entrées mais je me suis faite beaucoup de pourboires, ce qui encourage. Aujourd’hui il y avait des bourgeois qui ont donné 10 francs.</h3>
+      <h3 class="textcarte">Tu m’enverras le nouveau du pays, Si j’avais personne aux Raynauds, ça me ferait de la peine d’y retourner.</h3>
+      <h3 class="textcarte"></h3>
+      <br>
+      <h3 class="textcarte"></h3>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row" style="margin-right: 0px;margin-left: 0px;">
+    <div class="col-lg-5 text-box">
+      <h3 class="textcarte">Bien chère amie,</h3>
+      <br>
+      <h3 class="textcarte">Malgré mon travail, je pense toujours à toi.</h3>
+      <h3 class="textcarte">Nous avons eu beaucoup à faire mercredi et jeudi. Ce n’est pas ce qui m’a empêché de danser un bon coup jeudi soir. Nous avons fait bal, il y avait pas beaucoup de monde, c’est pour cela que nous nous sommes bien amusés. Nous en ferons un autre le 20 courant, si tu veux venir.</h3>
+      <h3 class="textcarte">Je suis bien habituée maintenant, malgré cela je serais contente d’aller aux Raynauds faire un tour. Michelat se marie, je l’ai vu avec sa fiancée, elle est bien belle.</h3>
+      <h3 class="textcarte">Je suis toujours en bonne santé. J’espère que ma carte te trouve de même ainsi que tes parents.</h3>
+      <h3 class="textcarte">Je finis en t’embrassant ainsi que Maria.</h3>
+      <br>
+      <h3 class="textcarte">A bientôt. Elisa</h3>
+    </div>
+    <div class="col-lg-7 image-box">
+      <img class="picv picrot-15" src="images/imagesbox/Box12/PicTraMa2a.JPG" alt="image">
+      <img class="pich" src="images/imagesbox/Box12/PicTraMa2b.JPG" alt="image">
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row" style="margin-right: 0px;margin-left: 0px;">
+    <div class="col-lg-7 image-box">
+      <img class="pich picrot-15" src="images/imagesbox/Box12/PicTRaMa3a.JPG" alt="image">
+      <img class="pich" src="images/imagesbox/Box12/PicTRaMa3b.JPG" alt="image">
+    </div>
+    <div class="col-lg-5 text-box">
+      <h3 class="textcarte">Mes chères petites amies,</h3>
+      <br>
+      <h3 class="textcarte">Nous voici bien proche de la nouvelle année.</h3>
+      <h3 class="textcarte">Je vous envoie ces quelques mots pour vous faire part de la bonne année et surtout une excellente santé pour 1926 et à chacune un joli mari dans l’année.</h3>
+      <h3 class="textcarte">Tu voudras bien faire part de la bonne année à toute la famille.</h3>
+      <h3 class="textcarte">Recevez de votre petite amie de bons baisers. Au plaisir pour le 19.</h3>
+      <h3 class="textcarte">Bien le bonjour à tous.</h3>
+      <br>
+      <h3 class="textcarte">Elisa</h3>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h3>… Victorine part plus loin et rejoint une famille bourgeoise de Commentry comme bonne à tout faire. Ces quelques cartes sont pleines de fraîcheur avec un brin d’effronterie comme on peut s’y attendre de la part d’une jeune fille dans ses vingt ans …</h3>
+  <br>
+  <h3>Nous sommes bien loin du quotidien de la Célestine du Journal d’une femme de chambre écris par Octave Mirbeau en 1900, mais comme Célestine, Victorine fait partie de ce contingent de jeunes paysannes employées par une bourgeoisie montante.</h3>
+  <br>
+  <br>
+  <div class="row" style="margin-left: 10px;margin-right: 0px;">
+    <div class="col-lg-6">
+      <iframe width="185" height="275" src="images/imagesbox/Box12/Journal.jpg">
+      </iframe>
+    </div>
+    <div class="col-lg-5">
+      <br>
+      <br>
+      <br>
+      <br>
+      <h3>Si le cœur vous en dit, feuilletez donc quelques pages de ce grand classique.</h3>
+    </div>
+    <div class="col-lg-1">
+    </div>
+  </div>
+  <br>
+  <div class="row" style="margin-left: 10px;margin-right: 0px;">
+    <div class="col-lg-6">
+      <a class="btn btn-lg btn-block btn-outline-secondary col-6" role="button" href="https://beq.ebooksgratuits.com/vents/mirbeau-journal.pdf" target="_blank"><i class="fas fa-archive"></i> Accès au Journal </a>
+    </div>
+    <div class="col-lg-5">
+    </div>
+    <div class="col-lg-1">
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="row" style="margin-right: 0px;margin-left: 0px;">
+    <div class="col-lg-5 text-box">
+      <h3 class="textcarte">Ma chère Léa et aussi Augustine,</h3>
+      <br>
+      <h3 class="textcarte">Etant rentrée de promenade avec ma marraine, je suis été porter ma robe à arranger chez la couturière. Je la fais transformer en robe droite.</h3>
+      <h3 class="textcarte">Les patrons sont en promenade. Je n’ai que de trois heures à sept heures, ça me fait pas beaucoup. Tu vois, il faut toujours se dépêcher, toujours courir. Ce n’est pas le rêve. Vive encore la campagne, on est bien moins fermé.</h3>
+      <h3 class="textcarte">Chez nous c’était la communion, tu me diras comment ça s’est passé – ici aussi, c’était la communion. Ça fait une jolie fête.</h3>
+      <h3 class="textcarte">Ecris-moi le plus souvent que tu pourras car je m’ennuie ici.</h3>
+      <h3 class="textcarte">Je finis ma carte et avant, reçois de ta petite amie mille baisers.</h3>
+        <h3 class="textcarte"></h3>
+      <br>
+      <h3 class="textcarte">Victorine</h3>
+        <h3 class="textcarte">PS : Je pense de m’en aller pour la Pentecôte, j’attends cet heureux jour pour causer de vive voix.</h3>
+    </div>
+    <div class="col-lg-7 image-box">
+      <img class="pich picrot-15" src="images/imagesbox/Box12/PicTraCo1a.JPG" alt="image">
+      <img class="pich" src="images/imagesbox/Box12/PicTraCo1b.JPG" alt="image">
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row" style="margin-right: 0px;margin-left: 0px;">
+    <div class="col-lg-7 image-box">
+      <img class="pich picrot-15" src="images/imagesbox/Box12/PicTraCo2a.JPG" alt="image">
+      <img class="picv" src="images/imagesbox/Box12/PicTraCo2b.JPG" alt="image">
+    </div>
+    <div class="col-lg-5 text-box">
+      <h3 class="textcarte">Chère Augustine et aussi Léa,</h3>
+      <br>
+      <h3 class="textcarte">Je vous écris ces deux mots dans ma chambre avant d’aller me coucher. Aujourd’hui, je me suis bien promenée. Ma cousine de Doyet était venue chez ma marraine avec sa petite. Ça fait que j’ai sorti de deux heures et demie jusqu`à six heures et que j’ai resté avec eux.</h3>
+      <h3 class="textcarte">Nous sommes allés nous promener sur la route de Chamblet et nous sommes revenus par le bois. Ah, c’est un beau pays autour de Commentry.</h3>
+      <h3 class="textcarte">Mais tout ça, ça ne vaut pas les Raynauds et la soirée de dimanche passée à la … Quand je suis rentrée, ce que j’avais le cafard, j’en étais malade.</h3>
+      <h3 class="textcarte">J’ai voulu dire que je serais peut-être obligée de quitter si mon frère en avait longtemps pour guérir. Il a fait une jolie grimace, il ne veut pas que je les quitte. Voilà ce qu’il me dit : vous nous quitterez que quand votre amoureux viendra vous chercher. Et bien, j’aurais pas fini d’attendre.</h3>
+      <h3 class="textcarte">Il m’appelle toujours petite Virlette, vous nous quitterez pas. Oui, je suis trop bonne, il me ferait battre l’eau.</h3>
+      <br>
+      <h3 class="textcarte"></h3>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h3>… Louise, une amie de Maria, est partie à Clermont Ferrand, la capitale auvergnate. Les années passent, mais dans cette période d’après-guerre où beaucoup d’hommes sont morts au front, les maris se font rares et bien des souhaits de mariage dans l’année ne seront jamais exaucés. Il en ira ainsi pour Maria …</h3>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row" style="margin-right: 0px;margin-left: 0px;">
+    <div class="col-lg-5 text-box">
+      <h3 class="textcarte">Bien chère Maria,</h3>
+      <br>
+      <h3 class="textcarte">Je viens te remercier de tes bons vœux que tu m’as envoyés. Quoique un peu tard, je viens t’offrir les miens.</h3>
+      <h3 class="textcarte">Quant au dernier vœu que tu me fais, je t’en souhaite autant : un joli mari au bout de l’année. Tu sais, c’est le moment de partir et débrouille toi pour que je mange cette noce.</h3>
+      <h3 class="textcarte">Quant à moi, je m’en fais pas pour le moment. Je suis bien heureuse. Mon idée est de ne pas me marier. Ceux que je veux me veulent pas, et ceux qui me veulent , je ne les veux pas. Je veux rester quelque temps comme ça et puis après, mon idée est de faire une sœur. Si tu veux venir, nous partirons toutes les deux.</h3>
+      <h3 class="textcarte">Tu sais, il y a chez Mr Baud une petite sœur qui garde Mr Baud qui est malade …</h3>
+      <h3 class="textcarte"></h3>
+      <br>
+      <h3 class="textcarte"></h3>
+    </div>
+    <div class="col-lg-7 image-box">
+      <img class="picv picrot-15" src="images/imagesbox/Box12/PicTraCler1a.JPG" alt="image">
+      <img class="picv" src="images/imagesbox/Box12/PicTraCler1b.JPG" alt="image">
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row" style="margin-right: 0px;margin-left: 0px;">
+    <div class="col-lg-7 image-box">
+      <img class="picv picrot-15" src="images/imagesbox/Box12/PicTraCler2a.JPG" alt="image">
+      <img class="picv" src="images/imagesbox/Box12/PicTraCler2b.JPG" alt="image">
+    </div>
+    <div class="col-lg-5 text-box">
+      <h3 class="textcarte">Ma chère amie,</h3>
+      <br>
+      <h3 class="textcarte">Depuis que je suis ici, j’ai souvent pensé vous tous et aux bons moments passés avec toi.</h3>
+      <h3 class="textcarte">J’aurais voulu t’écrire plus tôt mais ne le pouvais pas car j’étais très occupée à mon emménagement. Quoique point complet, ça ressemble un peu à un ménage et je me trouve très bien dans mon petit logis. Je ne veux pas t’en donner le détail, je préfère que tu viennes le voir.</h3>
+      <h3 class="textcarte">Que puis-je te dire sur ma nouvelle résidence sinon que je suis très heureuse. Je commence à m’habituer à cette nouvelle vie. Le temps me dure pourtant de revoir les Raynauds. J’irai probablement dans le courant Février.</h3>
+      <h3 class="textcarte">Qu’as-tu fait depuis mon départ ? Êtes-vous allées de nouveau aux foires ? Surtout ne vous abrutissez pas trop.</h3>
+      <h3 class="textcarte">Dis à Léa et Augustine qu’elles se débrouillent à broder pour qu’elles puissent me montrer de belles choses quand je viendrai.</h3>
+  <h3 class="textcarte">En attendant l’heureux plaisir de vous voir. J’adresse à tous mes affectueuses amitiés.</h3>
+    <h3 class="textcarte">Bons baisers de ton amie.</h3>
+      <br>
+      <h3 class="textcarte">Louise</h3>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row" style="margin-right: 0px;margin-left: 0px;">
+    <div class="col-lg-5 text-box">
+      <h3 class="textcarte">Bien chères amies,</h3>
+      <br>
+      <h3 class="textcarte">A l’occasion du nouvel an, je viens vous offrir à tous une bonne et heureuse année. Et surtout pour toi Léa ainsi que Gustine, un gentil mari comme celui-ci que je viens offrir.</h3>
+      <h3 class="textcarte">Je n’ai pas pu partir pour la Noël mais je partirai dans le courant du mois de janvier. Après le 7, je serai libre. Alors nous allons parler un bon coup, car j’ai bien des choses à vous dire.</h3>
+      <h3 class="textcarte">Dimanche, je suis été au cinéma. J’ai le droit d’y aller tant que je veux, je ne paye pas. C’est mon ancienne patronne qui m’a forcée …</h3>
+      <h3 class="textcarte"></h3>
+      <h3 class="textcarte"></h3>
+      <br>
+      <h3 class="textcarte"></h3>
+    </div>
+    <div class="col-lg-7 image-box">
+      <img class="picv picrot-15" src="images/imagesbox/Box12/PicTraCler3a.JPG" alt="image">
+      <img class="picv" src="images/imagesbox/Box12/PicTraCler3b.JPG" alt="image">
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h3>… Victorine a finalement un chéri, et dans cette carte à Léa, on apprend que Léa a également un petit ami. C’est sans doute mon grand-père, Louis, qu’elle épousera bientôt …</h3>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row" style="margin-right: 0px;margin-left: 0px;">
+    <div class="col-lg-7 image-box">
+      <img class="pich picrot-15" src="images/imagesbox/Box12/PicTraCler5a.JPG" alt="image">
+      <img class="picv" src="images/imagesbox/Box12/PicTraCler5b.JPG" alt="image">
+    </div>
+    <div class="col-lg-5 text-box">
+      <h3 class="textcarte">Bien chère amie,</h3>
+      <br>
+      <h3 class="textcarte">Je suis été contente de voir que tu t’es bien amusée à cette noce. Tu devais être belle avec cette jolie robe. Tu vas la prendre pour aller à Ronnet à la fête et amuse-toi bien.</h3>
+      <h3 class="textcarte">Moi je ne sais pas quand je partirai pour Pionsat. J’aurai toute les peines du monde pour y aller, ma patronne voudra pas que je parte et moi je voudrais déjà être partie.</h3>
+      <h3 class="textcarte">J’ai toujours des nouvelles de mon chéri. Je pense qu’il viendra me voir dimanche. Le temps me dure. Il n’est pas parti, il est toujours chez lui.</h3>
+      <h3 class="textcarte">Je suis été bien contente de voir que tu avais un petit ami. La Louisette doit être contente.</h3>
+      <h3 class="textcarte">Bien le bonjour chez toi.</h3>
+      <br>
+      <h3 class="textcarte">Ton amie. Victorine.</h3>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h3>… Et d’autres, comme Germaine, partirent encore plus loin … A la Capitale !</h3>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row" style="margin-right: 0px;margin-left: 0px;">
+    <div class="col-lg-5 text-box">
+      <h3 class="textcarte">Ma chère Maria,</h3>
+      <br>
+      <h3 class="textcarte">Me voilà depuis une quinzaine bien éloignée du patelin et de vous tous. Malgré cela, je ne vous oublie pas.</h3>
+      <h3 class="textcarte">Je pense même souvent à vous. Je vous espère et souhaite tous en bonne santé et que ton oncle aille un peu mieux. Quant à moi, je suis en bonne santé pour le moment.</h3>
+      <h3 class="textcarte">Je t’envoie une vue de l’eglise où je vais à la messe tous les dimanches à 7 heures et demie. Je ne me suis pas encore promenée dans Paris, juste dans le petit quartier que je fréquente pour faire les provisions.</h3>
+      <h3 class="textcarte">Pour aujourd’hui, je te quitte en t’adressant mes amitiés ainsi  qu’à Augustine et ta sœur.</h3>
+      <h3 class="textcarte">Bonjour à toute la maison.</h3>
+      <br>
+      <h3 class="textcarte">Germaine</h3>
+    </div>
+    <div class="col-lg-7 image-box">
+      <img class="pich picrot-15" src="images/imagesbox/Box12/PicTraPa1a.JPG" alt="image">
+      <img class="pich" src="images/imagesbox/Box12/PicTraPa1b.JPG" alt="image">
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h3>Dans ces années d’après-guerre, la vie reprend donc peu à peu son cours normal mais sans doute on n’oublie pas cette immense meurtrissure que la guerre a laissé. Et comme face à ses monuments aux morts que toutes les communes érigent, repensons un instant à ceux et celui qui n’est jamais revenu des champs de bataille.</h3>
+  <br>
+  <br>
+  <div class="row" style="margin-left: 10px;margin-right: 0px;">
+    <div class="col-lg-6">
+      <iframe width="609" height="360" src="images/imagesbox/Box12/Jaures.jpg">
+      </iframe>
+      <br>
+      <div class="audiobutton">
+        <audio id="audio" controls>
+          <source src="audios/Jaures.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+    <div class="col-lg-5">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h3>Comme Brel le chantera plus tard, pourquoi ont-ils tué Jaurès ?</h3>
+      <br>
+      <h3>Y-avait-il une autre voie, la guerre pouvait-elle être évitée comme le voulait Jaurès ? </h3>
+    </div>
+    <div class="col-lg-1">
+    </div>
+  </div>
+  <br>
+  <br>
+  <h3>Cette jolie carte postale adressée à Gabriel par les deux petites jumelles pour un 1er Avril au front illustre parfaitement le gâchis de cette guerre, les amours et les tendresses perdues.</h3>
+  <br>
+  <br>
+  <div class="row" style="margin-right: 0px;margin-left: 0px;">
+    <div class="col-lg-7 image-box">
+      <img class="picv picrot-15" src="images/imagesbox/Box12/PicLeaAuga.JPG" alt="image">
+      <img class="pich" src="images/imagesbox/Box12/PicLeaAugb.JPG" alt="image">
+    </div>
+    <div class="col-lg-5 text-box">
+      <h3 class="textcarte">Cher petit Gabriel,</h3>
+      <br>
+      <h3 class="textcarte">Nous te souhaitons le reste de tes jours heureux et une bonne ….</h3>
+      <h3 class="textcarte">C’est ce que nous désirons au plus vite. Ces quelques jours que tu passes avec nous ne font que nous faire envie et nous aimons beaucoup à te caresser le soir.</h3>
+      <h3 class="textcarte">Tu sais bien, il te faudrait tous les jours chez nous.</h3>
+      <h3 class="textcarte">Nous t’envoyons le poisson d’Avril porté par deux petites comme nous, mais pas si coquines ni si aimables.</h3>
+      <h3 class="textcarte">Nous t’embrassons sur les deux joues de tout cœur.</h3>
+      <br>
+      <h3 class="textcarte">Augustine et Léa</h3>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row" style="margin-right: 0px;margin-left: 0px;" >
+    <div class="footer">
+      <div class="row">
+        <div class="col-lg-9">
+          <hr style="border-top: 3px solid; margin-top: 25px; color: white;">
+        </div>
+        <div class="col-lg-2">
+          <p style="padding-top: 10px; text-align: left;">Des Sillons aux Tranchées </p>
+        </div>
+        <div class="col-lg-1">
+          <p><img class="logo" src="images/logo1.png" alt="logo-img" style="height:30px; width:30px; display: block;
+margin-left: auto;
+margin-right: auto;"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
 
 </body>
 
