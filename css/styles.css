@@ -477,6 +477,9 @@ padding-left: 25%;
 #carouselExampleSlidesOnly {
   display: none;
 }
+
+.footer{
+  display: none;
 }
 
 /**  Music band **/
